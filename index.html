@@ -96,9 +96,9 @@
   <section class="screen on" id="intro">
     <div class="hero">
       <h1>Which <em>famous writer</em> are you?</h1>
-      <p class="lead">A personality test for storytellers. Answer 12 questions about the stories you love, the sentences you'd write and how you work. Then find out which of 12 remarkable writers from history shares your style.</p>
+      <p class="lead">A personality test for storytellers. Answer 17 quick questions about the stories you love, the way you write and the life that shapes it. Then find out which of 12 remarkable writers from history shares your style.</p>
       <button class="btn" id="start">Start the quiz →</button>
-      <div class="meta">About 5 minutes · No right or wrong answers</div>
+      <div class="meta">About 5 minutes · 4 choices per question · No right or wrong answers</div>
     </div>
     <div class="legend" id="legend"></div>
   </section>
@@ -253,113 +253,94 @@ const BIO = {
     works:["Spring View","Ballad of the Army Carts","My Thatched Hut Is Torn by the Autumn Wind"], start:"\"Spring View,\" just eight lines about a country at war."}
 };
 
-// Writer keys: HP Dickens, HE Murasaki, HR Austen, SP Shakespeare, SE Dostoevsky, SR Hemingway,
-// WP Tolstoy, WE García Márquez, WR Hugo, VP Lu Xun, VE Nietzsche, VR Du Fu
+// D=HP Dickens, M=HE Murasaki, A=HR Austen, S=SP Shakespeare, Do=SE Dostoevsky, H=SR Hemingway,
+// T=WP Tolstoy, G=WE García Márquez, Hu=WR Hugo, L=VP Lu Xun, N=VE Nietzsche, F=VR Du Fu
 const QUESTIONS = [
-  {q:"A stranger sits next to you on a long train ride. You…", o:[
-    ["Give them a nickname and study how they talk",["HP","HR"]],
-    ["Imagine the secret they're hiding",["SE","SP"]],
-    ["Wonder what history their hometown carries",["WP","WR"]],
-    ["Notice one small sad detail, like a worn sleeve",["HE","VR"]],
-    ["Wonder why they follow everyone else's rules",["VE","VP"]],
-    ["Imagine their grandmother can talk to ghosts",["WE"]]]},
-  {q:"What kind of humor do you write?", o:[
-    ["Comic characters with funny names and habits",["HP","SP"]],
-    ["Quiet irony, where the narrator winks at the reader",["HR"]],
-    ["Bitter satire that makes readers uncomfortable",["VP"]],
-    ["Almost none",["SE","SR","VR"]],
-    ["Absurd events told with a straight face",["WE"]],
-    ["Mocking ideas everyone believes",["VE"]]]},
-  {q:"The mood you love most:", o:[
-    ["Gentle sadness that nothing lasts",["HE","VR"]],
-    ["Feverish, like someone on the edge",["SE"]],
-    ["Calm on the surface, deep feeling underneath",["SR"]],
-    ["Big and sweeping, like an orchestra",["WR","WP"]],
-    ["Electric and defiant",["VE","SP"]],
-    ["Dreamy and nostalgic",["WE"]]]},
-  {q:"The big question your story asks:", o:[
-    ["How should a person live?",["WP","VE"]],
-    ["Can a guilty person be redeemed?",["SE","WR"]],
-    ["Who gets to marry whom, and what does money have to do with it?",["HR"]],
-    ["Why are poor people treated this way?",["HP","VP","VR"]],
-    ["What happens when ambition meets fate?",["SP"]],
-    ["Can a family escape its own history?",["WE"]],
-    ["Why does beauty fade?",["HE"]],
-    ["What does courage look like when no one is watching?",["SR"]]]},
-  {q:"Your story takes place in…", o:[
-    ["A living room and a village dance",["HR"]],
-    ["A palace with moonlit gardens",["HE"]],
-    ["Crowded, foggy city streets",["HP","WR"]],
-    ["A nation at war, from the battlefield to home",["WP","VR"]],
-    ["One cramped room where someone can't stop thinking",["SE"]],
-    ["A fishing boat, a café or the open sea",["SR"]],
-    ["A tiny town where it rains flowers",["WE"]],
-    ["A village tavern where everyone gossips about an outsider",["VP"]]]},
-  {q:"Your narrator…", o:[
-    ["Talks straight to the reader and has strong opinions",["HP","WR"]],
-    ["Slips into characters' thoughts, with irony",["HR"]],
-    ["Is a character on the edge, telling their own story",["SE","VP"]],
-    ["Is barely there and shows rather than tells",["SR"]],
-    ["Doesn't exist, because the characters speak for themselves",["SP"]],
-    ["Sounds like a prophet",["VE"]],
-    ["Is \"I\", the poet, speaking personally",["VR"]],
-    ["Is a calm teller of legends",["WE","HE"]],
-    ["Knows everyone's thoughts, from foot soldiers to emperors",["WP"]]]},
-  {q:"Which sentence sounds most like you?", o:[
-    ["\"The rain fell on the river and the boats. He did not mind it.\"",["SR"]],
-    ["\"It rained, and no one remembered when it hadn't, though the oldest woman swore it once rained for four years.\"",["WE"]],
-    ["\"A thousand chimneys smoked, and each had a story it was too ashamed to tell.\"",["HP"]],
-    ["\"Mountains and rivers remain; rain falls on a gate where no one comes home.\"",["VR"]],
-    ["\"It was the kind of evening a sensible young woman stays in, so naturally she went out.\"",["HR"]],
-    ["\"He walked into the rain on purpose, because he felt he deserved it.\"",["SE"]],
-    ["\"The rain on the roof reminded her of a letter she never answered.\"",["HE"]],
-    ["\"Let it rain! Only someone with no roof learns what the sky is.\"",["VE"]]]},
-  {q:"Which opening line would you most want to write?", o:[
-    ["\"Everyone in the village laughed at him, and he laughed too, because that was easier.\"",["VP"]],
-    ["\"Paris was asleep, except for the sewers, the prisons and one man who could not forgive himself.\"",["WR"]],
-    ["\"The war reached the estate on a Tuesday, between lunch and the piano lesson.\"",["WP"]],
-    ["\"Enter a king, with a crown in his hand and a lie on his tongue.\"",["SP"]],
-    ["\"Nobody in the workhouse had ever said thank you to him, so the boy practised it alone.\"",["HP"]]]},
-  {q:"How do you work?", o:[
-    ["Plan every part in detail",["HP","WP"]],
-    ["Take an old story and rebuild it",["SP"]],
-    ["Write in a rush against a deadline",["SE"]],
-    ["Wait until the whole story hits you, then shut yourself away and write",["WE"]],
-    ["Walk and catch ideas in a notebook",["VE"]],
-    ["Rewrite for years",["HR","WR"]],
-    ["Write it, then cut half",["SR"]],
-    ["Fight over every single word",["VR"]],
-    ["Write piece by piece and share as you go",["HE"]],
-    ["Write with a mission to wake people up",["VP"]]]},
-  {q:"Who do you write for?", o:[
-    ["Everyone, from the cheapest seats up",["SP","HP"]],
-    ["A small circle who will catch every hint",["HE","HR"]],
-    ["People who need waking up",["VP","VE"]],
-    ["Forgotten people, to give them a voice",["WR","VR"]],
-    ["Myself, to wrestle with my own questions",["SE","WP"]],
-    ["Readers who can feel what's left unsaid",["SR"]],
-    ["Anyone who grew up on family stories",["WE"]]]},
-  {q:"Your main character is most likely…", w:3, tie:true, o:[
-    ["A poor kid with a good heart",["HP"]],
-    ["A clever young woman who misjudges someone",["HR"]],
-    ["A charming prince who keeps falling in love",["HE"]],
-    ["A tortured student who can't stop thinking",["SE"]],
-    ["A tough, quiet person facing loss",["SR"]],
-    ["A former prisoner trying to become good",["WR"]],
-    ["A nobleman searching for meaning",["WP"]],
-    ["A king, a ghost or two doomed lovers",["SP"]],
-    ["Someone who refuses to follow the crowd",["VE"]],
-    ["An ordinary man who can't see he's trapped",["VP"]],
-    ["A whole family across generations",["WE"]],
-    ["\"I\", the poet, watching the world",["VR"]]]},
+  {q:"If you could only write one kind of thing for the rest of your life, it would be…", o:[
+    ["A huge novel that holds a whole society or many generations",["WP","WR","WE"]],
+    ["Short, sharp pieces: stories, essays or poems",["VP","SR","VR"]],
+    ["A long story released part by part, with readers waiting for the next piece",["HP","HE","SE"]],
+    ["Scenes full of voices: plays, dialogues and speeches",["SP","VE","HR"]]]},
+  {q:"Where do your best story ideas come from?", o:[
+    ["Hard things I've lived through myself",["HP","SE","VR"]],
+    ["Big moments in history",["WP","WR","SR"]],
+    ["Family stories and the people around me",["HR","WE","HE"]],
+    ["Old stories and beliefs I want to remake or challenge",["SP","VE","VP"]]]},
+  {q:"Which writing routine sounds most like you?", o:[
+    ["Make a plan or borrow a structure, then build on it",["HP","WP","SP"]],
+    ["Write in an intense burst once the idea grabs me",["SE","WE","VE"]],
+    ["Rewrite the same piece for months or even years",["HR","WR","SR"]],
+    ["Write in moments I steal from a busy job or life",["HE","VP","VR"]]]},
+  {q:"What kind of humor shows up in your writing?", o:[
+    ["Big comic characters and ridiculous situations",["HP","SP","WE"]],
+    ["Quiet, dry irony that some readers might miss",["HR","HE","SR"]],
+    ["Bitter mockery of how people really behave",["VP","VE","SE"]],
+    ["Hardly any. My writing is mostly serious.",["WP","VR","WR"]]]},
+  {q:"Which mood do you love creating?", o:[
+    ["Gentle sadness that nothing lasts forever",["HE","VR","WE"]],
+    ["Fever and tension, like someone on the edge",["SE","VE","VP"]],
+    ["Calm on the surface, strong feeling underneath",["SR","HR","WP"]],
+    ["Big, stormy and passionate",["WR","SP","HP"]]]},
+  {q:"Which big question would your story ask?", o:[
+    ["How should a person live, and what makes life meaningful?",["WP","VE","SE"]],
+    ["Why do the powerful get away with crushing the weak?",["HP","WR","VR"]],
+    ["What do love and longing do to us?",["HR","HE","SR"]],
+    ["Can anyone escape their fate, their family or their traditions?",["SP","WE","VP"]]]},
+  {q:"Where does your story take place?", o:[
+    ["Busy city streets: crowded, dirty and alive",["HP","WR","SE"]],
+    ["Palaces, courts or elegant drawing rooms",["HE","HR","SP"]],
+    ["Battlefields, the sea or roads far from home",["WP","SR","VR"]],
+    ["A small town or a lonely mountain, far from the center",["WE","VP","VE"]]]},
+  {q:"How does your narrator sound?", o:[
+    ["Talks to the reader directly, with opinions and even essays",["HP","WR","WP"]],
+    ["Lives inside one character's racing or ironic thoughts",["SE","HR","VP"]],
+    ["Stays in the background and lets words, silences or poems carry the feeling",["SR","SP","HE"]],
+    ["Sounds like a poet, a prophet or a storyteller of legends",["VR","VE","WE"]]]},
+  {q:"Which kind of sentences do you write?", o:[
+    ["Short and plain, every word doing work",["SR","VP","VR"]],
+    ["Long and rolling, full of detail",["WP","WR","WE"]],
+    ["Elegant and witty, with perfect balance",["HR","SP","HE"]],
+    ["Bursting with emotion, repeating for effect",["SE","VE","HP"]]]},
+  {q:"Who are you really writing for?", o:[
+    ["Everyone: big crowds, from the cheapest seats up",["SP","HP","WR"]],
+    ["A small circle who will catch every hint",["HE","HR","VE"]],
+    ["People who need to wake up and change",["VP","WP","SE"]],
+    ["Readers who can feel what's left unsaid",["SR","VR","WE"]]]},
+  {q:"Your main character is most likely…", o:[
+    ["A poor outsider or someone society laughs at",["HP","WR","VP"]],
+    ["A clever or noble person inside a polite society",["HR","HE","WP"]],
+    ["A tortured thinker or rebel who can't stop questioning",["SE","VE","SP"]],
+    ["An ordinary person quietly enduring hard times",["SR","VR","WE"]]]},
   {q:"What is a writer's job?", o:[
-    ["To entertain and make people care",["HP","SP"]],
-    ["To tell the truth about history",["VR","WP"]],
-    ["To fight injustice",["WR","VP"]],
-    ["To show the hidden heart",["HE","HR"]],
-    ["To ask questions with no easy answers",["SE","VE"]],
-    ["To write one true sentence",["SR"]],
-    ["To keep memory alive",["WE"]]]}
+    ["To entertain people and make them care",["HP","SP","HR"]],
+    ["To tell the truth about war and history",["WP","VR","SR"]],
+    ["To shake people out of comfortable beliefs",["VP","VE","SE"]],
+    ["To keep memory and beauty from disappearing",["HE","WE","WR"]]]},
+  {q:"Which life experience sounds most like it would turn you into a writer?", o:[
+    ["My family loses its money, and I have to grow up fast",["HP","VP","SP"]],
+    ["Coming face to face with war or death",["SE","SR","WP"]],
+    ["Growing up in a house full of books and stories",["HR","WE","HE"]],
+    ["Wandering far from home, in exile or on the road",["WR","VE","VR"]]]},
+  {q:"What do you love describing most?", o:[
+    ["People's faces, habits and funny quirks",["HP","HR","WE"]],
+    ["Battles, crowds and history in motion",["WP","WR","SP"]],
+    ["Thoughts, arguments and inner struggles",["SE","VE","VP"]],
+    ["Nature: seasons, mountains, rivers and the sea",["VR","SR","HE"]]]},
+  {q:"How do you treat the rules of writing?", o:[
+    ["Master a strict form, like a fixed poem or verse pattern",["VR","SP","HE"]],
+    ["Break the old rules and start something new",["VP","VE","WE"]],
+    ["Mix everything: story, essay, history and philosophy",["WP","WR","SE"]],
+    ["Keep it clear enough that anyone can follow",["SR","HP","HR"]]]},
+  {q:"When is your story set?", o:[
+    ["In my own time and my own neighborhood",["HR","VP","SE"]],
+    ["A generation or two before I was born",["WP","WR","WE"]],
+    ["During hard times I lived through myself",["HP","SR","VR"]],
+    ["A distant or legendary past",["SP","HE","VE"]]]},
+  {q:"How would your writing life begin?", o:[
+    ["As a reporter, writing news for a paper",["SR","WE","HP"]],
+    ["As a poet, long before any novel",["WR","VR","HE"]],
+    ["Training for a completely different career first",["VP","SE","WP"]],
+    ["Close to words in another way: acting, teaching or writing for my family",["HR","SP","VE"]]]}
 ];
 
 const $ = id => document.getElementById(id);
@@ -406,16 +387,16 @@ function pick(oi, el){
 
 function score(){
   const s = Object.fromEntries(Object.keys(TYPES).map(k=>[k,0]));
-  let tieKey = null, last = {};
+  let tieSet = [], last = {};
   QUESTIONS.forEach((q,i)=>{
     if(answers[i]===null) return;
     const keys = q.o[answers[i]][1];
     const pts = q.w || 1;
     keys.forEach(k=>{ s[k]+=pts; last[k]=i; });
-    if(q.tie) tieKey = keys[0];
+    if(/main character/.test(q.q)) tieSet = keys;
   });
   const ranked = Object.keys(s).sort((a,b)=>
-    s[b]-s[a] || (b===tieKey)-(a===tieKey) || (last[b]??-1)-(last[a]??-1));
+    s[b]-s[a] || tieSet.includes(b)-tieSet.includes(a) || (last[b]??-1)-(last[a]??-1));
   return {scores:s, ranked};
 }
 

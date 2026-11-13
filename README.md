@@ -1,7 +1,7 @@
 # Which Famous Writer Are You? — W4GZ Quiz
 
 A personality quiz about writing style from **Writing for Gen Z (W4GZ)**.
-Students answer 12 questions about the stories they love, the sentences they'd write and how they work, then find out which of 12 remarkable writers from history shares their style.
+Students answer 17 questions (4 choices each) about the stories they love, the way they write and the life experiences that shape it, then find out which of 12 remarkable writers from history shares their style.
 
 *Create narratives worth living.*
 
@@ -18,9 +18,10 @@ Each result shows the student's writing style, a true story about how that write
 
 ## How scoring works
 
-- Each answer names 1–3 writers; each named writer gets +1 point.
-- "Your main character is most likely…" gives +3 and breaks ties.
-- The writer with the most points is the result; second place is the runner-up.
+- Every question has 4 answers, and each answer points to 3 writers, grouped by real facts about their lives and work (Dickens worked in a factory as a child, Dostoevsky dictated *The Gambler* in 26 days, Lu Xun trained in medicine, and so on).
+- Every writer appears in exactly one answer per question, so no writer is favored.
+- Each writer in the chosen answer gets +1 point. The writer with the most points is the result; second place is the runner-up.
+- Ties are broken by the "main character" question, then by the most recent answer.
 
 ## Run it
 
