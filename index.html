@@ -52,12 +52,7 @@
   .opt .k{flex:none;width:30px;height:30px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;font-weight:700;font-size:13px;color:var(--muted)}
 
   /* result */
-  .rtop{margin-top:34px;border-radius:24px;padding:16px;position:relative;overflow:hidden}
-  .rtop .result-copy{position:relative;z-index:1;background:var(--card);color:var(--ink);border-radius:14px;padding:24px;overflow-wrap:anywhere}
-  .rtop .result-copy .kicker,.rtop .result-copy .tagby{color:var(--muted);opacity:1}
-  .rtop .result-copy .tag,.rtop .result-copy .runner{opacity:1}
-  .rtop .result-copy .chips span{background:var(--bg);color:var(--ink);border:1px solid var(--line)}
-  @media(max-width:480px){.rtop{padding:12px}.rtop .result-copy{padding:18px}}
+  .rtop{margin-top:34px;border-radius:24px;padding:30px 26px;color:#fff;position:relative;overflow:hidden}
   .rtop .kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;font-weight:700}
   .rtop h2{font-size:clamp(38px,8vw,60px);margin:6px 0 8px}
   .rtop .tag{font-family:'Fraunces',serif;font-style:italic;font-size:20px;opacity:.95}
@@ -286,10 +281,6 @@
     const chips = el('div', 'chips');
     if (ap) chips.appendChild(el('span', null, ap.name + (ap.about ? ' · ' + ap.about : '')));
     top.appendChild(chips);
-    // Keep text on an opaque surface while retaining the writer's color around it.
-    const copy = el('div', 'result-copy');
-    Array.from(top.children).filter(child => child.tagName.toLowerCase() !== 'svg').forEach(child => copy.appendChild(child));
-    top.appendChild(copy);
 
     $('rdesc').textContent = w.style || '';
     $('rfact').textContent = w.trueStory || '';
