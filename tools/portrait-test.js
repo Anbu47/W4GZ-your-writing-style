@@ -48,7 +48,7 @@ for(const writer of writers){
 context.renderResult({name:'Legacy writer'},null);
 assert.equal(nodes.get('writerPortrait').hidden,true);
 assert.equal(nodes.get('writerPortrait').children.length,0);
-assert(html.indexOf('id="writerPortrait"')<html.indexOf('id="rtop"'));
+assert(html.indexOf('id="writerPortrait"')>html.indexOf('id="rtop"'));
 assert(html.includes('justify-content:center'));
 assert(!html.includes('chips')&&!html.includes('APPROACHES'));
 assert(html.includes('@media(max-width:560px)'));
