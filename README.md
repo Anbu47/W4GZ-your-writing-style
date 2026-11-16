@@ -32,6 +32,6 @@ Run `node tools/editorial-test.js` to verify this edition. `check.html` and `too
 
 ## Writer portraits
 
-All 50 result profiles include a matching chibi illustration. Transparent WebP portraits live in `assets/writers/` and are linked by the `portrait` field in each writer profile. Each portrait is centered below and outside the colored banner on every screen size. Writing-approach labels are hidden from banners and the writer directory. Ancient and some early historical likenesses are imaginative reconstructions.
+All 50 result profiles include a matching chibi illustration. Transparent WebP portraits live in `assets/writers/` and are linked by the `portrait` field in each writer profile. Each portrait appears as an upper-body circular medallion overlapping the top center of the colored result banner on desktop and mobile. Writing-approach labels are hidden from banners and the writer directory. Ancient and some early historical likenesses are imaginative reconstructions.
 
 Run `node tools/portrait-test.js` to check all 50 portrait files, writer-to-image assignments and profile switching.

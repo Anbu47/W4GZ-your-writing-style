@@ -12,7 +12,7 @@ for(const w of writers){
 }
 // Run the actual result renderer with lightweight DOM elements to check all profiles.
 class Element{
- constructor(tag='div',cls='',text=''){this.tagName=tag.toUpperCase();this.className=cls;this.textContent=text;this.children=[];this.style={};this.dataset={};this.classes=new Set();this.classList={toggle:(c,on)=>on?this.classes.add(c):this.classes.delete(c),remove:c=>this.classes.delete(c)};}
+ constructor(tag='div',cls='',text=''){this.tagName=tag.toUpperCase();this.className=cls;this.textContent=text;this.children=[];this.style={setProperty(k,v){this[k]=v}};this.dataset={};this.classes=new Set();this.classList={toggle:(c,on)=>on?this.classes.add(c):this.classes.delete(c),remove:c=>this.classes.delete(c)};}
  set innerHTML(value){this.children=[];}get innerHTML(){return '';}
  append(...children){children.forEach(c=>this.appendChild(c));}
  appendChild(child){child.parent=this;this.children.push(child);return child;}
@@ -48,8 +48,10 @@ for(const writer of writers){
 context.renderResult({name:'Legacy writer'},null);
 assert.equal(nodes.get('writerPortrait').hidden,true);
 assert.equal(nodes.get('writerPortrait').children.length,0);
-assert(html.indexOf('id="writerPortrait"')>html.indexOf('id="rtop"'));
-assert(html.includes('justify-content:center'));
+assert(html.indexOf('id="writerPortrait"')<html.indexOf('id="rtop"'));
+assert(html.includes('border-radius:50%'));
+assert(html.includes('width:160%'));
+assert(html.includes('.rtop.has-portrait'));
 assert(!html.includes('chips')&&!html.includes('APPROACHES'));
 assert(html.includes('@media(max-width:560px)'));
 assert(!html.includes('mixnote')&&!html.includes('match-detail'));
