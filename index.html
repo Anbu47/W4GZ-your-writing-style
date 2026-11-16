@@ -105,7 +105,8 @@
       <h1>Which <em>famous writer</em> are you?</h1>
       <p class="lead" id="lead"></p>
       <div class="actions">
-        <button class="btn" id="startShort"></button>        <button class="btn ghost" id="startComplete"></button>
+        <button class="btn" id="startShort"></button>
+        <button class="btn ghost" id="startComplete"></button>
       </div>
       <div class="meta" id="meta"></div>
     </div>
@@ -186,7 +187,11 @@
 
   const S = model.settings, STYLES = S.styles || {}, APPROACHES = S.approaches || {};
   const styleOf = w => STYLES[w.focus] || { name: '', color: '#1f1a17', about: '' };
-  const colorOf = w => /^#[0-9a-f]{6}$/i.test(styleOf(w).color || '') ? styleOf(w).color : '#1f1a17';
+  // Each writer has a stable personal color; older profiles retain a style fallback.
+  const colorOf = w => {
+    const color = w.color || styleOf(w).color;
+    return /^#[0-9a-f]{6}$/i.test(color || '') ? color : '#1f1a17';
+  };
   function shade(hex, amt) {
     const n = parseInt(hex.slice(1), 16);
     return '#' + [n >> 16, (n >> 8) & 255, n & 255].map(v => Math.max(0, Math.min(255, v + amt)).toString(16).padStart(2, '0')).join('');
@@ -345,4 +350,5 @@
 </script>
 </body>
 </html>
+
 

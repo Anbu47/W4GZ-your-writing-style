@@ -17,7 +17,7 @@ var QUIZ_SETTINGS = {
   noneRate: 0.3,         // how often we expect a student outside a branch to pick the "none of these" answer
   noneText: "None of these sounds like me",   // used when a branch question has no "none" text of its own
 
-  // What draws a writer in. Each writer has one "focus"; it sets the color of the result.
+  // What draws a writer in. Each writer has one "focus"; its color is a fallback for profiles without a personal color.
   styles: {
     heart: { name: "Heart", color: "#e0567a", about: "characters & feelings" },
     spark: { name: "Spark", color: "#f0a12a", about: "plot & twists" },
@@ -32,4 +32,5 @@ var QUIZ_SETTINGS = {
     reviser:  { name: "Reviser",  about: "finds it in rewriting" }
   }
 };
+
 
