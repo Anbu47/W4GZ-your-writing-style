@@ -36,7 +36,7 @@ questions.forEach((expected, i) => {
   });
 });
 assert.equal(assignments, 624);
-for (const limit of [25, 50, 60, 100]) {
+for (const limit of [25, 100]) {
   const model = Engine.compile(data, { limit });
   assert.equal(model.questions.length, limit);
   assert.equal(model.problems.length, 0);
@@ -79,5 +79,5 @@ assert(!result.ranking.some(r => r.id === 'd'));
 fixture.writers[1].fit.q2 = ['a'];
 const tied = Engine.step(Engine.compile(fixture, { limit: 2 }), [{ q: 'q1', a: 'a' }, { q: 'q2', a: 'a' }]).result;
 assert(tied.top.tiedWith.length === 1);
-console.log('PASS: 100 questions, 400 answers, 624 assignments, 50 writers; 25/50/60/100 lengths, scoring, ties, and zero opportunities.');
+console.log('PASS: 100 questions, 400 answers, 624 assignments, 50 writers; 25/100 lengths, scoring, ties, and zero opportunities.');
 

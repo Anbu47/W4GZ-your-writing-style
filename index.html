@@ -105,10 +105,7 @@
       <h1>Which <em>famous writer</em> are you?</h1>
       <p class="lead" id="lead"></p>
       <div class="actions">
-        <button class="btn" id="startShort"></button>
-        <button class="btn ghost" id="startLong"></button>
-        <button class="btn ghost" id="startAdditional"></button>
-        <button class="btn ghost" id="startComplete"></button>
+        <button class="btn" id="startShort"></button>        <button class="btn ghost" id="startComplete"></button>
       </div>
       <div class="meta" id="meta"></div>
     </div>
@@ -181,10 +178,8 @@
   const loaded = typeof QuizEngine !== 'undefined' && typeof QUIZ_SETTINGS !== 'undefined' &&
                  typeof QUIZ_QUESTIONS !== 'undefined' && typeof QUIZ_WRITERS !== 'undefined';
   const DATA = loaded ? { settings: QUIZ_SETTINGS, questions: QUIZ_QUESTIONS, writers: QUIZ_WRITERS } : null;
-  // Two versions of the quiz: the short one leaves out the questions marked long: true.
+  // Two versions: the first 25 questions or the complete 100-question quiz.
   const SHORT = loaded ? QuizEngine.compile(DATA, { long: false }) : null;
-  const LONG = loaded ? QuizEngine.compile(DATA, { long: true }) : null;
-  const ADDITIONAL = loaded ? QuizEngine.compile(DATA, { limit: 60 }) : null;
   const COMPLETE = loaded ? QuizEngine.compile(DATA, { limit: 100 }) : null;
   let model = SHORT;
   if (!model || model.W < 2 || !model.questions.length) { show('broken'); return; }
@@ -207,10 +202,8 @@
   const minutes = m => Math.max(2, Math.round(count(m) / 4));
   $('lead').textContent = 'Choose the writing you would like to create and explore literary affinities with 50 writers. These are connections with their work, not a personality assessment.';
   $('startShort').textContent = 'Short quiz · ' + count(SHORT) + ' questions';
-  $('startLong').textContent = 'Long quiz · ' + count(LONG) + ' questions';
-  $('startAdditional').textContent = 'Additional round · 60 questions';
   $('startComplete').textContent = 'Complete quiz · 100 questions';
-  $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Long: about ' + minutes(LONG) + ' minutes. Complete: about ' + minutes(COMPLETE) + ' minutes.';
+  $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Complete: about ' + minutes(COMPLETE) + ' minutes.';
   $('alltitle').textContent = 'All ' + model.W + ' writers';
 
   /* ---------- quiz ---------- */
@@ -326,8 +319,6 @@
   }
 
   $('startShort').onclick = () => start(SHORT);
-  $('startLong').onclick = () => start(LONG);
-  $('startAdditional').onclick = () => start(ADDITIONAL);
   $('startComplete').onclick = () => start(COMPLETE);
   $('back').onclick = () => { if (!busy && history.length) { history.pop(); next(); } };
   $('again').onclick = () => {

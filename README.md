@@ -1,6 +1,6 @@
 # Which Famous Writer Are You? — W4GZ
 
-A quiz exploring literary affinities with 50 writers. Choose 25, 50, 60, or all 100 questions. Answer order is randomized; question order and the 624 writer assignments match the editorial source.
+A quiz exploring literary affinities with 50 writers. Choose the short 25-question quiz or the complete 100-question quiz. Answer order is randomized; question order and the 624 writer assignments match the editorial source.
 
 ## Source
 
@@ -21,7 +21,7 @@ The result shows the three closest entries, each with a proportion and match/opp
 - `data/settings.js`: editorial scoring and result styling.
 - `engine.js`: quiz and scoring logic; legacy adaptive functions remain available for older datasets.
 - `index.html`: playable quiz; open directly in a browser or serve through GitHub Pages.
-- `tools/editorial-test.js`: document fidelity, scoring, ties, and all four quiz lengths.
+- `tools/editorial-test.js`: document fidelity, scoring, ties, and both quiz lengths.
 
 Run `node tools/editorial-test.js` to verify this edition. `check.html` and `tools/check.js` remain diagnostic tools; their simulated accuracy analysis was designed for the older probabilistic dataset and is not evidence of this editorial quiz’s validity.
 
