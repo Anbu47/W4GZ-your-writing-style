@@ -28,3 +28,10 @@ The result shows the three closest entries, each with a proportion and match/opp
 Run `node tools/editorial-test.js` to verify this edition. `check.html` and `tools/check.js` remain diagnostic tools; their simulated accuracy analysis was designed for the older probabilistic dataset and is not evidence of this editorial quiz’s validity.
 
 
+
+
+## Writer portraits
+
+All 50 result profiles include a matching chibi illustration. Transparent WebP portraits live in `assets/writers/` and are linked by the `portrait` field in each writer profile. The colored banner and white text are retained; portraits move above the text on small screens. Ancient and some early historical likenesses are imaginative reconstructions.
+
+Run `node tools/portrait-test.js` to check all 50 portrait files, writer-to-image assignments and profile switching.
