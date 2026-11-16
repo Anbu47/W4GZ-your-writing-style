@@ -345,26 +345,64 @@
     if (mine && $('again').textContent.startsWith('←')) renderResult(mine.top.writer, mine);
     else { mine = null; show('intro'); }
   };
+  function buildShareContent(result) {
+    const quizUrl = 'https://anbu47.github.io/W4GZ-your-writing-style/';
+    const ranking = result.ranking && result.ranking.length ? result.ranking :
+      [result.top, result.runnerUp].filter(Boolean);
+    const selected = ranking.slice(0, 2);
+    const displayedPercent = row => Math.round(row.agree / row.opportunities * 100);
+    if (ranking.length > 2 && displayedPercent(ranking[1]) === displayedPercent(ranking[2])) {
+      selected.push(ranking[2]);
+    }
+    const names = selected.map(row => row.writer.name);
+    const writer = result.top.writer;
+    const opening = names.length > 1 ?
+      'Part ' + names.join(', part ') + '—and entirely my own. ✨📖' :
+      'A little ' + names[0] + ', and a story entirely my own. ✨📖';
+    const escapeHtml = value => String(value).replace(/[&<>"']/g, char =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+    const textParts = [opening];
+    const htmlParts = ['<p>' + escapeHtml(opening) + '</p>'];
+    if (writer.tagline) {
+      const attribution = '— ' + writer.name + (writer.taglineFrom ? ', ' + writer.taglineFrom : '');
+      textParts.push('“' + writer.tagline + '”\n' + attribution);
+      htmlParts.push('<p>“' + escapeHtml(writer.tagline) + '”<br>— ' + escapeHtml(writer.name) +
+        (writer.taglineFrom ? ', <em>' + escapeHtml(writer.taglineFrom) + '</em>' : '') + '</p>');
+    }
+    textParts.push('Who’s hiding between the lines of your imagination? Take the W4GZ quiz and discover your writer mix.');
+    textParts.push(quizUrl);
+    htmlParts.push('<p>Who’s hiding between the lines of your imagination? Take the W4GZ quiz and discover your writer mix.</p>');
+    htmlParts.push('<p><a href="' + quizUrl + '">' + quizUrl + '</a></p>');
+    return { text: textParts.join('\n\n'), html: htmlParts.join(''), names };
+  }
+
   $('copy').onclick = async () => {
     if (!mine) return;
-    const w = mine.top.writer;
-    const a = w.name, b = mine.runnerUp ? mine.runnerUp.writer.name : null;
-    // One of three sentences, picked at random each time the button is pressed.
-    const lines = b ? [
-      'My literary affinity is with ' + a + ', with a hint of ' + b + '.',
-      'My literary affinities include ' + a + ' meeting ' + b + '.',
-      'My literary affinities are part ' + a + ', part ' + b + ', and entirely your own.'
-    ] : ['My literary affinity is with ' + a + '.'];
-    const text = (mine.top.tiedWith.length ? 'My closest literary affinities are tied: ' + [a].concat(mine.top.tiedWith).join(', ') + '.' : lines[Math.floor(Math.random() * lines.length)]) +
-      (w.tagline ? ' \u201C' + w.tagline + '\u201D \u2014 ' + a + (w.taglineFrom ? ', ' + w.taglineFrom : '') + '.' : '') +
-      ' Take the W4GZ quiz and find which writer you are.';
-    try { await navigator.clipboard.writeText(text); $('note').textContent = 'Copied: ' + text; }
-    catch (e) { $('note').textContent = text; }
+    const content = buildShareContent(mine);
+    try {
+      if (typeof ClipboardItem !== 'undefined' && navigator.clipboard && typeof navigator.clipboard.write === 'function') {
+        try {
+          await navigator.clipboard.write([new ClipboardItem({
+            'text/html': new Blob([content.html], { type: 'text/html' }),
+            'text/plain': new Blob([content.text], { type: 'text/plain' })
+          })]);
+          $('note').textContent = 'Your writer mix is copied and ready to share!';
+          return;
+        } catch (e) {
+          // Plain text keeps the quiz URL when formatted copying is unavailable.
+        }
+      }
+      await navigator.clipboard.writeText(content.text);
+      $('note').textContent = 'Your writer mix is copied and ready to share!';
+    } catch (e) {
+      $('note').textContent = 'Select and copy your result below:\n\n' + content.text;
+    }
   };
 })();
 </script>
 </body>
 </html>
+
 
 
 
