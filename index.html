@@ -63,8 +63,6 @@
   .rtop .tag{font-family:'Fraunces',serif;font-style:italic;font-size:20px;opacity:.95}
   .rtop .tagby{font-size:14px;opacity:.9;margin-top:4px}
   .rtop .runner{margin-top:10px;font-size:16px;opacity:.95}
-  .rtop .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
-  .rtop .chips span{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);padding:5px 12px;border-radius:99px;font-size:13px;font-weight:700}
   .rtop svg{position:absolute;right:-30px;bottom:-30px;opacity:.18}
   .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 22px;margin-top:16px}
   .card h3{font-size:20px;margin-bottom:8px}
@@ -271,7 +269,7 @@
 
   // w = the writer to show. res = my result when it is my own writer, or null when browsing.
   function renderResult(w, res) {
-    const st = styleOf(w), ap = APPROACHES[w.approach], color = colorOf(w);
+    const color = colorOf(w);
     const top = $('rtop');
     top.style.background = 'linear-gradient(135deg, ' + color + ', ' + shade(color, -28) + ')';
     top.innerHTML = '<svg width="220" height="220" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 80 L70 30 L80 40 L30 90 Z M70 30 L78 12 L88 22 Z" fill="#fff"/></svg>';
@@ -285,9 +283,6 @@
       r.appendChild(el('b', null, res.runnerUp.writer.name));
       copy.appendChild(r);
     }
-    const chips = el('div', 'chips');
-    if (ap) chips.appendChild(el('span', null, ap.name + (ap.about ? ' · ' + ap.about : '')));
-    copy.appendChild(chips);
     top.classList.toggle('has-chibi', Boolean(w.portrait));
     if (w.portrait) {
       const portrait = el('img', 'writer-chibi');
