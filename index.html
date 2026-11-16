@@ -53,11 +53,12 @@
 
   /* result */
   .rtop{margin-top:34px;border-radius:24px;padding:30px 26px;color:#fff;position:relative;overflow:hidden}
-  .rtop.has-chibi{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:20px;align-items:center}
   .rtop .writer-copy{position:relative;z-index:1;min-width:0;overflow-wrap:anywhere}
-  .rtop .writer-chibi{position:relative;z-index:1;display:block;width:100%;height:240px;object-fit:contain;object-position:center bottom;align-self:end;pointer-events:none}
-  .rtop.has-chibi svg{display:none}
-  @media(max-width:560px){.rtop.has-chibi{grid-template-columns:minmax(0,1fr);gap:16px}.rtop .writer-chibi{grid-row:1;justify-self:center;width:150px;height:180px}.rtop .writer-copy{grid-row:2}}
+  .writer-portrait{display:flex;justify-content:center;align-items:flex-end;margin-top:28px}
+  .writer-portrait[hidden]{display:none}
+  .writer-portrait .writer-chibi{display:block;width:180px;height:240px;max-width:100%;object-fit:contain;object-position:center bottom}
+  .writer-portrait:not([hidden]) + .rtop{margin-top:14px}
+  @media(max-width:560px){.writer-portrait .writer-chibi{width:150px;height:200px}}
   .rtop .kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;font-weight:700}
   .rtop h2{font-size:clamp(38px,8vw,60px);margin:6px 0 8px}
   .rtop .tag{font-family:'Fraunces',serif;font-style:italic;font-size:20px;opacity:.95}
@@ -123,6 +124,7 @@
 
   <!-- RESULT -->
   <section class="screen" id="result">
+    <div class="writer-portrait" id="writerPortrait" hidden></div>
     <div class="rtop" id="rtop"></div>
     <div class="card"><h3>Your style</h3><p id="rdesc"></p></div>
     <div class="card"><h3>True story</h3><p id="rfact"></p></div>
@@ -186,7 +188,7 @@
   let model = SHORT;
   if (!model || model.W < 2 || !model.questions.length) { show('broken'); return; }
 
-  const S = model.settings, STYLES = S.styles || {}, APPROACHES = S.approaches || {};
+  const S = model.settings, STYLES = S.styles || {};
   const styleOf = w => STYLES[w.focus] || { name: '', color: '#1f1a17', about: '' };
   // Each writer has a stable personal color; older profiles retain a style fallback.
   const colorOf = w => {
@@ -283,16 +285,18 @@
       r.appendChild(el('b', null, res.runnerUp.writer.name));
       copy.appendChild(r);
     }
-    top.classList.toggle('has-chibi', Boolean(w.portrait));
+    const portraitSlot = $('writerPortrait');
+    portraitSlot.innerHTML = '';
+    portraitSlot.hidden = !w.portrait;
     if (w.portrait) {
       const portrait = el('img', 'writer-chibi');
       portrait.alt = 'Chibi portrait of ' + w.name;
       portrait.width = 384;
       portrait.height = 512;
       portrait.decoding = 'async';
-      portrait.onerror = () => { portrait.remove(); top.classList.remove('has-chibi'); };
+      portrait.onerror = () => { portrait.remove(); portraitSlot.hidden = true; };
       portrait.src = w.portrait;
-      top.appendChild(portrait);
+      portraitSlot.appendChild(portrait);
     }
 
     $('rdesc').textContent = w.style || '';
@@ -322,11 +326,11 @@
 
     $('all').innerHTML = '';
     model.writers.forEach(x => {
-      const me = mine && x.id === mine.top.id, sx = styleOf(x), ax = APPROACHES[x.approach];
+      const me = mine && x.id === mine.top.id;
       const b = el('button', 'mini' + (me ? ' me' : '')), name = el('b'), sw = el('span', 'sw');
       sw.style.background = colorOf(x);
       name.append(sw, document.createTextNode(x.name));
-      b.append(name, el('small', null, [x.from, ax && ax.name].filter(Boolean).join(' · ') + (me ? ' · you' : '')));
+      b.append(name, el('small', null, [x.from].filter(Boolean).join(' · ') + (me ? ' · you' : '')));
       b.onclick = () => { renderResult(x, me ? mine : null); window.scrollTo({ top: 0, behavior: 'smooth' }); };
       $('all').appendChild(b);
     });
@@ -359,6 +363,7 @@
 </script>
 </body>
 </html>
+
 
 
 

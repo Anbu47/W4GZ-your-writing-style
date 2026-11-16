@@ -34,17 +34,23 @@ vm.runInContext(html.slice(start,end),context);
 for(const writer of writers){
  context.renderResult(writer,null);
  const top=nodes.get('rtop');
- const portraits=top.children.filter(c=>c.tagName==='IMG');
+ const slot=nodes.get('writerPortrait');
+ const portraits=slot.children.filter(c=>c.tagName==='IMG');
+ assert.equal(top.children.filter(c=>c.tagName==='IMG').length,0);
  assert.equal(portraits.length,1,writer.name);
  assert.equal(portraits[0].src,writer.portrait);
  assert.equal(portraits[0].alt,'Chibi portrait of '+writer.name);
- assert(top.classes.has('has-chibi'));
+ assert.equal(slot.hidden,false);
  portraits[0].onerror();
- assert(!top.classes.has('has-chibi'));
- assert.equal(top.children.filter(c=>c.tagName==='IMG').length,0);
+ assert.equal(slot.hidden,true);
+ assert.equal(slot.children.filter(c=>c.tagName==='IMG').length,0);
 }
 context.renderResult({name:'Legacy writer'},null);
-assert(!nodes.get('rtop').classes.has('has-chibi'));
+assert.equal(nodes.get('writerPortrait').hidden,true);
+assert.equal(nodes.get('writerPortrait').children.length,0);
+assert(html.indexOf('id="writerPortrait"')<html.indexOf('id="rtop"'));
+assert(html.includes('justify-content:center'));
+assert(!html.includes('chips')&&!html.includes('APPROACHES'));
 assert(html.includes('@media(max-width:560px)'));
 assert(!html.includes('mixnote')&&!html.includes('match-detail'));
 console.log('PASS: 50 portrait assets, matching writer paths, profile switching, missing-image fallback and mobile layout rules.');
