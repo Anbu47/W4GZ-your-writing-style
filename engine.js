@@ -91,7 +91,7 @@
     var questions = [], questionIndex = {};
     (Array.isArray(data.questions) ? data.questions : []).forEach(function (q, i) {
       if (!q || typeof q.id !== "string" || !q.id) { problem("error", "Question number " + (i + 1) + " has no id."); return; }
-      if (q.long && !useLong) { skipped[q.id] = true; return; }                 // short version: leave it out
+      if (data.settings && data.settings.scoring === "editorial" ? q.number > ((options && options.limit) || (useLong ? 50 : 25)) : q.long && !useLong) { skipped[q.id] = true; return; }                 // short version: leave it out
       if (questionIndex[q.id] !== undefined) { problem("error", 'Two questions share the id "' + q.id + '". Every id must be different.'); return; }
       var answers = [], keyIndex = {};
       asList(q.answers).forEach(function (a, j) {
@@ -292,6 +292,31 @@
   }
 
   function makeResult(model, st, why) {
+    if (model.settings.scoring === "editorial") {
+      var ranking = model.writers.map(function (writer, wi) {
+        var agree = 0, opportunities = 0;
+        st.used.forEach(function (u) {
+          var fits = u.q.fits[wi];
+          if (!fits || !fits.length) return;
+          opportunities++;
+          if (fits.indexOf(u.a) >= 0) agree++;
+        });
+        return { id: writer.id, writer: writer, agree: agree, opportunities: opportunities,
+                 share: opportunities ? agree / opportunities : 0 };
+      }).filter(function (r) { return r.opportunities > 0; });
+      ranking.sort(function (a, b) {
+        return b.agree * a.opportunities - a.agree * b.opportunities || b.agree - a.agree || a.id.localeCompare(b.id);
+      });
+      ranking.forEach(function (r) {
+        r.tiedWith = ranking.filter(function (other) {
+          return other.id !== r.id && other.agree === r.agree && other.agree * r.opportunities === r.agree * other.opportunities;
+        }).map(function (other) { return other.writer.name; });
+      });
+      return { top: ranking[0] || null, runnerUp: ranking[1] || null, ranking: ranking,
+               questions: st.count, reason: why, scoring: "editorial",
+               answers: st.used.map(function (u) { return { q: u.q.id, a: u.q.answers[u.a].key }; }) };
+    }
+
     var W = model.W, order = [], w;
     for (w = 0; w < W; w++) order.push(w);
     order.sort(function (a, b) { return st.p[b] - st.p[a] || a - b; });
@@ -373,7 +398,7 @@
         else if (q.members === W && W > 2) notes.push('Branch question "' + q.id + '" covers every writer. It could be a question for everyone (remove branch).');
       } else {
         if (missing.length === W) errors.push('Question "' + q.id + '": no writer has an answer for it yet. Add it to each writer\'s "fit".');
-        else if (missing.length) warnings.push('Question "' + q.id + '" is for everyone, but these writers have no answer for it: ' + list(missing) + ".");
+        else if (missing.length && s.scoring !== "editorial") warnings.push('Question "' + q.id + '" is for everyone, but these writers have no answer for it: ' + list(missing) + ".");
         var biggest = Math.max.apply(null, counts);
         if (W >= 6 && biggest > 0.6 * W) notes.push('Question "' + q.id + '": one answer fits ' + biggest + " of " + W + " writers, so it separates them poorly.");
       }
@@ -508,3 +533,4 @@
     expectedGain: expectedGain, replay: replay
   };
 });
+

@@ -1,849 +1,2404 @@
-/*
-  THE QUESTIONS
-  =============
-  There are three kinds of question:
-
-    start: true       OPENING ROUND. Everyone gets these first, in the order written here.
-
-    long: true        LONG VERSION ONLY. Asked in the long quiz, skipped in the short one.
-
-    (no label)        FOR EVERYONE. The quiz asks one of these only when it helps to tell
-                      apart the writers who are in the lead for that student.
-
-    branch: "Name"    BRANCH QUESTION. It is about one group of writers only, and it appears
-                      only when that group is in the lead. The quiz adds a "none of these"
-                      answer by itself, so a student who does not belong can leave the branch.
-                      Write your own wording for it with   none: "..."
-
-  Every answer has a key (a short name with no spaces) and the text students see.
-  The keys are what data/writers.js uses to say which answer fits which writer.
-
-  Optional: put   next: "question id"   on an answer to make that question come straight after.
-
-  After any change, open check.html.
-*/
+// Editorial question order and answer text. Writer mappings live in writers.js.
 var QUIZ_QUESTIONS = [
-
-  /* ---------- Opening round: everyone, in this order ---------- */
-
-  {
-    id: "form",
-    start: true,
-    text: "Which kind of work do you love most?",
-    answers: [
-      { key: "epic",   text: "A huge novel that holds a whole society or many generations" },
-      { key: "short",  text: "Short, sharp pieces: stories, essays or poems" },
-      { key: "serial", text: "A long story that comes out part by part, so you can't wait for the next piece" },
-      { key: "voices", text: "Scenes full of voices: plays, dialogues and speeches" }
-    ]
-  },
-
-  {
-    id: "ideas",
-    start: true,
-    text: "If you told a story, where would it come from?",
-    answers: [
-      { key: "hardship", text: "Hard things I've lived through myself" },
-      { key: "history",  text: "Big moments in history" },
-      { key: "family",   text: "Family stories and the people around me" },
-      { key: "remake",   text: "Old stories and beliefs I want to remake or challenge" }
-    ]
-  },
-
-  {
-    id: "routine",
-    start: true,
-    text: "When you take on a big project, how do you work?",
-    answers: [
-      { key: "plan",    text: "Make a plan or borrow a structure, then build on it" },
-      { key: "burst",   text: "In an intense burst once the idea grabs me" },
-      { key: "rewrite", text: "I redo it again and again, for months if I have to" },
-      { key: "stolen",  text: "I fit it into moments I steal from a busy life" }
-    ]
-  },
-
-  {
-    id: "mood",
-    start: true,
-    text: "Which mood do you love most in a story?",
-    answers: [
-      { key: "fleeting", text: "Gentle sadness that nothing lasts forever" },
-      { key: "fever",    text: "Fever and tension, like someone on the edge" },
-      { key: "calm",     text: "Calm on the surface, strong feeling underneath" },
-      { key: "stormy",   text: "Big, stormy and passionate" }
-    ]
-  },
-
-  {
-    id: "hero",
-    start: true,
-    text: "Which main character do you care about most?",
-    answers: [
-      { key: "outsider", text: "A poor outsider or someone society laughs at" },
-      { key: "polite",   text: "A clever or noble person inside a polite society" },
-      { key: "rebel",    text: "A tortured thinker or rebel who can't stop questioning" },
-      { key: "endure",   text: "An ordinary person quietly enduring hard times" }
-    ]
-  },
-
-
-  /* ---------- For everyone: asked when it helps ---------- */
-
-  {
-    id: "humor",
-    text: "What kind of humor do you enjoy?",
-    answers: [
-      { key: "comic",   text: "Big comic characters and ridiculous situations" },
-      { key: "irony",   text: "Quiet, dry irony that some readers might miss" },
-      { key: "bitter",  text: "Bitter mockery of how people really behave" },
-      { key: "serious", text: "Hardly any. I like things serious." }
-    ]
-  },
-
-  {
-    id: "bigq",
-    text: "Which big question matters most to you?",
-    answers: [
-      { key: "meaning", text: "How should a person live, and what makes life meaningful?" },
-      { key: "power",   text: "Why do the powerful get away with crushing the weak?" },
-      { key: "love",    text: "What do love and longing do to us?" },
-      { key: "fate",    text: "Can anyone escape their fate, their family or their traditions?" }
-    ]
-  },
-
-  {
-    id: "setting",
-    text: "Which setting pulls you into a story?",
-    answers: [
-      { key: "city",   text: "Busy city streets: crowded, dirty and alive" },
-      { key: "court",  text: "Palaces, courts or elegant drawing rooms" },
-      { key: "far",    text: "Battlefields, the sea or roads far from home" },
-      { key: "remote", text: "A small town or a lonely mountain, far from the center" }
-    ]
-  },
-
-  {
-    id: "narrator",
-    text: "Which storyteller's voice do you like best?",
-    answers: [
-      { key: "direct", text: "One that talks to you directly, with opinions of its own" },
-      { key: "inside", text: "One that lives inside a character's racing or ironic thoughts" },
-      { key: "hidden", text: "One that stays in the background and lets silences carry the feeling" },
-      { key: "bard",   text: "One that sounds like a poet, a prophet or a teller of legends" }
-    ]
-  },
-
-  {
-    id: "sentences",
-    text: "Which kind of sentences do you like to read?",
-    answers: [
-      { key: "plain",   text: "Short and plain, every word doing work" },
-      { key: "rolling", text: "Long and rolling, full of detail" },
-      { key: "witty",   text: "Elegant and witty, with perfect balance" },
-      { key: "intense", text: "Bursting with emotion, repeating for effect" }
-    ]
-  },
-
-  {
-    id: "audience",
-    text: "If you had something to say, who would you say it to?",
-    answers: [
-      { key: "crowd",  text: "Everyone: big crowds, from the cheapest seats up" },
-      { key: "circle", text: "A small circle who will catch every hint" },
-      { key: "wake",   text: "People who need to wake up and change" },
-      { key: "unsaid", text: "People who can feel what's left unsaid" }
-    ]
-  },
-
-  {
-    id: "job",
-    text: "What is a writer's job?",
-    answers: [
-      { key: "entertain", text: "To entertain people and make them care" },
-      { key: "witness",   text: "To tell the truth about war and history" },
-      { key: "shake",     text: "To shake people out of comfortable beliefs" },
-      { key: "memory",    text: "To keep memory and beauty from disappearing" }
-    ]
-  },
-
-  {
-    id: "life",
-    text: "Which of these would shape you the most?",
-    answers: [
-      { key: "lostmoney", text: "My family loses its money, and I have to grow up fast" },
-      { key: "war",       text: "Coming face to face with war or death" },
-      { key: "books",     text: "Growing up in a house full of books and stories" },
-      { key: "wander",    text: "Wandering far from home, in exile or on the road" }
-    ]
-  },
-
-  {
-    id: "describe",
-    text: "What do you notice most?",
-    answers: [
-      { key: "people",   text: "People's faces, habits and funny quirks" },
-      { key: "battles",  text: "Crowds, big events and history in motion" },
-      { key: "thoughts", text: "Thoughts, arguments and inner struggles" },
-      { key: "nature",   text: "Nature: seasons, mountains, rivers and the sea" }
-    ]
-  },
-
-  {
-    id: "rules",
-    text: "How do you feel about rules?",
-    answers: [
-      { key: "strict", text: "Master them until I can work beautifully inside them" },
-      { key: "break",  text: "Break the old rules and start something new" },
-      { key: "mix",    text: "Ignore the boxes and mix everything together" },
-      { key: "clear",  text: "Keep things clear and simple so anyone can follow" }
-    ]
-  },
-
-  {
-    id: "when",
-    text: "Which time would you most like to read about?",
-    answers: [
-      { key: "now",    text: "My own time and my own neighborhood" },
-      { key: "before", text: "A generation or two before I was born" },
-      { key: "lived",  text: "Hard times I've lived through myself" },
-      { key: "legend", text: "A distant or legendary past" }
-    ]
-  },
-
-  {
-    id: "began",
-    text: "If you became a writer, how would it start?",
-    answers: [
-      { key: "reporter", text: "As a reporter, writing news for a paper" },
-      { key: "poet",     text: "As a poet, long before any novel" },
-      { key: "career",   text: "Training for a completely different career first" },
-      { key: "words",    text: "Close to words in another way: acting, teaching or writing for my family" }
-    ]
-  },
-
-  {
-    id: "real",
-    text: "Which kind of world do you like to get lost in?",
-    answers: [
-      { key: "real",     text: "Everyday life, exactly as it is" },
-      { key: "strange",  text: "The real world, with something strange leaking in" },
-      { key: "invented", text: "A world of gods, legends or places nobody has seen" },
-      { key: "dream",    text: "A dream or a nightmare with its own odd logic" }
-    ]
-  },
-
-  {
-    id: "ending",
-    text: "Which kind of ending do you like best?",
-    answers: [
-      { key: "happy",  text: "Things are put right, and someone gets what they hoped for" },
-      { key: "tragic", text: "With a loss that can't be undone" },
-      { key: "open",   text: "It just stops, and the reader has to decide" },
-      { key: "twist",  text: "With a reveal that changes everything before it" }
-    ]
-  },
-
-  {
-    id: "words",
-    text: "When you talk or write, how do you choose your words?",
-    answers: [
-      { key: "speech", text: "The way people really talk, slang and all" },
-      { key: "music",  text: "For their sound: rich and musical" },
-      { key: "exact",  text: "The fewest and most exact words I can find" },
-      { key: "play",   text: "For fun: puns, riddles and words I make up" }
-    ]
-  },
-
-  {
-    id: "seek",
-    text: "What are you really searching for?",
-    answers: [
-      { key: "spirit",  text: "Something sacred, bigger than all of us" },
-      { key: "society", text: "A fairer world" },
-      { key: "beauty",  text: "Beauty, before it disappears" },
-      { key: "mind",    text: "The truth about how people think and feel" }
-    ]
-  },
-
-  {
-    id: "fame",
-    text: "If you wrote a book, what would happen to it in your lifetime?",
-    answers: [
-      { key: "famous", text: "It's a hit, and strangers know my name" },
-      { key: "hidden", text: "Almost nobody reads it until after I'm gone" },
-      { key: "banned", text: "It gets banned, attacked or lands me in court" },
-      { key: "handed", text: "It's copied or recited from person to person long before it's printed" }
-    ]
-  },
-
-  {
-    id: "cast",
-    text: "How many characters do you like a story to have?",
-    answers: [
-      { key: "one",    text: "Just one voice, speaking to me" },
-      { key: "few",    text: "Two or three people, seen up close" },
-      { key: "crowd",  text: "Dozens, each with a name and a story" },
-      { key: "people", text: "A whole people, across generations" }
-    ]
-  },
-
-  {
-    id: "effect",
-    text: "What do you want to feel on the last page?",
-    answers: [
-      { key: "moral", text: "That I need to rethink something" },
-      { key: "laugh", text: "That I've been laughing the whole way" },
-      { key: "chill", text: "A chill they can't shake off" },
-      { key: "moved", text: "Moved, maybe close to tears" }
-    ]
-  },
-
-  {
-    id: "time",
-    text: "How do you like time to move in a story?",
-    answers: [
-      { key: "line",   text: "Straight ahead, one event after another" },
-      { key: "moment", text: "It all happens in a single day or a single moment" },
-      { key: "memory", text: "Backward, through memories" },
-      { key: "cycle",  text: "In circles: seasons, years and generations" }
-    ]
-  },
-
-
-  /* ---------- Long version only (long: true): 25 extra questions ---------- */
-
-  {
-    id: "opening",
-    long: true,
-    text: "Which opening grabs you?",
-    answers: [
-      { key: "action", text: "In the middle of the action" },
-      { key: "place",  text: "With a slow look at a place" },
-      { key: "voice",  text: "With a voice saying \"I\"" },
-      { key: "idea",   text: "With a bold statement or idea" }
-    ]
-  },
-
-  {
-    id: "enemy",
-    long: true,
-    text: "What makes the best enemy in a story?",
-    answers: [
-      { key: "person",  text: "A villain you can name" },
-      { key: "society", text: "Unfair rules and the people who enforce them" },
-      { key: "self",    text: "The hero's own mind or flaws" },
-      { key: "fate",    text: "Time, death, nature or the gods" }
-    ]
-  },
-
-  {
-    id: "length",
-    long: true,
-    text: "How long do you like your reading?",
-    answers: [
-      { key: "tiny",  text: "A page or less" },
-      { key: "short", text: "Short enough to read in one sitting" },
-      { key: "book",  text: "A book of a few hundred pages" },
-      { key: "giant", text: "A giant: a thousand pages or many volumes" }
-    ]
-  },
-
-  {
-    id: "talk",
-    long: true,
-    text: "How much should characters talk?",
-    answers: [
-      { key: "mostly",   text: "Almost all of it is talk" },
-      { key: "balanced", text: "About half talk, half telling" },
-      { key: "little",   text: "Very little; mostly description and thought" },
-      { key: "none",     text: "Nobody talks; there is one voice speaking" }
-    ]
-  },
-
-  {
-    id: "nature",
-    long: true,
-    text: "What should nature be in a story?",
-    answers: [
-      { key: "mirror",   text: "A mirror for the characters' feelings" },
-      { key: "force",    text: "A dangerous force to survive" },
-      { key: "backdrop", text: "Just the background; people matter more" },
-      { key: "sacred",   text: "Something sacred, almost a teacher" }
-    ]
-  },
-
-  {
-    id: "romance",
-    long: true,
-    text: "What part should love play in a story?",
-    answers: [
-      { key: "center", text: "It is the whole story" },
-      { key: "ruin",   text: "It is a passion that wrecks lives" },
-      { key: "side",   text: "A small part; other things matter more" },
-      { key: "ideal",  text: "It points to something higher: God, humanity, an ideal" }
-    ]
-  },
-
-  {
-    id: "death",
-    long: true,
-    text: "How should a story handle death?",
-    answers: [
-      { key: "center",  text: "It is at the center of the work" },
-      { key: "violent", text: "It comes suddenly: battles, duels, murders" },
-      { key: "quiet",   text: "Quietly, often offstage" },
-      { key: "light",   text: "Lightly, even as a joke" }
-    ]
-  },
-
-  {
-    id: "child",
-    long: true,
-    text: "What part do children play in the stories you love?",
-    answers: [
-      { key: "hero",     text: "A child is the main character" },
-      { key: "memory",   text: "Remembering childhood" },
-      { key: "audience", text: "They're written for children" },
-      { key: "none",     text: "Hardly any" }
-    ]
-  },
-
-  {
-    id: "politics",
-    long: true,
-    text: "How political do you like a story to be?",
-    answers: [
-      { key: "direct",     text: "Very: name what is wrong, openly" },
-      { key: "hidden",     text: "It is there, but hidden in a fable or a code" },
-      { key: "background", text: "Politics is only in the background" },
-      { key: "none",       text: "Keep politics out of it" }
-    ]
-  },
-
-  {
-    id: "faith",
-    long: true,
-    text: "What about religion and faith?",
-    answers: [
-      { key: "devout",  text: "Faith is at the heart of it" },
-      { key: "wrestle", text: "I wrestle with belief and doubt" },
-      { key: "mock",    text: "I question or mock religion" },
-      { key: "absent",  text: "It hardly comes up" }
-    ]
-  },
-
-  {
-    id: "home",
-    long: true,
-    text: "Where would you most like to live?",
-    answers: [
-      { key: "home",    text: "In one place nearly all my life" },
-      { key: "capital", text: "In the big city, in the middle of things" },
-      { key: "road",    text: "On the road, always moving" },
-      { key: "abroad",  text: "Far from my homeland" }
-    ]
-  },
-
-  {
-    id: "output",
-    long: true,
-    text: "If you were a writer, how much would you write in a lifetime?",
-    answers: [
-      { key: "one",    text: "One great work" },
-      { key: "few",    text: "A handful of carefully finished works" },
-      { key: "steady", text: "A steady shelf of books" },
-      { key: "flood",  text: "An enormous flood of writing" }
-    ]
-  },
-
-  {
-    id: "hook",
-    long: true,
-    text: "Why do you pick up a book?",
-    answers: [
-      { key: "thrills",  text: "For the story: I need to know what happens" },
-      { key: "laughter", text: "To laugh" },
-      { key: "language", text: "For the beauty of the language" },
-      { key: "ideas",    text: "For the ideas" }
-    ]
-  },
-
-  {
-    id: "strongest",
-    long: true,
-    text: "Whose stories do you most want to hear?",
-    answers: [
-      { key: "women",    text: "Women and girls" },
-      { key: "action",   text: "Fighters and people of action" },
-      { key: "thinkers", text: "Thinkers, artists and dreamers" },
-      { key: "ordinary", text: "Ordinary and poor people" }
-    ]
-  },
-
-  {
-    id: "build",
-    long: true,
-    text: "Which shape of book do you enjoy most?",
-    answers: [
-      { key: "straight", text: "Chapters in a straight line" },
-      { key: "episodes", text: "A journey: one episode after another" },
-      { key: "pieces",   text: "A collection of separate pieces" },
-      { key: "layers",   text: "Layers: stories inside stories, letters, puzzles" }
-    ]
-  },
-
-  {
-    id: "title",
-    long: true,
-    text: "Which kind of title draws you to a book?",
-    answers: [
-      { key: "name",  text: "The main character's name" },
-      { key: "place", text: "A place or a journey" },
-      { key: "idea",  text: "An idea or a group of people" },
-      { key: "image", text: "An image or a phrase" }
-    ]
-  },
-
-  {
-    id: "sign",
-    long: true,
-    text: "If you published a book, whose name would go on the cover?",
-    answers: [
-      { key: "real",      text: "My real name" },
-      { key: "pen",       text: "A pen name" },
-      { key: "anon",      text: "No name, or my work stays hidden" },
-      { key: "tradition", text: "It hardly matters; I am one voice in a long tradition" }
-    ]
-  },
-
-  {
-    id: "peak",
-    long: true,
-    text: "When do you think you'll do your best work?",
-    answers: [
-      { key: "young",    text: "Young, before thirty" },
-      { key: "middle",   text: "In the middle of my life" },
-      { key: "late",     text: "Late in life" },
-      { key: "lifelong", text: "All my life long" }
-    ]
-  },
-
-  {
-    id: "pace",
-    long: true,
-    text: "How fast do you like a story to move?",
-    answers: [
-      { key: "fast",   text: "Fast" },
-      { key: "steady", text: "At a steady walk" },
-      { key: "slow",   text: "Slowly, lingering" },
-      { key: "still",  text: "It stands still on one image" }
-    ]
-  },
-
-  {
-    id: "self",
-    long: true,
-    text: "If you wrote a book, how much of it would be your own life?",
-    answers: [
-      { key: "auto",       text: "Nearly all of it" },
-      { key: "disguised",  text: "A lot, in disguise" },
-      { key: "researched", text: "Little; I'd study other people's lives" },
-      { key: "invented",   text: "None; I'd invent everything" }
-    ]
-  },
-
-  {
-    id: "outlook",
-    long: true,
-    text: "How do you see the world?",
-    answers: [
-      { key: "hopeful",     text: "With hope" },
-      { key: "dark",        text: "Darkly" },
-      { key: "bittersweet", text: "Bittersweet: beauty and loss together" },
-      { key: "playful",     text: "As a game to play" }
-    ]
-  },
-
-  {
-    id: "company",
-    long: true,
-    text: "Who do you like to have around you?",
-    answers: [
-      { key: "loner",   text: "Nobody; I work alone" },
-      { key: "circle",  text: "A close circle of creative friends" },
-      { key: "public",  text: "A big public; I like being known" },
-      { key: "teacher", text: "Students or followers who learn from me" }
-    ]
-  },
-
-  {
-    id: "heard",
-    long: true,
-    text: "How do you like to take in a story?",
-    answers: [
-      { key: "performed", text: "Watching it performed, sung or staged" },
-      { key: "aloud",     text: "Listening to it read aloud with a few others" },
-      { key: "silent",    text: "Reading it silently, alone" },
-      { key: "both",      text: "Both on the page and out loud" }
-    ]
-  },
-
-  {
-    id: "money",
-    long: true,
-    text: "What part should money play in a story?",
-    answers: [
-      { key: "plot",    text: "It drives the plot: debts, inheritances, treasure" },
-      { key: "poverty", text: "Poverty is the world the characters live in" },
-      { key: "hardly",  text: "It is hardly mentioned" },
-      { key: "mocked",  text: "Greed is mocked or punished" }
-    ]
-  },
-
-  {
-    id: "creature",
-    long: true,
-    text: "Which creatures do you like to meet in a story?",
-    answers: [
-      { key: "monsters", text: "Monsters, ghosts or magical beings" },
-      { key: "talking",  text: "Animals that talk or teach a lesson" },
-      { key: "observed", text: "Real animals and insects, closely watched" },
-      { key: "humans",   text: "Only humans" }
-    ]
-  },
-
-
-  /* ---------- Branch questions: used only when linear is false ---------- */
-
-  {
-    id: "detour",
-    branch: "Big novels",
-    none: "My stories never stop for detours",
-    text: "Your long novel stops the plot for a whole chapter. What is that chapter about?",
-    answers: [
-      { key: "history",    text: "How history really works, and why the generals don't control it" },
-      { key: "city",       text: "The hidden side of the city: its sewers, its slang, its old streets" },
-      { key: "sidekick",   text: "A comic side character who steals the whole show" },
-      { key: "argument",   text: "A long, feverish argument about God, guilt and freedom" },
-      { key: "plague",     text: "Something impossible that the whole town accepts, like a plague of forgetting" },
-      { key: "poetryclub", text: "A poetry contest held by the young cousins in the family garden" }
-    ]
-  },
-
-  {
-    id: "onepage",
-    branch: "Short forms",
-    none: "One page is never enough for me",
-    text: "You have one page to fill. What do you put on it?",
-    answers: [
-      { key: "iceberg", text: "A scene where the most important thing is never said out loud" },
-      { key: "fool",    text: "A portrait of a fool who thinks he's winning, to show what's wrong with everyone" },
-      { key: "eight",   text: "Eight carefully matched lines about a ruined city in spring" },
-      { key: "sayings", text: "A handful of bold sayings that turn a common belief upside down" }
-    ]
-  },
-
-  {
-    id: "love",
-    branch: "Love stories",
-    none: "I'd rather leave the love story out",
-    text: "Two of your characters are falling for each other. How does it happen?",
-    answers: [
-      { key: "poems",    text: "They send each other short poems, and the handwriting matters as much as the words" },
-      { key: "sparring", text: "They trade sharp remarks at a dance, both too proud to admit anything" },
-      { key: "masks",    text: "They meet at a party in disguise, and their first words together form a poem" },
-      { key: "station",  text: "One look at a train station, and society makes them pay for it" },
-      { key: "waiting",  text: "One of them waits more than fifty years for a second chance" },
-      { key: "cousins",  text: "They are cousins who grew up in the same garden, tied together since a former life" }
-    ]
-  },
-
-  {
-    id: "trouble",
-    branch: "Writers in trouble",
-    none: "My writing keeps me out of trouble",
-    text: "Your writing gets you into trouble. What happens?",
-    answers: [
-      { key: "exile",    text: "I attack the ruler in print and spend years in exile on an island" },
-      { key: "prison",   text: "I'm arrested for joining a secret discussion group and sent to a prison camp" },
-      { key: "pennames", text: "My essays get banned, so I keep publishing under new pen names" },
-      { key: "ignored",  text: "Hardly anyone buys my books, so I pay to print them myself" },
-      { key: "demoted",  text: "I speak up for a friend at court and lose my post" }
-    ]
-  },
-
-  {
-    id: "reach",
-    branch: "First audience",
-    text: "How does your story reach its first audience?",
-    answers: [
-      { key: "readings",  text: "In monthly parts, and I perform the best scenes on stage myself" },
-      { key: "actors",    text: "Live in a theater, with parts written for actors I know" },
-      { key: "aloud",     text: "Read aloud to a small circle, one chapter at a time" },
-      { key: "anonymous", text: "In print, but without my name on the cover" }
-    ]
-  },
-
-  {
-    id: "war",
-    branch: "War on the page",
-    none: "War stays out of my stories",
-    text: "War comes into your story. What do you show?",
-    answers: [
-      { key: "chaos",     text: "A huge battle where nobody, not even the generals, knows what is going on" },
-      { key: "retreat",   text: "One soldier walking away from it all, told in plain words with no big speeches" },
-      { key: "village",   text: "Officers arriving in a village at night to take whoever is left" },
-      { key: "field",     text: "A famous lost battle, retraced step by step across the field" },
-      { key: "uprisings", text: "A colonel who starts thirty-two uprisings and loses them all" }
-    ]
-  },
-
-  {
-    id: "poem",
-    branch: "Poets",
-    none: "I don't write poems",
-    text: "You write a poem. What shape does it take?",
-    answers: [
-      { key: "haiku",     text: "Three short lines about one moment on the road" },
-      { key: "dashes",    text: "A few short lines full of dashes, kept in a drawer" },
-      { key: "longlines", text: "Long, free lines that try to hold a whole country" },
-      { key: "ode",       text: "An ode to something ordinary, like an onion or a pair of socks" },
-      { key: "hymn",      text: "A song offered like a prayer, which I set to music myself" }
-    ]
-  },
-
-  {
-    id: "song",
-    branch: "Ancient songs",
-    none: "My words are for the page, not for singing",
-    text: "Your words are meant to be sung. What is the song?",
-    answers: [
-      { key: "moon",   text: "A song to the moon, written with a cup of wine in my hand" },
-      { key: "lyre",   text: "A love song for one voice and a lyre" },
-      { key: "reed",   text: "Rhyming couplets about longing to return to where the soul came from" },
-      { key: "heroes", text: "A long tale of heroes, performed from memory over many nights" }
-    ]
-  },
-
-  {
-    id: "versestory",
-    branch: "Stories in verse",
-    none: "I wouldn't tell a story in verse",
-    text: "You tell a long story in verse. What is it about?",
-    answers: [
-      { key: "voyage",    text: "A soldier's ten-year journey home from a war" },
-      { key: "afterlife", text: "My own journey through hell, purgatory and heaven" },
-      { key: "sacrifice", text: "A gifted young woman who gives up her own happiness to save her family" },
-      { key: "regret",    text: "A bored young nobleman who turns down a girl's love and regrets it" },
-      { key: "bargain",   text: "A scholar who makes a deal with the devil" }
-    ]
-  },
-
-  {
-    id: "stage",
-    branch: "On stage",
-    none: "I don't write for the stage",
-    text: "Your play opens tonight. What will the audience see?",
-    answers: [
-      { key: "hypocrite", text: "A comedy that mocks a hypocrite, with me in the leading role" },
-      { key: "paradox",   text: "A drawing-room comedy in which every line is a witty paradox" },
-      { key: "quiet",     text: "A play in which almost nothing happens, and hearts break quietly" },
-      { key: "kings",     text: "Kings, clowns and a battle, all in one evening" }
-    ]
-  },
-
-  {
-    id: "strange",
-    branch: "Strange stories",
-    none: "Nothing impossible happens in my stories",
-    text: "Something impossible happens in your story. What is it?",
-    answers: [
-      { key: "insect",     text: "A man wakes up as a giant insect, and his family is mostly annoyed" },
-      { key: "library",    text: "A library that contains every book that could ever be written" },
-      { key: "rabbithole", text: "A girl falls down a rabbit hole into a world of nonsense" },
-      { key: "heartbeat",  text: "A dead man's heart keeps beating under the floor, louder and louder" },
-      { key: "creature",   text: "A scientist brings a creature to life, then runs away from it" }
-    ]
-  },
-
-  {
-    id: "adventure",
-    branch: "Adventures",
-    none: "My characters mostly stay at home",
-    text: "Your heroes set out on an adventure. What kind?",
-    answers: [
-      { key: "submarine", text: "A voyage in a submarine, with the science worked out" },
-      { key: "swords",    text: "Sword fights, loyal friends and a long revenge" },
-      { key: "quest",     text: "A quest across a world with its own maps and languages" },
-      { key: "knight",    text: "An old man who has read too many adventure books rides out as a knight" },
-      { key: "raft",      text: "A boy and a runaway slave on a raft down a great river" }
-    ]
-  },
-
-  {
-    id: "mind",
-    branch: "Inside the mind",
-    none: "I'd rather show what people do than what they think",
-    text: "Your novel goes deep inside one mind. How?",
-    answers: [
-      { key: "oneday",    text: "One day in a woman's life, told through her drifting thoughts" },
-      { key: "styles",    text: "One day in one city, with every chapter in a different style" },
-      { key: "cake",      text: "The taste of a small cake brings back a whole childhood" },
-      { key: "daydreams", text: "A bored wife's daydreams, in sentences polished for days" },
-      { key: "governess", text: "A poor governess tells her own story and speaks straight to the reader" }
-    ]
-  },
-
-  {
-    id: "warning",
-    branch: "Stories that warn",
-    none: "My stories aren't warnings",
-    text: "Your story is a warning. What does it show?",
-    answers: [
-      { key: "farm",     text: "Farm animals drive out the farmer, and then the pigs take charge" },
-      { key: "optimist", text: "A cheerful young man is told all is for the best while disasters pile up" },
-      { key: "village",  text: "A village's way of life breaks when outsiders arrive to rule it" },
-      { key: "haunted",  text: "A mother haunted by the child she lost to slavery" }
-    ]
-  },
-
-  {
-    id: "secret",
-    branch: "Secrets",
-    none: "My stories have no secrets",
-    text: "Your story hides a secret. How does it come out?",
-    answers: [
-      { key: "gathering",  text: "The detective gathers everyone in one room and names the culprit" },
-      { key: "attic",      text: "A locked room at the top of the great house finally opens" },
-      { key: "benefactor", text: "A mysterious gift of money turns out to come from an escaped convict" },
-      { key: "portrait",   text: "A hidden painting grows old while its owner stays young" }
-    ]
-  },
-
-  {
-    id: "tales",
-    branch: "Stories for children",
-    none: "I don't write for children",
-    text: "You write a story for children. What is it?",
-    answers: [
-      { key: "duckling", text: "A fairy tale that is secretly about being an outsider" },
-      { key: "boat",     text: "A story made up on the spot for three sisters on a boat trip" },
-      { key: "fence",    text: "A boy in a river town who tricks his friends into painting a fence" },
-      { key: "dragon",   text: "A bedtime story for my own children about a small creature and a dragon" }
-    ]
-  },
-
-  {
-    id: "exile",
-    branch: "Far from home",
-    none: "I never have to leave",
-    text: "You have to leave your home. Why?",
-    answers: [
-      { key: "banished", text: "My city banishes me for life over politics" },
-      { key: "bastille", text: "I am locked up for my jokes about the powerful, then go abroad" },
-      { key: "andes",    text: "The government wants me arrested, so I cross the mountains on horseback" },
-      { key: "south",    text: "The ruler dislikes my poems and sends me to the far south" }
-    ]
+  {
+    "id": "q001",
+    "number": 1,
+    "text": "Which kind of writing would you most like to try?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A wide social novel"
+      },
+      {
+        "key": "b",
+        "text": "A short story with a strong effect"
+      },
+      {
+        "key": "c",
+        "text": "An intimate lyric poem"
+      },
+      {
+        "key": "d",
+        "text": "A play driven by speech and action"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q002",
+    "number": 2,
+    "text": "Where would you look first for a story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Family memory and inherited stories"
+      },
+      {
+        "key": "b",
+        "text": "A historical conflict"
+      },
+      {
+        "key": "c",
+        "text": "An old story I could transform"
+      },
+      {
+        "key": "d",
+        "text": "A small incident in ordinary life"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q003",
+    "number": 3,
+    "text": "How would you build a piece of writing?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Plant clues that fit together at the end"
+      },
+      {
+        "key": "b",
+        "text": "Follow one person's changing thoughts"
+      },
+      {
+        "key": "c",
+        "text": "Build a journey through a larger world"
+      },
+      {
+        "key": "d",
+        "text": "Make a brief image carry the meaning"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q004",
+    "number": 4,
+    "text": "Which emotional atmosphere draws you in?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Beauty touched by passing time"
+      },
+      {
+        "key": "b",
+        "text": "Guilt and mounting psychological pressure"
+      },
+      {
+        "key": "c",
+        "text": "Feeling held beneath a restrained surface"
+      },
+      {
+        "key": "d",
+        "text": "Wonder woven into everyday life"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q005",
+    "number": 5,
+    "text": "Whose experience would you put at the center?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Someone pushed aside by society"
+      },
+      {
+        "key": "b",
+        "text": "Someone learning to judge others more fairly"
+      },
+      {
+        "key": "c",
+        "text": "Someone wrestling with conscience"
+      },
+      {
+        "key": "d",
+        "text": "Someone trying to live through historical upheaval"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q006",
+    "number": 6,
+    "text": "What kind of humor would you write?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Social irony and polished conversation"
+      },
+      {
+        "key": "b",
+        "text": "Exaggerated habits and comic pretence"
+      },
+      {
+        "key": "c",
+        "text": "Satire that exposes accepted cruelty"
+      },
+      {
+        "key": "d",
+        "text": "Nonsense that makes familiar rules look strange"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q007",
+    "number": 7,
+    "text": "Which question would drive your work?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "What do I owe other people?"
+      },
+      {
+        "key": "b",
+        "text": "How does power justify its harm?"
+      },
+      {
+        "key": "c",
+        "text": "What does longing do to a person?"
+      },
+      {
+        "key": "d",
+        "text": "What happens when a community's traditions are challenged?"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q008",
+    "number": 8,
+    "text": "Which setting would you explore?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A city full of intersecting lives"
+      },
+      {
+        "key": "b",
+        "text": "A household shaped by status and relationships"
+      },
+      {
+        "key": "c",
+        "text": "A road or sea journey"
+      },
+      {
+        "key": "d",
+        "text": "A landscape seen through a traveler's attention"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q009",
+    "number": 9,
+    "text": "Which narrative voice would you choose?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A narrator who comments on the story"
+      },
+      {
+        "key": "b",
+        "text": "A first person voice whose judgment I might doubt"
+      },
+      {
+        "key": "c",
+        "text": "A voice close to the movement of thought"
+      },
+      {
+        "key": "d",
+        "text": "A voice carrying a community's memories"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q010",
+    "number": 10,
+    "text": "What would your sentences aim for?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Restraint and clear physical detail"
+      },
+      {
+        "key": "b",
+        "text": "Long movements of thought and memory"
+      },
+      {
+        "key": "c",
+        "text": "Epigram and verbal balance"
+      },
+      {
+        "key": "d",
+        "text": "Rhythm, repetition and accumulating images"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q011",
+    "number": 11,
+    "text": "Who would you imagine addressing?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "One beloved person"
+      },
+      {
+        "key": "b",
+        "text": "A broad human community"
+      },
+      {
+        "key": "c",
+        "text": "A reader willing to question inherited values"
+      },
+      {
+        "key": "d",
+        "text": "A reader willing to solve a literary puzzle"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q012",
+    "number": 12,
+    "text": "What would you most want your writing to do?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Make social suffering visible"
+      },
+      {
+        "key": "b",
+        "text": "Expose hypocrisy"
+      },
+      {
+        "key": "c",
+        "text": "Preserve and examine historical memory"
+      },
+      {
+        "key": "d",
+        "text": "Explore consciousness itself"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q013",
+    "number": 13,
+    "text": "Which pressure would you give your characters?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Debt, inheritance or unequal wealth"
+      },
+      {
+        "key": "b",
+        "text": "War or displacement"
+      },
+      {
+        "key": "c",
+        "text": "Family duty that conflicts with desire"
+      },
+      {
+        "key": "d",
+        "text": "Responsibility for something they created"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q014",
+    "number": 14,
+    "text": "What would you notice first in a scene?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A social gesture that gives someone away"
+      },
+      {
+        "key": "b",
+        "text": "A mind arguing with itself"
+      },
+      {
+        "key": "c",
+        "text": "A seasonal detail"
+      },
+      {
+        "key": "d",
+        "text": "An ordinary object suddenly worth a poem"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q015",
+    "number": 15,
+    "text": "How would you use literary conventions?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Work within a demanding verse form"
+      },
+      {
+        "key": "b",
+        "text": "Stretch the freedom of the poetic line"
+      },
+      {
+        "key": "c",
+        "text": "Turn a familiar genre against itself"
+      },
+      {
+        "key": "d",
+        "text": "Change style to fit each part of the work"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q016",
+    "number": 16,
+    "text": "Which relationship to the past interests you?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A society remembered across generations"
+      },
+      {
+        "key": "b",
+        "text": "An earlier historical period recreated in detail"
+      },
+      {
+        "key": "c",
+        "text": "A legendary world with its own history"
+      },
+      {
+        "key": "d",
+        "text": "A recent past recovered through memory"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q017",
+    "number": 17,
+    "text": "What would be your starting material?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Conversation and social observation"
+      },
+      {
+        "key": "b",
+        "text": "Myths and older literature"
+      },
+      {
+        "key": "c",
+        "text": "A scientific possibility and its consequences"
+      },
+      {
+        "key": "d",
+        "text": "A vivid image or emotional moment"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q018",
+    "number": 18,
+    "text": "How would the unusual enter your work?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "An impossible event told in a matter of fact voice"
+      },
+      {
+        "key": "b",
+        "text": "A carefully developed secondary world"
+      },
+      {
+        "key": "c",
+        "text": "A dream with playful but unsettling logic"
+      },
+      {
+        "key": "d",
+        "text": "A haunting tied to unresolved human harm"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q019",
+    "number": 19,
+    "text": "Which ending would satisfy your story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A relationship changes after better self-understanding"
+      },
+      {
+        "key": "b",
+        "text": "The mystery is explained"
+      },
+      {
+        "key": "c",
+        "text": "A loss exposes the cost of earlier choices"
+      },
+      {
+        "key": "d",
+        "text": "Life continues beyond an unresolved encounter"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q020",
+    "number": 20,
+    "text": "How would you choose your words?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Use a recognizable spoken voice"
+      },
+      {
+        "key": "b",
+        "text": "Make the sounds part of the effect"
+      },
+      {
+        "key": "c",
+        "text": "Compress thought into a few charged words"
+      },
+      {
+        "key": "d",
+        "text": "Play with puns and unexpected meanings"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q021",
+    "number": 21,
+    "text": "What would you be searching for on the page?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A way to face moral responsibility"
+      },
+      {
+        "key": "b",
+        "text": "A language for spiritual longing"
+      },
+      {
+        "key": "c",
+        "text": "A way to understand memory"
+      },
+      {
+        "key": "d",
+        "text": "A way to question what counts as knowledge"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q022",
+    "number": 22,
+    "text": "How would you want a work to reach readers?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Through performance on a stage"
+      },
+      {
+        "key": "b",
+        "text": "Through a carefully constructed short tale"
+      },
+      {
+        "key": "c",
+        "text": "Through a long, immersive narrative"
+      },
+      {
+        "key": "d",
+        "text": "Through poems that reward rereading"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q023",
+    "number": 23,
+    "text": "How large would your cast be?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "One lyric speaker addressing someone"
+      },
+      {
+        "key": "b",
+        "text": "A small circle under close observation"
+      },
+      {
+        "key": "c",
+        "text": "Many connected people in a social world"
+      },
+      {
+        "key": "d",
+        "text": "A family whose history crosses generations"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q024",
+    "number": 24,
+    "text": "What would you want readers to carry away?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A doubt about something they took for granted"
+      },
+      {
+        "key": "b",
+        "text": "A sharper sense of social pretence"
+      },
+      {
+        "key": "c",
+        "text": "An unsettling question about guilt or identity"
+      },
+      {
+        "key": "d",
+        "text": "Compassion for people history has wounded"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q025",
+    "number": 25,
+    "text": "How would time move through your story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Follow a journey from departure onward"
+      },
+      {
+        "key": "b",
+        "text": "Expand a single day's experience"
+      },
+      {
+        "key": "c",
+        "text": "Move through recollection and association"
+      },
+      {
+        "key": "d",
+        "text": "Return to patterns across generations"
+      }
+    ],
+    "long": false
+  },
+  {
+    "id": "q026",
+    "number": 26,
+    "text": "Which opening would you try?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "An ironic general claim about social life"
+      },
+      {
+        "key": "b",
+        "text": "An impossible event stated without fuss"
+      },
+      {
+        "key": "c",
+        "text": "A voice confessing or defending itself"
+      },
+      {
+        "key": "d",
+        "text": "A remembered moment that points toward a larger history"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q027",
+    "number": 27,
+    "text": "What kind of opposition would drive the plot?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A corrupt institution or inaccessible authority"
+      },
+      {
+        "key": "b",
+        "text": "A person's own self-deception"
+      },
+      {
+        "key": "c",
+        "text": "A dangerous journey or physical ordeal"
+      },
+      {
+        "key": "d",
+        "text": "A seductive power that tests moral choices"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q028",
+    "number": 28,
+    "text": "What size of work appeals to you?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A few lines that reward close attention"
+      },
+      {
+        "key": "b",
+        "text": "A short tale built around one discovery"
+      },
+      {
+        "key": "c",
+        "text": "A self-contained novel"
+      },
+      {
+        "key": "d",
+        "text": "An expansive narrative or sequence"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q029",
+    "number": 29,
+    "text": "What should dialogue do?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Reveal what people avoid saying"
+      },
+      {
+        "key": "b",
+        "text": "Become a contest of wit and social performance"
+      },
+      {
+        "key": "c",
+        "text": "Give competing moral positions a voice"
+      },
+      {
+        "key": "d",
+        "text": "Let a distinctive spoken idiom shape the narration"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q030",
+    "number": 30,
+    "text": "What role would nature play?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Hold a fleeting seasonal perception"
+      },
+      {
+        "key": "b",
+        "text": "Test endurance without promising comfort"
+      },
+      {
+        "key": "c",
+        "text": "Carry memory, desire or solitude"
+      },
+      {
+        "key": "d",
+        "text": "Belong to a world threatened by domination"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q031",
+    "number": 31,
+    "text": "How would you write about love?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "As intimate desire and absence"
+      },
+      {
+        "key": "b",
+        "text": "As a relationship shaped by money and judgment"
+      },
+      {
+        "key": "c",
+        "text": "As passion entangled with illusion or jealousy"
+      },
+      {
+        "key": "d",
+        "text": "As longing that opens toward the divine"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q032",
+    "number": 32,
+    "text": "How would you approach death?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Make mortality a direct philosophical encounter"
+      },
+      {
+        "key": "b",
+        "text": "Show its cost in war and heroic conflict"
+      },
+      {
+        "key": "c",
+        "text": "Build a mystery around a killing"
+      },
+      {
+        "key": "d",
+        "text": "Let the dead press on the lives of the living"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q033",
+    "number": 33,
+    "text": "How would childhood enter your work?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A child confronts an unequal adult world"
+      },
+      {
+        "key": "b",
+        "text": "A child's adventure overturns ordinary logic"
+      },
+      {
+        "key": "c",
+        "text": "Memory follows the formation of a self"
+      },
+      {
+        "key": "d",
+        "text": "A fairy tale speaks across age groups"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q034",
+    "number": 34,
+    "text": "How would politics enter your writing?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Through an invented regime or political fable"
+      },
+      {
+        "key": "b",
+        "text": "Through a community facing colonial intrusion"
+      },
+      {
+        "key": "c",
+        "text": "Through historical suffering and collective memory"
+      },
+      {
+        "key": "d",
+        "text": "Through satire of oppressive assumptions"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q035",
+    "number": 35,
+    "text": "How would you handle faith?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "As a journey toward spiritual understanding"
+      },
+      {
+        "key": "b",
+        "text": "As a struggle involving doubt and moral responsibility"
+      },
+      {
+        "key": "c",
+        "text": "As a target when belief becomes hypocrisy"
+      },
+      {
+        "key": "d",
+        "text": "As a set of values to question radically"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q036",
+    "number": 36,
+    "text": "What kind of place could sustain a whole book?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A city mapped through ordinary lives"
+      },
+      {
+        "key": "b",
+        "text": "A household with a complex social order"
+      },
+      {
+        "key": "c",
+        "text": "A road linking unfamiliar encounters"
+      },
+      {
+        "key": "d",
+        "text": "An invented land with deep linguistic history"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q037",
+    "number": 37,
+    "text": "What shape would you give a larger body of work?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Return to and expand a poetic collection"
+      },
+      {
+        "key": "b",
+        "text": "Build a linked sequence around memory and time"
+      },
+      {
+        "key": "c",
+        "text": "Develop recurring detectives across separate mysteries"
+      },
+      {
+        "key": "d",
+        "text": "Try poetry, drama and fiction"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q038",
+    "number": 38,
+    "text": "Why would you want someone to read your work?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "To follow an ingenious plot"
+      },
+      {
+        "key": "b",
+        "text": "To enjoy verbal comedy"
+      },
+      {
+        "key": "c",
+        "text": "To enter a distinctive poetic voice"
+      },
+      {
+        "key": "d",
+        "text": "To wrestle with a difficult idea"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q039",
+    "number": 39,
+    "text": "Whose perspective would you bring forward?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A woman claiming authority over her own life"
+      },
+      {
+        "key": "b",
+        "text": "A community described from within its own traditions"
+      },
+      {
+        "key": "c",
+        "text": "A person burdened by enslavement and its aftermath"
+      },
+      {
+        "key": "d",
+        "text": "A socially excluded child or young person"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q040",
+    "number": 40,
+    "text": "Which structure would you choose?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A journey made of successive encounters"
+      },
+      {
+        "key": "b",
+        "text": "Stories nested inside other people's accounts"
+      },
+      {
+        "key": "c",
+        "text": "A poem sequence or collection of short pieces"
+      },
+      {
+        "key": "d",
+        "text": "A novel woven from memory and shifting viewpoints"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q041",
+    "number": 41,
+    "text": "Which title would suit a piece you want to write?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A character's name"
+      },
+      {
+        "key": "b",
+        "text": "A journey or destination"
+      },
+      {
+        "key": "c",
+        "text": "An image that gathers meaning as the work unfolds"
+      },
+      {
+        "key": "d",
+        "text": "A conceptual space or paradox"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q042",
+    "number": 42,
+    "text": "How would you handle the identity of your narrator?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Let a fictional voice sound convincingly personal"
+      },
+      {
+        "key": "b",
+        "text": "Keep the storyteller's reliability uncertain"
+      },
+      {
+        "key": "c",
+        "text": "Make the narrator comment on storytelling itself"
+      },
+      {
+        "key": "d",
+        "text": "Use more than one voice to contest the story"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q043",
+    "number": 43,
+    "text": "How would a character's life unfold?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Youth leads toward an uncertain adult identity"
+      },
+      {
+        "key": "b",
+        "text": "A long family history reveals recurring patterns"
+      },
+      {
+        "key": "c",
+        "text": "A crisis forces a reckoning with mortality"
+      },
+      {
+        "key": "d",
+        "text": "A quest changes the meaning of home"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q044",
+    "number": 44,
+    "text": "What pace would suit your work?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Suspense built through plans and reversals"
+      },
+      {
+        "key": "b",
+        "text": "A sustained inward movement"
+      },
+      {
+        "key": "c",
+        "text": "A pause around one perception"
+      },
+      {
+        "key": "d",
+        "text": "An energetic sequence of discoveries"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q045",
+    "number": 45,
+    "text": "How would personal experience become literature?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Reshape remembered experience through fiction"
+      },
+      {
+        "key": "b",
+        "text": "Use a lyric speaker to explore feeling"
+      },
+      {
+        "key": "c",
+        "text": "Transform travel into reflective prose and verse"
+      },
+      {
+        "key": "d",
+        "text": "Use observed social life to build invented characters"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q046",
+    "number": 46,
+    "text": "Which tension would define your vision?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Beauty exists alongside impermanence"
+      },
+      {
+        "key": "b",
+        "text": "Human sympathy clashes with accepted social rules"
+      },
+      {
+        "key": "c",
+        "text": "Ambition or desire undermines judgment"
+      },
+      {
+        "key": "d",
+        "text": "Ordinary people face an incomprehensible system"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q047",
+    "number": 47,
+    "text": "How would people around a character affect the story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Their conversations expose status and self-deception"
+      },
+      {
+        "key": "b",
+        "text": "Their conflicting arguments deepen moral uncertainty"
+      },
+      {
+        "key": "c",
+        "text": "Their shared customs give the story its social logic"
+      },
+      {
+        "key": "d",
+        "text": "Their memories complicate one person's account"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q048",
+    "number": 48,
+    "text": "How would you use the sound of language?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Write speech designed for actors"
+      },
+      {
+        "key": "b",
+        "text": "Use rhythmic catalogues and a public poetic voice"
+      },
+      {
+        "key": "c",
+        "text": "Make a short lyric intimate and songlike"
+      },
+      {
+        "key": "d",
+        "text": "Let repeated sounds intensify unease"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q049",
+    "number": 49,
+    "text": "How would money matter in your story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Marriage and inheritance limit people's choices"
+      },
+      {
+        "key": "b",
+        "text": "Debt and consumption expose destructive illusions"
+      },
+      {
+        "key": "c",
+        "text": "Greed becomes the engine of comedy"
+      },
+      {
+        "key": "d",
+        "text": "Poverty exposes failures of social justice"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q050",
+    "number": 50,
+    "text": "Which nonhuman presence would you explore?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A created being asking for recognition"
+      },
+      {
+        "key": "b",
+        "text": "Animals used to examine political power"
+      },
+      {
+        "key": "c",
+        "text": "Talking creatures that disrupt human logic"
+      },
+      {
+        "key": "d",
+        "text": "Fantastic beings in a world with its own mythology"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q051",
+    "number": 51,
+    "text": "Someone makes an outrageous claim. How would you respond in writing?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Follow its logic until it exposes its own absurdity"
+      },
+      {
+        "key": "b",
+        "text": "Turn it into a clash of competing voices"
+      },
+      {
+        "key": "c",
+        "text": "Imagine a fictional book that makes it seem plausible"
+      },
+      {
+        "key": "d",
+        "text": "Show how institutions make people accept it"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q052",
+    "number": 52,
+    "text": "Which detail could unlock a larger story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A taste or sensation that brings the past back"
+      },
+      {
+        "key": "b",
+        "text": "A small clue everyone overlooked"
+      },
+      {
+        "key": "c",
+        "text": "A family name that keeps returning"
+      },
+      {
+        "key": "d",
+        "text": "A proverb whose meaning changes in a crisis"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q053",
+    "number": 53,
+    "text": "How would you make the familiar feel strange?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Describe an impossible transformation as routine"
+      },
+      {
+        "key": "b",
+        "text": "Look at language through a child's logic"
+      },
+      {
+        "key": "c",
+        "text": "Give a common object a generous poetic attention"
+      },
+      {
+        "key": "d",
+        "text": "Let a brief natural image shift perception"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q054",
+    "number": 54,
+    "text": "What would make a hero's victory complicated?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Success cannot restore everything that was lost"
+      },
+      {
+        "key": "b",
+        "text": "Social approval conflicts with conscience"
+      },
+      {
+        "key": "c",
+        "text": "A plan for revenge changes the avenger"
+      },
+      {
+        "key": "d",
+        "text": "A great ambition carries a moral cost"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q055",
+    "number": 55,
+    "text": "How would you portray a woman under social pressure?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Let her insist on moral and emotional independence"
+      },
+      {
+        "key": "b",
+        "text": "Show the constraints of marriage and property"
+      },
+      {
+        "key": "c",
+        "text": "Place her suffering within family duty and exploitation"
+      },
+      {
+        "key": "d",
+        "text": "Trace how racist ideals of beauty damage self-perception"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q056",
+    "number": 56,
+    "text": "What would you do with a borrowed story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Retell it in a different cultural and poetic form"
+      },
+      {
+        "key": "b",
+        "text": "Use an ancient epic as a pattern for modern city life"
+      },
+      {
+        "key": "c",
+        "text": "Parody its heroic conventions"
+      },
+      {
+        "key": "d",
+        "text": "Reshape a known plot for the stage"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q057",
+    "number": 57,
+    "text": "Which contrast would create meaning in your work?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A vast historical event and an intimate private life"
+      },
+      {
+        "key": "b",
+        "text": "A polished social surface and a concealed motive"
+      },
+      {
+        "key": "c",
+        "text": "A comic appearance and a painful exclusion"
+      },
+      {
+        "key": "d",
+        "text": "An official account and a community's own story"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q058",
+    "number": 58,
+    "text": "How would you handle a moral lesson?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Let a fable reveal how power corrupts"
+      },
+      {
+        "key": "b",
+        "text": "Use a comic impostor to expose false virtue"
+      },
+      {
+        "key": "c",
+        "text": "Ask who bears responsibility rather than supply an easy answer"
+      },
+      {
+        "key": "d",
+        "text": "Let a journey test a philosophy against suffering"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q059",
+    "number": 59,
+    "text": "What kind of ambiguity interests you?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Whether a narrator understands their own motives"
+      },
+      {
+        "key": "b",
+        "text": "Whether an ordinary event contains a deeper revelation"
+      },
+      {
+        "key": "c",
+        "text": "Whether a fictional world can be distinguished from a text"
+      },
+      {
+        "key": "d",
+        "text": "Whether a painful memory can ever have one final account"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q060",
+    "number": 60,
+    "text": "What would make a reader recognize your voice?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A restrained surface with strong feeling beneath"
+      },
+      {
+        "key": "b",
+        "text": "A compressed lyric with disruptive pauses"
+      },
+      {
+        "key": "c",
+        "text": "A broad, inclusive voice built from rhythmic lists"
+      },
+      {
+        "key": "d",
+        "text": "A densely imagined world shaped by names and languages"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q061",
+    "number": 61,
+    "text": "What could a letter reveal that a conversation cannot?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A declaration of love that arrives at the wrong moment"
+      },
+      {
+        "key": "b",
+        "text": "An increasingly consuming emotional attachment"
+      },
+      {
+        "key": "c",
+        "text": "Testimony passed through several narrators"
+      },
+      {
+        "key": "d",
+        "text": "Information that makes someone revise an earlier judgment"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q062",
+    "number": 62,
+    "text": "If you interrupted your own story, what would you add?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A playful aside about the narrator's tastes and memories"
+      },
+      {
+        "key": "b",
+        "text": "A historical or social explanation"
+      },
+      {
+        "key": "c",
+        "text": "A teaching story that opens into a spiritual reflection"
+      },
+      {
+        "key": "d",
+        "text": "A doubt about who really wrote the account"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q063",
+    "number": 63,
+    "text": "How would music matter in a scene?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A gifted woman's performance carries feelings she cannot freely express"
+      },
+      {
+        "key": "b",
+        "text": "Song and lyric become forms of devotional address"
+      },
+      {
+        "key": "c",
+        "text": "A repeated sound deepens mourning"
+      },
+      {
+        "key": "d",
+        "text": "Verse is exchanged as part of courtship"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q064",
+    "number": 64,
+    "text": "Which kind of promise could set your plot in motion?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A bargain that tests the limits of human ambition"
+      },
+      {
+        "key": "b",
+        "text": "An oath of friendship tested by danger"
+      },
+      {
+        "key": "c",
+        "text": "A family obligation that demands personal sacrifice"
+      },
+      {
+        "key": "d",
+        "text": "A commitment to carry a burden whose cost keeps growing"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q065",
+    "number": 65,
+    "text": "How would you use a dream?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Frame a household's worldly life within a larger sense of illusion"
+      },
+      {
+        "key": "b",
+        "text": "Give a child's adventure a shifting, playful reality"
+      },
+      {
+        "key": "c",
+        "text": "Expose a guilty person's moral horror"
+      },
+      {
+        "key": "d",
+        "text": "Make a dead beloved seem briefly present to a grieving hero"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q066",
+    "number": 66,
+    "text": "What might a disguise allow your story to explore?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "The patient construction of revenge through a new identity"
+      },
+      {
+        "key": "b",
+        "text": "The gap between chivalric fantasy and ordinary reality"
+      },
+      {
+        "key": "c",
+        "text": "A comic confusion about names and respectability"
+      },
+      {
+        "key": "d",
+        "text": "A returning traveler's ability to test loyalty"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q067",
+    "number": 67,
+    "text": "What would a quiet act of generosity mean in your work?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A speaker widens private distress into concern for others"
+      },
+      {
+        "key": "b",
+        "text": "An act of mercy unsettles a life governed by punishment"
+      },
+      {
+        "key": "c",
+        "text": "Compassion crosses the boundary between a prince and the poor"
+      },
+      {
+        "key": "d",
+        "text": "An offer of hospitality reveals the customs of a community"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q068",
+    "number": 68,
+    "text": "How would you treat a character who looks foolish?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Let an absurd ideal coexist with courage and dignity"
+      },
+      {
+        "key": "b",
+        "text": "Expose the excuses they use to protect their pride"
+      },
+      {
+        "key": "c",
+        "text": "Show how the crowd's judgment can be mistaken"
+      },
+      {
+        "key": "d",
+        "text": "Allow the reader to enjoy the narrator's affectionate irony"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q069",
+    "number": 69,
+    "text": "What would a garden contribute to your writing?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A richly detailed household space for poetry and relationships"
+      },
+      {
+        "key": "b",
+        "text": "A practical activity that answers grand philosophical claims"
+      },
+      {
+        "key": "c",
+        "text": "A place where childhood recollection and spiritual attention meet"
+      },
+      {
+        "key": "d",
+        "text": "A miniature image that opens onto death or uncertainty"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q070",
+    "number": 70,
+    "text": "Which conflict between duty and feeling would you explore?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Protecting a parent at the expense of personal happiness"
+      },
+      {
+        "key": "b",
+        "text": "Refusing a powerful attachment because of an existing commitment"
+      },
+      {
+        "key": "c",
+        "text": "Preserving self-respect when love demands moral compromise"
+      },
+      {
+        "key": "d",
+        "text": "Trying to reconcile erotic desire with family and social expectations"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q071",
+    "number": 71,
+    "text": "What would travel reveal about your traveler?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Their attention to places, seasons and earlier poets"
+      },
+      {
+        "key": "b",
+        "text": "Their ideals repeatedly colliding with what is actually there"
+      },
+      {
+        "key": "c",
+        "text": "Their reliance on planning, technology and timetables"
+      },
+      {
+        "key": "d",
+        "text": "Their growing need to question a reassuring philosophy"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q072",
+    "number": 72,
+    "text": "How would you make an object feel alive?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Address it as a companion in a generous ode"
+      },
+      {
+        "key": "b",
+        "text": "Give it speech and a place in a fairy tale"
+      },
+      {
+        "key": "c",
+        "text": "Let it become an image in a spiritual teaching story"
+      },
+      {
+        "key": "d",
+        "text": "Let a portrait bear the consequences its subject conceals"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q073",
+    "number": 73,
+    "text": "How would a city change the shape of your story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Streets and businesses connect strangers through hidden histories"
+      },
+      {
+        "key": "b",
+        "text": "A single day's routes connect several private consciousnesses"
+      },
+      {
+        "key": "c",
+        "text": "Ordinary places acquire correspondences with an ancient epic"
+      },
+      {
+        "key": "d",
+        "text": "Offices and courtrooms become parts of an inaccessible system"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q074",
+    "number": 74,
+    "text": "What would you do with a philosophical claim?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Test it against repeated disasters"
+      },
+      {
+        "key": "b",
+        "text": "Present it as a brief, provocative challenge"
+      },
+      {
+        "key": "c",
+        "text": "Let passionate characters argue over its consequences"
+      },
+      {
+        "key": "d",
+        "text": "Invent a fictional institution or text that takes it to an extreme"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q075",
+    "number": 75,
+    "text": "Which use of repetition would you choose?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Names and events return across family generations"
+      },
+      {
+        "key": "b",
+        "text": "A refrain intensifies grief and obsession"
+      },
+      {
+        "key": "c",
+        "text": "Parallel phrases accumulate into an expansive poetic voice"
+      },
+      {
+        "key": "d",
+        "text": "Repeated encounters deepen a spiritual lesson"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q076",
+    "number": 76,
+    "text": "How would you write a gathering of guests?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Let manners and small remarks reveal social ambition"
+      },
+      {
+        "key": "b",
+        "text": "Make the gathering part of a refined court world"
+      },
+      {
+        "key": "c",
+        "text": "Turn conversation into a display of sparkling social pretence"
+      },
+      {
+        "key": "d",
+        "text": "Let private grief coexist with the public occasion"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q077",
+    "number": 77,
+    "text": "What would an animal help you say?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A bird's call or a frog's movement can transform a brief perception"
+      },
+      {
+        "key": "b",
+        "text": "A creature can carry a lesson in a mystical narrative"
+      },
+      {
+        "key": "c",
+        "text": "A humanized animal can expose the machinery of power"
+      },
+      {
+        "key": "d",
+        "text": "A large fish can be both a worthy opponent and a test of endurance"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q078",
+    "number": 78,
+    "text": "How would weather enter a poem or scene?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A damaged roof opens into concern for others without shelter"
+      },
+      {
+        "key": "b",
+        "text": "A moonlit night awakens homesickness"
+      },
+      {
+        "key": "c",
+        "text": "A storm intensifies an encounter with a feared creation"
+      },
+      {
+        "key": "d",
+        "text": "Seasonal change gives emotional nuance to court life"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q079",
+    "number": 79,
+    "text": "What would make an outwardly successful person interesting?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "They discover that social success has concealed an unlived life"
+      },
+      {
+        "key": "b",
+        "text": "Their public charm depends on keeping moral damage invisible"
+      },
+      {
+        "key": "c",
+        "text": "Their restored wealth allows them to pursue an elaborate reckoning"
+      },
+      {
+        "key": "d",
+        "text": "Their practiced sophistication fails when love becomes urgent"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q080",
+    "number": 80,
+    "text": "How would you show exclusion?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A person is judged before anyone listens to their story"
+      },
+      {
+        "key": "b",
+        "text": "A young person is treated as unworthy because of appearance"
+      },
+      {
+        "key": "c",
+        "text": "Racialized beauty standards turn a child's gaze against herself"
+      },
+      {
+        "key": "d",
+        "text": "A poet speaks of hardship intensified by war and displacement"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q081",
+    "number": 81,
+    "text": "What would chance do in your plot?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A promise of secret knowledge tempts someone into destructive gambling"
+      },
+      {
+        "key": "b",
+        "text": "A precisely timed journey becomes vulnerable to delays and surprises"
+      },
+      {
+        "key": "c",
+        "text": "A small overlooked circumstance eventually unlocks the crime"
+      },
+      {
+        "key": "d",
+        "text": "An encounter gives a spiritual teacher a new story to unfold"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q082",
+    "number": 82,
+    "text": "How would other books enter your story?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A supposed source that complicates the narrator's authority"
+      },
+      {
+        "key": "b",
+        "text": "An imaginary work that changes how reality is understood"
+      },
+      {
+        "key": "c",
+        "text": "An ancient epic whose pattern shadows a modern day"
+      },
+      {
+        "key": "d",
+        "text": "A reading experience that feeds a character's romantic illusions"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q083",
+    "number": 83,
+    "text": "How would you write the distance between two people?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Let a short lyric make absence intensely present"
+      },
+      {
+        "key": "b",
+        "text": "Let homesickness emerge from a familiar natural image"
+      },
+      {
+        "key": "c",
+        "text": "Let separation deepen spiritual longing"
+      },
+      {
+        "key": "d",
+        "text": "Let time reverse who loves and who refuses"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q084",
+    "number": 84,
+    "text": "What would a family heirloom or valuable object expose?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "The fragility of wealth in a declining household"
+      },
+      {
+        "key": "b",
+        "text": "An obsession with possessing and protecting money"
+      },
+      {
+        "key": "c",
+        "text": "A costly ornament whose loss becomes an act of compassion"
+      },
+      {
+        "key": "d",
+        "text": "An inheritance that changes the choices available to women"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q085",
+    "number": 85,
+    "text": "What would you want from a scene of public embarrassment?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A child's plain observation punctures collective pretence"
+      },
+      {
+        "key": "b",
+        "text": "A stage impostor's false virtue becomes visible"
+      },
+      {
+        "key": "c",
+        "text": "A proud person learns that their judgment was mistaken"
+      },
+      {
+        "key": "d",
+        "text": "An apparent fool protects his self-image with a private fiction"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q086",
+    "number": 86,
+    "text": "How would you write a farewell?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "As a brief moment held in seasonal imagery"
+      },
+      {
+        "key": "b",
+        "text": "As an intimate address charged with desire and absence"
+      },
+      {
+        "key": "c",
+        "text": "As a refusal that reveals how much time has changed"
+      },
+      {
+        "key": "d",
+        "text": "As a departure that leaves an old way of life behind"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q087",
+    "number": 87,
+    "text": "What makes an invented place convincing to you?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Names, languages and histories fit together"
+      },
+      {
+        "key": "b",
+        "text": "Technical details make an extraordinary voyage feel possible"
+      },
+      {
+        "key": "c",
+        "text": "A town's family stories make marvels feel locally familiar"
+      },
+      {
+        "key": "d",
+        "text": "Daily rituals reveal the social order of a court"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q088",
+    "number": 88,
+    "text": "How would a spiritual insight reach the reader?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Through a story whose concrete events open into another meaning"
+      },
+      {
+        "key": "b",
+        "text": "Through an ordered journey with guides and moral encounters"
+      },
+      {
+        "key": "c",
+        "text": "Through a lyric offered as an act of devotion"
+      },
+      {
+        "key": "d",
+        "text": "Through a crisis that exposes the emptiness of an earlier life"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q089",
+    "number": 89,
+    "text": "How would you use a character's talent?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Make musical and poetic gifts vulnerable to exploitation"
+      },
+      {
+        "key": "b",
+        "text": "Let artistic aspiration shape the formation of a young self"
+      },
+      {
+        "key": "c",
+        "text": "Make an exceptionally gifted mind restless with ordinary limits"
+      },
+      {
+        "key": "d",
+        "text": "Show how learning and sensitivity matter in a court's relationships"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q090",
+    "number": 90,
+    "text": "What would make a friendship worth writing about?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Loyalty survives intrigue, rivalry and danger"
+      },
+      {
+        "key": "b",
+        "text": "Companions support each other under the pressure of a quest"
+      },
+      {
+        "key": "c",
+        "text": "An unequal pair keeps arguing about the meaning of their adventures"
+      },
+      {
+        "key": "d",
+        "text": "Companionship is imaginatively found with the moon and one's shadow"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q091",
+    "number": 91,
+    "text": "How would you handle the reader's sympathy for a wrongdoer?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Let a guilty mind reveal its excuses and torment"
+      },
+      {
+        "key": "b",
+        "text": "Show the appeal and moral danger of long-planned revenge"
+      },
+      {
+        "key": "c",
+        "text": "Let a first person defense reveal more than it intends"
+      },
+      {
+        "key": "d",
+        "text": "Place a destructive choice within a clash of personal fear and communal change"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q092",
+    "number": 92,
+    "text": "What would a contrast between appearance and value reveal?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A creature dismissed as ugly is not what others assume"
+      },
+      {
+        "key": "b",
+        "text": "Wealth and social position are unreliable guides to character"
+      },
+      {
+        "key": "c",
+        "text": "A polished surface can conceal moral corruption"
+      },
+      {
+        "key": "d",
+        "text": "A supposedly inferior person exposes society's failure of compassion"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q093",
+    "number": 93,
+    "text": "What would you do when a character cannot speak freely?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Let poetry or a musical performance carry the feeling"
+      },
+      {
+        "key": "b",
+        "text": "Make pauses and evasions carry the conflict"
+      },
+      {
+        "key": "c",
+        "text": "Show how political power restricts the available words"
+      },
+      {
+        "key": "d",
+        "text": "Let an interior voice reveal what public behavior conceals"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q094",
+    "number": 94,
+    "text": "How would you write a scene of temptation?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A bargain offers experience beyond ordinary human limits"
+      },
+      {
+        "key": "b",
+        "text": "A secret about winning at cards promises mastery over chance"
+      },
+      {
+        "key": "c",
+        "text": "An instrument of power offers an apparently useful shortcut"
+      },
+      {
+        "key": "d",
+        "text": "Romantic fantasies make consumption and escape seem irresistible"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q095",
+    "number": 95,
+    "text": "How would you place a private sorrow beside the wider world?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Move from one damaged home toward compassion for many others"
+      },
+      {
+        "key": "b",
+        "text": "Let one woman's suffering expose exploitation and social judgment"
+      },
+      {
+        "key": "c",
+        "text": "Connect an intimate story to the history of a continent"
+      },
+      {
+        "key": "d",
+        "text": "Let personal memory reveal the lasting harm of enslavement"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q096",
+    "number": 96,
+    "text": "What would a skeptical narrator question?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "Whether heroic stories offer a reliable map for life"
+      },
+      {
+        "key": "b",
+        "text": "Whether society's comforting account conceals cruelty"
+      },
+      {
+        "key": "c",
+        "text": "Whether an inherited moral vocabulary deserves obedience"
+      },
+      {
+        "key": "d",
+        "text": "Whether the same words mean the same thing in another historical setting"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q097",
+    "number": 97,
+    "text": "How would you use an encounter with the dead?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "To guide a traveler through moral and spiritual consequences"
+      },
+      {
+        "key": "b",
+        "text": "To make unresolved historical violence present in a household"
+      },
+      {
+        "key": "c",
+        "text": "To turn grief into an obsessive conversation with an absence"
+      },
+      {
+        "key": "d",
+        "text": "To show an epic traveler meeting the limits of heroic life"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q098",
+    "number": 98,
+    "text": "What would make a small gesture important?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "It reveals a shift in social understanding"
+      },
+      {
+        "key": "b",
+        "text": "It suggests a feeling the dialogue never states"
+      },
+      {
+        "key": "c",
+        "text": "It captures the emotional precision of courtly relationships"
+      },
+      {
+        "key": "d",
+        "text": "It suddenly brings an earlier life back into consciousness"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q099",
+    "number": 99,
+    "text": "How would you show the limits of control?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "An avenger discovers that his plans harm people beyond their intended targets"
+      },
+      {
+        "key": "b",
+        "text": "A timetable is disrupted by distance, weather and accident"
+      },
+      {
+        "key": "c",
+        "text": "A legal process proceeds without becoming comprehensible to its accused"
+      },
+      {
+        "key": "d",
+        "text": "A woman's choices are repeatedly constrained by others' power"
+      }
+    ],
+    "long": true
+  },
+  {
+    "id": "q100",
+    "number": 100,
+    "text": "Which final image would you choose for a piece of your own?",
+    "answers": [
+      {
+        "key": "a",
+        "text": "A traveler pausing before a small sign of the season"
+      },
+      {
+        "key": "b",
+        "text": "A person returning to practical work after philosophical disillusionment"
+      },
+      {
+        "key": "c",
+        "text": "A rejected declaration that shows how love has changed over time"
+      },
+      {
+        "key": "d",
+        "text": "An image of longing that opens beyond the individual self"
+      }
+    ],
+    "long": true
   }
-
 ];
+

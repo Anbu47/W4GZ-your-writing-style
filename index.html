@@ -70,6 +70,8 @@
   .bar{display:grid;grid-template-columns:150px 1fr 62px;gap:10px;align-items:center;font-size:14px}
   .bar .track{height:10px;background:var(--line);border-radius:99px;overflow:hidden}
   .bar .fill{height:100%;border-radius:99px;width:0;transition:width .8s ease}
+  .match-detail{grid-column:1 / -1;color:var(--muted);font-size:13px}
+  @media(max-width:480px){.bar{grid-template-columns:minmax(0,1fr) minmax(40px,1fr) 48px}.all{grid-template-columns:1fr}}
   .bar .pct{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
   .try{border-left:5px solid var(--ink)}
   .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
@@ -105,6 +107,8 @@
       <div class="actions">
         <button class="btn" id="startShort"></button>
         <button class="btn ghost" id="startLong"></button>
+        <button class="btn ghost" id="startAdditional"></button>
+        <button class="btn ghost" id="startComplete"></button>
       </div>
       <div class="meta" id="meta"></div>
     </div>
@@ -180,6 +184,8 @@
   // Two versions of the quiz: the short one leaves out the questions marked long: true.
   const SHORT = loaded ? QuizEngine.compile(DATA, { long: false }) : null;
   const LONG = loaded ? QuizEngine.compile(DATA, { long: true }) : null;
+  const ADDITIONAL = loaded ? QuizEngine.compile(DATA, { limit: 60 }) : null;
+  const COMPLETE = loaded ? QuizEngine.compile(DATA, { limit: 100 }) : null;
   let model = SHORT;
   if (!model || model.W < 2 || !model.questions.length) { show('broken'); return; }
 
@@ -199,10 +205,12 @@
   /* ---------- intro ---------- */
   const count = m => m.settings.linear ? m.settings.linearCount : m.settings.maxQuestions;
   const minutes = m => Math.max(2, Math.round(count(m) / 4));
-  $('lead').textContent = 'Find the writer from history whose style is closest to yours.';
+  $('lead').textContent = 'Choose the writing you would like to create and explore literary affinities with 50 writers. These are connections with their work, not a personality assessment.';
   $('startShort').textContent = 'Short quiz · ' + count(SHORT) + ' questions';
   $('startLong').textContent = 'Long quiz · ' + count(LONG) + ' questions';
-  $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Long: about ' + minutes(LONG) + ' minutes, and a closer match.';
+  $('startAdditional').textContent = 'Additional round · 60 questions';
+  $('startComplete').textContent = 'Complete quiz · 100 questions';
+  $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Long: about ' + minutes(LONG) + ' minutes. Complete: about ' + minutes(COMPLETE) + ' minutes.';
   $('alltitle').textContent = 'All ' + model.W + ' writers';
 
   /* ---------- quiz ---------- */
@@ -266,10 +274,11 @@
     const top = $('rtop');
     top.style.background = 'linear-gradient(135deg, ' + color + ', ' + shade(color, -28) + ')';
     top.innerHTML = '<svg width="220" height="220" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 80 L70 30 L80 40 L30 90 Z M70 30 L78 12 L88 22 Z" fill="#fff"/></svg>';
-    top.append(el('div', 'kicker', (res ? 'You write like' : 'Writer') + (w.years ? ' · ' + w.years : '')), el('h2', null, w.name), el('div', 'tag', w.tagline ? '\u201C' + w.tagline + '\u201D' : ''));
+    top.append(el('div', 'kicker', (res ? 'Literary affinity' : 'Writer') + (w.years ? ' · ' + w.years : '')), el('h2', null, w.name), el('div', 'tag', w.tagline ? '\u201C' + w.tagline + '\u201D' : ''));
     if (w.tagline) top.appendChild(el('div', 'tagby', '\u2014 ' + w.name + (w.taglineFrom ? ', ' + w.taglineFrom : '')));
-    if (res && res.runnerUp) {
-      const r = el('div', 'runner', '…with a touch of ');
+    if (res && res.top.tiedWith.length) top.appendChild(el('div', 'runner', 'Tied with: ' + res.top.tiedWith.join(', ')));
+    if (res && res.runnerUp && !res.top.tiedWith.length) {
+      const r = el('div', 'runner', 'Also close: ');
       r.appendChild(el('b', null, res.runnerUp.writer.name));
       top.appendChild(r);
     }
@@ -292,8 +301,12 @@
     $('mixcard').style.display = res ? '' : 'none';
     if (res) {
       $('mix').innerHTML = '';
-      res.ranking.slice(0, 5).forEach(r => $('mix').appendChild(bar(r.writer.name, r.agree, res.questions, colorOf(r.writer))));
-      $('mixnote').textContent = 'You answered ' + res.questions + ' questions. The bars show what share of your answers each writer would also give.';
+      res.ranking.slice(0, 3).forEach(r => {
+        const row = bar(r.writer.name, r.agree, r.opportunities, colorOf(r.writer));
+        row.appendChild(el('span', 'match-detail', r.agree + ' matches / ' + r.opportunities + ' opportunities' + (r.tiedWith.length ? ' · tied with ' + r.tiedWith.join(', ') : '')));
+        $('mix').appendChild(row);
+      });
+      $('mixnote').textContent = 'You answered ' + res.questions + ' questions. Each score is matches divided by questions where that writer appears in any answer. Writers with no opportunities are excluded. Few opportunities can make a high score unstable; these are literary affinities, not personality probabilities.';
       requestAnimationFrame(() => document.querySelectorAll('.fill').forEach(f => f.style.width = f.dataset.w));
     }
     $('copy').style.display = res ? '' : 'none';
@@ -314,6 +327,8 @@
 
   $('startShort').onclick = () => start(SHORT);
   $('startLong').onclick = () => start(LONG);
+  $('startAdditional').onclick = () => start(ADDITIONAL);
+  $('startComplete').onclick = () => start(COMPLETE);
   $('back').onclick = () => { if (!busy && history.length) { history.pop(); next(); } };
   $('again').onclick = () => {
     if (mine && $('again').textContent.startsWith('←')) renderResult(mine.top.writer, mine);
@@ -325,11 +340,11 @@
     const a = w.name, b = mine.runnerUp ? mine.runnerUp.writer.name : null;
     // One of three sentences, picked at random each time the button is pressed.
     const lines = b ? [
-      'Your writing reminds me of ' + a + ', with a hint of ' + b + '.',
-      'Your writing feels like ' + a + ' meeting ' + b + '.',
-      'Your style is part ' + a + ', part ' + b + ', and entirely your own.'
-    ] : ['Your writing reminds me of ' + a + '.'];
-    const text = lines[Math.floor(Math.random() * lines.length)] +
+      'My literary affinity is with ' + a + ', with a hint of ' + b + '.',
+      'My literary affinities include ' + a + ' meeting ' + b + '.',
+      'My literary affinities are part ' + a + ', part ' + b + ', and entirely your own.'
+    ] : ['My literary affinity is with ' + a + '.'];
+    const text = (mine.top.tiedWith.length ? 'My closest literary affinities are tied: ' + [a].concat(mine.top.tiedWith).join(', ') + '.' : lines[Math.floor(Math.random() * lines.length)]) +
       (w.tagline ? ' \u201C' + w.tagline + '\u201D \u2014 ' + a + (w.taglineFrom ? ', ' + w.taglineFrom : '') + '.' : '') +
       ' Take the W4GZ quiz and find which writer you are.';
     try { await navigator.clipboard.writeText(text); $('note').textContent = 'Copied: ' + text; }
@@ -339,3 +354,4 @@
 </script>
 </body>
 </html>
+

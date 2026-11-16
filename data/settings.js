@@ -5,6 +5,7 @@
   to see what the change does to accuracy and quiz length.
 */
 var QUIZ_SETTINGS = {
+  scoring: "editorial", // matches / administered opportunities; never a probability
   linear: true,          // true  = every student gets the same questions in the same order (branch questions are not used)
                          // false = the quiz adapts: the next question depends on the answers so far
   // The next five numbers are used only when linear is false.
@@ -31,3 +32,4 @@ var QUIZ_SETTINGS = {
     reviser:  { name: "Reviser",  about: "finds it in rewriting" }
   }
 };
+
