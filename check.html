@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz data check — W4GZ</title>
+<style>
+  :root{--bg:#fbf6ee;--ink:#1f1a17;--muted:#6b625b;--card:#fff;--line:#e9e0d3;--good:#1f7a5c;--bad:#b3261e;--warn:#9a5b00}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+  .wrap{max-width:920px;margin:0 auto;padding:28px 20px 64px}
+  h1{font-family:Georgia,serif;font-size:32px;margin:0 0 4px}
+  h2{font-family:Georgia,serif;font-size:21px;margin:0 0 6px}
+  p{margin:6px 0}
+  .muted{color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:16px}
+  .status{font-weight:700;font-size:18px}
+  .good{color:var(--good)} .bad{color:var(--bad)} .warn{color:var(--warn)}
+  ul.msgs{margin:8px 0 0;padding-left:20px}
+  ul.msgs li{margin:4px 0}
+  .scroll{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+  th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);white-space:nowrap}
+  td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  code{background:#f3ece1;border-radius:5px;padding:1px 5px;font-size:13px}
+  .tagk{display:inline-block;background:#f3ece1;border-radius:99px;padding:1px 9px;font-size:12px;white-space:nowrap}
+  progress{width:100%;height:10px;margin-top:8px}
+  details{margin-top:6px} summary{cursor:pointer;font-weight:700}
+  .small{font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Quiz data check</h1>
+  <p class="muted">Open this page after you change a writer, a question or a setting. It reads the same files as the quiz, lists anything that needs fixing, and runs pretend students through the quiz.</p>
+
+  <div class="card" id="problems"><p class="status">Reading the quiz files…</p></div>
+  <div class="card" id="sim" hidden></div>
+  <div class="card" id="pairs" hidden></div>
+  <div class="card" id="questions" hidden></div>
+  <div class="card" id="writers" hidden></div>
+</div>
+
+<script>
+  // Remember which file broke, if one has a typo.
+  var LOAD_ERRORS = [];
+  window.addEventListener('error', function (e) {
+    LOAD_ERRORS.push((e.filename ? e.filename.split('/').slice(-2).join('/') : 'a file') + (e.lineno ? ', line ' + e.lineno : '') + ': ' + e.message);
+  });
+</script>
+<script src="data/settings.js"></script>
+<script src="data/questions.js"></script>
+<script src="data/writers.js"></script>
+<script src="engine.js"></script>
+<script>
+(function () {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const pct = x => Math.round(100 * x) + '%';
+  const list = (items, cls) => '<ul class="msgs ' + (cls || '') + '">' + items.map(t => '<li>' + esc(t) + '</li>').join('') + '</ul>';
+
+  if (typeof QuizEngine === 'undefined') {
+    $('problems').innerHTML = '<p class="status bad">engine.js did not load, so nothing can be checked.</p>' + list(LOAD_ERRORS);
+    return;
+  }
+  const report = QuizEngine.validate({
+    settings: typeof QUIZ_SETTINGS === 'undefined' ? null : QUIZ_SETTINGS,
+    questions: typeof QUIZ_QUESTIONS === 'undefined' ? null : QUIZ_QUESTIONS,
+    writers: typeof QUIZ_WRITERS === 'undefined' ? null : QUIZ_WRITERS
+  });
+  const s = report.summary, model = report.model, set = model.settings;
+
+  /* ---------- problems ---------- */
+  let html = '<h2>' + s.writers + ' writers · ' + s.questions + ' questions</h2>' +
+    '<p class="muted">' + s.opening + ' opening, ' + (s.forEveryone - s.opening) + ' more for everyone, ' + s.branch + ' branch. ' + (set.linear ? 'Linear mode. This page tests the long version (' + set.linearCount + ' questions in order). The short version leaves out the questions marked long. Branch questions are not used.' : 'Students answer ' +
+    set.minQuestions + ' to ' + set.maxQuestions + ' questions. The quiz stops early once it is ' + pct(set.confidence) + ' sure.') + '</p>';
+  const located = LOAD_ERRORS.filter(t => /line \d+/.test(t));
+  if (report.unread) {
+    html += '<p class="status bad">A file has a typo, so the quiz cannot run</p>' + list(report.errors) + (located.length ? list(located) : '') +
+      '<p class="small muted">A typo is usually a missing comma, quote mark or bracket' + (located.length ? ' on or just before the line shown.' :
+      '. To see the line number, open this page on the website instead of from a folder on your computer.') + '</p>';
+  } else if (report.errors.length) html += '<p class="status bad">' + report.errors.length + ' thing' + (report.errors.length === 1 ? '' : 's') + ' to fix</p>' + list(report.errors);
+  if (report.warnings.length) html += '<p class="status warn">' + report.warnings.length + ' thing' + (report.warnings.length === 1 ? '' : 's') + ' to look at</p>' + list(report.warnings);
+  if (!report.errors.length && !report.warnings.length) html += '<p class="status good">✓ No problems found in the data.</p>';
+  if (report.notes.length) html += '<details><summary>' + report.notes.length + ' note' + (report.notes.length === 1 ? '' : 's') + '</summary>' + list(report.notes, 'muted') + '</details>';
+  $('problems').innerHTML = html;
+
+  /* ---------- questions and writers ---------- */
+  if (model.questions.length) {
+    const rows = model.questions.map(q => {
+      const kind = q.start ? 'opening' : (q.branch ? 'branch: ' + q.branch : 'everyone');
+      const answers = q.answers.filter(a => !a.none).map((a, i) => {
+        const who = model.writers.filter((w, wi) => q.fits[wi] && q.fits[wi].indexOf(i) >= 0).map(w => w.name || w.id);
+        return '<div><code>' + esc(a.key) + '</code> ' + esc(a.text) + ' <span class="muted">→ ' + (who.length ? esc(who.join(', ')) : 'no writer') + '</span></div>';
+      }).join('');
+      return '<tr><td><code>' + esc(q.id) + '</code><br><span class="tagk">' + esc(kind) + '</span></td><td><b>' + esc(q.text) + '</b>' + answers +
+        (q.hasNone ? '<div class="muted"><i>' + esc(q.answers[q.answers.length - 1].text) + '</i> (the way out of the branch)</div>' : '') + '</td></tr>';
+    }).join('');
+    $('questions').hidden = false;
+    $('questions').innerHTML = '<details><summary>Every question, and which writers fit each answer</summary><div class="scroll"><table><tr><th>Question</th><th>Answers</th></tr>' + rows + '</table></div></details>';
+  }
+  if (s.writers) {
+    const rows = s.perWriter.map((w, i) => {
+      const br = model.questions.filter(q => q.branch && q.fits[i]).map(q => q.branch);
+      return '<tr><td>' + esc(w.name) + '</td><td class="n">' + w.everyone + ' of ' + s.forEveryone + '</td><td>' + (br.length ? esc(br.join(', ')) : '<span class="muted">none</span>') + '</td></tr>';
+    }).join('');
+    $('writers').hidden = false;
+    $('writers').innerHTML = '<details><summary>Every writer, and how much the quiz knows about them</summary><div class="scroll"><table><tr><th>Writer</th><th class="n">Questions for everyone answered</th><th>Branches</th></tr>' + rows + '</table></div></details>';
+  }
+  if (s.closestPairs.length) {
+    $('pairs').hidden = false;
+    $('pairs').innerHTML = '<h2>Hardest writers to tell apart</h2><p class="muted small">The number of questions on which two writers answer differently. Under 3 is too few: add a question that separates them.</p>' +
+      '<div class="scroll"><table><tr><th>Pair</th><th class="n">Questions that separate them</th></tr>' +
+      s.closestPairs.slice(0, 8).map(p => '<tr><td>' + esc(p.a) + ' / ' + esc(p.b) + '</td><td class="n">' + p.differ + '</td></tr>').join('') + '</table></div>';
+  }
+
+  /* ---------- pretend students ---------- */
+  if (report.errors.length || s.writers < 2 || !model.questions.length) return;
+  const box = $('sim');
+  box.hidden = false;
+  const runs = Math.max(6, Math.min(100, Math.round(1200 / s.writers)));
+  const kinds = [
+    { name: 'Careful', about: 'picks their writer\'s answer 8 times in 10', opts: { noise: 0.2 } },
+    { name: 'Typical', about: 'picks their writer\'s answer about 2 times in 3', opts: { noise: 0.35 } },
+    { name: 'Mixed', about: 'picks their writer\'s answer half the time', opts: { noise: 0.5 } },
+    { name: 'Typical, never uses "none of these"', about: 'always picks a real answer on branch questions', opts: { noise: 0.35, noneRate: 0 } }
+  ];
+  box.innerHTML = '<h2>Pretend students</h2><p class="muted small">The page invents ' + runs + ' students for each writer and for each kind of student below, lets them take the quiz, and counts how often the quiz finds the right writer. These are test numbers from made-up students, not results from real ones.</p>' +
+    '<progress id="prog" max="1" value="0"></progress><div id="simout"></div>';
+
+  const tick = () => new Promise(r => setTimeout(r, 0));
+  (async function () {
+    const done = [];
+    const jobs = kinds.map((k, i) => QuizEngine.simulate(model, Object.assign({ runsPerWriter: runs, seed: 11 + i }, k.opts)));
+    const random = QuizEngine.simulate(model, { random: true, runs: Math.max(2000, 150 * s.writers), seed: 5 });
+    const all = jobs.concat([random]);
+    for (let i = 0; i < all.length; i++) {
+      while (!all[i].done) { all[i].work(40); $('prog').value = (i + all[i].progress) / all.length; await tick(); }
+      done.push(all[i].stats);
+    }
+    $('prog').remove();
+    let out = '<div class="scroll"><table><tr><th>Kind of student</th><th class="n">Right writer</th><th class="n">Right writer in top two</th><th class="n">Questions asked</th></tr>';
+    kinds.forEach((k, i) => {
+      const st = done[i];
+      out += '<tr><td><b>' + esc(k.name) + '</b><br><span class="muted small">' + esc(k.about) + '</span></td><td class="n">' + pct(st.right / st.runs) +
+        '</td><td class="n">' + pct(st.topTwo / st.runs) + '</td><td class="n">' + (st.questions / st.runs).toFixed(1) + '</td></tr>';
+    });
+    out += '</table></div>';
+
+    const rs = done[done.length - 1], shares = rs.writers.map(w => w.chosen / rs.runs);
+    const lo = Math.min.apply(null, shares), hi = Math.max.apply(null, shares), fair = 1 / s.writers;
+    const lopsided = lo < fair * 0.6 || hi > fair * 1.5;
+    out += '<p><b>Fairness.</b> When a student clicks at random, every writer should come up about ' + (100 * fair).toFixed(1) + '% of the time. ' +
+      'Lowest: ' + esc(rs.writers[shares.indexOf(lo)].name) + ' ' + (100 * lo).toFixed(1) + '%. Highest: ' + esc(rs.writers[shares.indexOf(hi)].name) + ' ' + (100 * hi).toFixed(1) + '%. ' +
+      (lopsided ? '<span class="warn"><b>That is lopsided.</b> The writer at the top is too easy to get, or the one at the bottom too hard.</span>' : '<span class="good">That is balanced.</span>') + '</p>';
+
+    const typical = done[1];
+    out += '<details><summary>Typical students, writer by writer</summary><div class="scroll"><table><tr><th>Writer</th><th class="n">Right</th><th class="n">Questions</th><th>Most often mistaken for</th></tr>' +
+      typical.writers.map(w => {
+        const worst = Object.keys(w.mistakenFor).sort((a, b) => w.mistakenFor[b] - w.mistakenFor[a])[0];
+        const other = worst ? model.writers[model.writerIndex[worst]] : null;
+        return '<tr><td>' + esc(w.name) + '</td><td class="n">' + pct(w.right / w.runs) + '</td><td class="n">' + (w.questions / w.runs).toFixed(1) + '</td><td>' + (other ? esc(other.name || other.id) : '<span class="muted">nobody</span>') + '</td></tr>';
+      }).join('') + '</table></div></details>';
+    $('simout').innerHTML = out;
+  })();
+})();
+</script>
+</body>
+</html>

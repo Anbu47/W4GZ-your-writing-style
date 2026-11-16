@@ -56,6 +56,7 @@
   .rtop .kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;font-weight:700}
   .rtop h2{font-size:clamp(38px,8vw,60px);margin:6px 0 8px}
   .rtop .tag{font-family:'Fraunces',serif;font-style:italic;font-size:20px;opacity:.95}
+  .rtop .tagby{font-size:14px;opacity:.9;margin-top:4px}
   .rtop .runner{margin-top:10px;font-size:16px;opacity:.95}
   .rtop .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
   .rtop .chips span{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);padding:5px 12px;border-radius:99px;font-size:13px;font-weight:700}
@@ -66,7 +67,7 @@
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media (max-width:560px){.grid2{grid-template-columns:1fr}}
   .bars{display:grid;gap:10px;margin-top:6px}
-  .bar{display:grid;grid-template-columns:150px 1fr 38px;gap:10px;align-items:center;font-size:14px}
+  .bar{display:grid;grid-template-columns:150px 1fr 62px;gap:10px;align-items:center;font-size:14px}
   .bar .track{height:10px;background:var(--line);border-radius:99px;overflow:hidden}
   .bar .fill{height:100%;border-radius:99px;width:0;transition:width .8s ease}
   .bar .pct{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -87,6 +88,9 @@
   .startw{margin-top:14px!important}
   footer{margin-top:44px;text-align:center;font-size:13px;color:var(--muted)}
   footer em{font-family:'Fraunces',serif;font-size:16px;color:var(--ink)}
+  .opt.none{border-style:dashed;color:var(--muted)}
+  .opt.none.picked{color:var(--ink)}
+  .mixnote{font-size:13px;color:var(--muted);margin-top:12px!important}
 </style>
 </head>
 <body>
@@ -97,11 +101,13 @@
   <section class="screen on" id="intro">
     <div class="hero">
       <h1>Which <em>famous writer</em> are you?</h1>
-      <p class="lead">A personality test for storytellers. Answer 17 quick questions about the stories you love, the way you write and the life that shapes it. Then find out which of 12 remarkable writers from history shares your style.</p>
-      <button class="btn" id="start">Start the quiz →</button>
-      <div class="meta">About 5 minutes · 4 choices per question · No right or wrong answers</div>
+      <p class="lead" id="lead"></p>
+      <div class="actions">
+        <button class="btn" id="startShort"></button>
+        <button class="btn ghost" id="startLong"></button>
+      </div>
+      <div class="meta" id="meta"></div>
     </div>
-    <div class="legend" id="legend"></div>
   </section>
 
   <!-- QUIZ -->
@@ -125,358 +131,211 @@
       <div class="card"><h3>Watch out for</h3><p id="rwatch"></p></div>
     </div>
     <div class="card try"><h3>Try this exercise</h3><p id="rtry"></p></div>
-    <div class="card" id="mixcard"><h3>Your writer mix</h3><div class="bars" id="mix"></div></div>
+    <div class="card" id="mixcard"><h3>Your closest writers</h3><div class="bars" id="mix"></div><p class="mixnote" id="mixnote"></p></div>
     <div class="actions">
       <button class="btn" id="copy">Copy my result</button>
       <button class="btn ghost" id="again">Retake the quiz</button>
     </div>
     <div class="note" id="note"></div>
 
-    <h3 style="margin-top:40px;font-size:24px">All 12 writers</h3>
+    <h3 style="margin-top:40px;font-size:24px" id="alltitle">All writers</h3>
     <p style="color:var(--muted);margin:4px 0 0">Tap any writer to read about their style.</p>
     <div class="all" id="all"></div>
+  </section>
+
+  <!-- shown only if the data files fail to load -->
+  <section class="screen" id="broken">
+    <div class="card" style="margin-top:40px"><h3>The quiz couldn't load</h3>
+      <p>One of the quiz files is missing or has a typo. If you edit this quiz, open <b>check.html</b> to see what needs fixing.</p></div>
   </section>
 
   <footer><em>Create narratives worth living.</em><span class="brand-logo small" role="img" aria-label="W4GZ"></span></footer>
 </div>
 
+<!-- The content (edit these) -->
+<script src="data/settings.js"></script>
+<script src="data/questions.js"></script>
+<script src="data/writers.js"></script>
+<!-- The algorithm -->
+<script src="engine.js"></script>
+<!-- The page -->
 <script>
-const FOCUS = {
-  H:{name:"Heart", color:"var(--heart)", hex:"#e0567a", blurb:"characters & feelings"},
-  S:{name:"Spark", color:"var(--spark)", hex:"#f0a12a", blurb:"plot & twists"},
-  W:{name:"World", color:"var(--world)", hex:"#1f9e8f", blurb:"places & atmosphere"},
-  V:{name:"Voice", color:"var(--voice)", hex:"#7a5cd6", blurb:"words & style"}
-};
-const APPROACH = {
-  P:{name:"Planner",  blurb:"plans before writing"},
-  E:{name:"Explorer", blurb:"discovers while writing"},
-  R:{name:"Reviser",  blurb:"finds it in rewriting"}
-};
-
-const TYPES = {
-  HP:{name:"Charles Dickens", years:"1812–1870", tag:"You know your characters better than they know themselves.",
-    desc:"Like Dickens, you build a big cast of unforgettable people, each with a name, a habit and a voice you could pick out of a crowd. You plan where they're going, so every one of them has a part to play by the end.",
-    fact:"Dickens published most of his novels in monthly parts and kept \"number plans\": sheets sketching the chapters and characters of each part before he wrote it.",
-    str:"Vivid, memorable characters and arcs that come together. Readers believe your people could walk off the page.",
-    watch:"Spending so long on backstory and planning that the story never actually starts.",
-    tryit:"Write one scene where your character wants something small (a seat on the bus, the last slice of pizza) and can't get it. No backstory allowed. Let the scene show who they are."},
-  HE:{name:"Murasaki Shikibu", years:"c. 973 – c. 1014", tag:"You follow your characters' hearts wherever they lead.",
-    desc:"Like Murasaki, you're fascinated by what people feel but don't say: longing, jealousy, quiet regret. You let your story grow chapter by chapter, following your characters through their lives.",
-    fact:"The Tale of Genji was read and passed around at the Japanese imperial court while Murasaki was still writing it, and it grew to 54 chapters.",
-    str:"Emotional insight. You notice the tiny moments where feelings change.",
-    watch:"Drifting. Characters can wander without a clear story shape to hold them.",
-    tryit:"Before your next draft, finish this sentence: \"My character wants ___ but ___.\" Keep it where you can see it while you write."},
-  HR:{name:"Jane Austen", years:"1775–1817", tag:"You sharpen your characters with every draft.",
-    desc:"Like Austen, you love people: their pride, their mistakes and the funny gap between what they say and what they mean. You rewrite until every conversation reveals character.",
-    fact:"Austen's first version of Pride and Prejudice was called First Impressions. A publisher turned it down without reading it, and she reworked it for years before it came out in 1813.",
-    str:"Sharp, witty characters and dialogue. Readers feel they know your people.",
-    watch:"Rewriting chapter one forever and never reaching the end.",
-    tryit:"Finish a whole draft before you revise anything. Then do a revision pass where every conversation must show something new about a character."},
-  SP:{name:"William Shakespeare", years:"1564–1616", tag:"You build every twist on purpose.",
-    desc:"Like Shakespeare, you take a story and engineer it for maximum drama: mistaken identities, secrets, bad timing and big reveals. You know exactly where each turn hits the audience.",
-    fact:"Shakespeare borrowed almost all of his plots from older histories and stories, then rebuilt them into tightly constructed plays.",
-    str:"Structure and drama. Your scenes build to moments people remember.",
-    watch:"Characters turning into chess pieces that only exist to move the plot.",
-    tryit:"Take your plot's biggest moment and rewrite it from inside your character's head. Focus on how it feels, not just what happens."},
-  SE:{name:"Fyodor Dostoevsky", years:"1821–1881", tag:"You push your characters to the edge and see what happens.",
-    desc:"Like Dostoevsky, you write high-stakes stories: crimes, confessions, impossible choices. You write in feverish bursts, and the story often surprises you as much as your reader.",
-    fact:"To meet a publisher's deadline, Dostoevsky dictated his novel The Gambler to a stenographer in 26 days. He later married her, Anna Snitkina.",
-    str:"Intensity and suspense. Readers can't look away.",
-    watch:"Endings. Stories that start strong can stall when the energy runs out.",
-    tryit:"Write your last scene now, even roughly. Now you're racing toward something instead of away from the blank page."},
-  SR:{name:"Ernest Hemingway", years:"1899–1961", tag:"You cut until only what matters is left.",
-    desc:"Like Hemingway, you get the story down and then strip it back. You cut, tighten and rewrite until every scene moves and nothing is wasted.",
-    fact:"Hemingway said he rewrote the ending of A Farewell to Arms 39 times before he was satisfied.",
-    str:"Pacing and economy. You can tell what's dull and you're brave enough to cut it.",
-    watch:"Cutting the quiet moments readers need to breathe and to care.",
-    tryit:"Find one scene you cut for being \"too slow.\" Ask yourself: did it help me care about someone? If yes, bring back a shorter version."},
-  WP:{name:"Leo Tolstoy", years:"1828–1910", tag:"You build a whole world, then let people live in it.",
-    desc:"Like Tolstoy, you see the big picture: families, cities, wars and history, with hundreds of lives crossing. You research and plan your world so it feels completely real.",
-    fact:"For War and Peace, Tolstoy read letters and memoirs from 1812 and visited the Borodino battlefield to study the ground where the battle was fought.",
-    str:"Huge, believable worlds full of real people.",
-    watch:"Info-dumping. The reader doesn't need every fact you found.",
-    tryit:"Describe a place using only what one character would notice in a hurry. Five sentences maximum."},
-  WE:{name:"Gabriel García Márquez", years:"1927–2014", tag:"In your worlds, magic feels ordinary.",
-    desc:"Like García Márquez, you create places where the impossible happens and everyone treats it as normal. You discover your world as you write it, and it keeps getting richer and stranger.",
-    fact:"The idea for One Hundred Years of Solitude struck him while driving his family to Acapulco in 1965. He turned the car around and wrote for about a year and a half.",
-    str:"Imagination and atmosphere. Your settings feel alive and unforgettable.",
-    watch:"Getting lost: wonderful places where nothing happens.",
-    tryit:"Write a scene where something impossible happens and every character treats it as completely normal."},
-  WR:{name:"Victor Hugo", years:"1802–1885", tag:"You dig deep into the history beneath your story.",
-    desc:"Like Hugo, you care about places and the people history forgets: a cathedral, a city's streets, the poor and the outcast. Your world gets deeper with every draft.",
-    fact:"Hugo started Les Misérables in the 1840s, put it aside for years, and finished it in exile on the island of Guernsey. It was published in 1862.",
-    str:"Depth and big themes. Your worlds feel like they existed long before page one.",
-    watch:"Long detours. Readers may skip your brilliant 50 pages about the sewers.",
-    tryit:"Pick one building in your story and write its history in 100 words. Then use only one detail of that history in the story."},
-  VP:{name:"Lu Xun", years:"1881–1936", tag:"Every word you choose has a purpose.",
-    desc:"Like Lu Xun, you write with a clear aim, and you choose your words to hit hard. Your style is sharp, plain and often ironic, and it makes people think.",
-    fact:"Lu Xun's \"A Madman's Diary\" (1918) was one of the first major stories written in everyday spoken Chinese instead of formal classical Chinese.",
-    str:"Clarity and impact. Your best lines stick in people's heads.",
-    watch:"Writing that's so controlled it starts to feel stiff.",
-    tryit:"Write one page as fast as you can without rereading. Then find the one wild sentence worth keeping."},
-  VE:{name:"Friedrich Nietzsche", years:"1844–1900", tag:"Your ideas come out in bold, bright bursts.",
-    desc:"Like Nietzsche, you write in a voice nobody could mistake: daring, poetic and full of energy. Your best thoughts arrive suddenly, and you catch them before they're gone.",
-    fact:"Nietzsche walked for hours a day in the Swiss Alps and jotted ideas in notebooks along the way. He said he wrote the first part of Thus Spoke Zarathustra in about ten days.",
-    str:"A powerful, original voice. Readers feel you talking straight to them.",
-    watch:"Voice can carry you right past structure. Readers still need a path.",
-    tryit:"Read your piece out loud. Mark every spot where your own attention drifted. That's where the story needs a push."},
-  VR:{name:"Du Fu", years:"712–770", tag:"You polish every line until it shines.",
-    desc:"Like Du Fu, you'll trade ten words for the perfect one. You work inside strict rules of rhythm and sound, and you polish until every line carries its full weight.",
-    fact:"Du Fu wrote that he would not rest, even in death, until his lines could startle readers.",
-    str:"Precise word choice and deep feeling in very few words.",
-    watch:"Polishing one line for an hour while the rest of the piece waits.",
-    tryit:"Set a 20-minute timer: draft only, no fixing. Polish only after the whole piece exists."}
-};
-const BIO = {
-  HP:{from:"England", about:"Dickens grew up in Portsmouth and London. When he was 12, his father was sent to prison for debt, and Charles had to work long days in a factory pasting labels on pots of shoe polish. He never forgot it. His stories are packed with poor children, cruel institutions and unforgettable characters, and they made him the most famous writer of his time. He also gave public readings of his work to huge crowds.",
-    works:["Oliver Twist","A Christmas Carol","David Copperfield","Great Expectations"], start:"A Christmas Carol is short, spooky and full of his best characters."},
-  HE:{from:"Japan", about:"Murasaki Shikibu was a lady-in-waiting at the Japanese imperial court during the Heian period, about a thousand years ago. \"Murasaki\" was a nickname, and her real name is unknown. She wrote The Tale of Genji, the story of a prince and his loves, which is often called one of the world's first novels. She also kept a diary that gives a sharp, honest look at court life.",
-    works:["The Tale of Genji","The Diary of Lady Murasaki"], start:"The first few chapters of a modern translation of The Tale of Genji."},
-  HR:{from:"England", about:"Austen was the daughter of a country clergyman in Hampshire and grew up in a lively family that loved reading and putting on plays at home. Her novels came out without her name; the first said only \"By a Lady.\" She wrote about everyday life, money and marriage with sharp humor, and her books are still adapted into films and series today.",
-    works:["Pride and Prejudice","Sense and Sensibility","Emma","Persuasion"], start:"Pride and Prejudice: two proud people, one big misunderstanding."},
-  SP:{from:"England", about:"Shakespeare was born in Stratford-upon-Avon and moved to London, where he became an actor, a playwright and a part-owner of an acting company and the Globe Theatre. He wrote about 37 plays and 154 sonnets. Many words and phrases we still use first appear in his writing. After he died, two of his fellow actors collected his plays in the First Folio (1623); without it, about half of them might have been lost.",
-    works:["Romeo and Juliet","Hamlet","Macbeth","A Midsummer Night's Dream"], start:"A Midsummer Night's Dream, and watch a performance if you can. Plays are meant to be seen."},
-  SE:{from:"Russia", about:"Dostoevsky was born in Moscow. As a young writer he was arrested for joining a group that discussed banned ideas, sentenced to death, and pardoned at the last moment. He spent four years in a prison camp in Siberia instead. That experience shaped his novels, which dive into guilt, faith, freedom and the darkest corners of the mind.",
-    works:["Crime and Punishment","The Brothers Karamazov","The Idiot","Notes from Underground"], start:"\"White Nights,\" a short, tender story, before taking on Crime and Punishment."},
-  SR:{from:"United States", about:"Hemingway started as a newspaper reporter, where he learned to write short, clear sentences. In the First World War he drove ambulances in Italy and was badly wounded. He believed a writer should show only the tip of the iceberg and leave the rest beneath the surface for the reader to feel. He won the Pulitzer Prize in 1953 and the Nobel Prize in Literature in 1954.",
-    works:["The Old Man and the Sea","A Farewell to Arms","The Sun Also Rises","For Whom the Bell Tolls"], start:"The Old Man and the Sea: short, simple sentences, huge feelings."},
-  WP:{from:"Russia", about:"Tolstoy was born into a rich noble family on an estate called Yasnaya Polyana. As a young man he served as a soldier, including in the Crimean War, and later wrote some of the longest and most admired novels ever written. In his later life he gave up much of his wealth, lived simply and wrote about how people should live. His ideas about peaceful resistance later inspired Mahatma Gandhi.",
-    works:["War and Peace","Anna Karenina","The Death of Ivan Ilyich"], start:"The Death of Ivan Ilyich is short but powerful, and much easier to start than War and Peace."},
-  WE:{from:"Colombia", about:"García Márquez spent his early childhood with his grandparents in the small town of Aracataca. His grandmother told the most fantastic stories with a completely straight face, and he later said that was the tone he wanted for his novels. He worked for years as a journalist. His style became known as magical realism, and he won the Nobel Prize in Literature in 1982.",
-    works:["One Hundred Years of Solitude","Love in the Time of Cholera","Chronicle of a Death Foretold"], start:"\"A Very Old Man with Enormous Wings,\" a short story with an angel in a chicken coop."},
-  WR:{from:"France", about:"Hugo was a poet, playwright, novelist and politician. He spoke out against Napoleon III, who had seized power, and lived in exile on the islands of Jersey and Guernsey for almost 20 years. He wrote The Hunchback of Notre-Dame partly to make people care about saving old Gothic buildings. When he died, about two million people are said to have joined his funeral procession in Paris.",
-    works:["Les Misérables","The Hunchback of Notre-Dame","The Contemplations (poems)"], start:"An abridged Les Misérables, or watch the musical first and then read the parts you loved."},
-  VP:{from:"China", about:"Lu Xun was the pen name of Zhou Shuren. He went to Japan to study medicine, but decided that his country needed its thinking healed more than its bodies, so he turned to writing. He is often called the father of modern Chinese literature. His stories and essays criticize old habits and injustice with dark humor, and many are still taught in schools.",
-    works:["A Madman's Diary","The True Story of Ah Q","Kong Yiji","My Old Home"], start:"\"Kong Yiji\" or \"My Old Home,\" both short and moving."},
-  VE:{from:"Germany", about:"Nietzsche was a philosopher, not a novelist, but he wrote like a poet. He became a university professor in Basel at just 24, then left because of poor health and spent years traveling between Switzerland and Italy. He often wrote in short, punchy aphorisms. His ideas about values, power and creating your own meaning are still argued about today and are often misunderstood.",
-    works:["Thus Spoke Zarathustra","The Gay Science","Beyond Good and Evil"], start:"A few short aphorisms from The Gay Science. His philosophy is best for older teens."},
-  VR:{from:"China", about:"Du Fu lived during the Tang dynasty, often called the golden age of Chinese poetry. He failed the imperial exams, lived through the An Lushan Rebellion, and spent years as a refugee in poverty. He wrote about war, hunger and ordinary people's suffering so truthfully that he is called the \"Poet-Historian\" and the \"Poet-Sage.\" His friendship with the poet Li Bai is famous too.",
-    works:["Spring View","Ballad of the Army Carts","My Thatched Hut Is Torn by the Autumn Wind"], start:"\"Spring View,\" just eight lines about a country at war."}
-};
-
-// D=HP Dickens, M=HE Murasaki, A=HR Austen, S=SP Shakespeare, Do=SE Dostoevsky, H=SR Hemingway,
-// T=WP Tolstoy, G=WE García Márquez, Hu=WR Hugo, L=VP Lu Xun, N=VE Nietzsche, F=VR Du Fu
-const QUESTIONS = [
-  {q:"If you could only write one kind of thing for the rest of your life, it would be…", o:[
-    ["A huge novel that holds a whole society or many generations",["WP","WR","WE"]],
-    ["Short, sharp pieces: stories, essays or poems",["VP","SR","VR"]],
-    ["A long story released part by part, with readers waiting for the next piece",["HP","HE","SE"]],
-    ["Scenes full of voices: plays, dialogues and speeches",["SP","VE","HR"]]]},
-  {q:"Where do your best story ideas come from?", o:[
-    ["Hard things I've lived through myself",["HP","SE","VR"]],
-    ["Big moments in history",["WP","WR","SR"]],
-    ["Family stories and the people around me",["HR","WE","HE"]],
-    ["Old stories and beliefs I want to remake or challenge",["SP","VE","VP"]]]},
-  {q:"Which writing routine sounds most like you?", o:[
-    ["Make a plan or borrow a structure, then build on it",["HP","WP","SP"]],
-    ["Write in an intense burst once the idea grabs me",["SE","WE","VE"]],
-    ["Rewrite the same piece for months or even years",["HR","WR","SR"]],
-    ["Write in moments I steal from a busy job or life",["HE","VP","VR"]]]},
-  {q:"What kind of humor shows up in your writing?", o:[
-    ["Big comic characters and ridiculous situations",["HP","SP","WE"]],
-    ["Quiet, dry irony that some readers might miss",["HR","HE","SR"]],
-    ["Bitter mockery of how people really behave",["VP","VE","SE"]],
-    ["Hardly any. My writing is mostly serious.",["WP","VR","WR"]]]},
-  {q:"Which mood do you love creating?", o:[
-    ["Gentle sadness that nothing lasts forever",["HE","VR","WE"]],
-    ["Fever and tension, like someone on the edge",["SE","VE","VP"]],
-    ["Calm on the surface, strong feeling underneath",["SR","HR","WP"]],
-    ["Big, stormy and passionate",["WR","SP","HP"]]]},
-  {q:"Which big question would your story ask?", o:[
-    ["How should a person live, and what makes life meaningful?",["WP","VE","SE"]],
-    ["Why do the powerful get away with crushing the weak?",["HP","WR","VR"]],
-    ["What do love and longing do to us?",["HR","HE","SR"]],
-    ["Can anyone escape their fate, their family or their traditions?",["SP","WE","VP"]]]},
-  {q:"Where does your story take place?", o:[
-    ["Busy city streets: crowded, dirty and alive",["HP","WR","SE"]],
-    ["Palaces, courts or elegant drawing rooms",["HE","HR","SP"]],
-    ["Battlefields, the sea or roads far from home",["WP","SR","VR"]],
-    ["A small town or a lonely mountain, far from the center",["WE","VP","VE"]]]},
-  {q:"How does your narrator sound?", o:[
-    ["Talks to the reader directly, with opinions and even essays",["HP","WR","WP"]],
-    ["Lives inside one character's racing or ironic thoughts",["SE","HR","VP"]],
-    ["Stays in the background and lets words, silences or poems carry the feeling",["SR","SP","HE"]],
-    ["Sounds like a poet, a prophet or a storyteller of legends",["VR","VE","WE"]]]},
-  {q:"Which kind of sentences do you write?", o:[
-    ["Short and plain, every word doing work",["SR","VP","VR"]],
-    ["Long and rolling, full of detail",["WP","WR","WE"]],
-    ["Elegant and witty, with perfect balance",["HR","SP","HE"]],
-    ["Bursting with emotion, repeating for effect",["SE","VE","HP"]]]},
-  {q:"Who are you really writing for?", o:[
-    ["Everyone: big crowds, from the cheapest seats up",["SP","HP","WR"]],
-    ["A small circle who will catch every hint",["HE","HR","VE"]],
-    ["People who need to wake up and change",["VP","WP","SE"]],
-    ["Readers who can feel what's left unsaid",["SR","VR","WE"]]]},
-  {q:"Your main character is most likely…", o:[
-    ["A poor outsider or someone society laughs at",["HP","WR","VP"]],
-    ["A clever or noble person inside a polite society",["HR","HE","WP"]],
-    ["A tortured thinker or rebel who can't stop questioning",["SE","VE","SP"]],
-    ["An ordinary person quietly enduring hard times",["SR","VR","WE"]]]},
-  {q:"What is a writer's job?", o:[
-    ["To entertain people and make them care",["HP","SP","HR"]],
-    ["To tell the truth about war and history",["WP","VR","SR"]],
-    ["To shake people out of comfortable beliefs",["VP","VE","SE"]],
-    ["To keep memory and beauty from disappearing",["HE","WE","WR"]]]},
-  {q:"Which life experience sounds most like it would turn you into a writer?", o:[
-    ["My family loses its money, and I have to grow up fast",["HP","VP","SP"]],
-    ["Coming face to face with war or death",["SE","SR","WP"]],
-    ["Growing up in a house full of books and stories",["HR","WE","HE"]],
-    ["Wandering far from home, in exile or on the road",["WR","VE","VR"]]]},
-  {q:"What do you love describing most?", o:[
-    ["People's faces, habits and funny quirks",["HP","HR","WE"]],
-    ["Battles, crowds and history in motion",["WP","WR","SP"]],
-    ["Thoughts, arguments and inner struggles",["SE","VE","VP"]],
-    ["Nature: seasons, mountains, rivers and the sea",["VR","SR","HE"]]]},
-  {q:"How do you treat the rules of writing?", o:[
-    ["Master a strict form, like a fixed poem or verse pattern",["VR","SP","HE"]],
-    ["Break the old rules and start something new",["VP","VE","WE"]],
-    ["Mix everything: story, essay, history and philosophy",["WP","WR","SE"]],
-    ["Keep it clear enough that anyone can follow",["SR","HP","HR"]]]},
-  {q:"When is your story set?", o:[
-    ["In my own time and my own neighborhood",["HR","VP","SE"]],
-    ["A generation or two before I was born",["WP","WR","WE"]],
-    ["During hard times I lived through myself",["HP","SR","VR"]],
-    ["A distant or legendary past",["SP","HE","VE"]]]},
-  {q:"How would your writing life begin?", o:[
-    ["As a reporter, writing news for a paper",["SR","WE","HP"]],
-    ["As a poet, long before any novel",["WR","VR","HE"]],
-    ["Training for a completely different career first",["VP","SE","WP"]],
-    ["Close to words in another way: acting, teaching or writing for my family",["HR","SP","VE"]]]}
-];
-
-const $ = id => document.getElementById(id);
-let answers = [], idx = 0, shuffled = [];
-let lastResult = null;
-
-function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('on',s.id===id));window.scrollTo({top:0,behavior:'smooth'});}
-
-$('legend').innerHTML = Object.values(FOCUS).map(f=>`<div><strong style="color:${f.hex}">${f.name}</strong>${f.blurb}</div>`).join('');
-
-function start(){
-  answers = new Array(QUESTIONS.length).fill(null); idx = 0;
-  shuffled = QUESTIONS.map(q=>shuffle(q.o.map((o,i)=>i)));
-  show('quiz'); renderQ();
-}
-
-function renderQ(){
-  const q = QUESTIONS[idx];
-  $('bar').style.width = (idx/QUESTIONS.length*100)+'%';
-  $('qnum').textContent = `Question ${idx+1} of ${QUESTIONS.length}`;
-  $('back').disabled = idx===0;
-  $('qtext').textContent = q.q;
-  $('opts').innerHTML = '';
-  shuffled[idx].forEach((oi,i)=>{
-    const b = document.createElement('button');
-    b.className = 'opt' + (answers[idx]===oi?' picked':'');
-    b.innerHTML = `<span class="k">${'ABCDEFGHIJKL'[i]}</span><span></span>`;
-    b.lastChild.textContent = q.o[oi][0];
-    b.onclick = ()=>pick(oi, b);
-    $('opts').appendChild(b);
-  });
-}
-
-function pick(oi, el){
-  answers[idx] = oi;
-  document.querySelectorAll('.opt').forEach(o=>o.classList.remove('picked'));
-  el.classList.add('picked');
-  setTimeout(()=>{
-    if(idx < QUESTIONS.length-1){ idx++; renderQ(); }
-    else { $('bar').style.width='100%'; finish(); }
-  }, 220);
-}
-
-function score(){
-  const s = Object.fromEntries(Object.keys(TYPES).map(k=>[k,0]));
-  let tieSet = [], last = {};
-  QUESTIONS.forEach((q,i)=>{
-    if(answers[i]===null) return;
-    const keys = q.o[answers[i]][1];
-    const pts = q.w || 1;
-    keys.forEach(k=>{ s[k]+=pts; last[k]=i; });
-    if(/main character/.test(q.q)) tieSet = keys;
-  });
-  const ranked = Object.keys(s).sort((a,b)=>
-    s[b]-s[a] || tieSet.includes(b)-tieSet.includes(a) || (last[b]??-1)-(last[a]??-1));
-  return {scores:s, ranked};
-}
-
-function finish(){
-  const r = score();
-  lastResult = {key:r.ranked[0], r};
-  renderResult(r.ranked[0], r);
-  show('result');
-}
-
-function renderResult(key, r){
-  const t = TYPES[key], fo = FOCUS[key[0]], ap = APPROACH[key[1]];
-  const second = r ? TYPES[r.ranked[1]].name : null;
-  $('rtop').style.background = `linear-gradient(135deg, ${fo.hex}, ${shade(fo.hex,-28)})`;
-  $('rtop').innerHTML = `
-    <svg width="220" height="220" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 80 L70 30 L80 40 L30 90 Z M70 30 L78 12 L88 22 Z" fill="#fff"/></svg>
-    <div class="kicker">${r ? 'You write like' : 'Writer'} · ${t.years}</div>
-    <h2>${t.name}</h2>
-    <div class="tag">${t.tag}</div>
-    ${second ? `<div class="runner">…with a touch of <b>${second}</b></div>` : ''}
-    <div class="chips"><span>${fo.name} · ${fo.blurb}</span><span>${ap.name} · ${ap.blurb}</span></div>`;
-  $('rdesc').textContent = t.desc;
-  $('rfact').textContent = t.fact;
-  const b = BIO[key];
-  $('mtitle').textContent = 'Meet ' + t.name;
-  $('mfrom').textContent = b.from + ' · ' + t.years;
-  $('mabout').textContent = b.about;
-  $('mworks').innerHTML = b.works.map(()=>'<li></li>').join('');
-  [...$('mworks').children].forEach((li,i)=>li.textContent=b.works[i]);
-  $('mstart').textContent = b.start;
-  $('rstr').textContent = t.str;
-  $('rwatch').textContent = t.watch;
-  $('rtry').textContent = t.tryit;
-
-  $('mixcard').style.display = r ? '' : 'none';
-  if(r){
-    const top = r.ranked.slice(0,5), total = Object.values(r.scores).reduce((x,y)=>x+y,0)||1;
-    $('mix').innerHTML = top.map(k=>bar(TYPES[k].name, r.scores[k]/total, FOCUS[k[0]].hex)).join('');
-    requestAnimationFrame(()=>document.querySelectorAll('.fill').forEach(el=>el.style.width=el.dataset.w));
+(function () {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  function show(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  $('copy').style.display = r ? '' : 'none';
-  $('again').textContent = lastResult ? (r ? 'Retake the quiz' : '← Back to my result') : 'Take the quiz';
-  $('note').textContent = '';
+  function el(tag, cls, text) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
 
-  $('all').innerHTML = Object.entries(TYPES).map(([k,v])=>`
-    <button class="mini ${lastResult && k===lastResult.key?'me':''}" data-k="${k}">
-      <b><span class="sw" style="background:${FOCUS[k[0]].hex}"></span>${v.name}</b>
-      <small>${FOCUS[k[0]].name} + ${APPROACH[k[1]].name}${lastResult && k===lastResult.key?' · you':''}</small>
-    </button>`).join('');
-  document.querySelectorAll('.mini').forEach(el=>el.onclick=()=>{
-    const k=el.dataset.k;
-    if(lastResult && k===lastResult.key) renderResult(k,lastResult.r); else renderResult(k);
-    window.scrollTo({top:0,behavior:'smooth'});
-  });
-}
+  const loaded = typeof QuizEngine !== 'undefined' && typeof QUIZ_SETTINGS !== 'undefined' &&
+                 typeof QUIZ_QUESTIONS !== 'undefined' && typeof QUIZ_WRITERS !== 'undefined';
+  const DATA = loaded ? { settings: QUIZ_SETTINGS, questions: QUIZ_QUESTIONS, writers: QUIZ_WRITERS } : null;
+  // Two versions of the quiz: the short one leaves out the questions marked long: true.
+  const SHORT = loaded ? QuizEngine.compile(DATA, { long: false }) : null;
+  const LONG = loaded ? QuizEngine.compile(DATA, { long: true }) : null;
+  let model = SHORT;
+  if (!model || model.W < 2 || !model.questions.length) { show('broken'); return; }
 
-function bar(label, p, color){
-  const pct = Math.round(p*100);
-  return `<div class="bar"><span>${label}</span><div class="track"><div class="fill" data-w="${pct}%" style="background:${color}"></div></div><span class="pct">${pct}%</span></div>`;
-}
-function shade(hex, amt){
-  const n=parseInt(hex.slice(1),16);
-  const c=[n>>16,(n>>8)&255,n&255].map(v=>Math.max(0,Math.min(255,v+amt)));
-  return '#'+c.map(v=>v.toString(16).padStart(2,'0')).join('');
-}
+  const S = model.settings, STYLES = S.styles || {}, APPROACHES = S.approaches || {};
+  const styleOf = w => STYLES[w.focus] || { name: '', color: '#1f1a17', about: '' };
+  const colorOf = w => /^#[0-9a-f]{6}$/i.test(styleOf(w).color || '') ? styleOf(w).color : '#1f1a17';
+  function shade(hex, amt) {
+    const n = parseInt(hex.slice(1), 16);
+    return '#' + [n >> 16, (n >> 8) & 255, n & 255].map(v => Math.max(0, Math.min(255, v + amt)).toString(16).padStart(2, '0')).join('');
+  }
+  function shuffle(a) {
+    a = a.slice();
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  }
 
-$('start').onclick = start;
-$('back').onclick = ()=>{ if(idx>0){ idx--; renderQ(); } };
-$('again').onclick = ()=>{
-  if(lastResult && $('again').textContent.startsWith('←')) renderResult(lastResult.key,lastResult.r);
-  else start();
-};
-$('copy').onclick = async ()=>{
-  if(!lastResult) return;
-  const t = TYPES[lastResult.key], s2 = TYPES[lastResult.r.ranked[1]].name;
-  const txt = `I write like ${t.name}, with a touch of ${s2}! "${t.tag}" Take the W4GZ quiz and find your writer.`;
-  try{ await navigator.clipboard.writeText(txt); $('note').textContent='Copied! Paste it anywhere to share.'; }
-  catch(e){ $('note').textContent = txt; }
-};
+  /* ---------- intro ---------- */
+  const count = m => m.settings.linear ? m.settings.linearCount : m.settings.maxQuestions;
+  const minutes = m => Math.max(2, Math.round(count(m) / 4));
+  $('lead').textContent = 'Find the writer from history whose style is closest to yours.';
+  $('startShort').textContent = 'Short quiz · ' + count(SHORT) + ' questions';
+  $('startLong').textContent = 'Long quiz · ' + count(LONG) + ' questions';
+  $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Long: about ' + minutes(LONG) + ' minutes, and a closer match.';
+  $('alltitle').textContent = 'All ' + model.W + ' writers';
+
+  /* ---------- quiz ---------- */
+  let history = [];      // the answers so far: [{ q: question id, a: answer key }]
+  let picked = {};       // last answer chosen for each question, so "Back" can show it
+  let order = {};        // the shuffled answer order for each question in this run
+  let mine = null;       // my result, once the quiz is finished
+  let busy = false;
+
+  function start(which) { model = which; history = []; picked = {}; order = {}; mine = null; busy = false; show('quiz'); next(); }
+
+  // Ask the engine what happens next: another question, or the result.
+  function next() {
+    const s = QuizEngine.step(model, history);
+    if (s.done) {
+      $('bar').style.width = '100%';
+      mine = s.result;
+      renderResult(mine.top.writer, mine);
+      show('result');
+      return;
+    }
+    const q = s.question;
+    $('bar').style.width = (history.length / count(model) * 100) + '%';
+    $('qnum').textContent = 'Question ' + s.number + (S.linear ? ' of ' + count(model) : '');
+    $('back').disabled = history.length === 0;
+    $('qtext').textContent = q.text;
+    if (!order[q.id]) order[q.id] = shuffle(q.answers.filter(a => !a.none)).concat(q.answers.filter(a => a.none));
+    $('opts').innerHTML = '';
+    order[q.id].forEach((a, i) => {
+      const b = el('button', 'opt' + (a.none ? ' none' : '') + (picked[q.id] === a.key ? ' picked' : ''));
+      b.append(el('span', 'k', a.none ? '–' : ('ABCDEFGHIJKLMNOP'[i] || '•')), el('span', null, a.text));
+      b.onclick = () => pick(q.id, a.key, b);
+      $('opts').appendChild(b);
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function pick(qid, key, button) {
+    if (busy) return;
+    busy = true;
+    picked[qid] = key;
+    document.querySelectorAll('.opt').forEach(o => o.classList.remove('picked'));
+    button.classList.add('picked');
+    setTimeout(() => { busy = false; history.push({ q: qid, a: key }); next(); }, 220);
+  }
+
+  /* ---------- result ---------- */
+  // One row of "Your closest writers": how many of my answers this writer would also give.
+  function bar(name, agree, total, color) {
+    const row = el('div', 'bar'), track = el('div', 'track'), fill = el('div', 'fill');
+    fill.style.background = color;
+    fill.dataset.w = Math.max(Math.round(agree / total * 100), 2) + '%';
+    track.appendChild(fill);
+    row.append(el('span', null, name), track, el('span', 'pct', Math.round(agree / total * 100) + '%'));
+    return row;
+  }
+
+  // w = the writer to show. res = my result when it is my own writer, or null when browsing.
+  function renderResult(w, res) {
+    const st = styleOf(w), ap = APPROACHES[w.approach], color = colorOf(w);
+    const top = $('rtop');
+    top.style.background = 'linear-gradient(135deg, ' + color + ', ' + shade(color, -28) + ')';
+    top.innerHTML = '<svg width="220" height="220" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 80 L70 30 L80 40 L30 90 Z M70 30 L78 12 L88 22 Z" fill="#fff"/></svg>';
+    top.append(el('div', 'kicker', (res ? 'You write like' : 'Writer') + (w.years ? ' · ' + w.years : '')), el('h2', null, w.name), el('div', 'tag', w.tagline ? '\u201C' + w.tagline + '\u201D' : ''));
+    if (w.tagline) top.appendChild(el('div', 'tagby', '\u2014 ' + w.name + (w.taglineFrom ? ', ' + w.taglineFrom : '')));
+    if (res && res.runnerUp) {
+      const r = el('div', 'runner', '…with a touch of ');
+      r.appendChild(el('b', null, res.runnerUp.writer.name));
+      top.appendChild(r);
+    }
+    const chips = el('div', 'chips');
+    if (ap) chips.appendChild(el('span', null, ap.name + (ap.about ? ' · ' + ap.about : '')));
+    top.appendChild(chips);
+
+    $('rdesc').textContent = w.style || '';
+    $('rfact').textContent = w.trueStory || '';
+    $('mtitle').textContent = 'Meet ' + w.name;
+    $('mfrom').textContent = [w.from, w.years].filter(Boolean).join(' · ');
+    $('mabout').textContent = w.about || '';
+    $('mworks').innerHTML = '';
+    (w.works || []).forEach(t => $('mworks').appendChild(el('li', null, t)));
+    $('mstart').textContent = w.startWith || '';
+    $('rstr').textContent = w.superpower || '';
+    $('rwatch').textContent = w.watchOut || '';
+    $('rtry').textContent = w.exercise || '';
+
+    $('mixcard').style.display = res ? '' : 'none';
+    if (res) {
+      $('mix').innerHTML = '';
+      res.ranking.slice(0, 5).forEach(r => $('mix').appendChild(bar(r.writer.name, r.agree, res.questions, colorOf(r.writer))));
+      $('mixnote').textContent = 'You answered ' + res.questions + ' questions. The bars show what share of your answers each writer would also give.';
+      requestAnimationFrame(() => document.querySelectorAll('.fill').forEach(f => f.style.width = f.dataset.w));
+    }
+    $('copy').style.display = res ? '' : 'none';
+    $('again').textContent = mine ? (res ? 'Retake the quiz' : '← Back to my result') : 'Take the quiz';
+    $('note').textContent = '';
+
+    $('all').innerHTML = '';
+    model.writers.forEach(x => {
+      const me = mine && x.id === mine.top.id, sx = styleOf(x), ax = APPROACHES[x.approach];
+      const b = el('button', 'mini' + (me ? ' me' : '')), name = el('b'), sw = el('span', 'sw');
+      sw.style.background = colorOf(x);
+      name.append(sw, document.createTextNode(x.name));
+      b.append(name, el('small', null, [x.from, ax && ax.name].filter(Boolean).join(' · ') + (me ? ' · you' : '')));
+      b.onclick = () => { renderResult(x, me ? mine : null); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+      $('all').appendChild(b);
+    });
+  }
+
+  $('startShort').onclick = () => start(SHORT);
+  $('startLong').onclick = () => start(LONG);
+  $('back').onclick = () => { if (!busy && history.length) { history.pop(); next(); } };
+  $('again').onclick = () => {
+    if (mine && $('again').textContent.startsWith('←')) renderResult(mine.top.writer, mine);
+    else { mine = null; show('intro'); }
+  };
+  $('copy').onclick = async () => {
+    if (!mine) return;
+    const w = mine.top.writer;
+    const a = w.name, b = mine.runnerUp ? mine.runnerUp.writer.name : null;
+    // One of three sentences, picked at random each time the button is pressed.
+    const lines = b ? [
+      'Your writing reminds me of ' + a + ', with a hint of ' + b + '.',
+      'Your writing feels like ' + a + ' meeting ' + b + '.',
+      'Your style is part ' + a + ', part ' + b + ', and entirely your own.'
+    ] : ['Your writing reminds me of ' + a + '.'];
+    const text = lines[Math.floor(Math.random() * lines.length)] +
+      (w.tagline ? ' \u201C' + w.tagline + '\u201D \u2014 ' + a + (w.taglineFrom ? ', ' + w.taglineFrom : '') + '.' : '') +
+      ' Take the W4GZ quiz and find which writer you are.';
+    try { await navigator.clipboard.writeText(text); $('note').textContent = 'Copied: ' + text; }
+    catch (e) { $('note').textContent = text; }
+  };
+})();
 </script>
 </body>
 </html>
