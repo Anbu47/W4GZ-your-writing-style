@@ -8,6 +8,8 @@ A quiz exploring literary affinities with 50 writers. Choose the short 25-questi
 
 The source text, reference index, historical qualifications, and verification links are preserved in [docs/editorial-source.md](docs/editorial-source.md).
 
+The current edition incorporates the revised wording of questions 37 and 56 and more general answer choices across all 100 questions. Direct genre and setting giveaways were reduced while preserving all 624 writer assignments. The editorial source in this repository reflects these wording updates.
+
 ## Scoring
 
 For each administered question, a writer receives at most one match when named under the selected answer. An opportunity is an administered question where that writer appears under any answer. Rank by matches / opportunities, then higher match count. Remaining ties are explicitly reported; alphabetical IDs only determine display order within a tie. Writers with zero opportunities are excluded.
@@ -24,4 +26,5 @@ The result shows the three closest entries, each with a proportion and match/opp
 - `tools/editorial-test.js`: document fidelity, scoring, ties, and both quiz lengths.
 
 Run `node tools/editorial-test.js` to verify this edition. `check.html` and `tools/check.js` remain diagnostic tools; their simulated accuracy analysis was designed for the older probabilistic dataset and is not evidence of this editorial quiz’s validity.
+
 

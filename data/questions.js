@@ -7,19 +7,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A wide social novel"
+        "text": "A long piece connecting different lives and experiences"
       },
       {
         "key": "b",
-        "text": "A short story with a strong effect"
+        "text": "A brief piece built around one strong impression"
       },
       {
         "key": "c",
-        "text": "An intimate lyric poem"
+        "text": "A personal piece focused on a feeling or moment"
       },
       {
         "key": "d",
-        "text": "A play driven by speech and action"
+        "text": "A piece that unfolds through conversation and action"
       }
     ],
     "long": false
@@ -31,19 +31,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Family memory and inherited stories"
+        "text": "Stories passed down through a family"
       },
       {
         "key": "b",
-        "text": "A historical conflict"
+        "text": "A conflict from history"
       },
       {
         "key": "c",
-        "text": "An old story I could transform"
+        "text": "An older story I could make my own"
       },
       {
         "key": "d",
-        "text": "A small incident in ordinary life"
+        "text": "Something small that happens in everyday life"
       }
     ],
     "long": false
@@ -55,19 +55,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Plant clues that fit together at the end"
+        "text": "Arrange small details so their connections become clear later"
       },
       {
         "key": "b",
-        "text": "Follow one person's changing thoughts"
+        "text": "Follow someone's thoughts as they change"
       },
       {
         "key": "c",
-        "text": "Build a journey through a larger world"
+        "text": "Let each new experience open up a wider picture"
       },
       {
         "key": "d",
-        "text": "Make a brief image carry the meaning"
+        "text": "Build the piece around one meaningful image"
       }
     ],
     "long": false
@@ -79,19 +79,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Beauty touched by passing time"
+        "text": "Beauty mixed with the sadness of change"
       },
       {
         "key": "b",
-        "text": "Guilt and mounting psychological pressure"
+        "text": "Guilt and growing tension"
       },
       {
         "key": "c",
-        "text": "Feeling held beneath a restrained surface"
+        "text": "Strong feelings that remain mostly unspoken"
       },
       {
         "key": "d",
-        "text": "Wonder woven into everyday life"
+        "text": "A sense of wonder in ordinary life"
       }
     ],
     "long": false
@@ -103,19 +103,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Someone pushed aside by society"
+        "text": "Someone treated unfairly or left out"
       },
       {
         "key": "b",
-        "text": "Someone learning to judge others more fairly"
+        "text": "Someone learning to understand others better"
       },
       {
         "key": "c",
-        "text": "Someone wrestling with conscience"
+        "text": "Someone struggling to do what is right"
       },
       {
         "key": "d",
-        "text": "Someone trying to live through historical upheaval"
+        "text": "Someone living through major changes in society"
       }
     ],
     "long": false
@@ -127,19 +127,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Social irony and polished conversation"
+        "text": "Subtle jokes about manners and relationships"
       },
       {
         "key": "b",
-        "text": "Exaggerated habits and comic pretence"
+        "text": "Exaggerated characters and ridiculous behavior"
       },
       {
         "key": "c",
-        "text": "Satire that exposes accepted cruelty"
+        "text": "Sharp humor about unfair or cruel behavior"
       },
       {
         "key": "d",
-        "text": "Nonsense that makes familiar rules look strange"
+        "text": "Playful surprises that make familiar rules seem less certain"
       }
     ],
     "long": false
@@ -151,19 +151,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "What do I owe other people?"
+        "text": "What responsibilities do we have toward others?"
       },
       {
         "key": "b",
-        "text": "How does power justify its harm?"
+        "text": "Why do powerful people harm others and get away with it?"
       },
       {
         "key": "c",
-        "text": "What does longing do to a person?"
+        "text": "How does wanting someone or something change us?"
       },
       {
         "key": "d",
-        "text": "What happens when a community's traditions are challenged?"
+        "text": "What happens when people question their community's traditions?"
       }
     ],
     "long": false
@@ -175,19 +175,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A city full of intersecting lives"
+        "text": "A busy city where different lives cross paths"
       },
       {
         "key": "b",
-        "text": "A household shaped by status and relationships"
+        "text": "A familiar place shaped by relationships and expectations"
       },
       {
         "key": "c",
-        "text": "A road or sea journey"
+        "text": "A journey across unfamiliar places"
       },
       {
         "key": "d",
-        "text": "A landscape seen through a traveler's attention"
+        "text": "A landscape discovered by someone passing through"
       }
     ],
     "long": false
@@ -199,19 +199,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A narrator who comments on the story"
+        "text": "A storyteller who shares opinions along the way"
       },
       {
         "key": "b",
-        "text": "A first person voice whose judgment I might doubt"
+        "text": "Someone telling their own story who may not be reliable"
       },
       {
         "key": "c",
-        "text": "A voice close to the movement of thought"
+        "text": "A voice that follows a person's private thoughts"
       },
       {
         "key": "d",
-        "text": "A voice carrying a community's memories"
+        "text": "A voice that brings a community's shared past to life"
       }
     ],
     "long": false
@@ -223,19 +223,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Restraint and clear physical detail"
+        "text": "Clear language with carefully chosen details"
       },
       {
         "key": "b",
-        "text": "Long movements of thought and memory"
+        "text": "Flowing sentences that follow thoughts and memories"
       },
       {
         "key": "c",
-        "text": "Epigram and verbal balance"
+        "text": "Clever, neatly balanced expressions"
       },
       {
         "key": "d",
-        "text": "Rhythm, repetition and accumulating images"
+        "text": "Rhythm and repeated images that build a feeling"
       }
     ],
     "long": false
@@ -247,19 +247,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "One beloved person"
+        "text": "Someone I love or miss"
       },
       {
         "key": "b",
-        "text": "A broad human community"
+        "text": "People from many different walks of life"
       },
       {
         "key": "c",
-        "text": "A reader willing to question inherited values"
+        "text": "Someone willing to question familiar beliefs"
       },
       {
         "key": "d",
-        "text": "A reader willing to solve a literary puzzle"
+        "text": "Someone who enjoys discovering connections for themselves"
       }
     ],
     "long": false
@@ -271,19 +271,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Make social suffering visible"
+        "text": "Help people notice suffering and unfairness"
       },
       {
         "key": "b",
-        "text": "Expose hypocrisy"
+        "text": "Show the gap between what people preach and what they do"
       },
       {
         "key": "c",
-        "text": "Preserve and examine historical memory"
+        "text": "Keep the past alive and explore what it means"
       },
       {
         "key": "d",
-        "text": "Explore consciousness itself"
+        "text": "Explore how people think and experience life"
       }
     ],
     "long": false
@@ -295,19 +295,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Debt, inheritance or unequal wealth"
+        "text": "Money problems and unequal opportunities"
       },
       {
         "key": "b",
-        "text": "War or displacement"
+        "text": "Conflict or being forced to leave home"
       },
       {
         "key": "c",
-        "text": "Family duty that conflicts with desire"
+        "text": "A clash between family expectations and personal wishes"
       },
       {
         "key": "d",
-        "text": "Responsibility for something they created"
+        "text": "The consequences of something they brought into the world"
       }
     ],
     "long": false
@@ -319,19 +319,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A social gesture that gives someone away"
+        "text": "A small action that reveals someone's character"
       },
       {
         "key": "b",
-        "text": "A mind arguing with itself"
+        "text": "A person struggling with their own thoughts"
       },
       {
         "key": "c",
-        "text": "A seasonal detail"
+        "text": "A sign that the season is changing"
       },
       {
         "key": "d",
-        "text": "An ordinary object suddenly worth a poem"
+        "text": "Something ordinary that suddenly seems meaningful"
       }
     ],
     "long": false
@@ -343,19 +343,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Work within a demanding verse form"
+        "text": "Use established forms with care"
       },
       {
         "key": "b",
-        "text": "Stretch the freedom of the poetic line"
+        "text": "Allow the shape of the writing to follow the thought"
       },
       {
         "key": "c",
-        "text": "Turn a familiar genre against itself"
+        "text": "Play with the rules of a familiar kind of story"
       },
       {
         "key": "d",
-        "text": "Change style to fit each part of the work"
+        "text": "Use different styles for different parts"
       }
     ],
     "long": false
@@ -367,19 +367,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A society remembered across generations"
+        "text": "How earlier generations still shape the present"
       },
       {
         "key": "b",
-        "text": "An earlier historical period recreated in detail"
+        "text": "What life was like in another period"
       },
       {
         "key": "c",
-        "text": "A legendary world with its own history"
+        "text": "How a distant past gives the present a larger meaning"
       },
       {
         "key": "d",
-        "text": "A recent past recovered through memory"
+        "text": "How people remember their own past"
       }
     ],
     "long": false
@@ -391,19 +391,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Conversation and social observation"
+        "text": "Things people say and do around me"
       },
       {
         "key": "b",
-        "text": "Myths and older literature"
+        "text": "Ideas and stories that people have passed down over time"
       },
       {
         "key": "c",
-        "text": "A scientific possibility and its consequences"
+        "text": "An unfamiliar possibility and the consequences of exploring it"
       },
       {
         "key": "d",
-        "text": "A vivid image or emotional moment"
+        "text": "A striking image or a strong feeling"
       }
     ],
     "long": false
@@ -415,19 +415,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "An impossible event told in a matter of fact voice"
+        "text": "An unexpected event quietly changes what feels normal"
       },
       {
         "key": "b",
-        "text": "A carefully developed secondary world"
+        "text": "Unfamiliar experiences belong to a world that feels consistent"
       },
       {
         "key": "c",
-        "text": "A dream with playful but unsettling logic"
+        "text": "Events make emotional sense even when they seem unlikely"
       },
       {
         "key": "d",
-        "text": "A haunting tied to unresolved human harm"
+        "text": "Something from the past returns to trouble the present"
       }
     ],
     "long": false
@@ -439,19 +439,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A relationship changes after better self-understanding"
+        "text": "People understand themselves and each other better"
       },
       {
         "key": "b",
-        "text": "The mystery is explained"
+        "text": "The reader finally understands what happened"
       },
       {
         "key": "c",
-        "text": "A loss exposes the cost of earlier choices"
+        "text": "A painful loss reveals the consequences of earlier choices"
       },
       {
         "key": "d",
-        "text": "Life continues beyond an unresolved encounter"
+        "text": "Some questions remain open as life goes on"
       }
     ],
     "long": false
@@ -463,19 +463,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Use a recognizable spoken voice"
+        "text": "Choose words that sound like everyday speech"
       },
       {
         "key": "b",
-        "text": "Make the sounds part of the effect"
+        "text": "Choose words partly for how they sound"
       },
       {
         "key": "c",
-        "text": "Compress thought into a few charged words"
+        "text": "Say a lot with very few words"
       },
       {
         "key": "d",
-        "text": "Play with puns and unexpected meanings"
+        "text": "Play with words that have surprising meanings"
       }
     ],
     "long": false
@@ -487,19 +487,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A way to face moral responsibility"
+        "text": "An understanding of what we owe others"
       },
       {
         "key": "b",
-        "text": "A language for spiritual longing"
+        "text": "A way to express a longing for something beyond everyday life"
       },
       {
         "key": "c",
-        "text": "A way to understand memory"
+        "text": "A better understanding of how the past stays with us"
       },
       {
         "key": "d",
-        "text": "A way to question what counts as knowledge"
+        "text": "A reason to question what we think we know"
       }
     ],
     "long": false
@@ -511,19 +511,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Through performance on a stage"
+        "text": "Through words that gain energy when shared aloud"
       },
       {
         "key": "b",
-        "text": "Through a carefully constructed short tale"
+        "text": "Through a focused experience that holds their attention"
       },
       {
         "key": "c",
-        "text": "Through a long, immersive narrative"
+        "text": "Through something they can spend time getting absorbed in"
       },
       {
         "key": "d",
-        "text": "Through poems that reward rereading"
+        "text": "Through brief passages that reveal more each time they return"
       }
     ],
     "long": false
@@ -535,19 +535,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "One lyric speaker addressing someone"
+        "text": "One person expressing a feeling to someone"
       },
       {
         "key": "b",
-        "text": "A small circle under close observation"
+        "text": "A few people explored in depth"
       },
       {
         "key": "c",
-        "text": "Many connected people in a social world"
+        "text": "Many people whose lives connect"
       },
       {
         "key": "d",
-        "text": "A family whose history crosses generations"
+        "text": "People whose lives are connected across a long stretch of time"
       }
     ],
     "long": false
@@ -559,19 +559,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A doubt about something they took for granted"
+        "text": "A reason to rethink a familiar belief"
       },
       {
         "key": "b",
-        "text": "A sharper sense of social pretence"
+        "text": "A better eye for the roles people play in society"
       },
       {
         "key": "c",
-        "text": "An unsettling question about guilt or identity"
+        "text": "An uneasy question about who someone really is"
       },
       {
         "key": "d",
-        "text": "Compassion for people history has wounded"
+        "text": "More compassion for people shaped by painful history"
       }
     ],
     "long": false
@@ -583,19 +583,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Follow a journey from departure onward"
+        "text": "Move forward as the journey unfolds"
       },
       {
         "key": "b",
-        "text": "Expand a single day's experience"
+        "text": "Slow down to explore a short stretch of time"
       },
       {
         "key": "c",
-        "text": "Move through recollection and association"
+        "text": "Move between the present and remembered moments"
       },
       {
         "key": "d",
-        "text": "Return to patterns across generations"
+        "text": "Show familiar patterns returning as circumstances change"
       }
     ],
     "long": false
@@ -607,19 +607,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "An ironic general claim about social life"
+        "text": "A witty observation about how people behave"
       },
       {
         "key": "b",
-        "text": "An impossible event stated without fuss"
+        "text": "An unexpected situation presented without much explanation"
       },
       {
         "key": "c",
-        "text": "A voice confessing or defending itself"
+        "text": "Someone trying to explain or defend their actions"
       },
       {
         "key": "d",
-        "text": "A remembered moment that points toward a larger history"
+        "text": "A memory that hints at a much bigger story"
       }
     ],
     "long": true
@@ -631,19 +631,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A corrupt institution or inaccessible authority"
+        "text": "Unfair rules or people who are difficult to challenge"
       },
       {
         "key": "b",
-        "text": "A person's own self-deception"
+        "text": "A person refusing to see the truth about themselves"
       },
       {
         "key": "c",
-        "text": "A dangerous journey or physical ordeal"
+        "text": "Physical danger and difficult conditions"
       },
       {
         "key": "d",
-        "text": "A seductive power that tests moral choices"
+        "text": "An offer of power that makes doing the right thing harder"
       }
     ],
     "long": true
@@ -655,19 +655,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A few lines that reward close attention"
+        "text": "Something brief enough to take in slowly and reflect on"
       },
       {
         "key": "b",
-        "text": "A short tale built around one discovery"
+        "text": "Something focused enough to experience in one sitting"
       },
       {
         "key": "c",
-        "text": "A self-contained novel"
+        "text": "Something substantial that feels complete on its own"
       },
       {
         "key": "d",
-        "text": "An expansive narrative or sequence"
+        "text": "Something expansive that develops over a longer stretch"
       }
     ],
     "long": true
@@ -679,19 +679,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Reveal what people avoid saying"
+        "text": "Hint at feelings people cannot say directly"
       },
       {
         "key": "b",
-        "text": "Become a contest of wit and social performance"
+        "text": "Reveal character through wit and social maneuvering"
       },
       {
         "key": "c",
-        "text": "Give competing moral positions a voice"
+        "text": "Let people argue about what is right"
       },
       {
         "key": "d",
-        "text": "Let a distinctive spoken idiom shape the narration"
+        "text": "Give the story a recognizable everyday voice"
       }
     ],
     "long": true
@@ -703,19 +703,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Hold a fleeting seasonal perception"
+        "text": "Draw attention to a brief moment in the natural world"
       },
       {
         "key": "b",
-        "text": "Test endurance without promising comfort"
+        "text": "Challenge people's strength and patience"
       },
       {
         "key": "c",
-        "text": "Carry memory, desire or solitude"
+        "text": "Bring out memories, longing or loneliness"
       },
       {
         "key": "d",
-        "text": "Belong to a world threatened by domination"
+        "text": "Show what is at risk when people seek too much control"
       }
     ],
     "long": true
@@ -727,19 +727,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "As intimate desire and absence"
+        "text": "Through desire and the feeling of missing someone"
       },
       {
         "key": "b",
-        "text": "As a relationship shaped by money and judgment"
+        "text": "Through the practical pressures around a relationship"
       },
       {
         "key": "c",
-        "text": "As passion entangled with illusion or jealousy"
+        "text": "Through strong feelings mixed with jealousy or false expectations"
       },
       {
         "key": "d",
-        "text": "As longing that opens toward the divine"
+        "text": "As a longing for a deeper spiritual connection"
       }
     ],
     "long": true
@@ -751,19 +751,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Make mortality a direct philosophical encounter"
+        "text": "Explore what the end of life makes people realize"
       },
       {
         "key": "b",
-        "text": "Show its cost in war and heroic conflict"
+        "text": "Show the human cost of violent conflict"
       },
       {
         "key": "c",
-        "text": "Build a mystery around a killing"
+        "text": "Explore an unanswered question that makes people reconsider events"
       },
       {
         "key": "d",
-        "text": "Let the dead press on the lives of the living"
+        "text": "Show how the dead still affect the living"
       }
     ],
     "long": true
@@ -775,19 +775,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A child confronts an unequal adult world"
+        "text": "A young person faces unfairness in the adult world"
       },
       {
         "key": "b",
-        "text": "A child's adventure overturns ordinary logic"
+        "text": "An unfamiliar experience makes everyday rules seem questionable"
       },
       {
         "key": "c",
-        "text": "Memory follows the formation of a self"
+        "text": "Looking back shows how a person came to be who they are"
       },
       {
         "key": "d",
-        "text": "A fairy tale speaks across age groups"
+        "text": "An imaginative tale offers something to readers of different ages"
       }
     ],
     "long": true
@@ -799,19 +799,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Through an invented regime or political fable"
+        "text": "Let the relationships within a group reveal how power works"
       },
       {
         "key": "b",
-        "text": "Through a community facing colonial intrusion"
+        "text": "Show a community facing outside rule"
       },
       {
         "key": "c",
-        "text": "Through historical suffering and collective memory"
+        "text": "Connect personal suffering with shared history"
       },
       {
         "key": "d",
-        "text": "Through satire of oppressive assumptions"
+        "text": "Use humor to question harmful beliefs and customs"
       }
     ],
     "long": true
@@ -823,19 +823,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "As a journey toward spiritual understanding"
+        "text": "As a search for a deeper sense of meaning"
       },
       {
         "key": "b",
-        "text": "As a struggle involving doubt and moral responsibility"
+        "text": "As a struggle between belief, doubt and responsibility"
       },
       {
         "key": "c",
-        "text": "As a target when belief becomes hypocrisy"
+        "text": "By exposing people who use belief to hide bad behavior"
       },
       {
         "key": "d",
-        "text": "As a set of values to question radically"
+        "text": "By questioning values that people accept without thinking"
       }
     ],
     "long": true
@@ -847,19 +847,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A city mapped through ordinary lives"
+        "text": "A city brought to life through ordinary people's routines"
       },
       {
         "key": "b",
-        "text": "A household with a complex social order"
+        "text": "A shared place where relationships follow complicated rules"
       },
       {
         "key": "c",
-        "text": "A road linking unfamiliar encounters"
+        "text": "A route that brings different people and experiences together"
       },
       {
         "key": "d",
-        "text": "An invented land with deep linguistic history"
+        "text": "An unfamiliar place with a convincing sense of identity and history"
       }
     ],
     "long": true
@@ -867,23 +867,23 @@ var QUIZ_QUESTIONS = [
   {
     "id": "q037",
     "number": 37,
-    "text": "What shape would you give a larger body of work?",
+    "text": "How would you organize your writing across multiple books or collections?",
     "answers": [
       {
         "key": "a",
-        "text": "Return to and expand a poetic collection"
+        "text": "Keep developing one project as my ideas grow"
       },
       {
         "key": "b",
-        "text": "Build a linked sequence around memory and time"
+        "text": "Create connected pieces that explore how experience changes over time"
       },
       {
         "key": "c",
-        "text": "Develop recurring detectives across separate mysteries"
+        "text": "Return to familiar characters as they face different situations"
       },
       {
         "key": "d",
-        "text": "Try poetry, drama and fiction"
+        "text": "Try different forms to see what each one lets me express"
       }
     ],
     "long": true
@@ -895,19 +895,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "To follow an ingenious plot"
+        "text": "To find out what happens next"
       },
       {
         "key": "b",
-        "text": "To enjoy verbal comedy"
+        "text": "To enjoy clever and funny language"
       },
       {
         "key": "c",
-        "text": "To enter a distinctive poetic voice"
+        "text": "To experience a distinctive way of expressing feelings"
       },
       {
         "key": "d",
-        "text": "To wrestle with a difficult idea"
+        "text": "To think through a challenging idea"
       }
     ],
     "long": true
@@ -919,19 +919,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A woman claiming authority over her own life"
+        "text": "Someone seeking more control over her own life"
       },
       {
         "key": "b",
-        "text": "A community described from within its own traditions"
+        "text": "People telling their community's story from within"
       },
       {
         "key": "c",
-        "text": "A person burdened by enslavement and its aftermath"
+        "text": "Someone whose freedom and sense of self have been deeply harmed"
       },
       {
         "key": "d",
-        "text": "A socially excluded child or young person"
+        "text": "A young person who is excluded or underestimated"
       }
     ],
     "long": true
@@ -943,19 +943,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A journey made of successive encounters"
+        "text": "A journey shaped by one encounter after another"
       },
       {
         "key": "b",
-        "text": "Stories nested inside other people's accounts"
+        "text": "Different people telling stories within the main story"
       },
       {
         "key": "c",
-        "text": "A poem sequence or collection of short pieces"
+        "text": "Separate short pieces that form a larger whole"
       },
       {
         "key": "d",
-        "text": "A novel woven from memory and shifting viewpoints"
+        "text": "A longer story moving between memories and viewpoints"
       }
     ],
     "long": true
@@ -967,19 +967,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A character's name"
+        "text": "The name of an important character"
       },
       {
         "key": "b",
-        "text": "A journey or destination"
+        "text": "A place or a journey"
       },
       {
         "key": "c",
-        "text": "An image that gathers meaning as the work unfolds"
+        "text": "An image whose meaning grows during the story"
       },
       {
         "key": "d",
-        "text": "A conceptual space or paradox"
+        "text": "An intriguing idea that invites more than one interpretation"
       }
     ],
     "long": true
@@ -991,19 +991,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Let a fictional voice sound convincingly personal"
+        "text": "Make the voice feel intimate and personal"
       },
       {
         "key": "b",
-        "text": "Keep the storyteller's reliability uncertain"
+        "text": "Let readers wonder whether to trust the storyteller"
       },
       {
         "key": "c",
-        "text": "Make the narrator comment on storytelling itself"
+        "text": "Let the storyteller reflect on how stories are told"
       },
       {
         "key": "d",
-        "text": "Use more than one voice to contest the story"
+        "text": "Let different voices challenge each other's version"
       }
     ],
     "long": true
@@ -1015,19 +1015,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Youth leads toward an uncertain adult identity"
+        "text": "They grow up while searching for who they want to become"
       },
       {
         "key": "b",
-        "text": "A long family history reveals recurring patterns"
+        "text": "Their life forms part of a longer family pattern"
       },
       {
         "key": "c",
-        "text": "A crisis forces a reckoning with mortality"
+        "text": "A crisis makes them reconsider how they have lived"
       },
       {
         "key": "d",
-        "text": "A quest changes the meaning of home"
+        "text": "A journey changes what home means to them"
       }
     ],
     "long": true
@@ -1039,19 +1039,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Suspense built through plans and reversals"
+        "text": "Build tension through plans, surprises and setbacks"
       },
       {
         "key": "b",
-        "text": "A sustained inward movement"
+        "text": "Take time to explore thoughts and feelings"
       },
       {
         "key": "c",
-        "text": "A pause around one perception"
+        "text": "Pause over one meaningful moment"
       },
       {
         "key": "d",
-        "text": "An energetic sequence of discoveries"
+        "text": "Keep moving through new events and discoveries"
       }
     ],
     "long": true
@@ -1063,19 +1063,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Reshape remembered experience through fiction"
+        "text": "Turn memories into an invented story"
       },
       {
         "key": "b",
-        "text": "Use a lyric speaker to explore feeling"
+        "text": "Let a personal voice explore the feeling behind an experience"
       },
       {
         "key": "c",
-        "text": "Transform travel into reflective prose and verse"
+        "text": "Turn a journey into observations and reflections"
       },
       {
         "key": "d",
-        "text": "Use observed social life to build invented characters"
+        "text": "Build fictional characters from things I notice in real life"
       }
     ],
     "long": true
@@ -1087,19 +1087,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Beauty exists alongside impermanence"
+        "text": "Beautiful things do not last forever"
       },
       {
         "key": "b",
-        "text": "Human sympathy clashes with accepted social rules"
+        "text": "Caring for others can conflict with social expectations"
       },
       {
         "key": "c",
-        "text": "Ambition or desire undermines judgment"
+        "text": "Wanting something too much can cloud judgment"
       },
       {
         "key": "d",
-        "text": "Ordinary people face an incomprehensible system"
+        "text": "Ordinary people cannot make sense of the system around them"
       }
     ],
     "long": true
@@ -1111,19 +1111,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Their conversations expose status and self-deception"
+        "text": "Their conversations reveal status and hidden assumptions"
       },
       {
         "key": "b",
-        "text": "Their conflicting arguments deepen moral uncertainty"
+        "text": "Their disagreements make right and wrong harder to separate"
       },
       {
         "key": "c",
-        "text": "Their shared customs give the story its social logic"
+        "text": "Their customs shape what feels normal or acceptable"
       },
       {
         "key": "d",
-        "text": "Their memories complicate one person's account"
+        "text": "Their memories complicate the main character's version of events"
       }
     ],
     "long": true
@@ -1135,19 +1135,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Write speech designed for actors"
+        "text": "Make the words work well when spoken aloud"
       },
       {
         "key": "b",
-        "text": "Use rhythmic catalogues and a public poetic voice"
+        "text": "Build momentum through repeating and expanding patterns"
       },
       {
         "key": "c",
-        "text": "Make a short lyric intimate and songlike"
+        "text": "Make a brief passage feel intimate and musical"
       },
       {
         "key": "d",
-        "text": "Let repeated sounds intensify unease"
+        "text": "Repeat sounds to create tension or unease"
       }
     ],
     "long": true
@@ -1159,19 +1159,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Marriage and inheritance limit people's choices"
+        "text": "It affects who people can marry and how freely they can live"
       },
       {
         "key": "b",
-        "text": "Debt and consumption expose destructive illusions"
+        "text": "It feeds dreams that become costly and disappointing"
       },
       {
         "key": "c",
-        "text": "Greed becomes the engine of comedy"
+        "text": "It brings out greed in ways that are funny"
       },
       {
         "key": "d",
-        "text": "Poverty exposes failures of social justice"
+        "text": "It reveals how society fails people with very little"
       }
     ],
     "long": true
@@ -1183,19 +1183,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A created being asking for recognition"
+        "text": "An unfamiliar being trying to find acceptance"
       },
       {
         "key": "b",
-        "text": "Animals used to examine political power"
+        "text": "Creatures whose relationships reflect human behavior"
       },
       {
         "key": "c",
-        "text": "Talking creatures that disrupt human logic"
+        "text": "Creatures whose unexpected behavior challenges familiar assumptions"
       },
       {
         "key": "d",
-        "text": "Fantastic beings in a world with its own mythology"
+        "text": "Unfamiliar beings that feel at home in a convincing world"
       }
     ],
     "long": true
@@ -1207,19 +1207,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Follow its logic until it exposes its own absurdity"
+        "text": "Take the claim seriously until its problems become obvious"
       },
       {
         "key": "b",
-        "text": "Turn it into a clash of competing voices"
+        "text": "Let people with different views argue about it"
       },
       {
         "key": "c",
-        "text": "Imagine a fictional book that makes it seem plausible"
+        "text": "Explore an invented example in which the claim seems possible"
       },
       {
         "key": "d",
-        "text": "Show how institutions make people accept it"
+        "text": "Show how pressure from those in power makes people accept it"
       }
     ],
     "long": true
@@ -1231,19 +1231,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A taste or sensation that brings the past back"
+        "text": "A familiar sensation that brings back a memory"
       },
       {
         "key": "b",
-        "text": "A small clue everyone overlooked"
+        "text": "An overlooked detail that changes how events fit together"
       },
       {
         "key": "c",
-        "text": "A family name that keeps returning"
+        "text": "A small pattern that seems to repeat over time"
       },
       {
         "key": "d",
-        "text": "A proverb whose meaning changes in a crisis"
+        "text": "A familiar saying that takes on new meaning during a crisis"
       }
     ],
     "long": true
@@ -1255,19 +1255,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Describe an impossible transformation as routine"
+        "text": "Describe a startling change in a calm, ordinary way"
       },
       {
         "key": "b",
-        "text": "Look at language through a child's logic"
+        "text": "See familiar words and rules through a child's eyes"
       },
       {
         "key": "c",
-        "text": "Give a common object a generous poetic attention"
+        "text": "Look closely at an everyday object until it feels special"
       },
       {
         "key": "d",
-        "text": "Let a brief natural image shift perception"
+        "text": "Use a small detail in nature to change how we see things"
       }
     ],
     "long": true
@@ -1279,19 +1279,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Success cannot restore everything that was lost"
+        "text": "Winning cannot bring back everything they lost"
       },
       {
         "key": "b",
-        "text": "Social approval conflicts with conscience"
+        "text": "Doing what is right costs them other people's approval"
       },
       {
         "key": "c",
-        "text": "A plan for revenge changes the avenger"
+        "text": "Getting revenge changes them in ways they did not expect"
       },
       {
         "key": "d",
-        "text": "A great ambition carries a moral cost"
+        "text": "Reaching their goal has a serious moral cost"
       }
     ],
     "long": true
@@ -1303,19 +1303,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Let her insist on moral and emotional independence"
+        "text": "Show her holding on to her independence and self-respect"
       },
       {
         "key": "b",
-        "text": "Show the constraints of marriage and property"
+        "text": "Show how security and social expectations limit her options"
       },
       {
         "key": "c",
-        "text": "Place her suffering within family duty and exploitation"
+        "text": "Show the cost of family duty and being used by others"
       },
       {
         "key": "d",
-        "text": "Trace how racist ideals of beauty damage self-perception"
+        "text": "Show how unfair standards of beauty damage her sense of worth"
       }
     ],
     "long": true
@@ -1323,23 +1323,23 @@ var QUIZ_QUESTIONS = [
   {
     "id": "q056",
     "number": 56,
-    "text": "What would you do with a borrowed story?",
+    "text": "What happens when your character's beliefs are tested?",
     "answers": [
       {
         "key": "a",
-        "text": "Retell it in a different cultural and poetic form"
+        "text": "They put family duty ahead of personal happiness"
       },
       {
         "key": "b",
-        "text": "Use an ancient epic as a pattern for modern city life"
+        "text": "They question old beliefs while seeking independence"
       },
       {
         "key": "c",
-        "text": "Parody its heroic conventions"
+        "text": "They hold on to noble ideals despite repeated setbacks"
       },
       {
         "key": "d",
-        "text": "Reshape a known plot for the stage"
+        "text": "Their wish for power conflicts with their sense of right and wrong"
       }
     ],
     "long": true
@@ -1351,19 +1351,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A vast historical event and an intimate private life"
+        "text": "Large public events and small private moments"
       },
       {
         "key": "b",
-        "text": "A polished social surface and a concealed motive"
+        "text": "Polite behavior and hidden intentions"
       },
       {
         "key": "c",
-        "text": "A comic appearance and a painful exclusion"
+        "text": "Something funny on the surface and painful underneath"
       },
       {
         "key": "d",
-        "text": "An official account and a community's own story"
+        "text": "The official version of events and the community's experience"
       }
     ],
     "long": true
@@ -1375,19 +1375,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Let a fable reveal how power corrupts"
+        "text": "Use an imagined tale to show how power changes people"
       },
       {
         "key": "b",
-        "text": "Use a comic impostor to expose false virtue"
+        "text": "Use a funny character to expose false goodness"
       },
       {
         "key": "c",
-        "text": "Ask who bears responsibility rather than supply an easy answer"
+        "text": "Leave readers thinking about who should take responsibility"
       },
       {
         "key": "d",
-        "text": "Let a journey test a philosophy against suffering"
+        "text": "Let difficult experiences challenge a comforting belief"
       }
     ],
     "long": true
@@ -1399,19 +1399,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Whether a narrator understands their own motives"
+        "text": "Whether someone understands their own reasons for acting"
       },
       {
         "key": "b",
-        "text": "Whether an ordinary event contains a deeper revelation"
+        "text": "Whether a small event holds a larger meaning"
       },
       {
         "key": "c",
-        "text": "Whether a fictional world can be distinguished from a text"
+        "text": "Whether a story can change what people accept as real"
       },
       {
         "key": "d",
-        "text": "Whether a painful memory can ever have one final account"
+        "text": "Whether anyone can tell the whole truth about a painful memory"
       }
     ],
     "long": true
@@ -1423,19 +1423,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A restrained surface with strong feeling beneath"
+        "text": "Simple language with strong feeling underneath"
       },
       {
         "key": "b",
-        "text": "A compressed lyric with disruptive pauses"
+        "text": "Concentrated language with pauses that leave room for thought"
       },
       {
         "key": "c",
-        "text": "A broad, inclusive voice built from rhythmic lists"
+        "text": "An open, welcoming voice that builds a sense of connection"
       },
       {
         "key": "d",
-        "text": "A densely imagined world shaped by names and languages"
+        "text": "Careful details that make unfamiliar experiences feel fully real"
       }
     ],
     "long": true
@@ -1447,19 +1447,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A declaration of love that arrives at the wrong moment"
+        "text": "Feelings someone finds easier to write than say"
       },
       {
         "key": "b",
-        "text": "An increasingly consuming emotional attachment"
+        "text": "An attachment that grows harder to manage"
       },
       {
         "key": "c",
-        "text": "Testimony passed through several narrators"
+        "text": "An account that adds a new perspective to the story"
       },
       {
         "key": "d",
-        "text": "Information that makes someone revise an earlier judgment"
+        "text": "Information that changes how someone sees another person"
       }
     ],
     "long": true
@@ -1471,19 +1471,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A playful aside about the narrator's tastes and memories"
+        "text": "A personal aside that brings the storyteller closer to the reader"
       },
       {
         "key": "b",
-        "text": "A historical or social explanation"
+        "text": "Some background that helps explain the wider situation"
       },
       {
         "key": "c",
-        "text": "A teaching story that opens into a spiritual reflection"
+        "text": "A short example that invites reflection on life's meaning"
       },
       {
         "key": "d",
-        "text": "A doubt about who really wrote the account"
+        "text": "A question about where the story came from and whether to trust it"
       }
     ],
     "long": true
@@ -1495,19 +1495,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A gifted woman's performance carries feelings she cannot freely express"
+        "text": "It expresses feelings someone cannot easily say aloud"
       },
       {
         "key": "b",
-        "text": "Song and lyric become forms of devotional address"
+        "text": "It gives people a way to express trust, gratitude or hope"
       },
       {
         "key": "c",
-        "text": "A repeated sound deepens mourning"
+        "text": "It brings back a feeling of grief or loss"
       },
       {
         "key": "d",
-        "text": "Verse is exchanged as part of courtship"
+        "text": "It helps people express affection without speaking directly"
       }
     ],
     "long": true
@@ -1519,19 +1519,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A bargain that tests the limits of human ambition"
+        "text": "An agreement that offers more than someone can safely handle"
       },
       {
         "key": "b",
-        "text": "An oath of friendship tested by danger"
+        "text": "A promise to stand by a friend during difficult times"
       },
       {
         "key": "c",
-        "text": "A family obligation that demands personal sacrifice"
+        "text": "A duty to family that comes at a personal cost"
       },
       {
         "key": "d",
-        "text": "A commitment to carry a burden whose cost keeps growing"
+        "text": "A responsibility that becomes harder to carry over time"
       }
     ],
     "long": true
@@ -1543,19 +1543,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Frame a household's worldly life within a larger sense of illusion"
+        "text": "Make people question what they value in waking life"
       },
       {
         "key": "b",
-        "text": "Give a child's adventure a shifting, playful reality"
+        "text": "Let familiar rules turn strange and unpredictable"
       },
       {
         "key": "c",
-        "text": "Expose a guilty person's moral horror"
+        "text": "Bring hidden guilt or fear to the surface"
       },
       {
         "key": "d",
-        "text": "Make a dead beloved seem briefly present to a grieving hero"
+        "text": "Let someone feel close to a person they have lost"
       }
     ],
     "long": true
@@ -1567,19 +1567,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "The patient construction of revenge through a new identity"
+        "text": "The chance to rebuild a life while hiding a plan"
       },
       {
         "key": "b",
-        "text": "The gap between chivalric fantasy and ordinary reality"
+        "text": "The gap between who someone imagines they are and who they are"
       },
       {
         "key": "c",
-        "text": "A comic confusion about names and respectability"
+        "text": "The misunderstandings that arise when people make assumptions"
       },
       {
         "key": "d",
-        "text": "A returning traveler's ability to test loyalty"
+        "text": "The chance to find out whom someone can really trust"
       }
     ],
     "long": true
@@ -1591,19 +1591,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A speaker widens private distress into concern for others"
+        "text": "Personal hardship leads to greater concern for others"
       },
       {
         "key": "b",
-        "text": "An act of mercy unsettles a life governed by punishment"
+        "text": "Being shown mercy changes how someone lives"
       },
       {
         "key": "c",
-        "text": "Compassion crosses the boundary between a prince and the poor"
+        "text": "Kindness brings people together across social differences"
       },
       {
         "key": "d",
-        "text": "An offer of hospitality reveals the customs of a community"
+        "text": "Welcoming someone reveals what a community values"
       }
     ],
     "long": true
@@ -1615,19 +1615,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Let an absurd ideal coexist with courage and dignity"
+        "text": "Show that an unrealistic dream can still contain courage"
       },
       {
         "key": "b",
-        "text": "Expose the excuses they use to protect their pride"
+        "text": "Show how they explain away things that hurt their pride"
       },
       {
         "key": "c",
-        "text": "Show how the crowd's judgment can be mistaken"
+        "text": "Show that other people may have judged them unfairly"
       },
       {
         "key": "d",
-        "text": "Allow the reader to enjoy the narrator's affectionate irony"
+        "text": "Use gentle humor without taking away their humanity"
       }
     ],
     "long": true
@@ -1639,19 +1639,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A richly detailed household space for poetry and relationships"
+        "text": "A place where relationships and creative life develop"
       },
       {
         "key": "b",
-        "text": "A practical activity that answers grand philosophical claims"
+        "text": "A reminder that everyday action can matter more than grand ideas"
       },
       {
         "key": "c",
-        "text": "A place where childhood recollection and spiritual attention meet"
+        "text": "A place for memory, reflection and a sense of connection"
       },
       {
         "key": "d",
-        "text": "A miniature image that opens onto death or uncertainty"
+        "text": "A small living space that raises bigger questions about life and loss"
       }
     ],
     "long": true
@@ -1663,19 +1663,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Protecting a parent at the expense of personal happiness"
+        "text": "Choosing between a loved one's needs and personal happiness"
       },
       {
         "key": "b",
-        "text": "Refusing a powerful attachment because of an existing commitment"
+        "text": "Honoring an existing commitment despite new feelings"
       },
       {
         "key": "c",
-        "text": "Preserving self-respect when love demands moral compromise"
+        "text": "Keeping self-respect when a relationship asks too much"
       },
       {
         "key": "d",
-        "text": "Trying to reconcile erotic desire with family and social expectations"
+        "text": "Wanting something that conflicts with family and social expectations"
       }
     ],
     "long": true
@@ -1687,19 +1687,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Their attention to places, seasons and earlier poets"
+        "text": "How carefully they notice places and changes in nature"
       },
       {
         "key": "b",
-        "text": "Their ideals repeatedly colliding with what is actually there"
+        "text": "How they respond when reality challenges their ideals"
       },
       {
         "key": "c",
-        "text": "Their reliance on planning, technology and timetables"
+        "text": "How they solve problems and adapt their plans"
       },
       {
         "key": "d",
-        "text": "Their growing need to question a reassuring philosophy"
+        "text": "How new experiences change what they believe"
       }
     ],
     "long": true
@@ -1711,19 +1711,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Address it as a companion in a generous ode"
+        "text": "Speak to it as if it were a familiar companion"
       },
       {
         "key": "b",
-        "text": "Give it speech and a place in a fairy tale"
+        "text": "Give it a voice and feelings of its own"
       },
       {
         "key": "c",
-        "text": "Let it become an image in a spiritual teaching story"
+        "text": "Use it to help explore a deeper question about life"
       },
       {
         "key": "d",
-        "text": "Let a portrait bear the consequences its subject conceals"
+        "text": "Let it reveal something its owner tries to hide"
       }
     ],
     "long": true
@@ -1735,19 +1735,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Streets and businesses connect strangers through hidden histories"
+        "text": "Bring people with hidden connections into each other's lives"
       },
       {
         "key": "b",
-        "text": "A single day's routes connect several private consciousnesses"
+        "text": "Let different people's inner lives cross in a short time"
       },
       {
         "key": "c",
-        "text": "Ordinary places acquire correspondences with an ancient epic"
+        "text": "Connect everyday experiences with larger, familiar story patterns"
       },
       {
         "key": "d",
-        "text": "Offices and courtrooms become parts of an inaccessible system"
+        "text": "Make ordinary places part of a system people cannot understand"
       }
     ],
     "long": true
@@ -1759,19 +1759,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Test it against repeated disasters"
+        "text": "Show what happens when people try to live by it"
       },
       {
         "key": "b",
-        "text": "Present it as a brief, provocative challenge"
+        "text": "Turn it into a short, challenging statement"
       },
       {
         "key": "c",
-        "text": "Let passionate characters argue over its consequences"
+        "text": "Let different characters debate what it means"
       },
       {
         "key": "d",
-        "text": "Invent a fictional institution or text that takes it to an extreme"
+        "text": "Imagine a world where it is taken to its furthest conclusion"
       }
     ],
     "long": true
@@ -1783,19 +1783,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Names and events return across family generations"
+        "text": "Let similar situations return under different circumstances"
       },
       {
         "key": "b",
-        "text": "A refrain intensifies grief and obsession"
+        "text": "Repeat a phrase to deepen a strong feeling"
       },
       {
         "key": "c",
-        "text": "Parallel phrases accumulate into an expansive poetic voice"
+        "text": "Build a sense of connection through similar phrases"
       },
       {
         "key": "d",
-        "text": "Repeated encounters deepen a spiritual lesson"
+        "text": "Return to an experience until its deeper meaning becomes clearer"
       }
     ],
     "long": true
@@ -1807,19 +1807,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Let manners and small remarks reveal social ambition"
+        "text": "Let small remarks reveal what people want from each other"
       },
       {
         "key": "b",
-        "text": "Make the gathering part of a refined court world"
+        "text": "Show how customs and expectations shape their behavior"
       },
       {
         "key": "c",
-        "text": "Turn conversation into a display of sparkling social pretence"
+        "text": "Use witty conversation to reveal the roles they are playing"
       },
       {
         "key": "d",
-        "text": "Let private grief coexist with the public occasion"
+        "text": "Show private feelings beneath a public celebration"
       }
     ],
     "long": true
@@ -1831,19 +1831,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A bird's call or a frog's movement can transform a brief perception"
+        "text": "A small encounter with nature can change how we see a moment"
       },
       {
         "key": "b",
-        "text": "A creature can carry a lesson in a mystical narrative"
+        "text": "A creature's story can help us reflect on life"
       },
       {
         "key": "c",
-        "text": "A humanized animal can expose the machinery of power"
+        "text": "Relationships between creatures can reveal familiar human weaknesses"
       },
       {
         "key": "d",
-        "text": "A large fish can be both a worthy opponent and a test of endurance"
+        "text": "An encounter with nature can teach both endurance and respect"
       }
     ],
     "long": true
@@ -1855,19 +1855,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A damaged roof opens into concern for others without shelter"
+        "text": "Bad weather reveals how vulnerable people are"
       },
       {
         "key": "b",
-        "text": "A moonlit night awakens homesickness"
+        "text": "The atmosphere outside brings back feelings of missing home"
       },
       {
         "key": "c",
-        "text": "A storm intensifies an encounter with a feared creation"
+        "text": "A storm heightens fear and emotional tension"
       },
       {
         "key": "d",
-        "text": "Seasonal change gives emotional nuance to court life"
+        "text": "Changes outside quietly reflect changes between people"
       }
     ],
     "long": true
@@ -1879,19 +1879,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "They discover that social success has concealed an unlived life"
+        "text": "They begin to wonder whether they have lived meaningfully"
       },
       {
         "key": "b",
-        "text": "Their public charm depends on keeping moral damage invisible"
+        "text": "Their attractive public image hides troubling choices"
       },
       {
         "key": "c",
-        "text": "Their restored wealth allows them to pursue an elaborate reckoning"
+        "text": "Their new opportunities bring unfinished feelings back to the surface"
       },
       {
         "key": "d",
-        "text": "Their practiced sophistication fails when love becomes urgent"
+        "text": "Their confidence falls apart when they become emotionally vulnerable"
       }
     ],
     "long": true
@@ -1903,19 +1903,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A person is judged before anyone listens to their story"
+        "text": "People judge someone before trying to understand them"
       },
       {
         "key": "b",
-        "text": "A young person is treated as unworthy because of appearance"
+        "text": "Someone is left out because others dislike how they look"
       },
       {
         "key": "c",
-        "text": "Racialized beauty standards turn a child's gaze against herself"
+        "text": "Social ideals make someone feel unworthy of being loved"
       },
       {
         "key": "d",
-        "text": "A poet speaks of hardship intensified by war and displacement"
+        "text": "Difficult times leave people without a secure place to belong"
       }
     ],
     "long": true
@@ -1927,19 +1927,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A promise of secret knowledge tempts someone into destructive gambling"
+        "text": "It tempts someone to believe they can control the outcome"
       },
       {
         "key": "b",
-        "text": "A precisely timed journey becomes vulnerable to delays and surprises"
+        "text": "It disrupts a careful plan and forces people to adapt"
       },
       {
         "key": "c",
-        "text": "A small overlooked circumstance eventually unlocks the crime"
+        "text": "It brings attention to a detail that changes everything"
       },
       {
         "key": "d",
-        "text": "An encounter gives a spiritual teacher a new story to unfold"
+        "text": "It brings an unexpected encounter that invites deeper reflection"
       }
     ],
     "long": true
@@ -1951,19 +1951,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A supposed source that complicates the narrator's authority"
+        "text": "As a source that makes readers question whose version to trust"
       },
       {
         "key": "b",
-        "text": "An imaginary work that changes how reality is understood"
+        "text": "As an invented example that changes what seems possible"
       },
       {
         "key": "c",
-        "text": "An ancient epic whose pattern shadows a modern day"
+        "text": "As a familiar pattern that gives everyday events another layer"
       },
       {
         "key": "d",
-        "text": "A reading experience that feeds a character's romantic illusions"
+        "text": "As something a character reads that shapes their expectations"
       }
     ],
     "long": true
@@ -1975,19 +1975,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Let a short lyric make absence intensely present"
+        "text": "Express the strong feeling of someone's absence"
       },
       {
         "key": "b",
-        "text": "Let homesickness emerge from a familiar natural image"
+        "text": "Let familiar surroundings bring out the feeling of missing someone"
       },
       {
         "key": "c",
-        "text": "Let separation deepen spiritual longing"
+        "text": "Let separation become a search for deeper connection"
       },
       {
         "key": "d",
-        "text": "Let time reverse who loves and who refuses"
+        "text": "Show how time can reverse what two people want from each other"
       }
     ],
     "long": true
@@ -1999,19 +1999,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "The fragility of wealth in a declining household"
+        "text": "How easily a family's security and status can change"
       },
       {
         "key": "b",
-        "text": "An obsession with possessing and protecting money"
+        "text": "How strongly someone needs to possess and control things"
       },
       {
         "key": "c",
-        "text": "A costly ornament whose loss becomes an act of compassion"
+        "text": "What someone is willing to give up to help others"
       },
       {
         "key": "d",
-        "text": "An inheritance that changes the choices available to women"
+        "text": "How material security affects the choices people can make"
       }
     ],
     "long": true
@@ -2023,19 +2023,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A child's plain observation punctures collective pretence"
+        "text": "Someone says what others have been unwilling to admit"
       },
       {
         "key": "b",
-        "text": "A stage impostor's false virtue becomes visible"
+        "text": "A person's claim to goodness is exposed as false"
       },
       {
         "key": "c",
-        "text": "A proud person learns that their judgment was mistaken"
+        "text": "Someone realizes they have misjudged another person"
       },
       {
         "key": "d",
-        "text": "An apparent fool protects his self-image with a private fiction"
+        "text": "Someone invents a comforting explanation to protect their pride"
       }
     ],
     "long": true
@@ -2047,19 +2047,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "As a brief moment held in seasonal imagery"
+        "text": "Focus on one small detail that makes the moment memorable"
       },
       {
         "key": "b",
-        "text": "As an intimate address charged with desire and absence"
+        "text": "Let a personal voice express longing and absence"
       },
       {
         "key": "c",
-        "text": "As a refusal that reveals how much time has changed"
+        "text": "Show how people's feelings and circumstances have changed"
       },
       {
         "key": "d",
-        "text": "As a departure that leaves an old way of life behind"
+        "text": "Suggest that a familiar way of life is coming to an end"
       }
     ],
     "long": true
@@ -2071,19 +2071,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Names, languages and histories fit together"
+        "text": "Its details fit together and suggest a life beyond the page"
       },
       {
         "key": "b",
-        "text": "Technical details make an extraordinary voyage feel possible"
+        "text": "Its practical details make unusual events believable"
       },
       {
         "key": "c",
-        "text": "A town's family stories make marvels feel locally familiar"
+        "text": "The people who live there make unusual things feel familiar"
       },
       {
         "key": "d",
-        "text": "Daily rituals reveal the social order of a court"
+        "text": "Its everyday habits make relationships and expectations believable"
       }
     ],
     "long": true
@@ -2095,19 +2095,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Through a story whose concrete events open into another meaning"
+        "text": "Through an everyday story that suggests a deeper meaning"
       },
       {
         "key": "b",
-        "text": "Through an ordered journey with guides and moral encounters"
+        "text": "Through a journey that makes someone reconsider their choices"
       },
       {
         "key": "c",
-        "text": "Through a lyric offered as an act of devotion"
+        "text": "Through an intimate expression of trust, gratitude or hope"
       },
       {
         "key": "d",
-        "text": "Through a crisis that exposes the emptiness of an earlier life"
+        "text": "Through a crisis that changes what someone thinks matters"
       }
     ],
     "long": true
@@ -2119,19 +2119,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Make musical and poetic gifts vulnerable to exploitation"
+        "text": "Show how other people may take advantage of it"
       },
       {
         "key": "b",
-        "text": "Let artistic aspiration shape the formation of a young self"
+        "text": "Let it guide their search for an identity"
       },
       {
         "key": "c",
-        "text": "Make an exceptionally gifted mind restless with ordinary limits"
+        "text": "Make it drive them to push beyond ordinary limits"
       },
       {
         "key": "d",
-        "text": "Show how learning and sensitivity matter in a court's relationships"
+        "text": "Show how it affects their place in a social group"
       }
     ],
     "long": true
@@ -2143,19 +2143,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Loyalty survives intrigue, rivalry and danger"
+        "text": "They remain loyal through conflict and danger"
       },
       {
         "key": "b",
-        "text": "Companions support each other under the pressure of a quest"
+        "text": "They help each other carry a difficult responsibility"
       },
       {
         "key": "c",
-        "text": "An unequal pair keeps arguing about the meaning of their adventures"
+        "text": "They challenge each other's way of seeing the world"
       },
       {
         "key": "d",
-        "text": "Companionship is imaginatively found with the moon and one's shadow"
+        "text": "Someone discovers they can feel connected even when alone"
       }
     ],
     "long": true
@@ -2167,19 +2167,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Let a guilty mind reveal its excuses and torment"
+        "text": "Show their guilt and the reasons they use to defend themselves"
       },
       {
         "key": "b",
-        "text": "Show the appeal and moral danger of long-planned revenge"
+        "text": "Show how an understandable wish for justice can go too far"
       },
       {
         "key": "c",
-        "text": "Let a first person defense reveal more than it intends"
+        "text": "Let their own explanation reveal what they try to hide"
       },
       {
         "key": "d",
-        "text": "Place a destructive choice within a clash of personal fear and communal change"
+        "text": "Show how personal fears and social pressures shape their choices"
       }
     ],
     "long": true
@@ -2191,19 +2191,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A creature dismissed as ugly is not what others assume"
+        "text": "Someone dismissed by others deserves a second look"
       },
       {
         "key": "b",
-        "text": "Wealth and social position are unreliable guides to character"
+        "text": "Money and status do not tell us what a person is like"
       },
       {
         "key": "c",
-        "text": "A polished surface can conceal moral corruption"
+        "text": "An attractive surface can hide harmful behavior"
       },
       {
         "key": "d",
-        "text": "A supposedly inferior person exposes society's failure of compassion"
+        "text": "The way someone is treated reveals other people's lack of compassion"
       }
     ],
     "long": true
@@ -2215,19 +2215,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Let poetry or a musical performance carry the feeling"
+        "text": "Let a creative performance express what they cannot say"
       },
       {
         "key": "b",
-        "text": "Make pauses and evasions carry the conflict"
+        "text": "Let pauses and avoided topics carry the tension"
       },
       {
         "key": "c",
-        "text": "Show how political power restricts the available words"
+        "text": "Show how those in power limit what can be said"
       },
       {
         "key": "d",
-        "text": "Let an interior voice reveal what public behavior conceals"
+        "text": "Let the reader hear thoughts that remain hidden from others"
       }
     ],
     "long": true
@@ -2239,19 +2239,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A bargain offers experience beyond ordinary human limits"
+        "text": "Someone is offered a chance to escape ordinary limits"
       },
       {
         "key": "b",
-        "text": "A secret about winning at cards promises mastery over chance"
+        "text": "Someone believes they have found a shortcut to success"
       },
       {
         "key": "c",
-        "text": "An instrument of power offers an apparently useful shortcut"
+        "text": "Someone is offered power that could solve an immediate problem"
       },
       {
         "key": "d",
-        "text": "Romantic fantasies make consumption and escape seem irresistible"
+        "text": "Someone is drawn toward a more glamorous and satisfying life"
       }
     ],
     "long": true
@@ -2263,19 +2263,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Move from one damaged home toward compassion for many others"
+        "text": "Let one person's hardship lead to concern for many others"
       },
       {
         "key": "b",
-        "text": "Let one woman's suffering expose exploitation and social judgment"
+        "text": "Use a personal struggle to reveal unfair social expectations"
       },
       {
         "key": "c",
-        "text": "Connect an intimate story to the history of a continent"
+        "text": "Connect someone's experience with a much larger shared history"
       },
       {
         "key": "d",
-        "text": "Let personal memory reveal the lasting harm of enslavement"
+        "text": "Show how an unresolved past continues to shape private lives"
       }
     ],
     "long": true
@@ -2287,19 +2287,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "Whether heroic stories offer a reliable map for life"
+        "text": "Whether inspiring stories prepare people for real life"
       },
       {
         "key": "b",
-        "text": "Whether society's comforting account conceals cruelty"
+        "text": "Whether familiar explanations hide harm or unfairness"
       },
       {
         "key": "c",
-        "text": "Whether an inherited moral vocabulary deserves obedience"
+        "text": "Whether accepted rules deserve to be followed"
       },
       {
         "key": "d",
-        "text": "Whether the same words mean the same thing in another historical setting"
+        "text": "Whether words mean the same thing in different times and situations"
       }
     ],
     "long": true
@@ -2311,19 +2311,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "To guide a traveler through moral and spiritual consequences"
+        "text": "To make someone reflect on how they have lived"
       },
       {
         "key": "b",
-        "text": "To make unresolved historical violence present in a household"
+        "text": "To show that old harm has not been resolved"
       },
       {
         "key": "c",
-        "text": "To turn grief into an obsessive conversation with an absence"
+        "text": "To explore grief that someone cannot let go of"
       },
       {
         "key": "d",
-        "text": "To show an epic traveler meeting the limits of heroic life"
+        "text": "To remind someone that strength cannot overcome every limit"
       }
     ],
     "long": true
@@ -2335,19 +2335,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "It reveals a shift in social understanding"
+        "text": "It shows that someone now understands another person differently"
       },
       {
         "key": "b",
-        "text": "It suggests a feeling the dialogue never states"
+        "text": "It hints at a feeling that remains unspoken"
       },
       {
         "key": "c",
-        "text": "It captures the emotional precision of courtly relationships"
+        "text": "It reveals closeness or distance within a social relationship"
       },
       {
         "key": "d",
-        "text": "It suddenly brings an earlier life back into consciousness"
+        "text": "It unexpectedly brings back an earlier experience"
       }
     ],
     "long": true
@@ -2359,19 +2359,19 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "An avenger discovers that his plans harm people beyond their intended targets"
+        "text": "Someone's plan has consequences they did not intend"
       },
       {
         "key": "b",
-        "text": "A timetable is disrupted by distance, weather and accident"
+        "text": "Unexpected events disrupt a carefully arranged schedule"
       },
       {
         "key": "c",
-        "text": "A legal process proceeds without becoming comprehensible to its accused"
+        "text": "Someone cannot get clear answers from the system controlling their life"
       },
       {
         "key": "d",
-        "text": "A woman's choices are repeatedly constrained by others' power"
+        "text": "Other people's power keeps narrowing someone's choices"
       }
     ],
     "long": true
@@ -2383,22 +2383,21 @@ var QUIZ_QUESTIONS = [
     "answers": [
       {
         "key": "a",
-        "text": "A traveler pausing before a small sign of the season"
+        "text": "A quiet detail that captures a passing moment"
       },
       {
         "key": "b",
-        "text": "A person returning to practical work after philosophical disillusionment"
+        "text": "Someone choosing useful action over comforting theories"
       },
       {
         "key": "c",
-        "text": "A rejected declaration that shows how love has changed over time"
+        "text": "An exchange that shows how feelings have changed with time"
       },
       {
         "key": "d",
-        "text": "An image of longing that opens beyond the individual self"
+        "text": "A feeling of longing that suggests a connection beyond the self"
       }
     ],
     "long": true
   }
 ];
-

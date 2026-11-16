@@ -22,451 +22,451 @@ These selective mappings change the original scoring coverage. Treat the ranking
 
 ### 1. Which kind of writing would you most like to try?
 
-A. A wide social novel
+A. A long piece connecting different lives and experiences
 
 Maps to: Leo Tolstoy, Victor Hugo, Charles Dickens
 
-B. A short story with a strong effect
+B. A brief piece built around one strong impression
 
 Maps to: Edgar Allan Poe, Anton Chekhov, Jorge Luis Borges
 
-C. An intimate lyric poem
+C. A personal piece focused on a feeling or moment
 
 Maps to: Sappho, Emily Dickinson, Li Bai
 
-D. A play driven by speech and action
+D. A piece that unfolds through conversation and action
 
 Maps to: William Shakespeare, Molière, Oscar Wilde
 
 ### 2. Where would you look first for a story?
 
-A. Family memory and inherited stories
+A. Stories passed down through a family
 
 Maps to: Gabriel García Márquez, Toni Morrison, Cao Xueqin
 
-B. A historical conflict
+B. A conflict from history
 
 Maps to: Leo Tolstoy, Victor Hugo, Chinua Achebe
 
-C. An old story I could transform
+C. An older story I could make my own
 
 Maps to: William Shakespeare, Nguyễn Du, James Joyce
 
-D. A small incident in ordinary life
+D. Something small that happens in everyday life
 
 Maps to: Anton Chekhov, Jane Austen, Ernest Hemingway
 
 ### 3. How would you build a piece of writing?
 
-A. Plant clues that fit together at the end
+A. Arrange small details so their connections become clear later
 
 Maps to: Agatha Christie, Edgar Allan Poe
 
-B. Follow one person's changing thoughts
+B. Follow someone's thoughts as they change
 
 Maps to: Virginia Woolf, James Joyce, Marcel Proust
 
-C. Build a journey through a larger world
+C. Let each new experience open up a wider picture
 
 Maps to: Dante Alighieri, Homer, J.R.R. Tolkien
 
-D. Make a brief image carry the meaning
+D. Build the piece around one meaningful image
 
 Maps to: Matsuo Bashō, Emily Dickinson, Li Bai
 
 ### 4. Which emotional atmosphere draws you in?
 
-A. Beauty touched by passing time
+A. Beauty mixed with the sadness of change
 
 Maps to: Murasaki Shikibu, Cao Xueqin, Marcel Proust
 
-B. Guilt and mounting psychological pressure
+B. Guilt and growing tension
 
 Maps to: Fyodor Dostoevsky, Edgar Allan Poe
 
-C. Feeling held beneath a restrained surface
+C. Strong feelings that remain mostly unspoken
 
 Maps to: Ernest Hemingway, Anton Chekhov
 
-D. Wonder woven into everyday life
+D. A sense of wonder in ordinary life
 
 Maps to: Gabriel García Márquez, Hans Christian Andersen
 
 ### 5. Whose experience would you put at the center?
 
-A. Someone pushed aside by society
+A. Someone treated unfairly or left out
 
 Maps to: Charles Dickens, Victor Hugo, Mary Shelley
 
-B. Someone learning to judge others more fairly
+B. Someone learning to understand others better
 
 Maps to: Jane Austen
 
-C. Someone wrestling with conscience
+C. Someone struggling to do what is right
 
 Maps to: Fyodor Dostoevsky, Mark Twain
 
-D. Someone trying to live through historical upheaval
+D. Someone living through major changes in society
 
 Maps to: Chinua Achebe, Toni Morrison, Leo Tolstoy
 
 ### 6. What kind of humor would you write?
 
-A. Social irony and polished conversation
+A. Subtle jokes about manners and relationships
 
 Maps to: Jane Austen, Oscar Wilde
 
-B. Exaggerated habits and comic pretence
+B. Exaggerated characters and ridiculous behavior
 
 Maps to: Molière, Charles Dickens
 
-C. Satire that exposes accepted cruelty
+C. Sharp humor about unfair or cruel behavior
 
 Maps to: Voltaire, Lu Xun, Mark Twain
 
-D. Nonsense that makes familiar rules look strange
+D. Playful surprises that make familiar rules seem less certain
 
 Maps to: Lewis Carroll
 
 ### 7. Which question would drive your work?
 
-A. What do I owe other people?
+A. What responsibilities do we have toward others?
 
 Maps to: Fyodor Dostoevsky, Mary Shelley, Leo Tolstoy
 
-B. How does power justify its harm?
+B. Why do powerful people harm others and get away with it?
 
 Maps to: George Orwell, Lu Xun, Victor Hugo
 
-C. What does longing do to a person?
+C. How does wanting someone or something change us?
 
 Maps to: Sappho, Pablo Neruda, Rumi
 
-D. What happens when a community's traditions are challenged?
+D. What happens when people question their community's traditions?
 
 Maps to: Chinua Achebe, Cao Xueqin
 
 ### 8. Which setting would you explore?
 
-A. A city full of intersecting lives
+A. A busy city where different lives cross paths
 
 Maps to: Charles Dickens, James Joyce, Virginia Woolf
 
-B. A household shaped by status and relationships
+B. A familiar place shaped by relationships and expectations
 
 Maps to: Jane Austen, Murasaki Shikibu, Cao Xueqin
 
-C. A road or sea journey
+C. A journey across unfamiliar places
 
 Maps to: Homer, Jules Verne, Mark Twain
 
-D. A landscape seen through a traveler's attention
+D. A landscape discovered by someone passing through
 
 Maps to: Matsuo Bashō, Li Bai
 
 ### 9. Which narrative voice would you choose?
 
-A. A narrator who comments on the story
+A. A storyteller who shares opinions along the way
 
 Maps to: Miguel de Cervantes, Victor Hugo, Alexander Pushkin
 
-B. A first person voice whose judgment I might doubt
+B. Someone telling their own story who may not be reliable
 
 Maps to: Edgar Allan Poe, Lu Xun
 
-C. A voice close to the movement of thought
+C. A voice that follows a person's private thoughts
 
 Maps to: Virginia Woolf, James Joyce, Marcel Proust
 
-D. A voice carrying a community's memories
+D. A voice that brings a community's shared past to life
 
 Maps to: Chinua Achebe, Toni Morrison, Gabriel García Márquez
 
 ### 10. What would your sentences aim for?
 
-A. Restraint and clear physical detail
+A. Clear language with carefully chosen details
 
 Maps to: Ernest Hemingway, George Orwell
 
-B. Long movements of thought and memory
+B. Flowing sentences that follow thoughts and memories
 
 Maps to: Marcel Proust, Virginia Woolf
 
-C. Epigram and verbal balance
+C. Clever, neatly balanced expressions
 
 Maps to: Oscar Wilde, Voltaire
 
-D. Rhythm, repetition and accumulating images
+D. Rhythm and repeated images that build a feeling
 
 Maps to: Walt Whitman, Pablo Neruda
 
 ### 11. Who would you imagine addressing?
 
-A. One beloved person
+A. Someone I love or miss
 
 Maps to: Sappho, Pablo Neruda
 
-B. A broad human community
+B. People from many different walks of life
 
 Maps to: Walt Whitman, Rabindranath Tagore
 
-C. A reader willing to question inherited values
+C. Someone willing to question familiar beliefs
 
 Maps to: Friedrich Nietzsche, Voltaire
 
-D. A reader willing to solve a literary puzzle
+D. Someone who enjoys discovering connections for themselves
 
 Maps to: Jorge Luis Borges, Agatha Christie
 
 ### 12. What would you most want your writing to do?
 
-A. Make social suffering visible
+A. Help people notice suffering and unfairness
 
 Maps to: Charles Dickens, Du Fu, Victor Hugo
 
-B. Expose hypocrisy
+B. Show the gap between what people preach and what they do
 
 Maps to: Molière, Voltaire, Lu Xun
 
-C. Preserve and examine historical memory
+C. Keep the past alive and explore what it means
 
 Maps to: Toni Morrison, Gabriel García Márquez, Chinua Achebe
 
-D. Explore consciousness itself
+D. Explore how people think and experience life
 
 Maps to: Virginia Woolf, James Joyce, Marcel Proust
 
 ### 13. Which pressure would you give your characters?
 
-A. Debt, inheritance or unequal wealth
+A. Money problems and unequal opportunities
 
 Maps to: Jane Austen, Charles Dickens, Gustave Flaubert
 
-B. War or displacement
+B. Conflict or being forced to leave home
 
 Maps to: Leo Tolstoy, Du Fu, Homer
 
-C. Family duty that conflicts with desire
+C. A clash between family expectations and personal wishes
 
 Maps to: Nguyễn Du, Cao Xueqin
 
-D. Responsibility for something they created
+D. The consequences of something they brought into the world
 
 Maps to: Mary Shelley
 
 ### 14. What would you notice first in a scene?
 
-A. A social gesture that gives someone away
+A. A small action that reveals someone's character
 
 Maps to: Jane Austen, Gustave Flaubert, Marcel Proust
 
-B. A mind arguing with itself
+B. A person struggling with their own thoughts
 
 Maps to: Fyodor Dostoevsky, William Shakespeare
 
-C. A seasonal detail
+C. A sign that the season is changing
 
 Maps to: Matsuo Bashō, Du Fu, Murasaki Shikibu
 
-D. An ordinary object suddenly worth a poem
+D. Something ordinary that suddenly seems meaningful
 
 Maps to: Pablo Neruda, Emily Dickinson
 
 ### 15. How would you use literary conventions?
 
-A. Work within a demanding verse form
+A. Use established forms with care
 
 Maps to: Dante Alighieri, Du Fu, Nguyễn Du
 
-B. Stretch the freedom of the poetic line
+B. Allow the shape of the writing to follow the thought
 
 Maps to: Walt Whitman
 
-C. Turn a familiar genre against itself
+C. Play with the rules of a familiar kind of story
 
 Maps to: Miguel de Cervantes, Lewis Carroll
 
-D. Change style to fit each part of the work
+D. Use different styles for different parts
 
 Maps to: James Joyce
 
 ### 16. Which relationship to the past interests you?
 
-A. A society remembered across generations
+A. How earlier generations still shape the present
 
 Maps to: Gabriel García Márquez, Toni Morrison
 
-B. An earlier historical period recreated in detail
+B. What life was like in another period
 
 Maps to: Leo Tolstoy, Alexandre Dumas
 
-C. A legendary world with its own history
+C. How a distant past gives the present a larger meaning
 
 Maps to: Homer, J.R.R. Tolkien
 
-D. A recent past recovered through memory
+D. How people remember their own past
 
 Maps to: Marcel Proust, Virginia Woolf
 
 ### 17. What would be your starting material?
 
-A. Conversation and social observation
+A. Things people say and do around me
 
 Maps to: Jane Austen, Anton Chekhov
 
-B. Myths and older literature
+B. Ideas and stories that people have passed down over time
 
 Maps to: James Joyce, Dante Alighieri
 
-C. A scientific possibility and its consequences
+C. An unfamiliar possibility and the consequences of exploring it
 
 Maps to: Jules Verne, Mary Shelley
 
-D. A vivid image or emotional moment
+D. A striking image or a strong feeling
 
 Maps to: Matsuo Bashō, Sappho, Emily Dickinson
 
 ### 18. How would the unusual enter your work?
 
-A. An impossible event told in a matter of fact voice
+A. An unexpected event quietly changes what feels normal
 
 Maps to: Franz Kafka, Gabriel García Márquez
 
-B. A carefully developed secondary world
+B. Unfamiliar experiences belong to a world that feels consistent
 
 Maps to: J.R.R. Tolkien
 
-C. A dream with playful but unsettling logic
+C. Events make emotional sense even when they seem unlikely
 
 Maps to: Lewis Carroll
 
-D. A haunting tied to unresolved human harm
+D. Something from the past returns to trouble the present
 
 Maps to: Toni Morrison, Edgar Allan Poe
 
 ### 19. Which ending would satisfy your story?
 
-A. A relationship changes after better self-understanding
+A. People understand themselves and each other better
 
 Maps to: Jane Austen, Charlotte Brontë
 
-B. The mystery is explained
+B. The reader finally understands what happened
 
 Maps to: Agatha Christie
 
-C. A loss exposes the cost of earlier choices
+C. A painful loss reveals the consequences of earlier choices
 
 Maps to: William Shakespeare, Gustave Flaubert, Chinua Achebe
 
-D. Life continues beyond an unresolved encounter
+D. Some questions remain open as life goes on
 
 Maps to: Anton Chekhov
 
 ### 20. How would you choose your words?
 
-A. Use a recognizable spoken voice
+A. Choose words that sound like everyday speech
 
 Maps to: Mark Twain
 
-B. Make the sounds part of the effect
+B. Choose words partly for how they sound
 
 Maps to: Edgar Allan Poe, Sappho
 
-C. Compress thought into a few charged words
+C. Say a lot with very few words
 
 Maps to: Emily Dickinson, Matsuo Bashō
 
-D. Play with puns and unexpected meanings
+D. Play with words that have surprising meanings
 
 Maps to: Lewis Carroll, James Joyce, William Shakespeare
 
 ### 21. What would you be searching for on the page?
 
-A. A way to face moral responsibility
+A. An understanding of what we owe others
 
 Maps to: Leo Tolstoy, Fyodor Dostoevsky
 
-B. A language for spiritual longing
+B. A way to express a longing for something beyond everyday life
 
 Maps to: Rumi, Rabindranath Tagore, Dante Alighieri
 
-C. A way to understand memory
+C. A better understanding of how the past stays with us
 
 Maps to: Marcel Proust, Toni Morrison
 
-D. A way to question what counts as knowledge
+D. A reason to question what we think we know
 
 Maps to: Jorge Luis Borges, Friedrich Nietzsche
 
 ### 22. How would you want a work to reach readers?
 
-A. Through performance on a stage
+A. Through words that gain energy when shared aloud
 
 Maps to: William Shakespeare, Molière
 
-B. Through a carefully constructed short tale
+B. Through a focused experience that holds their attention
 
 Maps to: Edgar Allan Poe, Jorge Luis Borges
 
-C. Through a long, immersive narrative
+C. Through something they can spend time getting absorbed in
 
 Maps to: Leo Tolstoy, Cao Xueqin
 
-D. Through poems that reward rereading
+D. Through brief passages that reveal more each time they return
 
 Maps to: Emily Dickinson, Du Fu
 
 ### 23. How large would your cast be?
 
-A. One lyric speaker addressing someone
+A. One person expressing a feeling to someone
 
 Maps to: Sappho, Li Bai
 
-B. A small circle under close observation
+B. A few people explored in depth
 
 Maps to: Jane Austen, Anton Chekhov
 
-C. Many connected people in a social world
+C. Many people whose lives connect
 
 Maps to: Charles Dickens, Leo Tolstoy, Cao Xueqin
 
-D. A family whose history crosses generations
+D. People whose lives are connected across a long stretch of time
 
 Maps to: Gabriel García Márquez, Toni Morrison
 
 ### 24. What would you want readers to carry away?
 
-A. A doubt about something they took for granted
+A. A reason to rethink a familiar belief
 
 Maps to: Voltaire, Friedrich Nietzsche, Lu Xun
 
-B. A sharper sense of social pretence
+B. A better eye for the roles people play in society
 
 Maps to: Molière, Oscar Wilde, Jane Austen
 
-C. An unsettling question about guilt or identity
+C. An uneasy question about who someone really is
 
 Maps to: Edgar Allan Poe, Franz Kafka
 
-D. Compassion for people history has wounded
+D. More compassion for people shaped by painful history
 
 Maps to: Toni Morrison, Du Fu, Victor Hugo
 
 ### 25. How would time move through your story?
 
-A. Follow a journey from departure onward
+A. Move forward as the journey unfolds
 
 Maps to: Homer, Dante Alighieri, Jules Verne
 
-B. Expand a single day's experience
+B. Slow down to explore a short stretch of time
 
 Maps to: James Joyce, Virginia Woolf
 
-C. Move through recollection and association
+C. Move between the present and remembered moments
 
 Maps to: Marcel Proust, Toni Morrison
 
-D. Return to patterns across generations
+D. Show familiar patterns returning as circumstances change
 
 Maps to: Gabriel García Márquez
 
@@ -474,451 +474,451 @@ Maps to: Gabriel García Márquez
 
 ### 26. Which opening would you try?
 
-A. An ironic general claim about social life
+A. A witty observation about how people behave
 
 Maps to: Jane Austen
 
-B. An impossible event stated without fuss
+B. An unexpected situation presented without much explanation
 
 Maps to: Franz Kafka
 
-C. A voice confessing or defending itself
+C. Someone trying to explain or defend their actions
 
 Maps to: Edgar Allan Poe
 
-D. A remembered moment that points toward a larger history
+D. A memory that hints at a much bigger story
 
 Maps to: Gabriel García Márquez, Marcel Proust
 
 ### 27. What kind of opposition would drive the plot?
 
-A. A corrupt institution or inaccessible authority
+A. Unfair rules or people who are difficult to challenge
 
 Maps to: Franz Kafka, George Orwell, Victor Hugo
 
-B. A person's own self-deception
+B. A person refusing to see the truth about themselves
 
 Maps to: Jane Austen, Gustave Flaubert, Fyodor Dostoevsky
 
-C. A dangerous journey or physical ordeal
+C. Physical danger and difficult conditions
 
 Maps to: Homer, Jules Verne, Ernest Hemingway
 
-D. A seductive power that tests moral choices
+D. An offer of power that makes doing the right thing harder
 
 Maps to: J.R.R. Tolkien, Johann Wolfgang von Goethe
 
 ### 28. What size of work appeals to you?
 
-A. A few lines that reward close attention
+A. Something brief enough to take in slowly and reflect on
 
 Maps to: Matsuo Bashō, Emily Dickinson, Sappho
 
-B. A short tale built around one discovery
+B. Something focused enough to experience in one sitting
 
 Maps to: Jorge Luis Borges, Edgar Allan Poe, Anton Chekhov
 
-C. A self-contained novel
+C. Something substantial that feels complete on its own
 
 Maps to: Jane Austen, Gustave Flaubert, Chinua Achebe
 
-D. An expansive narrative or sequence
+D. Something expansive that develops over a longer stretch
 
 Maps to: Marcel Proust, Leo Tolstoy, Cao Xueqin
 
 ### 29. What should dialogue do?
 
-A. Reveal what people avoid saying
+A. Hint at feelings people cannot say directly
 
 Maps to: Ernest Hemingway, Anton Chekhov
 
-B. Become a contest of wit and social performance
+B. Reveal character through wit and social maneuvering
 
 Maps to: Oscar Wilde, Molière
 
-C. Give competing moral positions a voice
+C. Let people argue about what is right
 
 Maps to: Fyodor Dostoevsky, William Shakespeare
 
-D. Let a distinctive spoken idiom shape the narration
+D. Give the story a recognizable everyday voice
 
 Maps to: Mark Twain
 
 ### 30. What role would nature play?
 
-A. Hold a fleeting seasonal perception
+A. Draw attention to a brief moment in the natural world
 
 Maps to: Matsuo Bashō, Du Fu
 
-B. Test endurance without promising comfort
+B. Challenge people's strength and patience
 
 Maps to: Ernest Hemingway
 
-C. Carry memory, desire or solitude
+C. Bring out memories, longing or loneliness
 
 Maps to: Li Bai, Pablo Neruda
 
-D. Belong to a world threatened by domination
+D. Show what is at risk when people seek too much control
 
 Maps to: J.R.R. Tolkien
 
 ### 31. How would you write about love?
 
-A. As intimate desire and absence
+A. Through desire and the feeling of missing someone
 
 Maps to: Sappho, Pablo Neruda
 
-B. As a relationship shaped by money and judgment
+B. Through the practical pressures around a relationship
 
 Maps to: Jane Austen
 
-C. As passion entangled with illusion or jealousy
+C. Through strong feelings mixed with jealousy or false expectations
 
 Maps to: Gustave Flaubert, Marcel Proust, Johann Wolfgang von Goethe
 
-D. As longing that opens toward the divine
+D. As a longing for a deeper spiritual connection
 
 Maps to: Rumi, Rabindranath Tagore
 
 ### 32. How would you approach death?
 
-A. Make mortality a direct philosophical encounter
+A. Explore what the end of life makes people realize
 
 Maps to: Leo Tolstoy, Emily Dickinson
 
-B. Show its cost in war and heroic conflict
+B. Show the human cost of violent conflict
 
 Maps to: Homer, Du Fu
 
-C. Build a mystery around a killing
+C. Explore an unanswered question that makes people reconsider events
 
 Maps to: Agatha Christie, Edgar Allan Poe
 
-D. Let the dead press on the lives of the living
+D. Show how the dead still affect the living
 
 Maps to: Toni Morrison, William Shakespeare
 
 ### 33. How would childhood enter your work?
 
-A. A child confronts an unequal adult world
+A. A young person faces unfairness in the adult world
 
 Maps to: Charles Dickens, Mark Twain
 
-B. A child's adventure overturns ordinary logic
+B. An unfamiliar experience makes everyday rules seem questionable
 
 Maps to: Lewis Carroll
 
-C. Memory follows the formation of a self
+C. Looking back shows how a person came to be who they are
 
 Maps to: James Joyce, Marcel Proust
 
-D. A fairy tale speaks across age groups
+D. An imaginative tale offers something to readers of different ages
 
 Maps to: Hans Christian Andersen, Oscar Wilde
 
 ### 34. How would politics enter your writing?
 
-A. Through an invented regime or political fable
+A. Let the relationships within a group reveal how power works
 
 Maps to: George Orwell
 
-B. Through a community facing colonial intrusion
+B. Show a community facing outside rule
 
 Maps to: Chinua Achebe
 
-C. Through historical suffering and collective memory
+C. Connect personal suffering with shared history
 
 Maps to: Toni Morrison, Pablo Neruda
 
-D. Through satire of oppressive assumptions
+D. Use humor to question harmful beliefs and customs
 
 Maps to: Lu Xun, Voltaire
 
 ### 35. How would you handle faith?
 
-A. As a journey toward spiritual understanding
+A. As a search for a deeper sense of meaning
 
 Maps to: Dante Alighieri, Rumi, Rabindranath Tagore
 
-B. As a struggle involving doubt and moral responsibility
+B. As a struggle between belief, doubt and responsibility
 
 Maps to: Fyodor Dostoevsky, Leo Tolstoy
 
-C. As a target when belief becomes hypocrisy
+C. By exposing people who use belief to hide bad behavior
 
 Maps to: Molière, Voltaire
 
-D. As a set of values to question radically
+D. By questioning values that people accept without thinking
 
 Maps to: Friedrich Nietzsche
 
 ### 36. What kind of place could sustain a whole book?
 
-A. A city mapped through ordinary lives
+A. A city brought to life through ordinary people's routines
 
 Maps to: James Joyce, Virginia Woolf
 
-B. A household with a complex social order
+B. A shared place where relationships follow complicated rules
 
 Maps to: Cao Xueqin, Murasaki Shikibu
 
-C. A road linking unfamiliar encounters
+C. A route that brings different people and experiences together
 
 Maps to: Miguel de Cervantes, Matsuo Bashō
 
-D. An invented land with deep linguistic history
+D. An unfamiliar place with a convincing sense of identity and history
 
 Maps to: J.R.R. Tolkien
 
-### 37. What shape would you give a larger body of work?
+### 37. How would you organize your writing across multiple books or collections?
 
-A. Return to and expand a poetic collection
+A. Keep developing one project as my ideas grow
 
 Maps to: Walt Whitman
 
-B. Build a linked sequence around memory and time
+B. Create connected pieces that explore how experience changes over time
 
 Maps to: Marcel Proust
 
-C. Develop recurring detectives across separate mysteries
+C. Return to familiar characters as they face different situations
 
 Maps to: Agatha Christie
 
-D. Try poetry, drama and fiction
+D. Try different forms to see what each one lets me express
 
 Maps to: Johann Wolfgang von Goethe, Rabindranath Tagore, Victor Hugo
 
 ### 38. Why would you want someone to read your work?
 
-A. To follow an ingenious plot
+A. To find out what happens next
 
 Maps to: Agatha Christie, Alexandre Dumas
 
-B. To enjoy verbal comedy
+B. To enjoy clever and funny language
 
 Maps to: Oscar Wilde, Lewis Carroll
 
-C. To enter a distinctive poetic voice
+C. To experience a distinctive way of expressing feelings
 
 Maps to: Sappho, Walt Whitman, Li Bai
 
-D. To wrestle with a difficult idea
+D. To think through a challenging idea
 
 Maps to: Friedrich Nietzsche, Fyodor Dostoevsky, Jorge Luis Borges
 
 ### 39. Whose perspective would you bring forward?
 
-A. A woman claiming authority over her own life
+A. Someone seeking more control over her own life
 
 Maps to: Charlotte Brontë, Virginia Woolf
 
-B. A community described from within its own traditions
+B. People telling their community's story from within
 
 Maps to: Chinua Achebe
 
-C. A person burdened by enslavement and its aftermath
+C. Someone whose freedom and sense of self have been deeply harmed
 
 Maps to: Toni Morrison
 
-D. A socially excluded child or young person
+D. A young person who is excluded or underestimated
 
 Maps to: Charles Dickens, Hans Christian Andersen
 
 ### 40. Which structure would you choose?
 
-A. A journey made of successive encounters
+A. A journey shaped by one encounter after another
 
 Maps to: Homer, Miguel de Cervantes, Voltaire
 
-B. Stories nested inside other people's accounts
+B. Different people telling stories within the main story
 
 Maps to: Mary Shelley
 
-C. A poem sequence or collection of short pieces
+C. Separate short pieces that form a larger whole
 
 Maps to: Emily Dickinson, Li Bai
 
-D. A novel woven from memory and shifting viewpoints
+D. A longer story moving between memories and viewpoints
 
 Maps to: Virginia Woolf, Toni Morrison
 
 ### 41. Which title would suit a piece you want to write?
 
-A. A character's name
+A. The name of an important character
 
 Maps to: Jane Austen, Charlotte Brontë, Johann Wolfgang von Goethe
 
-B. A journey or destination
+B. A place or a journey
 
 Maps to: Dante Alighieri, Jules Verne, Matsuo Bashō
 
-C. An image that gathers meaning as the work unfolds
+C. An image whose meaning grows during the story
 
 Maps to: Cao Xueqin, Edgar Allan Poe
 
-D. A conceptual space or paradox
+D. An intriguing idea that invites more than one interpretation
 
 Maps to: Jorge Luis Borges
 
 ### 42. How would you handle the identity of your narrator?
 
-A. Let a fictional voice sound convincingly personal
+A. Make the voice feel intimate and personal
 
 Maps to: Charlotte Brontë, Mark Twain
 
-B. Keep the storyteller's reliability uncertain
+B. Let readers wonder whether to trust the storyteller
 
 Maps to: Edgar Allan Poe, Agatha Christie
 
-C. Make the narrator comment on storytelling itself
+C. Let the storyteller reflect on how stories are told
 
 Maps to: Miguel de Cervantes, Alexander Pushkin
 
-D. Use more than one voice to contest the story
+D. Let different voices challenge each other's version
 
 Maps to: Toni Morrison, Mary Shelley
 
 ### 43. How would a character's life unfold?
 
-A. Youth leads toward an uncertain adult identity
+A. They grow up while searching for who they want to become
 
 Maps to: James Joyce, Charlotte Brontë
 
-B. A long family history reveals recurring patterns
+B. Their life forms part of a longer family pattern
 
 Maps to: Gabriel García Márquez, Cao Xueqin
 
-C. A crisis forces a reckoning with mortality
+C. A crisis makes them reconsider how they have lived
 
 Maps to: Leo Tolstoy
 
-D. A quest changes the meaning of home
+D. A journey changes what home means to them
 
 Maps to: Homer, J.R.R. Tolkien
 
 ### 44. What pace would suit your work?
 
-A. Suspense built through plans and reversals
+A. Build tension through plans, surprises and setbacks
 
 Maps to: Alexandre Dumas, Agatha Christie
 
-B. A sustained inward movement
+B. Take time to explore thoughts and feelings
 
 Maps to: Marcel Proust, Virginia Woolf
 
-C. A pause around one perception
+C. Pause over one meaningful moment
 
 Maps to: Matsuo Bashō, Emily Dickinson
 
-D. An energetic sequence of discoveries
+D. Keep moving through new events and discoveries
 
 Maps to: Jules Verne, Lewis Carroll
 
 ### 45. How would personal experience become literature?
 
-A. Reshape remembered experience through fiction
+A. Turn memories into an invented story
 
 Maps to: Marcel Proust, James Joyce
 
-B. Use a lyric speaker to explore feeling
+B. Let a personal voice explore the feeling behind an experience
 
 Maps to: Sappho, Li Bai, Pablo Neruda
 
-C. Transform travel into reflective prose and verse
+C. Turn a journey into observations and reflections
 
 Maps to: Matsuo Bashō
 
-D. Use observed social life to build invented characters
+D. Build fictional characters from things I notice in real life
 
 Maps to: Jane Austen, Anton Chekhov
 
 ### 46. Which tension would define your vision?
 
-A. Beauty exists alongside impermanence
+A. Beautiful things do not last forever
 
 Maps to: Murasaki Shikibu, Cao Xueqin
 
-B. Human sympathy clashes with accepted social rules
+B. Caring for others can conflict with social expectations
 
 Maps to: Mark Twain, Victor Hugo
 
-C. Ambition or desire undermines judgment
+C. Wanting something too much can cloud judgment
 
 Maps to: William Shakespeare, Gustave Flaubert
 
-D. Ordinary people face an incomprehensible system
+D. Ordinary people cannot make sense of the system around them
 
 Maps to: Franz Kafka
 
 ### 47. How would people around a character affect the story?
 
-A. Their conversations expose status and self-deception
+A. Their conversations reveal status and hidden assumptions
 
 Maps to: Jane Austen, Oscar Wilde
 
-B. Their conflicting arguments deepen moral uncertainty
+B. Their disagreements make right and wrong harder to separate
 
 Maps to: Fyodor Dostoevsky
 
-C. Their shared customs give the story its social logic
+C. Their customs shape what feels normal or acceptable
 
 Maps to: Chinua Achebe
 
-D. Their memories complicate one person's account
+D. Their memories complicate the main character's version of events
 
 Maps to: Toni Morrison
 
 ### 48. How would you use the sound of language?
 
-A. Write speech designed for actors
+A. Make the words work well when spoken aloud
 
 Maps to: William Shakespeare, Molière
 
-B. Use rhythmic catalogues and a public poetic voice
+B. Build momentum through repeating and expanding patterns
 
 Maps to: Walt Whitman
 
-C. Make a short lyric intimate and songlike
+C. Make a brief passage feel intimate and musical
 
 Maps to: Sappho, Rabindranath Tagore
 
-D. Let repeated sounds intensify unease
+D. Repeat sounds to create tension or unease
 
 Maps to: Edgar Allan Poe
 
 ### 49. How would money matter in your story?
 
-A. Marriage and inheritance limit people's choices
+A. It affects who people can marry and how freely they can live
 
 Maps to: Jane Austen, Charlotte Brontë
 
-B. Debt and consumption expose destructive illusions
+B. It feeds dreams that become costly and disappointing
 
 Maps to: Gustave Flaubert
 
-C. Greed becomes the engine of comedy
+C. It brings out greed in ways that are funny
 
 Maps to: Molière
 
-D. Poverty exposes failures of social justice
+D. It reveals how society fails people with very little
 
 Maps to: Charles Dickens, Victor Hugo, George Orwell
 
 ### 50. Which nonhuman presence would you explore?
 
-A. A created being asking for recognition
+A. An unfamiliar being trying to find acceptance
 
 Maps to: Mary Shelley
 
-B. Animals used to examine political power
+B. Creatures whose relationships reflect human behavior
 
 Maps to: George Orwell
 
-C. Talking creatures that disrupt human logic
+C. Creatures whose unexpected behavior challenges familiar assumptions
 
 Maps to: Lewis Carroll, Hans Christian Andersen
 
-D. Fantastic beings in a world with its own mythology
+D. Unfamiliar beings that feel at home in a convincing world
 
 Maps to: J.R.R. Tolkien, Homer
 
@@ -926,181 +926,181 @@ Maps to: J.R.R. Tolkien, Homer
 
 ### 51. Someone makes an outrageous claim. How would you respond in writing?
 
-A. Follow its logic until it exposes its own absurdity
+A. Take the claim seriously until its problems become obvious
 
 Maps to: Voltaire, Lewis Carroll
 
-B. Turn it into a clash of competing voices
+B. Let people with different views argue about it
 
 Maps to: Fyodor Dostoevsky
 
-C. Imagine a fictional book that makes it seem plausible
+C. Explore an invented example in which the claim seems possible
 
 Maps to: Jorge Luis Borges
 
-D. Show how institutions make people accept it
+D. Show how pressure from those in power makes people accept it
 
 Maps to: George Orwell, Franz Kafka
 
 ### 52. Which detail could unlock a larger story?
 
-A. A taste or sensation that brings the past back
+A. A familiar sensation that brings back a memory
 
 Maps to: Marcel Proust
 
-B. A small clue everyone overlooked
+B. An overlooked detail that changes how events fit together
 
 Maps to: Agatha Christie
 
-C. A family name that keeps returning
+C. A small pattern that seems to repeat over time
 
 Maps to: Gabriel García Márquez
 
-D. A proverb whose meaning changes in a crisis
+D. A familiar saying that takes on new meaning during a crisis
 
 Maps to: Chinua Achebe
 
 ### 53. How would you make the familiar feel strange?
 
-A. Describe an impossible transformation as routine
+A. Describe a startling change in a calm, ordinary way
 
 Maps to: Franz Kafka
 
-B. Look at language through a child's logic
+B. See familiar words and rules through a child's eyes
 
 Maps to: Lewis Carroll
 
-C. Give a common object a generous poetic attention
+C. Look closely at an everyday object until it feels special
 
 Maps to: Pablo Neruda
 
-D. Let a brief natural image shift perception
+D. Use a small detail in nature to change how we see things
 
 Maps to: Matsuo Bashō
 
 ### 54. What would make a hero's victory complicated?
 
-A. Success cannot restore everything that was lost
+A. Winning cannot bring back everything they lost
 
 Maps to: J.R.R. Tolkien
 
-B. Social approval conflicts with conscience
+B. Doing what is right costs them other people's approval
 
 Maps to: Mark Twain
 
-C. A plan for revenge changes the avenger
+C. Getting revenge changes them in ways they did not expect
 
 Maps to: Alexandre Dumas
 
-D. A great ambition carries a moral cost
+D. Reaching their goal has a serious moral cost
 
 Maps to: William Shakespeare, Johann Wolfgang von Goethe
 
 ### 55. How would you portray a woman under social pressure?
 
-A. Let her insist on moral and emotional independence
+A. Show her holding on to her independence and self-respect
 
 Maps to: Charlotte Brontë
 
-B. Show the constraints of marriage and property
+B. Show how security and social expectations limit her options
 
 Maps to: Jane Austen
 
-C. Place her suffering within family duty and exploitation
+C. Show the cost of family duty and being used by others
 
 Maps to: Nguyễn Du
 
-D. Trace how racist ideals of beauty damage self-perception
+D. Show how unfair standards of beauty damage her sense of worth
 
 Maps to: Toni Morrison
 
-### 56. What would you do with a borrowed story?
+### 56. What happens when your character's beliefs are tested?
 
-A. Retell it in a different cultural and poetic form
+A. They put family duty ahead of personal happiness
 
 Maps to: Nguyễn Du
 
-B. Use an ancient epic as a pattern for modern city life
+B. They question old beliefs while seeking independence
 
 Maps to: James Joyce
 
-C. Parody its heroic conventions
+C. They hold on to noble ideals despite repeated setbacks
 
 Maps to: Miguel de Cervantes
 
-D. Reshape a known plot for the stage
+D. Their wish for power conflicts with their sense of right and wrong
 
 Maps to: William Shakespeare
 
 ### 57. Which contrast would create meaning in your work?
 
-A. A vast historical event and an intimate private life
+A. Large public events and small private moments
 
 Maps to: Leo Tolstoy
 
-B. A polished social surface and a concealed motive
+B. Polite behavior and hidden intentions
 
 Maps to: Jane Austen, Agatha Christie
 
-C. A comic appearance and a painful exclusion
+C. Something funny on the surface and painful underneath
 
 Maps to: Hans Christian Andersen
 
-D. An official account and a community's own story
+D. The official version of events and the community's experience
 
 Maps to: Chinua Achebe, Toni Morrison
 
 ### 58. How would you handle a moral lesson?
 
-A. Let a fable reveal how power corrupts
+A. Use an imagined tale to show how power changes people
 
 Maps to: George Orwell
 
-B. Use a comic impostor to expose false virtue
+B. Use a funny character to expose false goodness
 
 Maps to: Molière
 
-C. Ask who bears responsibility rather than supply an easy answer
+C. Leave readers thinking about who should take responsibility
 
 Maps to: Mary Shelley
 
-D. Let a journey test a philosophy against suffering
+D. Let difficult experiences challenge a comforting belief
 
 Maps to: Voltaire
 
 ### 59. What kind of ambiguity interests you?
 
-A. Whether a narrator understands their own motives
+A. Whether someone understands their own reasons for acting
 
 Maps to: Edgar Allan Poe
 
-B. Whether an ordinary event contains a deeper revelation
+B. Whether a small event holds a larger meaning
 
 Maps to: James Joyce
 
-C. Whether a fictional world can be distinguished from a text
+C. Whether a story can change what people accept as real
 
 Maps to: Jorge Luis Borges
 
-D. Whether a painful memory can ever have one final account
+D. Whether anyone can tell the whole truth about a painful memory
 
 Maps to: Toni Morrison
 
 ### 60. What would make a reader recognize your voice?
 
-A. A restrained surface with strong feeling beneath
+A. Simple language with strong feeling underneath
 
 Maps to: Ernest Hemingway
 
-B. A compressed lyric with disruptive pauses
+B. Concentrated language with pauses that leave room for thought
 
 Maps to: Emily Dickinson
 
-C. A broad, inclusive voice built from rhythmic lists
+C. An open, welcoming voice that builds a sense of connection
 
 Maps to: Walt Whitman
 
-D. A densely imagined world shaped by names and languages
+D. Careful details that make unfamiliar experiences feel fully real
 
 Maps to: J.R.R. Tolkien
 
@@ -1110,721 +1110,721 @@ Questions 61 to 100 continue the same four-answer format. The associations below
 
 ### 61. What could a letter reveal that a conversation cannot?
 
-A. A declaration of love that arrives at the wrong moment
+A. Feelings someone finds easier to write than say
 
 Maps to: Alexander Pushkin
 
-B. An increasingly consuming emotional attachment
+B. An attachment that grows harder to manage
 
 Maps to: Johann Wolfgang von Goethe
 
-C. Testimony passed through several narrators
+C. An account that adds a new perspective to the story
 
 Maps to: Mary Shelley
 
-D. Information that makes someone revise an earlier judgment
+D. Information that changes how someone sees another person
 
 Maps to: Jane Austen
 
 ### 62. If you interrupted your own story, what would you add?
 
-A. A playful aside about the narrator's tastes and memories
+A. A personal aside that brings the storyteller closer to the reader
 
 Maps to: Alexander Pushkin
 
-B. A historical or social explanation
+B. Some background that helps explain the wider situation
 
 Maps to: Victor Hugo
 
-C. A teaching story that opens into a spiritual reflection
+C. A short example that invites reflection on life's meaning
 
 Maps to: Rumi
 
-D. A doubt about who really wrote the account
+D. A question about where the story came from and whether to trust it
 
 Maps to: Miguel de Cervantes
 
 ### 63. How would music matter in a scene?
 
-A. A gifted woman's performance carries feelings she cannot freely express
+A. It expresses feelings someone cannot easily say aloud
 
 Maps to: Nguyễn Du
 
-B. Song and lyric become forms of devotional address
+B. It gives people a way to express trust, gratitude or hope
 
 Maps to: Rabindranath Tagore
 
-C. A repeated sound deepens mourning
+C. It brings back a feeling of grief or loss
 
 Maps to: Edgar Allan Poe
 
-D. Verse is exchanged as part of courtship
+D. It helps people express affection without speaking directly
 
 Maps to: Murasaki Shikibu
 
 ### 64. Which kind of promise could set your plot in motion?
 
-A. A bargain that tests the limits of human ambition
+A. An agreement that offers more than someone can safely handle
 
 Maps to: Johann Wolfgang von Goethe
 
-B. An oath of friendship tested by danger
+B. A promise to stand by a friend during difficult times
 
 Maps to: Alexandre Dumas
 
-C. A family obligation that demands personal sacrifice
+C. A duty to family that comes at a personal cost
 
 Maps to: Nguyễn Du
 
-D. A commitment to carry a burden whose cost keeps growing
+D. A responsibility that becomes harder to carry over time
 
 Maps to: J.R.R. Tolkien
 
 ### 65. How would you use a dream?
 
-A. Frame a household's worldly life within a larger sense of illusion
+A. Make people question what they value in waking life
 
 Maps to: Cao Xueqin
 
-B. Give a child's adventure a shifting, playful reality
+B. Let familiar rules turn strange and unpredictable
 
 Maps to: Lewis Carroll
 
-C. Expose a guilty person's moral horror
+C. Bring hidden guilt or fear to the surface
 
 Maps to: Fyodor Dostoevsky
 
-D. Make a dead beloved seem briefly present to a grieving hero
+D. Let someone feel close to a person they have lost
 
 Maps to: Homer
 
 ### 66. What might a disguise allow your story to explore?
 
-A. The patient construction of revenge through a new identity
+A. The chance to rebuild a life while hiding a plan
 
 Maps to: Alexandre Dumas
 
-B. The gap between chivalric fantasy and ordinary reality
+B. The gap between who someone imagines they are and who they are
 
 Maps to: Miguel de Cervantes
 
-C. A comic confusion about names and respectability
+C. The misunderstandings that arise when people make assumptions
 
 Maps to: Oscar Wilde
 
-D. A returning traveler's ability to test loyalty
+D. The chance to find out whom someone can really trust
 
 Maps to: Homer
 
 ### 67. What would a quiet act of generosity mean in your work?
 
-A. A speaker widens private distress into concern for others
+A. Personal hardship leads to greater concern for others
 
 Maps to: Du Fu
 
-B. An act of mercy unsettles a life governed by punishment
+B. Being shown mercy changes how someone lives
 
 Maps to: Victor Hugo
 
-C. Compassion crosses the boundary between a prince and the poor
+C. Kindness brings people together across social differences
 
 Maps to: Oscar Wilde
 
-D. An offer of hospitality reveals the customs of a community
+D. Welcoming someone reveals what a community values
 
 Maps to: Chinua Achebe
 
 ### 68. How would you treat a character who looks foolish?
 
-A. Let an absurd ideal coexist with courage and dignity
+A. Show that an unrealistic dream can still contain courage
 
 Maps to: Miguel de Cervantes
 
-B. Expose the excuses they use to protect their pride
+B. Show how they explain away things that hurt their pride
 
 Maps to: Lu Xun
 
-C. Show how the crowd's judgment can be mistaken
+C. Show that other people may have judged them unfairly
 
 Maps to: Hans Christian Andersen
 
-D. Allow the reader to enjoy the narrator's affectionate irony
+D. Use gentle humor without taking away their humanity
 
 Maps to: Alexander Pushkin
 
 ### 69. What would a garden contribute to your writing?
 
-A. A richly detailed household space for poetry and relationships
+A. A place where relationships and creative life develop
 
 Maps to: Cao Xueqin
 
-B. A practical activity that answers grand philosophical claims
+B. A reminder that everyday action can matter more than grand ideas
 
 Maps to: Voltaire
 
-C. A place where childhood recollection and spiritual attention meet
+C. A place for memory, reflection and a sense of connection
 
 Maps to: Rabindranath Tagore
 
-D. A miniature image that opens onto death or uncertainty
+D. A small living space that raises bigger questions about life and loss
 
 Maps to: Emily Dickinson
 
 ### 70. Which conflict between duty and feeling would you explore?
 
-A. Protecting a parent at the expense of personal happiness
+A. Choosing between a loved one's needs and personal happiness
 
 Maps to: Nguyễn Du
 
-B. Refusing a powerful attachment because of an existing commitment
+B. Honoring an existing commitment despite new feelings
 
 Maps to: Alexander Pushkin
 
-C. Preserving self-respect when love demands moral compromise
+C. Keeping self-respect when a relationship asks too much
 
 Maps to: Charlotte Brontë
 
-D. Trying to reconcile erotic desire with family and social expectations
+D. Wanting something that conflicts with family and social expectations
 
 Maps to: Leo Tolstoy
 
 ### 71. What would travel reveal about your traveler?
 
-A. Their attention to places, seasons and earlier poets
+A. How carefully they notice places and changes in nature
 
 Maps to: Matsuo Bashō
 
-B. Their ideals repeatedly colliding with what is actually there
+B. How they respond when reality challenges their ideals
 
 Maps to: Miguel de Cervantes
 
-C. Their reliance on planning, technology and timetables
+C. How they solve problems and adapt their plans
 
 Maps to: Jules Verne
 
-D. Their growing need to question a reassuring philosophy
+D. How new experiences change what they believe
 
 Maps to: Voltaire
 
 ### 72. How would you make an object feel alive?
 
-A. Address it as a companion in a generous ode
+A. Speak to it as if it were a familiar companion
 
 Maps to: Pablo Neruda
 
-B. Give it speech and a place in a fairy tale
+B. Give it a voice and feelings of its own
 
 Maps to: Hans Christian Andersen
 
-C. Let it become an image in a spiritual teaching story
+C. Use it to help explore a deeper question about life
 
 Maps to: Rumi
 
-D. Let a portrait bear the consequences its subject conceals
+D. Let it reveal something its owner tries to hide
 
 Maps to: Oscar Wilde
 
 ### 73. How would a city change the shape of your story?
 
-A. Streets and businesses connect strangers through hidden histories
+A. Bring people with hidden connections into each other's lives
 
 Maps to: Charles Dickens
 
-B. A single day's routes connect several private consciousnesses
+B. Let different people's inner lives cross in a short time
 
 Maps to: Virginia Woolf
 
-C. Ordinary places acquire correspondences with an ancient epic
+C. Connect everyday experiences with larger, familiar story patterns
 
 Maps to: James Joyce
 
-D. Offices and courtrooms become parts of an inaccessible system
+D. Make ordinary places part of a system people cannot understand
 
 Maps to: Franz Kafka
 
 ### 74. What would you do with a philosophical claim?
 
-A. Test it against repeated disasters
+A. Show what happens when people try to live by it
 
 Maps to: Voltaire
 
-B. Present it as a brief, provocative challenge
+B. Turn it into a short, challenging statement
 
 Maps to: Friedrich Nietzsche
 
-C. Let passionate characters argue over its consequences
+C. Let different characters debate what it means
 
 Maps to: Fyodor Dostoevsky
 
-D. Invent a fictional institution or text that takes it to an extreme
+D. Imagine a world where it is taken to its furthest conclusion
 
 Maps to: Jorge Luis Borges
 
 ### 75. Which use of repetition would you choose?
 
-A. Names and events return across family generations
+A. Let similar situations return under different circumstances
 
 Maps to: Gabriel García Márquez
 
-B. A refrain intensifies grief and obsession
+B. Repeat a phrase to deepen a strong feeling
 
 Maps to: Edgar Allan Poe
 
-C. Parallel phrases accumulate into an expansive poetic voice
+C. Build a sense of connection through similar phrases
 
 Maps to: Walt Whitman
 
-D. Repeated encounters deepen a spiritual lesson
+D. Return to an experience until its deeper meaning becomes clearer
 
 Maps to: Rumi
 
 ### 76. How would you write a gathering of guests?
 
-A. Let manners and small remarks reveal social ambition
+A. Let small remarks reveal what people want from each other
 
 Maps to: Jane Austen
 
-B. Make the gathering part of a refined court world
+B. Show how customs and expectations shape their behavior
 
 Maps to: Murasaki Shikibu
 
-C. Turn conversation into a display of sparkling social pretence
+C. Use witty conversation to reveal the roles they are playing
 
 Maps to: Oscar Wilde
 
-D. Let private grief coexist with the public occasion
+D. Show private feelings beneath a public celebration
 
 Maps to: Virginia Woolf
 
 ### 77. What would an animal help you say?
 
-A. A bird's call or a frog's movement can transform a brief perception
+A. A small encounter with nature can change how we see a moment
 
 Maps to: Matsuo Bashō
 
-B. A creature can carry a lesson in a mystical narrative
+B. A creature's story can help us reflect on life
 
 Maps to: Rumi
 
-C. A humanized animal can expose the machinery of power
+C. Relationships between creatures can reveal familiar human weaknesses
 
 Maps to: George Orwell
 
-D. A large fish can be both a worthy opponent and a test of endurance
+D. An encounter with nature can teach both endurance and respect
 
 Maps to: Ernest Hemingway
 
 ### 78. How would weather enter a poem or scene?
 
-A. A damaged roof opens into concern for others without shelter
+A. Bad weather reveals how vulnerable people are
 
 Maps to: Du Fu
 
-B. A moonlit night awakens homesickness
+B. The atmosphere outside brings back feelings of missing home
 
 Maps to: Li Bai
 
-C. A storm intensifies an encounter with a feared creation
+C. A storm heightens fear and emotional tension
 
 Maps to: Mary Shelley
 
-D. Seasonal change gives emotional nuance to court life
+D. Changes outside quietly reflect changes between people
 
 Maps to: Murasaki Shikibu
 
 ### 79. What would make an outwardly successful person interesting?
 
-A. They discover that social success has concealed an unlived life
+A. They begin to wonder whether they have lived meaningfully
 
 Maps to: Leo Tolstoy
 
-B. Their public charm depends on keeping moral damage invisible
+B. Their attractive public image hides troubling choices
 
 Maps to: Oscar Wilde
 
-C. Their restored wealth allows them to pursue an elaborate reckoning
+C. Their new opportunities bring unfinished feelings back to the surface
 
 Maps to: Alexandre Dumas
 
-D. Their practiced sophistication fails when love becomes urgent
+D. Their confidence falls apart when they become emotionally vulnerable
 
 Maps to: Alexander Pushkin
 
 ### 80. How would you show exclusion?
 
-A. A person is judged before anyone listens to their story
+A. People judge someone before trying to understand them
 
 Maps to: Mary Shelley
 
-B. A young person is treated as unworthy because of appearance
+B. Someone is left out because others dislike how they look
 
 Maps to: Hans Christian Andersen
 
-C. Racialized beauty standards turn a child's gaze against herself
+C. Social ideals make someone feel unworthy of being loved
 
 Maps to: Toni Morrison
 
-D. A poet speaks of hardship intensified by war and displacement
+D. Difficult times leave people without a secure place to belong
 
 Maps to: Du Fu
 
 ### 81. What would chance do in your plot?
 
-A. A promise of secret knowledge tempts someone into destructive gambling
+A. It tempts someone to believe they can control the outcome
 
 Maps to: Alexander Pushkin
 
-B. A precisely timed journey becomes vulnerable to delays and surprises
+B. It disrupts a careful plan and forces people to adapt
 
 Maps to: Jules Verne
 
-C. A small overlooked circumstance eventually unlocks the crime
+C. It brings attention to a detail that changes everything
 
 Maps to: Agatha Christie
 
-D. An encounter gives a spiritual teacher a new story to unfold
+D. It brings an unexpected encounter that invites deeper reflection
 
 Maps to: Rumi
 
 ### 82. How would other books enter your story?
 
-A. A supposed source that complicates the narrator's authority
+A. As a source that makes readers question whose version to trust
 
 Maps to: Miguel de Cervantes
 
-B. An imaginary work that changes how reality is understood
+B. As an invented example that changes what seems possible
 
 Maps to: Jorge Luis Borges
 
-C. An ancient epic whose pattern shadows a modern day
+C. As a familiar pattern that gives everyday events another layer
 
 Maps to: James Joyce
 
-D. A reading experience that feeds a character's romantic illusions
+D. As something a character reads that shapes their expectations
 
 Maps to: Gustave Flaubert
 
 ### 83. How would you write the distance between two people?
 
-A. Let a short lyric make absence intensely present
+A. Express the strong feeling of someone's absence
 
 Maps to: Sappho
 
-B. Let homesickness emerge from a familiar natural image
+B. Let familiar surroundings bring out the feeling of missing someone
 
 Maps to: Li Bai
 
-C. Let separation deepen spiritual longing
+C. Let separation become a search for deeper connection
 
 Maps to: Rumi
 
-D. Let time reverse who loves and who refuses
+D. Show how time can reverse what two people want from each other
 
 Maps to: Alexander Pushkin
 
 ### 84. What would a family heirloom or valuable object expose?
 
-A. The fragility of wealth in a declining household
+A. How easily a family's security and status can change
 
 Maps to: Cao Xueqin
 
-B. An obsession with possessing and protecting money
+B. How strongly someone needs to possess and control things
 
 Maps to: Molière
 
-C. A costly ornament whose loss becomes an act of compassion
+C. What someone is willing to give up to help others
 
 Maps to: Oscar Wilde
 
-D. An inheritance that changes the choices available to women
+D. How material security affects the choices people can make
 
 Maps to: Jane Austen
 
 ### 85. What would you want from a scene of public embarrassment?
 
-A. A child's plain observation punctures collective pretence
+A. Someone says what others have been unwilling to admit
 
 Maps to: Hans Christian Andersen
 
-B. A stage impostor's false virtue becomes visible
+B. A person's claim to goodness is exposed as false
 
 Maps to: Molière
 
-C. A proud person learns that their judgment was mistaken
+C. Someone realizes they have misjudged another person
 
 Maps to: Jane Austen
 
-D. An apparent fool protects his self-image with a private fiction
+D. Someone invents a comforting explanation to protect their pride
 
 Maps to: Lu Xun
 
 ### 86. How would you write a farewell?
 
-A. As a brief moment held in seasonal imagery
+A. Focus on one small detail that makes the moment memorable
 
 Maps to: Matsuo Bashō
 
-B. As an intimate address charged with desire and absence
+B. Let a personal voice express longing and absence
 
 Maps to: Sappho
 
-C. As a refusal that reveals how much time has changed
+C. Show how people's feelings and circumstances have changed
 
 Maps to: Alexander Pushkin
 
-D. As a departure that leaves an old way of life behind
+D. Suggest that a familiar way of life is coming to an end
 
 Maps to: Anton Chekhov
 
 ### 87. What makes an invented place convincing to you?
 
-A. Names, languages and histories fit together
+A. Its details fit together and suggest a life beyond the page
 
 Maps to: J.R.R. Tolkien
 
-B. Technical details make an extraordinary voyage feel possible
+B. Its practical details make unusual events believable
 
 Maps to: Jules Verne
 
-C. A town's family stories make marvels feel locally familiar
+C. The people who live there make unusual things feel familiar
 
 Maps to: Gabriel García Márquez
 
-D. Daily rituals reveal the social order of a court
+D. Its everyday habits make relationships and expectations believable
 
 Maps to: Murasaki Shikibu
 
 ### 88. How would a spiritual insight reach the reader?
 
-A. Through a story whose concrete events open into another meaning
+A. Through an everyday story that suggests a deeper meaning
 
 Maps to: Rumi
 
-B. Through an ordered journey with guides and moral encounters
+B. Through a journey that makes someone reconsider their choices
 
 Maps to: Dante Alighieri
 
-C. Through a lyric offered as an act of devotion
+C. Through an intimate expression of trust, gratitude or hope
 
 Maps to: Rabindranath Tagore
 
-D. Through a crisis that exposes the emptiness of an earlier life
+D. Through a crisis that changes what someone thinks matters
 
 Maps to: Leo Tolstoy
 
 ### 89. How would you use a character's talent?
 
-A. Make musical and poetic gifts vulnerable to exploitation
+A. Show how other people may take advantage of it
 
 Maps to: Nguyễn Du
 
-B. Let artistic aspiration shape the formation of a young self
+B. Let it guide their search for an identity
 
 Maps to: James Joyce
 
-C. Make an exceptionally gifted mind restless with ordinary limits
+C. Make it drive them to push beyond ordinary limits
 
 Maps to: Johann Wolfgang von Goethe
 
-D. Show how learning and sensitivity matter in a court's relationships
+D. Show how it affects their place in a social group
 
 Maps to: Murasaki Shikibu
 
 ### 90. What would make a friendship worth writing about?
 
-A. Loyalty survives intrigue, rivalry and danger
+A. They remain loyal through conflict and danger
 
 Maps to: Alexandre Dumas
 
-B. Companions support each other under the pressure of a quest
+B. They help each other carry a difficult responsibility
 
 Maps to: J.R.R. Tolkien
 
-C. An unequal pair keeps arguing about the meaning of their adventures
+C. They challenge each other's way of seeing the world
 
 Maps to: Miguel de Cervantes
 
-D. Companionship is imaginatively found with the moon and one's shadow
+D. Someone discovers they can feel connected even when alone
 
 Maps to: Li Bai
 
 ### 91. How would you handle the reader's sympathy for a wrongdoer?
 
-A. Let a guilty mind reveal its excuses and torment
+A. Show their guilt and the reasons they use to defend themselves
 
 Maps to: Fyodor Dostoevsky
 
-B. Show the appeal and moral danger of long-planned revenge
+B. Show how an understandable wish for justice can go too far
 
 Maps to: Alexandre Dumas
 
-C. Let a first person defense reveal more than it intends
+C. Let their own explanation reveal what they try to hide
 
 Maps to: Edgar Allan Poe
 
-D. Place a destructive choice within a clash of personal fear and communal change
+D. Show how personal fears and social pressures shape their choices
 
 Maps to: Chinua Achebe
 
 ### 92. What would a contrast between appearance and value reveal?
 
-A. A creature dismissed as ugly is not what others assume
+A. Someone dismissed by others deserves a second look
 
 Maps to: Hans Christian Andersen
 
-B. Wealth and social position are unreliable guides to character
+B. Money and status do not tell us what a person is like
 
 Maps to: Jane Austen
 
-C. A polished surface can conceal moral corruption
+C. An attractive surface can hide harmful behavior
 
 Maps to: Oscar Wilde
 
-D. A supposedly inferior person exposes society's failure of compassion
+D. The way someone is treated reveals other people's lack of compassion
 
 Maps to: Victor Hugo
 
 ### 93. What would you do when a character cannot speak freely?
 
-A. Let poetry or a musical performance carry the feeling
+A. Let a creative performance express what they cannot say
 
 Maps to: Nguyễn Du, Murasaki Shikibu
 
-B. Make pauses and evasions carry the conflict
+B. Let pauses and avoided topics carry the tension
 
 Maps to: Ernest Hemingway, Anton Chekhov
 
-C. Show how political power restricts the available words
+C. Show how those in power limit what can be said
 
 Maps to: George Orwell
 
-D. Let an interior voice reveal what public behavior conceals
+D. Let the reader hear thoughts that remain hidden from others
 
 Maps to: Virginia Woolf
 
 ### 94. How would you write a scene of temptation?
 
-A. A bargain offers experience beyond ordinary human limits
+A. Someone is offered a chance to escape ordinary limits
 
 Maps to: Johann Wolfgang von Goethe
 
-B. A secret about winning at cards promises mastery over chance
+B. Someone believes they have found a shortcut to success
 
 Maps to: Alexander Pushkin
 
-C. An instrument of power offers an apparently useful shortcut
+C. Someone is offered power that could solve an immediate problem
 
 Maps to: J.R.R. Tolkien
 
-D. Romantic fantasies make consumption and escape seem irresistible
+D. Someone is drawn toward a more glamorous and satisfying life
 
 Maps to: Gustave Flaubert
 
 ### 95. How would you place a private sorrow beside the wider world?
 
-A. Move from one damaged home toward compassion for many others
+A. Let one person's hardship lead to concern for many others
 
 Maps to: Du Fu
 
-B. Let one woman's suffering expose exploitation and social judgment
+B. Use a personal struggle to reveal unfair social expectations
 
 Maps to: Nguyễn Du
 
-C. Connect an intimate story to the history of a continent
+C. Connect someone's experience with a much larger shared history
 
 Maps to: Pablo Neruda
 
-D. Let personal memory reveal the lasting harm of enslavement
+D. Show how an unresolved past continues to shape private lives
 
 Maps to: Toni Morrison
 
 ### 96. What would a skeptical narrator question?
 
-A. Whether heroic stories offer a reliable map for life
+A. Whether inspiring stories prepare people for real life
 
 Maps to: Miguel de Cervantes
 
-B. Whether society's comforting account conceals cruelty
+B. Whether familiar explanations hide harm or unfairness
 
 Maps to: Lu Xun
 
-C. Whether an inherited moral vocabulary deserves obedience
+C. Whether accepted rules deserve to be followed
 
 Maps to: Friedrich Nietzsche
 
-D. Whether the same words mean the same thing in another historical setting
+D. Whether words mean the same thing in different times and situations
 
 Maps to: Jorge Luis Borges
 
 ### 97. How would you use an encounter with the dead?
 
-A. To guide a traveler through moral and spiritual consequences
+A. To make someone reflect on how they have lived
 
 Maps to: Dante Alighieri
 
-B. To make unresolved historical violence present in a household
+B. To show that old harm has not been resolved
 
 Maps to: Toni Morrison
 
-C. To turn grief into an obsessive conversation with an absence
+C. To explore grief that someone cannot let go of
 
 Maps to: Edgar Allan Poe
 
-D. To show an epic traveler meeting the limits of heroic life
+D. To remind someone that strength cannot overcome every limit
 
 Maps to: Homer
 
 ### 98. What would make a small gesture important?
 
-A. It reveals a shift in social understanding
+A. It shows that someone now understands another person differently
 
 Maps to: Jane Austen
 
-B. It suggests a feeling the dialogue never states
+B. It hints at a feeling that remains unspoken
 
 Maps to: Anton Chekhov
 
-C. It captures the emotional precision of courtly relationships
+C. It reveals closeness or distance within a social relationship
 
 Maps to: Murasaki Shikibu
 
-D. It suddenly brings an earlier life back into consciousness
+D. It unexpectedly brings back an earlier experience
 
 Maps to: Marcel Proust
 
 ### 99. How would you show the limits of control?
 
-A. An avenger discovers that his plans harm people beyond their intended targets
+A. Someone's plan has consequences they did not intend
 
 Maps to: Alexandre Dumas
 
-B. A timetable is disrupted by distance, weather and accident
+B. Unexpected events disrupt a carefully arranged schedule
 
 Maps to: Jules Verne
 
-C. A legal process proceeds without becoming comprehensible to its accused
+C. Someone cannot get clear answers from the system controlling their life
 
 Maps to: Franz Kafka
 
-D. A woman's choices are repeatedly constrained by others' power
+D. Other people's power keeps narrowing someone's choices
 
 Maps to: Nguyễn Du
 
 ### 100. Which final image would you choose for a piece of your own?
 
-A. A traveler pausing before a small sign of the season
+A. A quiet detail that captures a passing moment
 
 Maps to: Matsuo Bashō
 
-B. A person returning to practical work after philosophical disillusionment
+B. Someone choosing useful action over comforting theories
 
 Maps to: Voltaire
 
-C. A rejected declaration that shows how love has changed over time
+C. An exchange that shows how feelings have changed with time
 
 Maps to: Alexander Pushkin
 
-D. An image of longing that opens beyond the individual self
+D. A feeling of longing that suggests a connection beyond the self
 
 Maps to: Rumi
 
@@ -2193,3 +2193,4 @@ All 50 original questions and their answer lists were reviewed. Questions 1 to 5
 49. Removed the claim that money is hardly mentioned across a large and diverse group.
 
 50. Removed the absolute only humans classification.
+
