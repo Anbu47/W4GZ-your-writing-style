@@ -75,7 +75,6 @@
   .bar{display:grid;grid-template-columns:150px 1fr 62px;gap:10px;align-items:center;font-size:14px}
   .bar .track{height:10px;background:var(--line);border-radius:99px;overflow:hidden}
   .bar .fill{height:100%;border-radius:99px;width:0;transition:width .8s ease}
-  .match-detail{grid-column:1 / -1;color:var(--muted);font-size:13px}
   @media(max-width:480px){.bar{grid-template-columns:minmax(0,1fr) minmax(40px,1fr) 48px}.all{grid-template-columns:1fr}}
   .bar .pct{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
   .try{border-left:5px solid var(--ink)}
@@ -97,7 +96,6 @@
   footer em{font-family:'Fraunces',serif;font-size:16px;color:var(--ink)}
   .opt.none{border-style:dashed;color:var(--muted)}
   .opt.none.picked{color:var(--ink)}
-  .mixnote{font-size:13px;color:var(--muted);margin-top:12px!important}
 </style>
 </head>
 <body>
@@ -138,7 +136,7 @@
       <div class="card"><h3>Watch out for</h3><p id="rwatch"></p></div>
     </div>
     <div class="card try"><h3>Try this exercise</h3><p id="rtry"></p></div>
-    <div class="card" id="mixcard"><h3>Your closest writers</h3><div class="bars" id="mix"></div><p class="mixnote" id="mixnote"></p></div>
+    <div class="card" id="mixcard"><h3>Your closest writers</h3><div class="bars" id="mix"></div></div>
     <div class="actions">
       <button class="btn" id="copy">Copy my result</button>
       <button class="btn ghost" id="again">Retake the quiz</button>
@@ -310,10 +308,8 @@
       $('mix').innerHTML = '';
       res.ranking.slice(0, 3).forEach(r => {
         const row = bar(r.writer.name, r.agree, r.opportunities, colorOf(r.writer));
-        row.appendChild(el('span', 'match-detail', r.agree + ' matches / ' + r.opportunities + ' opportunities' + (r.tiedWith.length ? ' · tied with ' + r.tiedWith.join(', ') : '')));
         $('mix').appendChild(row);
       });
-      $('mixnote').textContent = 'You answered ' + res.questions + ' questions. Each score is matches divided by questions where that writer appears in any answer. Writers with no opportunities are excluded. Few opportunities can make a high score unstable; these are literary affinities, not personality probabilities.';
       requestAnimationFrame(() => document.querySelectorAll('.fill').forEach(f => f.style.width = f.dataset.w));
     }
     $('copy').style.display = res ? '' : 'none';
