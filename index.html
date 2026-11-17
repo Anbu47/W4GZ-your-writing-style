@@ -277,7 +277,7 @@
     top.innerHTML = '<svg width="220" height="220" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 80 L70 30 L80 40 L30 90 Z M70 30 L78 12 L88 22 Z" fill="#fff"/></svg>';
     const copy = el('div', 'writer-copy');
     top.appendChild(copy);
-    copy.append(el('div', 'kicker', (res ? 'Literary affinity' : 'Writer') + (w.years ? ' · ' + w.years : '')), el('h2', null, w.name), el('div', 'tag', w.tagline ? '\u201C' + w.tagline + '\u201D' : ''));
+    copy.append(el('div', 'kicker', (res ? 'Your writer match' : 'Writer') + (w.years ? ' · ' + w.years : '')), el('h2', null, w.name), el('div', 'tag', w.tagline ? '\u201C' + w.tagline + '\u201D' : ''));
     if (w.tagline) copy.appendChild(el('div', 'tagby', '\u2014 ' + w.name + (w.taglineFrom ? ', ' + w.taglineFrom : '')));
     if (res && res.top.tiedWith.length) copy.appendChild(el('div', 'runner', 'Tied with: ' + res.top.tiedWith.join(', ')));
     if (res && res.runnerUp && !res.top.tiedWith.length) {
