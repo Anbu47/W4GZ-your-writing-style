@@ -4,8 +4,8 @@ vm.runInContext(fs.readFileSync(path.join(root,'data/writers.js'),'utf8'),box);
 const writers=box.QUIZ_WRITERS;
 assert.equal(writers.length,68);
 const drawn=writers.filter(w=>w.portrait);
-assert.equal(drawn.length,50);
-assert.equal(new Set(drawn.map(w=>w.portrait)).size,50);
+assert.equal(drawn.length,68);
+assert.equal(new Set(drawn.map(w=>w.portrait)).size,68);
 for(const w of drawn){
  assert.equal(w.portrait,'assets/writers/'+w.id+'.webp');
  const image=fs.readFileSync(path.join(root,w.portrait));
@@ -62,4 +62,4 @@ assert(html.includes('.rtop.has-portrait'));
 assert(!html.includes('chips')&&!html.includes('APPROACHES'));
 assert(html.includes('@media(max-width:560px)'));
 assert(!html.includes('mixnote')&&!html.includes('match-detail'));
-console.log('PASS: 50 portrait assets (18 writers still without one), matching writer paths, profile switching, missing-image fallback and mobile layout rules.');
+console.log('PASS: 68 portrait assets, matching writer paths, profile switching, missing-image fallback and mobile layout rules.');

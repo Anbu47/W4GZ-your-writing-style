@@ -32,6 +32,6 @@ Run `node tools/editorial-test.js` to verify this edition. `check.html` and `too
 
 ## Writer portraits
 
-50 of the 68 result profiles include a matching chibi illustration. The 18 writers added in November 2026 (J.K. Rowling to Dan Brown in `data/writers.js`) have no portrait yet; their result page simply shows no picture. To add one, save `assets/writers/<id>.webp` and set `"portrait": "assets/writers/<id>.webp"` on that writer. Transparent WebP portraits live in `assets/writers/` and are linked by the `portrait` field in each writer profile. Each portrait appears as an upper-body circular medallion overlapping the top center of the colored result banner on desktop and mobile. Writing-approach labels are hidden from banners and the writer directory. Ancient and some early historical likenesses are imaginative reconstructions.
+All 68 result profiles include a matching chibi illustration. To add a writer's portrait, save `assets/writers/<id>.webp` and set `"portrait": "assets/writers/<id>.webp"` on that writer; a writer without one simply shows no picture. Transparent WebP portraits live in `assets/writers/` and are linked by the `portrait` field in each writer profile. Each portrait appears as an upper-body circular medallion overlapping the top center of the colored result banner on desktop and mobile. Writing-approach labels are hidden from banners and the writer directory. Ancient and some early historical likenesses are imaginative reconstructions.
 
-Run `node tools/portrait-test.js` to check all 50 portrait files, writer-to-image assignments and profile switching.
+Run `node tools/portrait-test.js` to check all 68 portrait files, writer-to-image assignments and profile switching.
