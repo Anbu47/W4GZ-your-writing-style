@@ -6,8 +6,8 @@ const root = path.join(__dirname, '..');
 const box = vm.createContext({});
 vm.runInContext(fs.readFileSync(path.join(root, 'data/writers.js'), 'utf8'), box);
 const writers = box.QUIZ_WRITERS;
-assert.equal(writers.length, 50);
-assert.equal(new Set(writers.map(w => w.color.toLowerCase())).size, 50);
+assert.equal(writers.length, 68);
+assert.equal(new Set(writers.map(w => w.color.toLowerCase())).size, writers.length);
 const lum = rgb => rgb.map(v => v <= .04045 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4)
   .reduce((sum, v, i) => sum + v * [.2126, .7152, .0722][i], 0);
 const contrast = (a, b) => (Math.max(lum(a), lum(b)) + .05) / (Math.min(lum(a), lum(b)) + .05);
@@ -28,4 +28,4 @@ assert.equal(box.resolveColor({color:'not-a-color'}), '#1f1a17');
 assert(html.includes('color = colorOf(w)'));
 assert(html.includes('colorOf(r.writer)'));
 assert(html.includes('sw.style.background = colorOf(x)'));
-console.log('PASS: 50 stable unique colors, header/chip text contrast, writer color rendering and legacy fallback.');
+console.log('PASS: ' + writers.length + ' stable unique colors, header/chip text contrast, writer color rendering and legacy fallback.');

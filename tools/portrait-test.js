@@ -2,9 +2,11 @@ const assert=require('assert'),fs=require('fs'),path=require('path'),vm=require(
 const root=path.join(__dirname,'..'),box=vm.createContext({});
 vm.runInContext(fs.readFileSync(path.join(root,'data/writers.js'),'utf8'),box);
 const writers=box.QUIZ_WRITERS;
-assert.equal(writers.length,50);
-assert.equal(new Set(writers.map(w=>w.portrait)).size,50);
-for(const w of writers){
+assert.equal(writers.length,68);
+const drawn=writers.filter(w=>w.portrait);
+assert.equal(drawn.length,50);
+assert.equal(new Set(drawn.map(w=>w.portrait)).size,50);
+for(const w of drawn){
  assert.equal(w.portrait,'assets/writers/'+w.id+'.webp');
  const image=fs.readFileSync(path.join(root,w.portrait));
  assert.equal(image.toString('ascii',0,4),'RIFF',w.name);
@@ -31,7 +33,12 @@ const start=html.indexOf('  function renderResult(w, res) {');
 const end=html.indexOf("  $('startShort').onclick",start);
 assert(start>=0&&end>start);
 vm.runInContext(html.slice(start,end),context);
-for(const writer of writers){
+for(const writer of writers.filter(w=>!w.portrait)){
+ context.renderResult(writer,null);
+ assert.equal(nodes.get('writerPortrait').hidden,true,writer.name);
+ assert.equal(nodes.get('writerPortrait').children.length,0,writer.name);
+}
+for(const writer of drawn){
  context.renderResult(writer,null);
  const top=nodes.get('rtop');
  const slot=nodes.get('writerPortrait');
@@ -55,4 +62,4 @@ assert(html.includes('.rtop.has-portrait'));
 assert(!html.includes('chips')&&!html.includes('APPROACHES'));
 assert(html.includes('@media(max-width:560px)'));
 assert(!html.includes('mixnote')&&!html.includes('match-detail'));
-console.log('PASS: 50 portrait assets, matching writer paths, profile switching, missing-image fallback and mobile layout rules.');
+console.log('PASS: 50 portrait assets (18 writers still without one), matching writer paths, profile switching, missing-image fallback and mobile layout rules.');

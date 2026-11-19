@@ -1,6 +1,6 @@
 # Which Famous Writer Are You? — W4GZ
 
-A quiz exploring literary affinities with 50 writers. Choose the short 25-question quiz or the complete 100-question quiz. Answer order is randomized; question order and the 624 writer assignments match the editorial source.
+A quiz exploring literary affinities with 68 writers. Choose the short 25-question quiz or the complete 100-question quiz. Answer order is randomized; question order and the 624 writer assignments match the editorial source.
 
 ## Source
 
@@ -32,6 +32,6 @@ Run `node tools/editorial-test.js` to verify this edition. `check.html` and `too
 
 ## Writer portraits
 
-All 50 result profiles include a matching chibi illustration. Transparent WebP portraits live in `assets/writers/` and are linked by the `portrait` field in each writer profile. Each portrait appears as an upper-body circular medallion overlapping the top center of the colored result banner on desktop and mobile. Writing-approach labels are hidden from banners and the writer directory. Ancient and some early historical likenesses are imaginative reconstructions.
+50 of the 68 result profiles include a matching chibi illustration. The 18 writers added in November 2026 (J.K. Rowling to Dan Brown in `data/writers.js`) have no portrait yet; their result page simply shows no picture. To add one, save `assets/writers/<id>.webp` and set `"portrait": "assets/writers/<id>.webp"` on that writer. Transparent WebP portraits live in `assets/writers/` and are linked by the `portrait` field in each writer profile. Each portrait appears as an upper-body circular medallion overlapping the top center of the colored result banner on desktop and mobile. Writing-approach labels are hidden from banners and the writer directory. Ancient and some early historical likenesses are imaginative reconstructions.
 
 Run `node tools/portrait-test.js` to check all 50 portrait files, writer-to-image assignments and profile switching.

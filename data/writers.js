@@ -39,9 +39,6 @@ var QUIZ_WRITERS = [
       "q012": [
         "a"
       ],
-      "q013": [
-        "a"
-      ],
       "q023": [
         "c"
       ],
@@ -145,9 +142,6 @@ var QUIZ_WRITERS = [
     "watchOut": "Rewriting chapter one forever and never reaching the end.",
     "exercise": "Finish a whole draft before you revise anything. Then do a revision pass where every conversation must show something new about a character.",
     "fit": {
-      "q002": [
-        "d"
-      ],
       "q005": [
         "b"
       ],
@@ -156,15 +150,6 @@ var QUIZ_WRITERS = [
       ],
       "q008": [
         "b"
-      ],
-      "q013": [
-        "a"
-      ],
-      "q014": [
-        "a"
-      ],
-      "q017": [
-        "a"
       ],
       "q019": [
         "a"
@@ -313,6 +298,9 @@ var QUIZ_WRITERS = [
     "watchOut": "Endings. Stories that start strong can stall when the energy runs out.",
     "exercise": "Write your last scene now, even roughly. Now you're racing toward something instead of away from the blank page.",
     "fit": {
+      "q003": [
+        "b"
+      ],
       "q004": [
         "b"
       ],
@@ -438,9 +426,6 @@ var QUIZ_WRITERS = [
       "q001": [
         "a"
       ],
-      "q002": [
-        "b"
-      ],
       "q005": [
         "d"
       ],
@@ -455,12 +440,6 @@ var QUIZ_WRITERS = [
       ],
       "q021": [
         "a"
-      ],
-      "q022": [
-        "c"
-      ],
-      "q023": [
-        "c"
       ],
       "q028": [
         "d"
@@ -515,14 +494,8 @@ var QUIZ_WRITERS = [
       "q002": [
         "a"
       ],
-      "q004": [
-        "d"
-      ],
       "q009": [
         "d"
-      ],
-      "q012": [
-        "c"
       ],
       "q016": [
         "a"
@@ -594,9 +567,6 @@ var QUIZ_WRITERS = [
       ],
       "q012": [
         "a"
-      ],
-      "q024": [
-        "d"
       ],
       "q027": [
         "a"
@@ -989,6 +959,9 @@ var QUIZ_WRITERS = [
     "watchOut": "Episodes that pile up without moving the story forward.",
     "exercise": "Write a conversation between a dreamer and a realist looking at the same ordinary object. Let each be right about something.",
     "fit": {
+      "q006": [
+        "d"
+      ],
       "q009": [
         "a"
       ],
@@ -1188,6 +1161,9 @@ var QUIZ_WRITERS = [
       "q007": [
         "c"
       ],
+      "q011": [
+        "a"
+      ],
       "q021": [
         "b"
       ],
@@ -1309,9 +1285,6 @@ var QUIZ_WRITERS = [
       "q002": [
         "a"
       ],
-      "q004": [
-        "a"
-      ],
       "q007": [
         "d"
       ],
@@ -1377,6 +1350,15 @@ var QUIZ_WRITERS = [
     "watchOut": "Starting ten things and finishing none.",
     "exercise": "Take one idea and write it three ways: as a four-line poem, as a short dialogue and as a diary entry.",
     "fit": {
+      "q002": [
+        "c"
+      ],
+      "q014": [
+        "b"
+      ],
+      "q019": [
+        "c"
+      ],
       "q027": [
         "d"
       ],
@@ -1619,6 +1601,12 @@ var QUIZ_WRITERS = [
     "watchOut": "A narrator who is always right.",
     "exercise": "Write a page in first person in which your narrator disagrees with someone more powerful, and says so.",
     "fit": {
+      "q005": [
+        "a"
+      ],
+      "q016": [
+        "d"
+      ],
       "q019": [
         "a"
       ],
@@ -1673,9 +1661,6 @@ var QUIZ_WRITERS = [
       "q001": [
         "b"
       ],
-      "q003": [
-        "a"
-      ],
       "q004": [
         "b"
       ],
@@ -1686,9 +1671,6 @@ var QUIZ_WRITERS = [
         "d"
       ],
       "q020": [
-        "b"
-      ],
-      "q022": [
         "b"
       ],
       "q024": [
@@ -1874,6 +1856,9 @@ var QUIZ_WRITERS = [
       "q008": [
         "c"
       ],
+      "q017": [
+        "a"
+      ],
       "q020": [
         "a"
       ],
@@ -1921,6 +1906,12 @@ var QUIZ_WRITERS = [
     "fit": {
       "q004": [
         "d"
+      ],
+      "q018": [
+        "c"
+      ],
+      "q022": [
+        "a"
       ],
       "q033": [
         "d"
@@ -2090,6 +2081,12 @@ var QUIZ_WRITERS = [
     "watchOut": "Endings. A story that starts strong can stall when the excitement runs out.",
     "exercise": "Write your last scene now, even roughly. Then you are racing toward something.",
     "fit": {
+      "q002": [
+        "b"
+      ],
+      "q011": [
+        "b"
+      ],
       "q016": [
         "b"
       ],
@@ -2266,7 +2263,13 @@ var QUIZ_WRITERS = [
     "watchOut": "Staying on the surface because it comes so easily.",
     "exercise": "Tell a sad story in a cheerful, chatty voice. Keep the sadness for the last two lines.",
     "fit": {
+      "q006": [
+        "a"
+      ],
       "q009": [
+        "a"
+      ],
+      "q015": [
         "a"
       ],
       "q042": [
@@ -2402,6 +2405,9 @@ var QUIZ_WRITERS = [
       "q018": [
         "a"
       ],
+      "q021": [
+        "d"
+      ],
       "q024": [
         "c"
       ],
@@ -2471,9 +2477,6 @@ var QUIZ_WRITERS = [
       "q016": [
         "d"
       ],
-      "q025": [
-        "b"
-      ],
       "q036": [
         "a"
       ],
@@ -2524,17 +2527,8 @@ var QUIZ_WRITERS = [
       "q002": [
         "c"
       ],
-      "q003": [
-        "b"
-      ],
-      "q008": [
-        "a"
-      ],
       "q009": [
         "c"
-      ],
-      "q012": [
-        "d"
       ],
       "q015": [
         "d"
@@ -2600,20 +2594,11 @@ var QUIZ_WRITERS = [
     "watchOut": "Sentences so long that the reader forgets where they began.",
     "exercise": "Pick a taste or smell from when you were small. Write everything it brings back, without stopping, for ten minutes.",
     "fit": {
-      "q003": [
-        "b"
-      ],
       "q004": [
         "a"
       ],
-      "q009": [
-        "c"
-      ],
       "q010": [
         "b"
-      ],
-      "q012": [
-        "d"
       ],
       "q014": [
         "a"
@@ -2684,6 +2669,9 @@ var QUIZ_WRITERS = [
         "b"
       ],
       "q010": [
+        "a"
+      ],
+      "q024": [
         "a"
       ],
       "q027": [
@@ -2864,6 +2852,9 @@ var QUIZ_WRITERS = [
     "exercise": "Write a short scene by a river or a road, and end it with four lines that could be sung.",
     "fit": {
       "q011": [
+        "b"
+      ],
+      "q020": [
         "b"
       ],
       "q021": [
@@ -3106,9 +3097,6 @@ var QUIZ_WRITERS = [
     "watchOut": "Leaving readers behind when the story jumps in time.",
     "exercise": "Write about a family object that has been passed down. Let it tell one thing the family doesn't talk about.",
     "fit": {
-      "q002": [
-        "a"
-      ],
       "q005": [
         "d"
       ],
@@ -3118,23 +3106,14 @@ var QUIZ_WRITERS = [
       "q012": [
         "c"
       ],
-      "q016": [
-        "a"
-      ],
       "q018": [
         "d"
       ],
       "q021": [
         "c"
       ],
-      "q023": [
-        "d"
-      ],
       "q024": [
         "d"
-      ],
-      "q025": [
-        "c"
       ],
       "q032": [
         "d"
@@ -3174,5 +3153,1019 @@ var QUIZ_WRITERS = [
       ]
     },
     "portrait": "assets/writers/morrison.webp"
+  },
+  {
+    "id": "rowling",
+    "name": "J.K. Rowling",
+    "years": "born 1965",
+    "from": "England",
+    "focus": "world",
+    "color": "#276105",
+    "approach": "planner",
+    "tagline": "It does not do to dwell on dreams and forget to live.",
+    "taglineFrom": "Harry Potter and the Philosopher's Stone",
+    "style": "Like Rowling, you build a whole hidden world with its own rules, schools and history, then fill it with friends who would do anything for each other. You plant clues early and pay them off books later.",
+    "trueStory": "The idea for Harry Potter came to Rowling in 1990 on a delayed train from Manchester to London. She planned all seven books before the first one was published, and twelve publishers turned it down.",
+    "about": "Rowling grew up in the west of England and wrote much of the first Harry Potter book as a single mother in Edinburgh. The series follows a boy who learns he is a wizard and grows up over seven school years, while a war gathers around him. It became one of the best-selling book series in history.",
+    "works": [
+      "Harry Potter and the Philosopher's Stone",
+      "Harry Potter and the Prisoner of Azkaban",
+      "Harry Potter and the Deathly Hallows"
+    ],
+    "startWith": "Harry Potter and the Philosopher's Stone.",
+    "superpower": "World-building and long-range planning. Your readers trust that every detail matters.",
+    "watchOut": "So many rules and secrets that the story needs long explanations.",
+    "exercise": "Invent one rule of a magical world. Write a scene where a character breaks it by accident and pays a price.",
+    "fit": {
+      "q003": [
+        "a"
+      ],
+      "q005": [
+        "c"
+      ],
+      "q006": [
+        "b"
+      ],
+      "q018": [
+        "b"
+      ],
+      "q020": [
+        "d"
+      ],
+      "q022": [
+        "c"
+      ],
+      "q032": [
+        "d"
+      ],
+      "q033": [
+        "d"
+      ],
+      "q037": [
+        "c"
+      ],
+      "q038": [
+        "a"
+      ],
+      "q039": [
+        "d"
+      ],
+      "q043": [
+        "a"
+      ],
+      "q050": [
+        "d"
+      ],
+      "q087": [
+        "a"
+      ],
+      "q090": [
+        "b"
+      ]
+    }
+  },
+  {
+    "id": "king",
+    "name": "Stephen King",
+    "years": "born 1947",
+    "from": "United States",
+    "focus": "spark",
+    "color": "#7d127b",
+    "approach": "explorer",
+    "tagline": "Books are a uniquely portable magic.",
+    "taglineFrom": "On Writing",
+    "style": "Like King, you start with ordinary people in an ordinary town, then let something terrible creep in. Your characters talk like real people, and you discover the story by writing it.",
+    "trueStory": "King threw an early draft of Carrie into the trash. His wife, Tabitha, pulled it out and told him to finish it. It became his first published novel in 1974.",
+    "about": "King grew up in Maine, where most of his stories are set. He worked in a laundry and as a teacher while selling short stories to magazines. He has written more than 60 novels, and his memoir On Writing is a favorite guide for new writers. Many of his books are for adult readers.",
+    "works": [
+      "Carrie",
+      "It",
+      "The Shining",
+      "On Writing"
+    ],
+    "startWith": "On Writing, his book about how he works. Most of his novels are for older readers.",
+    "superpower": "Suspense and believable everyday voices.",
+    "watchOut": "Stories that keep growing long after the scary part is done.",
+    "exercise": "Describe a completely normal room. Then add one small detail that is wrong, and let a character notice it.",
+    "fit": {
+      "q004": [
+        "b"
+      ],
+      "q018": [
+        "a"
+      ],
+      "q020": [
+        "a"
+      ],
+      "q026": [
+        "b"
+      ],
+      "q029": [
+        "d"
+      ],
+      "q033": [
+        "a"
+      ],
+      "q044": [
+        "a"
+      ],
+      "q065": [
+        "c"
+      ],
+      "q090": [
+        "a"
+      ],
+      "q097": [
+        "b"
+      ]
+    }
+  },
+  {
+    "id": "fitzgerald",
+    "name": "F. Scott Fitzgerald",
+    "years": "1896–1940",
+    "from": "United States",
+    "focus": "voice",
+    "color": "#740625",
+    "approach": "reviser",
+    "tagline": "So we beat on, boats against the current, borne back ceaselessly into the past.",
+    "taglineFrom": "The Great Gatsby",
+    "style": "Like Fitzgerald, you write beautiful sentences about glamorous lives and the longing underneath them. Parties, money and old love all shine on the surface, and something sad waits below.",
+    "trueStory": "Fitzgerald considered many titles for The Great Gatsby, including Trimalchio in West Egg. The book sold poorly in his lifetime, and he died believing he had failed.",
+    "about": "Fitzgerald grew up in Minnesota and became famous young, with his wife Zelda, as a face of the Jazz Age, a name he helped make popular. His stories describe wealth, parties and broken dreams in 1920s America. The Great Gatsby became a classic only after his death.",
+    "works": [
+      "The Great Gatsby",
+      "Tender Is the Night",
+      "Babylon Revisited"
+    ],
+    "startWith": "The Great Gatsby, short and full of famous sentences.",
+    "superpower": "Lyrical sentences and a sharp eye for what money does to people.",
+    "watchOut": "Beautiful writing about characters the reader can't quite reach.",
+    "exercise": "Describe a party from the point of view of someone who wishes they were somewhere else.",
+    "fit": {
+      "q004": [
+        "a"
+      ],
+      "q007": [
+        "c"
+      ],
+      "q009": [
+        "b"
+      ],
+      "q013": [
+        "a"
+      ],
+      "q016": [
+        "d"
+      ],
+      "q031": [
+        "c"
+      ],
+      "q049": [
+        "b"
+      ],
+      "q076": [
+        "d"
+      ],
+      "q079": [
+        "c"
+      ],
+      "q092": [
+        "c"
+      ],
+      "q094": [
+        "d"
+      ],
+      "q100": [
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "grimm",
+    "name": "Brothers Grimm",
+    "years": "Jacob 1785–1863, Wilhelm 1786–1859",
+    "from": "Germany",
+    "focus": "world",
+    "color": "#0f1d6b",
+    "approach": "reviser",
+    "tagline": "Mirror, mirror on the wall, who in this land is fairest of all?",
+    "taglineFrom": "Snow White",
+    "style": "Like the Grimms, you love stories that have been told for generations. You keep them simple and strong: a forest, a wolf, three tasks, a reward and a punishment.",
+    "trueStory": "Jacob and Wilhelm Grimm collected their tales from storytellers, including Dorothea Viehmann. Wilhelm kept revising the collection through seven editions, from 1812 to 1857.",
+    "about": "The Grimm brothers were scholars of the German language who set out to save the folk tales they feared would be lost. Their Children's and Household Tales includes Hansel and Gretel, Rapunzel and Snow White. They also began a huge German dictionary.",
+    "works": [
+      "Children's and Household Tales",
+      "Hansel and Gretel",
+      "Rapunzel",
+      "Snow White"
+    ],
+    "startWith": "Hansel and Gretel, in an unabridged translation.",
+    "superpower": "Clear, memorable story shapes that people want to retell.",
+    "watchOut": "Characters so simple they have no inner life.",
+    "exercise": "Retell a story your family tells, in fairy-tale form: begin with \"Once upon a time\" and use something that happens three times.",
+    "fit": {
+      "q002": [
+        "a"
+      ],
+      "q012": [
+        "c"
+      ],
+      "q017": [
+        "b"
+      ],
+      "q022": [
+        "a"
+      ],
+      "q033": [
+        "d"
+      ],
+      "q039": [
+        "d"
+      ],
+      "q048": [
+        "a"
+      ],
+      "q050": [
+        "c"
+      ],
+      "q064": [
+        "a"
+      ],
+      "q075": [
+        "a"
+      ],
+      "q092": [
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "conan-doyle",
+    "name": "Arthur Conan Doyle",
+    "years": "1859–1930",
+    "from": "Scotland",
+    "focus": "spark",
+    "color": "#6b1a0f",
+    "approach": "planner",
+    "tagline": "When you have eliminated the impossible, whatever remains, however improbable, must be the truth.",
+    "taglineFrom": "The Sign of the Four",
+    "style": "Like Conan Doyle, you build stories around a puzzle and a brilliant mind. A loyal friend tells the story, and every clue is there for the reader to find.",
+    "trueStory": "Conan Doyle based Sherlock Holmes partly on Joseph Bell, a doctor who taught him in Edinburgh. He killed Holmes off in 1893, but readers protested and he brought him back.",
+    "about": "Conan Doyle trained as a doctor and wrote stories while waiting for patients. Sherlock Holmes first appeared in A Study in Scarlet in 1887 and became the most famous detective in fiction. He also wrote historical novels and adventure stories such as The Lost World.",
+    "works": [
+      "A Study in Scarlet",
+      "The Adventures of Sherlock Holmes",
+      "The Hound of the Baskervilles",
+      "The Lost World"
+    ],
+    "startWith": "\"The Red-Headed League\", a short Holmes story.",
+    "superpower": "Logic and fair-play mysteries.",
+    "watchOut": "A genius hero who leaves no room for anyone else.",
+    "exercise": "Write a scene where a detective guesses three facts about a stranger from small details. Explain each one.",
+    "fit": {
+      "q003": [
+        "a"
+      ],
+      "q008": [
+        "a"
+      ],
+      "q011": [
+        "d"
+      ],
+      "q019": [
+        "b"
+      ],
+      "q022": [
+        "b"
+      ],
+      "q032": [
+        "c"
+      ],
+      "q037": [
+        "c"
+      ],
+      "q038": [
+        "a"
+      ],
+      "q052": [
+        "b"
+      ],
+      "q073": [
+        "a"
+      ],
+      "q090": [
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "harper-lee",
+    "name": "Harper Lee",
+    "years": "1926–2016",
+    "from": "United States",
+    "focus": "heart",
+    "color": "#721d53",
+    "approach": "reviser",
+    "tagline": "You never really understand a person until you consider things from his point of view.",
+    "taglineFrom": "To Kill a Mockingbird",
+    "style": "Like Harper Lee, you tell a story about injustice through the eyes of a child. You show a whole small town, its kindness and its prejudice, and let the reader grow up with the narrator.",
+    "trueStory": "In 1956 Lee's friends gave her a year's wages as a Christmas present so she could write full time. The result became To Kill a Mockingbird.",
+    "about": "Lee grew up in Monroeville, Alabama, where her childhood friend was the writer Truman Capote, the model for the character Dill. To Kill a Mockingbird came out in 1960, won the Pulitzer Prize and became one of the most widely read American novels. An earlier draft, Go Set a Watchman, was published in 2015.",
+    "works": [
+      "To Kill a Mockingbird",
+      "Go Set a Watchman"
+    ],
+    "startWith": "To Kill a Mockingbird.",
+    "superpower": "Moral clarity told with warmth and humor.",
+    "watchOut": "Characters who exist only to teach a lesson.",
+    "exercise": "Describe an adult you know through the eyes of a seven-year-old. Let the child misunderstand one important thing.",
+    "fit": {
+      "q002": [
+        "d"
+      ],
+      "q005": [
+        "b"
+      ],
+      "q007": [
+        "a"
+      ],
+      "q008": [
+        "b"
+      ],
+      "q024": [
+        "d"
+      ],
+      "q033": [
+        "a"
+      ],
+      "q046": [
+        "b"
+      ],
+      "q047": [
+        "c"
+      ],
+      "q054": [
+        "b"
+      ],
+      "q092": [
+        "d"
+      ],
+      "q098": [
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "coelho",
+    "name": "Paulo Coelho",
+    "years": "born 1947",
+    "from": "Brazil",
+    "focus": "heart",
+    "color": "#880707",
+    "approach": "explorer",
+    "tagline": "When you want something, all the universe conspires in helping you to achieve it.",
+    "taglineFrom": "The Alchemist",
+    "style": "Like Coelho, you write simple stories that carry a big idea. A traveler follows a dream, reads the signs along the way and learns something about life.",
+    "trueStory": "In 1986 Coelho walked the Camino de Santiago, a pilgrimage route in Spain, and wrote about it in The Pilgrimage. His next book, The Alchemist, had a tiny first print run in Brazil before it became a worldwide bestseller.",
+    "about": "Coelho was a songwriter and journalist in Brazil before he became a novelist. The Alchemist, about a shepherd boy traveling to find a treasure, has been translated into more than 80 languages. His books mix travel, spirituality and short parables.",
+    "works": [
+      "The Alchemist",
+      "The Pilgrimage",
+      "Brida"
+    ],
+    "startWith": "The Alchemist.",
+    "superpower": "Clear, hopeful storytelling that readers return to.",
+    "watchOut": "Messages so direct that the story feels like advice.",
+    "exercise": "Write a short journey in which a character misreads a sign at first, then understands it at the end.",
+    "fit": {
+      "q003": [
+        "c"
+      ],
+      "q008": [
+        "c"
+      ],
+      "q021": [
+        "b"
+      ],
+      "q035": [
+        "a"
+      ],
+      "q043": [
+        "d"
+      ],
+      "q071": [
+        "d"
+      ],
+      "q081": [
+        "d"
+      ],
+      "q088": [
+        "a"
+      ],
+      "q100": [
+        "d"
+      ]
+    }
+  },
+  {
+    "id": "murakami",
+    "name": "Haruki Murakami",
+    "years": "born 1949",
+    "from": "Japan",
+    "focus": "world",
+    "color": "#155214",
+    "approach": "explorer",
+    "tagline": "If you only read the books that everyone else is reading, you can only think what everyone else is thinking.",
+    "taglineFrom": "Norwegian Wood",
+    "style": "Like Murakami, you write about lonely people in ordinary cities, and then something strange slips in: a cat that talks, a well, a second moon. You tell it calmly, with music in the background.",
+    "trueStory": "Murakami ran a jazz bar in Tokyo. He has said the idea of writing a novel came to him suddenly at a baseball game in 1978, and he wrote his first book at the kitchen table late at night.",
+    "about": "Murakami grew up in Kobe and has also translated American writers, including F. Scott Fitzgerald, into Japanese. His novels mix everyday life with dreamlike events and are read around the world. He is also a long-distance runner who has written about running. Some of his books are for adult readers.",
+    "works": [
+      "Norwegian Wood",
+      "Kafka on the Shore",
+      "The Wind-Up Bird Chronicle",
+      "1Q84"
+    ],
+    "startWith": "The short stories in The Elephant Vanishes.",
+    "superpower": "A calm voice that makes the strange feel real.",
+    "watchOut": "Mysteries that never come together.",
+    "exercise": "Write a page about an ordinary evening. Halfway through, let one impossible thing happen, and don't let the narrator panic.",
+    "fit": {
+      "q004": [
+        "c"
+      ],
+      "q012": [
+        "d"
+      ],
+      "q018": [
+        "a"
+      ],
+      "q019": [
+        "d"
+      ],
+      "q024": [
+        "c"
+      ],
+      "q026": [
+        "b"
+      ],
+      "q059": [
+        "b"
+      ],
+      "q063": [
+        "a"
+      ],
+      "q065": [
+        "b"
+      ],
+      "q090": [
+        "d"
+      ],
+      "q093": [
+        "d"
+      ]
+    }
+  },
+  {
+    "id": "steinbeck",
+    "name": "John Steinbeck",
+    "years": "1902–1968",
+    "from": "United States",
+    "focus": "heart",
+    "color": "#580561",
+    "approach": "planner",
+    "tagline": "And now that you don't have to be perfect, you can be good.",
+    "taglineFrom": "East of Eden",
+    "style": "Like Steinbeck, you write about working people, the land they live on and the hard times that test them. Your stories are plain and warm, and they ask readers to care about people who are often ignored.",
+    "trueStory": "Steinbeck's dog chewed up about half of an early draft of Of Mice and Men, and he had to rewrite it. He said the dog may have been acting as a critic.",
+    "about": "Steinbeck grew up in California's Salinas Valley and worked on ranches next to migrant workers. The Grapes of Wrath, about a family fleeing the Dust Bowl, won the Pulitzer Prize and was banned in some places. He won the Nobel Prize in Literature in 1962.",
+    "works": [
+      "Of Mice and Men",
+      "The Grapes of Wrath",
+      "East of Eden",
+      "Travels with Charley"
+    ],
+    "startWith": "Of Mice and Men, a short novel about two friends.",
+    "superpower": "Compassion for ordinary people and a strong sense of place.",
+    "watchOut": "Symbols that tell the reader what to think.",
+    "exercise": "Write a scene where two friends share a dream they both know is unlikely.",
+    "fit": {
+      "q001": [
+        "a"
+      ],
+      "q012": [
+        "a"
+      ],
+      "q013": [
+        "a"
+      ],
+      "q016": [
+        "a"
+      ],
+      "q030": [
+        "b"
+      ],
+      "q034": [
+        "c"
+      ],
+      "q043": [
+        "b"
+      ],
+      "q049": [
+        "d"
+      ],
+      "q067": [
+        "a"
+      ],
+      "q080": [
+        "d"
+      ],
+      "q090": [
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "cs-lewis",
+    "name": "C.S. Lewis",
+    "years": "1898–1963",
+    "from": "Northern Ireland",
+    "focus": "world",
+    "color": "#615005",
+    "approach": "planner",
+    "tagline": "Some day you will be old enough to start reading fairy tales again.",
+    "taglineFrom": "The Lion, the Witch and the Wardrobe (dedication)",
+    "style": "Like Lewis, you open a door into another world: a wardrobe, a painting, a wood between worlds. Your adventures are also about big questions of right, wrong and faith.",
+    "trueStory": "Lewis said Narnia began with a picture he had carried in his head since he was sixteen: a faun carrying an umbrella and parcels through a snowy wood.",
+    "about": "Lewis was born in Belfast and taught at Oxford and Cambridge. He belonged to the Inklings, a writers' group that included J.R.R. Tolkien, whose conversations helped him turn to Christianity. He wrote the seven Chronicles of Narnia as well as essays and other novels.",
+    "works": [
+      "The Lion, the Witch and the Wardrobe",
+      "The Voyage of the Dawn Treader",
+      "The Screwtape Letters",
+      "Till We Have Faces"
+    ],
+    "startWith": "The Lion, the Witch and the Wardrobe.",
+    "superpower": "Wonder, and a clear sense of what is at stake.",
+    "watchOut": "Letting the lesson take over the adventure.",
+    "exercise": "Choose an ordinary household object. Write the moment a character discovers it leads somewhere else.",
+    "fit": {
+      "q005": [
+        "c"
+      ],
+      "q017": [
+        "b"
+      ],
+      "q018": [
+        "b"
+      ],
+      "q035": [
+        "b"
+      ],
+      "q050": [
+        "d"
+      ],
+      "q077": [
+        "b"
+      ],
+      "q087": [
+        "a"
+      ],
+      "q088": [
+        "b"
+      ],
+      "q094": [
+        "c"
+      ],
+      "q097": [
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "blyton",
+    "name": "Enid Blyton",
+    "years": "1897–1968",
+    "from": "England",
+    "focus": "spark",
+    "color": "#05614f",
+    "approach": "explorer",
+    "tagline": "It is an absolutely marvellous name.",
+    "taglineFrom": "The Folk of the Faraway Tree",
+    "style": "Like Blyton, you write fast, fun adventures for young readers: a gang of friends, a secret, a picnic and a mystery to solve before the holidays end.",
+    "trueStory": "Blyton was one of the most productive writers ever. She wrote hundreds of books and could type several thousand words in a single day.",
+    "about": "Blyton trained as a teacher before she became a full-time writer. Her series include the Famous Five, the Secret Seven, Malory Towers and the Faraway Tree, and her books have sold hundreds of millions of copies. Some critics and libraries dismissed her simple style, but generations of children learned to love reading with her books.",
+    "works": [
+      "Five on a Treasure Island",
+      "The Enchanted Wood",
+      "Malory Towers",
+      "The Secret Seven"
+    ],
+    "startWith": "The Enchanted Wood, the first Faraway Tree book.",
+    "superpower": "Momentum. Readers can't wait to turn the page.",
+    "watchOut": "Characters who all sound the same.",
+    "exercise": "Write the first page of a holiday adventure in which four friends find something they shouldn't have.",
+    "fit": {
+      "q001": [
+        "d"
+      ],
+      "q004": [
+        "d"
+      ],
+      "q019": [
+        "b"
+      ],
+      "q029": [
+        "d"
+      ],
+      "q037": [
+        "c"
+      ],
+      "q044": [
+        "d"
+      ],
+      "q087": [
+        "c"
+      ],
+      "q090": [
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "emily-bronte",
+    "name": "Emily Brontë",
+    "years": "1818–1848",
+    "from": "England",
+    "focus": "heart",
+    "color": "#0f5d6b",
+    "approach": "explorer",
+    "tagline": "Whatever our souls are made of, his and mine are the same.",
+    "taglineFrom": "Wuthering Heights",
+    "style": "Like Emily Brontë, you write about wild places and wilder feelings. Love turns into obsession and revenge, and the story is passed between narrators who don't fully understand it.",
+    "trueStory": "Emily published Wuthering Heights in 1847 under the name Ellis Bell. It was her only novel, and she died the next year, aged thirty.",
+    "about": "Emily grew up with her sisters Charlotte and Anne on the Yorkshire moors. As children they invented imaginary kingdoms and wrote tiny books about them. Wuthering Heights puzzled many first readers and is now one of the most famous love stories in English.",
+    "works": [
+      "Wuthering Heights",
+      "No Coward Soul Is Mine (poem)"
+    ],
+    "startWith": "The first chapters of Wuthering Heights, told by a visitor who gets snowed in.",
+    "superpower": "Raw emotional power and atmosphere.",
+    "watchOut": "Characters so extreme readers stop believing them.",
+    "exercise": "Describe a storm from inside a house, through the eyes of someone waiting for a person who may not come.",
+    "fit": {
+      "q008": [
+        "d"
+      ],
+      "q013": [
+        "c"
+      ],
+      "q016": [
+        "a"
+      ],
+      "q018": [
+        "d"
+      ],
+      "q025": [
+        "c"
+      ],
+      "q030": [
+        "c"
+      ],
+      "q031": [
+        "a"
+      ],
+      "q042": [
+        "d"
+      ],
+      "q054": [
+        "c"
+      ],
+      "q078": [
+        "c"
+      ],
+      "q091": [
+        "b"
+      ],
+      "q097": [
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "stoker",
+    "name": "Bram Stoker",
+    "years": "1847–1912",
+    "from": "Ireland",
+    "focus": "spark",
+    "color": "#7d123d",
+    "approach": "planner",
+    "tagline": "Welcome to my house! Enter freely and of your own will!",
+    "taglineFrom": "Dracula",
+    "style": "Like Stoker, you tell a frightening story through letters, diaries and newspaper reports. Each voice knows only part of the truth, and the reader puts the horror together.",
+    "trueStory": "Stoker spent years making notes for Dracula before it came out in 1897. A visit to the seaside town of Whitby, which appears in the novel, gave him ideas for it.",
+    "about": "Stoker was so ill as a small child that he could hardly walk until about age seven. He later worked as manager of a London theater for the actor Henry Irving, writing novels in his spare time. Dracula has shaped almost every vampire story since.",
+    "works": [
+      "Dracula",
+      "The Jewel of Seven Stars",
+      "The Lair of the White Worm"
+    ],
+    "startWith": "Dracula, starting with Jonathan Harker's journal.",
+    "superpower": "Building dread from many points of view.",
+    "watchOut": "Too many documents slowing the story down.",
+    "exercise": "Tell a short, eerie event in three pieces: a text message, a diary entry and a news report.",
+    "fit": {
+      "q004": [
+        "b"
+      ],
+      "q015": [
+        "d"
+      ],
+      "q018": [
+        "d"
+      ],
+      "q040": [
+        "b"
+      ],
+      "q061": [
+        "c"
+      ],
+      "q065": [
+        "c"
+      ],
+      "q078": [
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "wells",
+    "name": "H.G. Wells",
+    "years": "1866–1946",
+    "from": "England",
+    "focus": "world",
+    "color": "#40127d",
+    "approach": "planner",
+    "tagline": "I am afraid I cannot convey the peculiar sensations of time travelling.",
+    "taglineFrom": "The Time Machine",
+    "style": "Like Wells, you start with a scientific \"what if\" and follow it to its end. Time travel, invisible men and invaders from Mars all become ways to look at society today.",
+    "trueStory": "Wells studied biology under the scientist T.H. Huxley, the grandfather of Aldous Huxley. In 1938 a radio version of The War of the Worlds frightened some listeners who thought it was real news.",
+    "about": "Wells grew up poor and worked as a shop apprentice before winning a scholarship to study science in London. The Time Machine, The Invisible Man and The War of the Worlds helped create modern science fiction. He also wrote histories and argued for social change.",
+    "works": [
+      "The Time Machine",
+      "The War of the Worlds",
+      "The Invisible Man",
+      "The Island of Doctor Moreau"
+    ],
+    "startWith": "The Time Machine, a short novel.",
+    "superpower": "Big ideas made concrete and exciting.",
+    "watchOut": "Ideas that crowd out the characters.",
+    "exercise": "Imagine one invention that doesn't exist. Write a scene showing its first unexpected side effect.",
+    "fit": {
+      "q013": [
+        "d"
+      ],
+      "q017": [
+        "c"
+      ],
+      "q025": [
+        "a"
+      ],
+      "q027": [
+        "c"
+      ],
+      "q050": [
+        "b"
+      ],
+      "q058": [
+        "c"
+      ],
+      "q087": [
+        "b"
+      ],
+      "q099": [
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "asimov",
+    "name": "Isaac Asimov",
+    "years": "c. 1920–1992",
+    "from": "United States (born in Russia)",
+    "focus": "world",
+    "color": "#144152",
+    "approach": "planner",
+    "tagline": "Violence is the last refuge of the incompetent.",
+    "taglineFrom": "Foundation",
+    "style": "Like Asimov, you build stories from ideas and rules: laws for robots, a science that predicts history. Your prose is plain, and the fun is in the logic puzzle.",
+    "trueStory": "Asimov's Three Laws of Robotics were first stated in his 1942 story \"Runaround\". He wrote or edited around 500 books in his lifetime.",
+    "about": "Asimov's family moved from Russia to New York when he was a child, and he grew up reading the magazines in his father's candy store. He became a professor of biochemistry and wrote science fiction, popular science and much more. His Foundation and Robot series follow history across thousands of years.",
+    "works": [
+      "I, Robot",
+      "Foundation",
+      "The Caves of Steel",
+      "Nightfall"
+    ],
+    "startWith": "I, Robot, a set of connected robot stories.",
+    "superpower": "Clear thinking and clever ideas.",
+    "watchOut": "Characters who are only there to explain things.",
+    "exercise": "Invent three rules for a machine. Write a scene where following all three causes a problem.",
+    "fit": {
+      "q010": [
+        "a"
+      ],
+      "q013": [
+        "d"
+      ],
+      "q017": [
+        "c"
+      ],
+      "q023": [
+        "d"
+      ],
+      "q037": [
+        "a"
+      ],
+      "q050": [
+        "a"
+      ],
+      "q051": [
+        "c"
+      ],
+      "q074": [
+        "d"
+      ],
+      "q081": [
+        "b"
+      ],
+      "q099": [
+        "a"
+      ]
+    }
+  },
+  {
+    "id": "bradbury",
+    "name": "Ray Bradbury",
+    "years": "1920–2012",
+    "from": "United States",
+    "focus": "voice",
+    "color": "#590d1a",
+    "approach": "explorer",
+    "tagline": "It was a pleasure to burn.",
+    "taglineFrom": "Fahrenheit 451",
+    "style": "Like Bradbury, you write poetic, image-filled stories that mix wonder and warning. Rockets, small towns and summer nights all glow in your sentences.",
+    "trueStory": "Bradbury wrote the first version of Fahrenheit 451 on rented typewriters in the basement of a university library, paying ten cents for every half hour.",
+    "about": "Bradbury never went to college; he said he educated himself in libraries. He wrote short stories almost every day and became one of the best-known science fiction writers, though many of his stories are closer to poetry or fantasy. Fahrenheit 451 imagines a future where books are burned.",
+    "works": [
+      "Fahrenheit 451",
+      "The Martian Chronicles",
+      "Dandelion Wine",
+      "Something Wicked This Way Comes"
+    ],
+    "startWith": "\"All Summer in a Day\", a short story.",
+    "superpower": "Vivid, poetic images.",
+    "watchOut": "Mood that carries more weight than the plot can hold.",
+    "exercise": "Write one paragraph about a summer memory using at least five senses. Then rewrite it as if it happened on Mars.",
+    "fit": {
+      "q001": [
+        "b"
+      ],
+      "q004": [
+        "d"
+      ],
+      "q007": [
+        "d"
+      ],
+      "q010": [
+        "d"
+      ],
+      "q033": [
+        "c"
+      ],
+      "q040": [
+        "c"
+      ],
+      "q053": [
+        "c"
+      ],
+      "q082": [
+        "d"
+      ],
+      "q093": [
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "huxley",
+    "name": "Aldous Huxley",
+    "years": "1894–1963",
+    "from": "England",
+    "focus": "world",
+    "color": "#063d74",
+    "approach": "planner",
+    "tagline": "Words can be like X-rays if you use them properly—they'll go through anything.",
+    "taglineFrom": "Brave New World",
+    "style": "Like Huxley, you write novels of ideas. You imagine a society that seems perfect, then show what it costs, with sharp humor and long arguments about how to live.",
+    "trueStory": "Huxley briefly taught French at Eton, where one of his pupils was the young Eric Blair, later known as George Orwell.",
+    "about": "Huxley came from a famous family of scientists; his grandfather was T.H. Huxley. An eye illness at sixteen left him nearly blind for a time and ended his plan to become a doctor. Brave New World, published in 1932, imagines a world kept happy and controlled by pleasure. He later moved to California and wrote about spiritual experience.",
+    "works": [
+      "Brave New World",
+      "Island",
+      "Point Counter Point"
+    ],
+    "startWith": "Brave New World.",
+    "superpower": "Ideas and satire that stay relevant.",
+    "watchOut": "Characters who give speeches instead of talking.",
+    "exercise": "Describe a perfect city in one paragraph. In the next, show one person who is paying for that perfection.",
+    "fit": {
+      "q006": [
+        "c"
+      ],
+      "q007": [
+        "b"
+      ],
+      "q010": [
+        "c"
+      ],
+      "q011": [
+        "c"
+      ],
+      "q021": [
+        "d"
+      ],
+      "q034": [
+        "a"
+      ],
+      "q058": [
+        "a"
+      ],
+      "q074": [
+        "a"
+      ],
+      "q093": [
+        "c"
+      ],
+      "q094": [
+        "a"
+      ],
+      "q096": [
+        "c"
+      ]
+    }
+  },
+  {
+    "id": "dan-brown",
+    "name": "Dan Brown",
+    "years": "born 1964",
+    "from": "United States",
+    "focus": "spark",
+    "color": "#491862",
+    "approach": "planner",
+    "tagline": "History is always written by the winners.",
+    "taglineFrom": "The Da Vinci Code",
+    "style": "Like Dan Brown, you write fast thrillers built on codes, symbols and secret history. Short chapters end on cliffhangers, and the clock is always ticking.",
+    "trueStory": "Brown has said that as a child he solved codes and treasure hunts his parents set up at Christmas. He writes early in the morning, with an hourglass on his desk to remind him to take breaks.",
+    "about": "Brown taught English and wrote songs before turning to novels. The Da Vinci Code, published in 2003, became one of the best-selling novels ever and sent readers to museums and churches around the world. His hero, Robert Langdon, is a professor of symbols.",
+    "works": [
+      "The Da Vinci Code",
+      "Angels & Demons",
+      "Inferno",
+      "Origin"
+    ],
+    "startWith": "Angels & Demons, the first Robert Langdon book.",
+    "superpower": "Pace and puzzles that keep readers up all night.",
+    "watchOut": "Information dumps between the action.",
+    "exercise": "Hide a three-step clue in an ordinary place, like a library or a train station. Write the chapter where your hero finds the first step.",
+    "fit": {
+      "q011": [
+        "d"
+      ],
+      "q019": [
+        "b"
+      ],
+      "q025": [
+        "b"
+      ],
+      "q041": [
+        "d"
+      ],
+      "q044": [
+        "a"
+      ],
+      "q052": [
+        "b"
+      ],
+      "q057": [
+        "d"
+      ],
+      "q081": [
+        "c"
+      ],
+      "q082": [
+        "a"
+      ]
+    }
   }
 ];

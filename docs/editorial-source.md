@@ -24,11 +24,11 @@ These selective mappings change the original scoring coverage. Treat the ranking
 
 A. A long piece connecting different lives and experiences
 
-Maps to: Leo Tolstoy, Victor Hugo, Charles Dickens
+Maps to: Leo Tolstoy, Victor Hugo, Charles Dickens, John Steinbeck
 
 B. A brief piece built around one strong impression
 
-Maps to: Edgar Allan Poe, Anton Chekhov, Jorge Luis Borges
+Maps to: Edgar Allan Poe, Anton Chekhov, Jorge Luis Borges, Ray Bradbury
 
 C. A personal piece focused on a feeling or moment
 
@@ -36,39 +36,39 @@ Maps to: Sappho, Emily Dickinson, Li Bai
 
 D. A piece that unfolds through conversation and action
 
-Maps to: William Shakespeare, Molière, Oscar Wilde
+Maps to: William Shakespeare, Molière, Oscar Wilde, Enid Blyton
 
 ### 2. Where would you look first for a story?
 
 A. Stories passed down through a family
 
-Maps to: Gabriel García Márquez, Toni Morrison, Cao Xueqin
+Maps to: Gabriel García Márquez, Cao Xueqin, Brothers Grimm
 
 B. A conflict from history
 
-Maps to: Leo Tolstoy, Victor Hugo, Chinua Achebe
+Maps to: Victor Hugo, Chinua Achebe, Alexandre Dumas
 
 C. An older story I could make my own
 
-Maps to: William Shakespeare, Nguyễn Du, James Joyce
+Maps to: William Shakespeare, Nguyễn Du, James Joyce, Johann Wolfgang von Goethe
 
 D. Something small that happens in everyday life
 
-Maps to: Anton Chekhov, Jane Austen, Ernest Hemingway
+Maps to: Anton Chekhov, Ernest Hemingway, Harper Lee
 
 ### 3. How would you build a piece of writing?
 
 A. Arrange small details so their connections become clear later
 
-Maps to: Agatha Christie, Edgar Allan Poe
+Maps to: Agatha Christie, Arthur Conan Doyle, J.K. Rowling
 
 B. Follow someone's thoughts as they change
 
-Maps to: Virginia Woolf, James Joyce, Marcel Proust
+Maps to: Virginia Woolf, Fyodor Dostoevsky
 
 C. Let each new experience open up a wider picture
 
-Maps to: Dante Alighieri, Homer, J.R.R. Tolkien
+Maps to: Dante Alighieri, Homer, J.R.R. Tolkien, Paulo Coelho
 
 D. Build the piece around one meaningful image
 
@@ -78,33 +78,33 @@ Maps to: Matsuo Bashō, Emily Dickinson, Li Bai
 
 A. Beauty mixed with the sadness of change
 
-Maps to: Murasaki Shikibu, Cao Xueqin, Marcel Proust
+Maps to: Murasaki Shikibu, Marcel Proust, F. Scott Fitzgerald
 
 B. Guilt and growing tension
 
-Maps to: Fyodor Dostoevsky, Edgar Allan Poe
+Maps to: Fyodor Dostoevsky, Edgar Allan Poe, Stephen King, Bram Stoker
 
 C. Strong feelings that remain mostly unspoken
 
-Maps to: Ernest Hemingway, Anton Chekhov
+Maps to: Ernest Hemingway, Anton Chekhov, Haruki Murakami
 
 D. A sense of wonder in ordinary life
 
-Maps to: Gabriel García Márquez, Hans Christian Andersen
+Maps to: Hans Christian Andersen, Enid Blyton, Ray Bradbury
 
 ### 5. Whose experience would you put at the center?
 
 A. Someone treated unfairly or left out
 
-Maps to: Charles Dickens, Victor Hugo, Mary Shelley
+Maps to: Charles Dickens, Victor Hugo, Mary Shelley, Charlotte Brontë
 
 B. Someone learning to understand others better
 
-Maps to: Jane Austen
+Maps to: Jane Austen, Harper Lee
 
 C. Someone struggling to do what is right
 
-Maps to: Fyodor Dostoevsky, Mark Twain
+Maps to: Fyodor Dostoevsky, Mark Twain, J.K. Rowling, C.S. Lewis
 
 D. Someone living through major changes in society
 
@@ -114,55 +114,55 @@ Maps to: Chinua Achebe, Toni Morrison, Leo Tolstoy
 
 A. Subtle jokes about manners and relationships
 
-Maps to: Jane Austen, Oscar Wilde
+Maps to: Jane Austen, Oscar Wilde, Alexander Pushkin
 
 B. Exaggerated characters and ridiculous behavior
 
-Maps to: Molière, Charles Dickens
+Maps to: Molière, Charles Dickens, J.K. Rowling
 
 C. Sharp humor about unfair or cruel behavior
 
-Maps to: Voltaire, Lu Xun, Mark Twain
+Maps to: Voltaire, Lu Xun, Mark Twain, Aldous Huxley
 
 D. Playful surprises that make familiar rules seem less certain
 
-Maps to: Lewis Carroll
+Maps to: Lewis Carroll, Miguel de Cervantes
 
 ### 7. Which question would drive your work?
 
 A. What responsibilities do we have toward others?
 
-Maps to: Fyodor Dostoevsky, Mary Shelley, Leo Tolstoy
+Maps to: Fyodor Dostoevsky, Mary Shelley, Leo Tolstoy, Harper Lee
 
 B. Why do powerful people harm others and get away with it?
 
-Maps to: George Orwell, Lu Xun, Victor Hugo
+Maps to: George Orwell, Lu Xun, Victor Hugo, Aldous Huxley
 
 C. How does wanting someone or something change us?
 
-Maps to: Sappho, Pablo Neruda, Rumi
+Maps to: Sappho, Pablo Neruda, Rumi, F. Scott Fitzgerald
 
 D. What happens when people question their community's traditions?
 
-Maps to: Chinua Achebe, Cao Xueqin
+Maps to: Chinua Achebe, Cao Xueqin, Ray Bradbury
 
 ### 8. Which setting would you explore?
 
 A. A busy city where different lives cross paths
 
-Maps to: Charles Dickens, James Joyce, Virginia Woolf
+Maps to: Charles Dickens, Virginia Woolf, Arthur Conan Doyle
 
 B. A familiar place shaped by relationships and expectations
 
-Maps to: Jane Austen, Murasaki Shikibu, Cao Xueqin
+Maps to: Jane Austen, Murasaki Shikibu, Cao Xueqin, Harper Lee
 
 C. A journey across unfamiliar places
 
-Maps to: Homer, Jules Verne, Mark Twain
+Maps to: Homer, Jules Verne, Mark Twain, Paulo Coelho
 
 D. A landscape discovered by someone passing through
 
-Maps to: Matsuo Bashō, Li Bai
+Maps to: Matsuo Bashō, Li Bai, Emily Brontë
 
 ### 9. Which narrative voice would you choose?
 
@@ -172,11 +172,11 @@ Maps to: Miguel de Cervantes, Victor Hugo, Alexander Pushkin
 
 B. Someone telling their own story who may not be reliable
 
-Maps to: Edgar Allan Poe, Lu Xun
+Maps to: Edgar Allan Poe, Lu Xun, F. Scott Fitzgerald
 
 C. A voice that follows a person's private thoughts
 
-Maps to: Virginia Woolf, James Joyce, Marcel Proust
+Maps to: Virginia Woolf, James Joyce
 
 D. A voice that brings a community's shared past to life
 
@@ -186,7 +186,7 @@ Maps to: Chinua Achebe, Toni Morrison, Gabriel García Márquez
 
 A. Clear language with carefully chosen details
 
-Maps to: Ernest Hemingway, George Orwell
+Maps to: Ernest Hemingway, George Orwell, Isaac Asimov
 
 B. Flowing sentences that follow thoughts and memories
 
@@ -194,35 +194,35 @@ Maps to: Marcel Proust, Virginia Woolf
 
 C. Clever, neatly balanced expressions
 
-Maps to: Oscar Wilde, Voltaire
+Maps to: Oscar Wilde, Voltaire, Aldous Huxley
 
 D. Rhythm and repeated images that build a feeling
 
-Maps to: Walt Whitman, Pablo Neruda
+Maps to: Walt Whitman, Pablo Neruda, Ray Bradbury
 
 ### 11. Who would you imagine addressing?
 
 A. Someone I love or miss
 
-Maps to: Sappho, Pablo Neruda
+Maps to: Sappho, Pablo Neruda, Rumi
 
 B. People from many different walks of life
 
-Maps to: Walt Whitman, Rabindranath Tagore
+Maps to: Walt Whitman, Rabindranath Tagore, Alexandre Dumas
 
 C. Someone willing to question familiar beliefs
 
-Maps to: Friedrich Nietzsche, Voltaire
+Maps to: Friedrich Nietzsche, Voltaire, Aldous Huxley
 
 D. Someone who enjoys discovering connections for themselves
 
-Maps to: Jorge Luis Borges, Agatha Christie
+Maps to: Jorge Luis Borges, Agatha Christie, Arthur Conan Doyle, Dan Brown
 
 ### 12. What would you most want your writing to do?
 
 A. Help people notice suffering and unfairness
 
-Maps to: Charles Dickens, Du Fu, Victor Hugo
+Maps to: Charles Dickens, Du Fu, Victor Hugo, John Steinbeck
 
 B. Show the gap between what people preach and what they do
 
@@ -230,17 +230,17 @@ Maps to: Molière, Voltaire, Lu Xun
 
 C. Keep the past alive and explore what it means
 
-Maps to: Toni Morrison, Gabriel García Márquez, Chinua Achebe
+Maps to: Toni Morrison, Chinua Achebe, Brothers Grimm
 
 D. Explore how people think and experience life
 
-Maps to: Virginia Woolf, James Joyce, Marcel Proust
+Maps to: Virginia Woolf, Haruki Murakami
 
 ### 13. Which pressure would you give your characters?
 
 A. Money problems and unequal opportunities
 
-Maps to: Jane Austen, Charles Dickens, Gustave Flaubert
+Maps to: Gustave Flaubert, John Steinbeck, F. Scott Fitzgerald
 
 B. Conflict or being forced to leave home
 
@@ -248,21 +248,21 @@ Maps to: Leo Tolstoy, Du Fu, Homer
 
 C. A clash between family expectations and personal wishes
 
-Maps to: Nguyễn Du, Cao Xueqin
+Maps to: Nguyễn Du, Cao Xueqin, Emily Brontë
 
 D. The consequences of something they brought into the world
 
-Maps to: Mary Shelley
+Maps to: Mary Shelley, H.G. Wells, Isaac Asimov
 
 ### 14. What would you notice first in a scene?
 
 A. A small action that reveals someone's character
 
-Maps to: Jane Austen, Gustave Flaubert, Marcel Proust
+Maps to: Gustave Flaubert, Marcel Proust
 
 B. A person struggling with their own thoughts
 
-Maps to: Fyodor Dostoevsky, William Shakespeare
+Maps to: Fyodor Dostoevsky, William Shakespeare, Johann Wolfgang von Goethe
 
 C. A sign that the season is changing
 
@@ -276,7 +276,7 @@ Maps to: Pablo Neruda, Emily Dickinson
 
 A. Use established forms with care
 
-Maps to: Dante Alighieri, Du Fu, Nguyễn Du
+Maps to: Dante Alighieri, Du Fu, Nguyễn Du, Alexander Pushkin
 
 B. Allow the shape of the writing to follow the thought
 
@@ -288,13 +288,13 @@ Maps to: Miguel de Cervantes, Lewis Carroll
 
 D. Use different styles for different parts
 
-Maps to: James Joyce
+Maps to: James Joyce, Bram Stoker
 
 ### 16. Which relationship to the past interests you?
 
 A. How earlier generations still shape the present
 
-Maps to: Gabriel García Márquez, Toni Morrison
+Maps to: Gabriel García Márquez, Emily Brontë, John Steinbeck
 
 B. What life was like in another period
 
@@ -306,21 +306,21 @@ Maps to: Homer, J.R.R. Tolkien
 
 D. How people remember their own past
 
-Maps to: Marcel Proust, Virginia Woolf
+Maps to: Marcel Proust, Virginia Woolf, F. Scott Fitzgerald, Charlotte Brontë
 
 ### 17. What would be your starting material?
 
 A. Things people say and do around me
 
-Maps to: Jane Austen, Anton Chekhov
+Maps to: Anton Chekhov, Mark Twain
 
 B. Ideas and stories that people have passed down over time
 
-Maps to: James Joyce, Dante Alighieri
+Maps to: James Joyce, Dante Alighieri, Brothers Grimm, C.S. Lewis
 
 C. An unfamiliar possibility and the consequences of exploring it
 
-Maps to: Jules Verne, Mary Shelley
+Maps to: Jules Verne, Mary Shelley, H.G. Wells, Isaac Asimov
 
 D. A striking image or a strong feeling
 
@@ -330,19 +330,19 @@ Maps to: Matsuo Bashō, Sappho, Emily Dickinson
 
 A. An unexpected event quietly changes what feels normal
 
-Maps to: Franz Kafka, Gabriel García Márquez
+Maps to: Franz Kafka, Gabriel García Márquez, Haruki Murakami, Stephen King
 
 B. Unfamiliar experiences belong to a world that feels consistent
 
-Maps to: J.R.R. Tolkien
+Maps to: J.R.R. Tolkien, J.K. Rowling, C.S. Lewis
 
 C. Events make emotional sense even when they seem unlikely
 
-Maps to: Lewis Carroll
+Maps to: Lewis Carroll, Hans Christian Andersen
 
 D. Something from the past returns to trouble the present
 
-Maps to: Toni Morrison, Edgar Allan Poe
+Maps to: Toni Morrison, Edgar Allan Poe, Emily Brontë, Bram Stoker
 
 ### 19. Which ending would satisfy your story?
 
@@ -352,25 +352,25 @@ Maps to: Jane Austen, Charlotte Brontë
 
 B. The reader finally understands what happened
 
-Maps to: Agatha Christie
+Maps to: Agatha Christie, Arthur Conan Doyle, Dan Brown, Enid Blyton
 
 C. A painful loss reveals the consequences of earlier choices
 
-Maps to: William Shakespeare, Gustave Flaubert, Chinua Achebe
+Maps to: William Shakespeare, Gustave Flaubert, Chinua Achebe, Johann Wolfgang von Goethe
 
 D. Some questions remain open as life goes on
 
-Maps to: Anton Chekhov
+Maps to: Anton Chekhov, Haruki Murakami
 
 ### 20. How would you choose your words?
 
 A. Choose words that sound like everyday speech
 
-Maps to: Mark Twain
+Maps to: Mark Twain, Stephen King
 
 B. Choose words partly for how they sound
 
-Maps to: Edgar Allan Poe, Sappho
+Maps to: Edgar Allan Poe, Sappho, Rabindranath Tagore
 
 C. Say a lot with very few words
 
@@ -378,7 +378,7 @@ Maps to: Emily Dickinson, Matsuo Bashō
 
 D. Play with words that have surprising meanings
 
-Maps to: Lewis Carroll, James Joyce, William Shakespeare
+Maps to: Lewis Carroll, James Joyce, William Shakespeare, J.K. Rowling
 
 ### 21. What would you be searching for on the page?
 
@@ -388,7 +388,7 @@ Maps to: Leo Tolstoy, Fyodor Dostoevsky
 
 B. A way to express a longing for something beyond everyday life
 
-Maps to: Rumi, Rabindranath Tagore, Dante Alighieri
+Maps to: Rumi, Rabindranath Tagore, Dante Alighieri, Paulo Coelho
 
 C. A better understanding of how the past stays with us
 
@@ -396,21 +396,21 @@ Maps to: Marcel Proust, Toni Morrison
 
 D. A reason to question what we think we know
 
-Maps to: Jorge Luis Borges, Friedrich Nietzsche
+Maps to: Jorge Luis Borges, Friedrich Nietzsche, Aldous Huxley, Franz Kafka
 
 ### 22. How would you want a work to reach readers?
 
 A. Through words that gain energy when shared aloud
 
-Maps to: William Shakespeare, Molière
+Maps to: William Shakespeare, Molière, Brothers Grimm, Hans Christian Andersen
 
 B. Through a focused experience that holds their attention
 
-Maps to: Edgar Allan Poe, Jorge Luis Borges
+Maps to: Jorge Luis Borges, Arthur Conan Doyle
 
 C. Through something they can spend time getting absorbed in
 
-Maps to: Leo Tolstoy, Cao Xueqin
+Maps to: Cao Xueqin, J.K. Rowling
 
 D. Through brief passages that reveal more each time they return
 
@@ -428,17 +428,17 @@ Maps to: Jane Austen, Anton Chekhov
 
 C. Many people whose lives connect
 
-Maps to: Charles Dickens, Leo Tolstoy, Cao Xueqin
+Maps to: Charles Dickens, Cao Xueqin
 
 D. People whose lives are connected across a long stretch of time
 
-Maps to: Gabriel García Márquez, Toni Morrison
+Maps to: Gabriel García Márquez, Isaac Asimov
 
 ### 24. What would you want readers to carry away?
 
 A. A reason to rethink a familiar belief
 
-Maps to: Voltaire, Friedrich Nietzsche, Lu Xun
+Maps to: Voltaire, Friedrich Nietzsche, Lu Xun, George Orwell
 
 B. A better eye for the roles people play in society
 
@@ -446,25 +446,25 @@ Maps to: Molière, Oscar Wilde, Jane Austen
 
 C. An uneasy question about who someone really is
 
-Maps to: Edgar Allan Poe, Franz Kafka
+Maps to: Edgar Allan Poe, Franz Kafka, Haruki Murakami
 
 D. More compassion for people shaped by painful history
 
-Maps to: Toni Morrison, Du Fu, Victor Hugo
+Maps to: Toni Morrison, Du Fu, Harper Lee
 
 ### 25. How would time move through your story?
 
 A. Move forward as the journey unfolds
 
-Maps to: Homer, Dante Alighieri, Jules Verne
+Maps to: Homer, Dante Alighieri, Jules Verne, H.G. Wells
 
 B. Slow down to explore a short stretch of time
 
-Maps to: James Joyce, Virginia Woolf
+Maps to: James Joyce, Dan Brown
 
 C. Move between the present and remembered moments
 
-Maps to: Marcel Proust, Toni Morrison
+Maps to: Marcel Proust, Emily Brontë
 
 D. Show familiar patterns returning as circumstances change
 
@@ -480,7 +480,7 @@ Maps to: Jane Austen
 
 B. An unexpected situation presented without much explanation
 
-Maps to: Franz Kafka
+Maps to: Franz Kafka, Stephen King, Haruki Murakami
 
 C. Someone trying to explain or defend their actions
 
@@ -502,7 +502,7 @@ Maps to: Jane Austen, Gustave Flaubert, Fyodor Dostoevsky
 
 C. Physical danger and difficult conditions
 
-Maps to: Homer, Jules Verne, Ernest Hemingway
+Maps to: Homer, Jules Verne, Ernest Hemingway, H.G. Wells
 
 D. An offer of power that makes doing the right thing harder
 
@@ -542,7 +542,7 @@ Maps to: Fyodor Dostoevsky, William Shakespeare
 
 D. Give the story a recognizable everyday voice
 
-Maps to: Mark Twain
+Maps to: Mark Twain, Stephen King, Enid Blyton
 
 ### 30. What role would nature play?
 
@@ -552,11 +552,11 @@ Maps to: Matsuo Bashō, Du Fu
 
 B. Challenge people's strength and patience
 
-Maps to: Ernest Hemingway
+Maps to: Ernest Hemingway, John Steinbeck
 
 C. Bring out memories, longing or loneliness
 
-Maps to: Li Bai, Pablo Neruda
+Maps to: Li Bai, Pablo Neruda, Emily Brontë
 
 D. Show what is at risk when people seek too much control
 
@@ -566,7 +566,7 @@ Maps to: J.R.R. Tolkien
 
 A. Through desire and the feeling of missing someone
 
-Maps to: Sappho, Pablo Neruda
+Maps to: Sappho, Pablo Neruda, Emily Brontë
 
 B. Through the practical pressures around a relationship
 
@@ -574,7 +574,7 @@ Maps to: Jane Austen
 
 C. Through strong feelings mixed with jealousy or false expectations
 
-Maps to: Gustave Flaubert, Marcel Proust, Johann Wolfgang von Goethe
+Maps to: Gustave Flaubert, Marcel Proust, Johann Wolfgang von Goethe, F. Scott Fitzgerald
 
 D. As a longing for a deeper spiritual connection
 
@@ -592,17 +592,17 @@ Maps to: Homer, Du Fu
 
 C. Explore an unanswered question that makes people reconsider events
 
-Maps to: Agatha Christie, Edgar Allan Poe
+Maps to: Agatha Christie, Edgar Allan Poe, Arthur Conan Doyle
 
 D. Show how the dead still affect the living
 
-Maps to: Toni Morrison, William Shakespeare
+Maps to: Toni Morrison, William Shakespeare, J.K. Rowling
 
 ### 33. How would childhood enter your work?
 
 A. A young person faces unfairness in the adult world
 
-Maps to: Charles Dickens, Mark Twain
+Maps to: Charles Dickens, Mark Twain, Stephen King, Harper Lee
 
 B. An unfamiliar experience makes everyday rules seem questionable
 
@@ -610,17 +610,17 @@ Maps to: Lewis Carroll
 
 C. Looking back shows how a person came to be who they are
 
-Maps to: James Joyce, Marcel Proust
+Maps to: James Joyce, Marcel Proust, Ray Bradbury
 
 D. An imaginative tale offers something to readers of different ages
 
-Maps to: Hans Christian Andersen, Oscar Wilde
+Maps to: Hans Christian Andersen, Oscar Wilde, J.K. Rowling, Brothers Grimm
 
 ### 34. How would politics enter your writing?
 
 A. Let the relationships within a group reveal how power works
 
-Maps to: George Orwell
+Maps to: George Orwell, Aldous Huxley
 
 B. Show a community facing outside rule
 
@@ -628,7 +628,7 @@ Maps to: Chinua Achebe
 
 C. Connect personal suffering with shared history
 
-Maps to: Toni Morrison, Pablo Neruda
+Maps to: Toni Morrison, Pablo Neruda, John Steinbeck
 
 D. Use humor to question harmful beliefs and customs
 
@@ -638,11 +638,11 @@ Maps to: Lu Xun, Voltaire
 
 A. As a search for a deeper sense of meaning
 
-Maps to: Dante Alighieri, Rumi, Rabindranath Tagore
+Maps to: Dante Alighieri, Rumi, Rabindranath Tagore, Paulo Coelho
 
 B. As a struggle between belief, doubt and responsibility
 
-Maps to: Fyodor Dostoevsky, Leo Tolstoy
+Maps to: Fyodor Dostoevsky, Leo Tolstoy, C.S. Lewis
 
 C. By exposing people who use belief to hide bad behavior
 
@@ -674,7 +674,7 @@ Maps to: J.R.R. Tolkien
 
 A. Keep developing one project as my ideas grow
 
-Maps to: Walt Whitman
+Maps to: Walt Whitman, Isaac Asimov
 
 B. Create connected pieces that explore how experience changes over time
 
@@ -682,7 +682,7 @@ Maps to: Marcel Proust
 
 C. Return to familiar characters as they face different situations
 
-Maps to: Agatha Christie
+Maps to: Agatha Christie, J.K. Rowling, Arthur Conan Doyle, Enid Blyton
 
 D. Try different forms to see what each one lets me express
 
@@ -692,7 +692,7 @@ Maps to: Johann Wolfgang von Goethe, Rabindranath Tagore, Victor Hugo
 
 A. To find out what happens next
 
-Maps to: Agatha Christie, Alexandre Dumas
+Maps to: Agatha Christie, Alexandre Dumas, J.K. Rowling, Arthur Conan Doyle
 
 B. To enjoy clever and funny language
 
@@ -722,7 +722,7 @@ Maps to: Toni Morrison
 
 D. A young person who is excluded or underestimated
 
-Maps to: Charles Dickens, Hans Christian Andersen
+Maps to: Charles Dickens, Hans Christian Andersen, J.K. Rowling, Brothers Grimm
 
 ### 40. Which structure would you choose?
 
@@ -732,11 +732,11 @@ Maps to: Homer, Miguel de Cervantes, Voltaire
 
 B. Different people telling stories within the main story
 
-Maps to: Mary Shelley
+Maps to: Mary Shelley, Bram Stoker
 
 C. Separate short pieces that form a larger whole
 
-Maps to: Emily Dickinson, Li Bai
+Maps to: Emily Dickinson, Li Bai, Ray Bradbury
 
 D. A longer story moving between memories and viewpoints
 
@@ -758,7 +758,7 @@ Maps to: Cao Xueqin, Edgar Allan Poe
 
 D. An intriguing idea that invites more than one interpretation
 
-Maps to: Jorge Luis Borges
+Maps to: Jorge Luis Borges, Dan Brown
 
 ### 42. How would you handle the identity of your narrator?
 
@@ -776,17 +776,17 @@ Maps to: Miguel de Cervantes, Alexander Pushkin
 
 D. Let different voices challenge each other's version
 
-Maps to: Toni Morrison, Mary Shelley
+Maps to: Toni Morrison, Mary Shelley, Emily Brontë
 
 ### 43. How would a character's life unfold?
 
 A. They grow up while searching for who they want to become
 
-Maps to: James Joyce, Charlotte Brontë
+Maps to: James Joyce, Charlotte Brontë, J.K. Rowling
 
 B. Their life forms part of a longer family pattern
 
-Maps to: Gabriel García Márquez, Cao Xueqin
+Maps to: Gabriel García Márquez, Cao Xueqin, John Steinbeck
 
 C. A crisis makes them reconsider how they have lived
 
@@ -794,13 +794,13 @@ Maps to: Leo Tolstoy
 
 D. A journey changes what home means to them
 
-Maps to: Homer, J.R.R. Tolkien
+Maps to: Homer, J.R.R. Tolkien, Paulo Coelho
 
 ### 44. What pace would suit your work?
 
 A. Build tension through plans, surprises and setbacks
 
-Maps to: Alexandre Dumas, Agatha Christie
+Maps to: Alexandre Dumas, Agatha Christie, Stephen King, Dan Brown
 
 B. Take time to explore thoughts and feelings
 
@@ -812,7 +812,7 @@ Maps to: Matsuo Bashō, Emily Dickinson
 
 D. Keep moving through new events and discoveries
 
-Maps to: Jules Verne, Lewis Carroll
+Maps to: Jules Verne, Lewis Carroll, Enid Blyton
 
 ### 45. How would personal experience become literature?
 
@@ -840,7 +840,7 @@ Maps to: Murasaki Shikibu, Cao Xueqin
 
 B. Caring for others can conflict with social expectations
 
-Maps to: Mark Twain, Victor Hugo
+Maps to: Mark Twain, Victor Hugo, Harper Lee
 
 C. Wanting something too much can cloud judgment
 
@@ -862,7 +862,7 @@ Maps to: Fyodor Dostoevsky
 
 C. Their customs shape what feels normal or acceptable
 
-Maps to: Chinua Achebe
+Maps to: Chinua Achebe, Harper Lee
 
 D. Their memories complicate the main character's version of events
 
@@ -872,7 +872,7 @@ Maps to: Toni Morrison
 
 A. Make the words work well when spoken aloud
 
-Maps to: William Shakespeare, Molière
+Maps to: William Shakespeare, Molière, Brothers Grimm
 
 B. Build momentum through repeating and expanding patterns
 
@@ -894,7 +894,7 @@ Maps to: Jane Austen, Charlotte Brontë
 
 B. It feeds dreams that become costly and disappointing
 
-Maps to: Gustave Flaubert
+Maps to: Gustave Flaubert, F. Scott Fitzgerald
 
 C. It brings out greed in ways that are funny
 
@@ -902,25 +902,25 @@ Maps to: Molière
 
 D. It reveals how society fails people with very little
 
-Maps to: Charles Dickens, Victor Hugo, George Orwell
+Maps to: Charles Dickens, Victor Hugo, George Orwell, John Steinbeck
 
 ### 50. Which nonhuman presence would you explore?
 
 A. An unfamiliar being trying to find acceptance
 
-Maps to: Mary Shelley
+Maps to: Mary Shelley, Isaac Asimov
 
 B. Creatures whose relationships reflect human behavior
 
-Maps to: George Orwell
+Maps to: George Orwell, H.G. Wells
 
 C. Creatures whose unexpected behavior challenges familiar assumptions
 
-Maps to: Lewis Carroll, Hans Christian Andersen
+Maps to: Lewis Carroll, Hans Christian Andersen, Brothers Grimm
 
 D. Unfamiliar beings that feel at home in a convincing world
 
-Maps to: J.R.R. Tolkien, Homer
+Maps to: J.R.R. Tolkien, Homer, J.K. Rowling, C.S. Lewis
 
 ## Part 3 Additional questions
 
@@ -936,7 +936,7 @@ Maps to: Fyodor Dostoevsky
 
 C. Explore an invented example in which the claim seems possible
 
-Maps to: Jorge Luis Borges
+Maps to: Jorge Luis Borges, Isaac Asimov
 
 D. Show how pressure from those in power makes people accept it
 
@@ -950,7 +950,7 @@ Maps to: Marcel Proust
 
 B. An overlooked detail that changes how events fit together
 
-Maps to: Agatha Christie
+Maps to: Agatha Christie, Arthur Conan Doyle, Dan Brown
 
 C. A small pattern that seems to repeat over time
 
@@ -972,7 +972,7 @@ Maps to: Lewis Carroll
 
 C. Look closely at an everyday object until it feels special
 
-Maps to: Pablo Neruda
+Maps to: Pablo Neruda, Ray Bradbury
 
 D. Use a small detail in nature to change how we see things
 
@@ -986,11 +986,11 @@ Maps to: J.R.R. Tolkien
 
 B. Doing what is right costs them other people's approval
 
-Maps to: Mark Twain
+Maps to: Mark Twain, Harper Lee
 
 C. Getting revenge changes them in ways they did not expect
 
-Maps to: Alexandre Dumas
+Maps to: Alexandre Dumas, Emily Brontë
 
 D. Reaching their goal has a serious moral cost
 
@@ -1048,13 +1048,13 @@ Maps to: Hans Christian Andersen
 
 D. The official version of events and the community's experience
 
-Maps to: Chinua Achebe, Toni Morrison
+Maps to: Chinua Achebe, Toni Morrison, Dan Brown
 
 ### 58. How would you handle a moral lesson?
 
 A. Use an imagined tale to show how power changes people
 
-Maps to: George Orwell
+Maps to: George Orwell, Aldous Huxley
 
 B. Use a funny character to expose false goodness
 
@@ -1062,7 +1062,7 @@ Maps to: Molière
 
 C. Leave readers thinking about who should take responsibility
 
-Maps to: Mary Shelley
+Maps to: Mary Shelley, H.G. Wells
 
 D. Let difficult experiences challenge a comforting belief
 
@@ -1076,7 +1076,7 @@ Maps to: Edgar Allan Poe
 
 B. Whether a small event holds a larger meaning
 
-Maps to: James Joyce
+Maps to: James Joyce, Haruki Murakami
 
 C. Whether a story can change what people accept as real
 
@@ -1120,7 +1120,7 @@ Maps to: Johann Wolfgang von Goethe
 
 C. An account that adds a new perspective to the story
 
-Maps to: Mary Shelley
+Maps to: Mary Shelley, Bram Stoker
 
 D. Information that changes how someone sees another person
 
@@ -1148,7 +1148,7 @@ Maps to: Miguel de Cervantes
 
 A. It expresses feelings someone cannot easily say aloud
 
-Maps to: Nguyễn Du
+Maps to: Nguyễn Du, Haruki Murakami
 
 B. It gives people a way to express trust, gratitude or hope
 
@@ -1166,7 +1166,7 @@ Maps to: Murasaki Shikibu
 
 A. An agreement that offers more than someone can safely handle
 
-Maps to: Johann Wolfgang von Goethe
+Maps to: Johann Wolfgang von Goethe, Brothers Grimm
 
 B. A promise to stand by a friend during difficult times
 
@@ -1188,11 +1188,11 @@ Maps to: Cao Xueqin
 
 B. Let familiar rules turn strange and unpredictable
 
-Maps to: Lewis Carroll
+Maps to: Lewis Carroll, Haruki Murakami
 
 C. Bring hidden guilt or fear to the surface
 
-Maps to: Fyodor Dostoevsky
+Maps to: Fyodor Dostoevsky, Stephen King, Bram Stoker
 
 D. Let someone feel close to a person they have lost
 
@@ -1220,7 +1220,7 @@ Maps to: Homer
 
 A. Personal hardship leads to greater concern for others
 
-Maps to: Du Fu
+Maps to: Du Fu, John Steinbeck
 
 B. Being shown mercy changes how someone lives
 
@@ -1304,7 +1304,7 @@ Maps to: Jules Verne
 
 D. How new experiences change what they believe
 
-Maps to: Voltaire
+Maps to: Voltaire, Paulo Coelho
 
 ### 72. How would you make an object feel alive?
 
@@ -1328,7 +1328,7 @@ Maps to: Oscar Wilde
 
 A. Bring people with hidden connections into each other's lives
 
-Maps to: Charles Dickens
+Maps to: Charles Dickens, Arthur Conan Doyle
 
 B. Let different people's inner lives cross in a short time
 
@@ -1346,7 +1346,7 @@ Maps to: Franz Kafka
 
 A. Show what happens when people try to live by it
 
-Maps to: Voltaire
+Maps to: Voltaire, Aldous Huxley
 
 B. Turn it into a short, challenging statement
 
@@ -1358,13 +1358,13 @@ Maps to: Fyodor Dostoevsky
 
 D. Imagine a world where it is taken to its furthest conclusion
 
-Maps to: Jorge Luis Borges
+Maps to: Jorge Luis Borges, Isaac Asimov
 
 ### 75. Which use of repetition would you choose?
 
 A. Let similar situations return under different circumstances
 
-Maps to: Gabriel García Márquez
+Maps to: Gabriel García Márquez, Brothers Grimm
 
 B. Repeat a phrase to deepen a strong feeling
 
@@ -1394,7 +1394,7 @@ Maps to: Oscar Wilde
 
 D. Show private feelings beneath a public celebration
 
-Maps to: Virginia Woolf
+Maps to: Virginia Woolf, F. Scott Fitzgerald
 
 ### 77. What would an animal help you say?
 
@@ -1404,7 +1404,7 @@ Maps to: Matsuo Bashō
 
 B. A creature's story can help us reflect on life
 
-Maps to: Rumi
+Maps to: Rumi, C.S. Lewis
 
 C. Relationships between creatures can reveal familiar human weaknesses
 
@@ -1426,7 +1426,7 @@ Maps to: Li Bai
 
 C. A storm heightens fear and emotional tension
 
-Maps to: Mary Shelley
+Maps to: Mary Shelley, Emily Brontë, Bram Stoker
 
 D. Changes outside quietly reflect changes between people
 
@@ -1444,7 +1444,7 @@ Maps to: Oscar Wilde
 
 C. Their new opportunities bring unfinished feelings back to the surface
 
-Maps to: Alexandre Dumas
+Maps to: Alexandre Dumas, F. Scott Fitzgerald
 
 D. Their confidence falls apart when they become emotionally vulnerable
 
@@ -1466,7 +1466,7 @@ Maps to: Toni Morrison
 
 D. Difficult times leave people without a secure place to belong
 
-Maps to: Du Fu
+Maps to: Du Fu, John Steinbeck
 
 ### 81. What would chance do in your plot?
 
@@ -1476,21 +1476,21 @@ Maps to: Alexander Pushkin
 
 B. It disrupts a careful plan and forces people to adapt
 
-Maps to: Jules Verne
+Maps to: Jules Verne, Isaac Asimov
 
 C. It brings attention to a detail that changes everything
 
-Maps to: Agatha Christie
+Maps to: Agatha Christie, Dan Brown
 
 D. It brings an unexpected encounter that invites deeper reflection
 
-Maps to: Rumi
+Maps to: Rumi, Paulo Coelho
 
 ### 82. How would other books enter your story?
 
 A. As a source that makes readers question whose version to trust
 
-Maps to: Miguel de Cervantes
+Maps to: Miguel de Cervantes, Dan Brown
 
 B. As an invented example that changes what seems possible
 
@@ -1502,7 +1502,7 @@ Maps to: James Joyce
 
 D. As something a character reads that shapes their expectations
 
-Maps to: Gustave Flaubert
+Maps to: Gustave Flaubert, Ray Bradbury
 
 ### 83. How would you write the distance between two people?
 
@@ -1580,15 +1580,15 @@ Maps to: Anton Chekhov
 
 A. Its details fit together and suggest a life beyond the page
 
-Maps to: J.R.R. Tolkien
+Maps to: J.R.R. Tolkien, J.K. Rowling, C.S. Lewis
 
 B. Its practical details make unusual events believable
 
-Maps to: Jules Verne
+Maps to: Jules Verne, H.G. Wells
 
 C. The people who live there make unusual things feel familiar
 
-Maps to: Gabriel García Márquez
+Maps to: Gabriel García Márquez, Enid Blyton
 
 D. Its everyday habits make relationships and expectations believable
 
@@ -1598,11 +1598,11 @@ Maps to: Murasaki Shikibu
 
 A. Through an everyday story that suggests a deeper meaning
 
-Maps to: Rumi
+Maps to: Rumi, Paulo Coelho
 
 B. Through a journey that makes someone reconsider their choices
 
-Maps to: Dante Alighieri
+Maps to: Dante Alighieri, C.S. Lewis
 
 C. Through an intimate expression of trust, gratitude or hope
 
@@ -1634,19 +1634,19 @@ Maps to: Murasaki Shikibu
 
 A. They remain loyal through conflict and danger
 
-Maps to: Alexandre Dumas
+Maps to: Alexandre Dumas, Stephen King, John Steinbeck, Enid Blyton
 
 B. They help each other carry a difficult responsibility
 
-Maps to: J.R.R. Tolkien
+Maps to: J.R.R. Tolkien, J.K. Rowling
 
 C. They challenge each other's way of seeing the world
 
-Maps to: Miguel de Cervantes
+Maps to: Miguel de Cervantes, Arthur Conan Doyle
 
 D. Someone discovers they can feel connected even when alone
 
-Maps to: Li Bai
+Maps to: Li Bai, Haruki Murakami
 
 ### 91. How would you handle the reader's sympathy for a wrongdoer?
 
@@ -1656,7 +1656,7 @@ Maps to: Fyodor Dostoevsky
 
 B. Show how an understandable wish for justice can go too far
 
-Maps to: Alexandre Dumas
+Maps to: Alexandre Dumas, Emily Brontë
 
 C. Let their own explanation reveal what they try to hide
 
@@ -1670,7 +1670,7 @@ Maps to: Chinua Achebe
 
 A. Someone dismissed by others deserves a second look
 
-Maps to: Hans Christian Andersen
+Maps to: Hans Christian Andersen, Brothers Grimm
 
 B. Money and status do not tell us what a person is like
 
@@ -1678,11 +1678,11 @@ Maps to: Jane Austen
 
 C. An attractive surface can hide harmful behavior
 
-Maps to: Oscar Wilde
+Maps to: Oscar Wilde, F. Scott Fitzgerald
 
 D. The way someone is treated reveals other people's lack of compassion
 
-Maps to: Victor Hugo
+Maps to: Victor Hugo, Harper Lee
 
 ### 93. What would you do when a character cannot speak freely?
 
@@ -1696,17 +1696,17 @@ Maps to: Ernest Hemingway, Anton Chekhov
 
 C. Show how those in power limit what can be said
 
-Maps to: George Orwell
+Maps to: George Orwell, Ray Bradbury, Aldous Huxley
 
 D. Let the reader hear thoughts that remain hidden from others
 
-Maps to: Virginia Woolf
+Maps to: Virginia Woolf, Haruki Murakami
 
 ### 94. How would you write a scene of temptation?
 
 A. Someone is offered a chance to escape ordinary limits
 
-Maps to: Johann Wolfgang von Goethe
+Maps to: Johann Wolfgang von Goethe, Aldous Huxley
 
 B. Someone believes they have found a shortcut to success
 
@@ -1714,11 +1714,11 @@ Maps to: Alexander Pushkin
 
 C. Someone is offered power that could solve an immediate problem
 
-Maps to: J.R.R. Tolkien
+Maps to: J.R.R. Tolkien, C.S. Lewis
 
 D. Someone is drawn toward a more glamorous and satisfying life
 
-Maps to: Gustave Flaubert
+Maps to: Gustave Flaubert, F. Scott Fitzgerald
 
 ### 95. How would you place a private sorrow beside the wider world?
 
@@ -1750,7 +1750,7 @@ Maps to: Lu Xun
 
 C. Whether accepted rules deserve to be followed
 
-Maps to: Friedrich Nietzsche
+Maps to: Friedrich Nietzsche, Aldous Huxley
 
 D. Whether words mean the same thing in different times and situations
 
@@ -1760,15 +1760,15 @@ Maps to: Jorge Luis Borges
 
 A. To make someone reflect on how they have lived
 
-Maps to: Dante Alighieri
+Maps to: Dante Alighieri, C.S. Lewis
 
 B. To show that old harm has not been resolved
 
-Maps to: Toni Morrison
+Maps to: Toni Morrison, Stephen King
 
 C. To explore grief that someone cannot let go of
 
-Maps to: Edgar Allan Poe
+Maps to: Edgar Allan Poe, Emily Brontë
 
 D. To remind someone that strength cannot overcome every limit
 
@@ -1778,7 +1778,7 @@ Maps to: Homer
 
 A. It shows that someone now understands another person differently
 
-Maps to: Jane Austen
+Maps to: Jane Austen, Harper Lee
 
 B. It hints at a feeling that remains unspoken
 
@@ -1796,7 +1796,7 @@ Maps to: Marcel Proust
 
 A. Someone's plan has consequences they did not intend
 
-Maps to: Alexandre Dumas
+Maps to: Alexandre Dumas, H.G. Wells, Isaac Asimov
 
 B. Unexpected events disrupt a carefully arranged schedule
 
@@ -1822,11 +1822,11 @@ Maps to: Voltaire
 
 C. An exchange that shows how feelings have changed with time
 
-Maps to: Alexander Pushkin
+Maps to: Alexander Pushkin, F. Scott Fitzgerald
 
 D. A feeling of longing that suggests a connection beyond the self
 
-Maps to: Rumi
+Maps to: Rumi, Paulo Coelho
 
 ## Reference index
 
@@ -2194,3 +2194,74 @@ All 50 original questions and their answer lists were reviewed. Questions 1 to 5
 
 50. Removed the absolute only humans classification.
 
+J.K. Rowling
+
+Harry Potter series. A hidden magical world, school life, friendship, planted clues and long-range plotting.
+
+Stephen King
+
+Carrie; It; The Shining; On Writing. Ordinary towns, horror, everyday voices, childhood friendship and fear that returns.
+
+F. Scott Fitzgerald
+
+The Great Gatsby; Tender Is the Night. Wealth, glamour, longing for the past and lyrical prose.
+
+Brothers Grimm
+
+Children's and Household Tales. Folk tales from oral tradition, repetition, magical creatures, reward and punishment.
+
+Arthur Conan Doyle
+
+The Adventures of Sherlock Holmes; The Hound of the Baskervilles. Deduction, clues, a narrating friend and recurring characters.
+
+Harper Lee
+
+To Kill a Mockingbird. A child's view of injustice, small-town customs, empathy and moral courage.
+
+Paulo Coelho
+
+The Alchemist; The Pilgrimage. Journeys, signs, spiritual searching and parable.
+
+Haruki Murakami
+
+Norwegian Wood; Kafka on the Shore. Loneliness, music, cities and the strange entering everyday life.
+
+John Steinbeck
+
+Of Mice and Men; The Grapes of Wrath; East of Eden. Working people, the land, poverty, friendship and family history.
+
+C.S. Lewis
+
+The Chronicles of Narnia; The Screwtape Letters. Portal fantasy, talking animals, temptation and faith.
+
+Enid Blyton
+
+The Famous Five; The Faraway Tree. Children's adventures, groups of friends, mysteries and fast-moving episodes.
+
+Emily Brontë
+
+Wuthering Heights. The moors, passionate love, revenge, nested narrators and haunting.
+
+Bram Stoker
+
+Dracula. Gothic horror told through letters and diaries, storms and an old threat returning.
+
+H.G. Wells
+
+The Time Machine; The War of the Worlds; The Island of Doctor Moreau. Scientific what-ifs, invaders, social class and responsibility for creation.
+
+Isaac Asimov
+
+I, Robot; Foundation. Rules for machines, logic puzzles, long future history and plain prose.
+
+Ray Bradbury
+
+Fahrenheit 451; The Martian Chronicles; Dandelion Wine. Book burning and censorship, linked stories, childhood wonder and poetic images.
+
+Aldous Huxley
+
+Brave New World. A controlled society, pleasure as power, satire and ideas.
+
+Dan Brown
+
+The Da Vinci Code; Angels & Demons. Codes, symbols, secret history, short chapters and races against time.

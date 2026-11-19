@@ -208,7 +208,7 @@
   /* ---------- intro ---------- */
   const count = m => m.settings.linear ? m.settings.linearCount : m.settings.maxQuestions;
   const minutes = m => Math.max(2, Math.round(count(m) / 4));
-  $('lead').textContent = 'Choose the writing you would like to create and explore literary affinities with 50 writers. These are connections with their work, not a personality assessment.';
+  $('lead').textContent = 'Choose the writing you would like to create and explore literary affinities with ' + model.W + ' writers. These are connections with their work, not a personality assessment.';
   $('startShort').textContent = 'Short quiz · ' + count(SHORT) + ' questions';
   $('startComplete').textContent = 'Complete quiz · 100 questions';
   $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Complete: about ' + minutes(COMPLETE) + ' minutes.';
