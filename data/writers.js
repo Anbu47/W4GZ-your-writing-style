@@ -12,6 +12,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "A Tale of Two Cities",
     "style": "Like Dickens, you build a big cast of unforgettable people, each with a name, a habit and a voice you could pick out of a crowd. You plan where they're going, so every one of them has a part to play by the end.",
     "trueStory": "Dickens published most of his novels in monthly parts and kept \"number plans\": sheets sketching the chapters and characters of each part before he wrote it.",
+    "howTheyWorked": "Dickens wrote from about nine in the morning until two in the afternoon in a quiet study, then walked for hours, often twenty miles or more, to think through his stories.",
+    "moreStories": [
+      "Dickens wrote A Christmas Carol in about six weeks in 1843 and paid for it to be printed himself.",
+      "In 1865 Dickens survived the Staplehurst rail crash. He climbed back into the wrecked carriage to rescue the manuscript of Our Mutual Friend."
+    ],
     "about": "Dickens grew up in Portsmouth and London. When he was 12, his father was sent to prison for debt, and Charles had to work long days in a factory pasting labels on pots of shoe polish. He never forgot it. His stories are packed with poor children, cruel institutions and unforgettable characters, and they made him the most famous writer of his time. He also gave public readings of his work to huge crowds.",
     "works": [
       "Oliver Twist",
@@ -69,6 +74,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Tale of Genji (translated by Arthur Waley)",
     "style": "Like Murasaki, you're fascinated by what people feel but don't say: longing, jealousy, quiet regret. You let your story grow chapter by chapter, following your characters through their lives.",
     "trueStory": "The Tale of Genji was read and passed around at the Japanese imperial court while Murasaki was still writing it, and it grew to 54 chapters.",
+    "howTheyWorked": "Murasaki wrote in kana, the Japanese script used at court for stories and diaries, and her chapters were copied by hand and lent from reader to reader.",
+    "moreStories": [
+      "In her diary Murasaki says that as a child she learned Chinese faster than her brother while listening to his lessons, and her father wished she had been born a boy.",
+      "Her diary also describes the court making a fine bound copy of Genji, with Murasaki helping to choose the paper and arrange the copying."
+    ],
     "about": "Murasaki Shikibu was a lady-in-waiting at the Japanese imperial court during the Heian period, about a thousand years ago. \"Murasaki\" was a nickname, and her real name is unknown. She wrote The Tale of Genji, the story of a prince and his loves, which is often called one of the world's first novels. She also kept a diary that gives a sharp, honest look at court life.",
     "works": [
       "The Tale of Genji",
@@ -130,6 +140,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Emma",
     "style": "Like Austen, you love people: their pride, their mistakes and the funny gap between what they say and what they mean. You rewrite until every conversation reveals character.",
     "trueStory": "Austen's first version of Pride and Prejudice was called First Impressions. A publisher turned it down without reading it, and she reworked it for years before it came out in 1813.",
+    "howTheyWorked": "Austen wrote in the family sitting room at Chawton on small sheets of paper she could slip out of sight. Her nephew said she would not let anyone fix a creaking door, because its noise warned her that someone was coming.",
+    "moreStories": [
+      "Her first published novel, Sense and Sensibility (1811), came out without her name: the title page said only \"By a Lady\".",
+      "The Prince Regent was a fan, and his librarian let her know she could dedicate Emma to him. She did, even though she disliked the prince."
+    ],
     "about": "Austen was the daughter of a country clergyman in Hampshire and grew up in a lively family that loved reading and putting on plays at home. Her novels came out without her name; the first said only \"By a Lady.\" She wrote about everyday life, money and marriage with sharp humor, and her books are still adapted into films and series today.",
     "works": [
       "Pride and Prejudice",
@@ -223,6 +238,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "As You Like It",
     "style": "Like Shakespeare, you take a story and engineer it for maximum drama: mistaken identities, secrets, bad timing and big reveals. You know exactly where each turn hits the audience.",
     "trueStory": "Shakespeare borrowed almost all of his plots from older histories and stories, then rebuilt them into tightly constructed plays.",
+    "howTheyWorked": "Shakespeare wrote for one company of actors he knew well and shaped roles for particular performers, such as the leading actor Richard Burbage. He averaged about two plays a year.",
+    "moreStories": [
+      "The Globe Theatre burned down in 1613 when a cannon fired during a performance of Henry VIII set the thatched roof alight. Nobody was killed.",
+      "In his will Shakespeare left his wife his \"second best bed\", a line people still argue about."
+    ],
     "about": "Shakespeare was born in Stratford-upon-Avon and moved to London, where he became an actor, a playwright and a part-owner of an acting company and the Globe Theatre. He wrote about 37 plays and 154 sonnets. Many words and phrases we still use first appear in his writing. After he died, two of his fellow actors collected his plays in the First Folio (1623); without it, about half of them might have been lost.",
     "works": [
       "Romeo and Juliet",
@@ -286,6 +306,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Crime and Punishment",
     "style": "Like Dostoevsky, you write high-stakes stories: crimes, confessions, impossible choices. You write in feverish bursts, and the story often surprises you as much as your reader.",
     "trueStory": "To meet a publisher's deadline, Dostoevsky dictated his novel The Gambler to a stenographer in 26 days. He later married her, Anna Snitkina.",
+    "howTheyWorked": "Dostoevsky usually worked at night, often until dawn, drinking strong tea, and slept late into the morning. Many of his novels came out in magazines while he was still writing the later parts.",
+    "moreStories": [
+      "Dostoevsky was a compulsive roulette player in German spa towns and sometimes pawned his and his wife's belongings to keep playing. He finally stopped in 1871.",
+      "He finished The Brothers Karamazov in 1880, only months before he died."
+    ],
     "about": "Dostoevsky was born in Moscow. As a young writer he was arrested for joining a group that discussed banned ideas, sentenced to death, and pardoned at the last moment. He spent four years in a prison camp in Siberia instead. That experience shaped his novels, which dive into guilt, faith, freedom and the darkest corners of the mind.",
     "works": [
       "Crime and Punishment",
@@ -358,6 +383,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Old Man and the Sea",
     "style": "Like Hemingway, you get the story down and then strip it back. You cut, tighten and rewrite until every scene moves and nothing is wasted.",
     "trueStory": "Hemingway said he rewrote the ending of A Farewell to Arms 39 times before he was satisfied.",
+    "howTheyWorked": "Hemingway wrote early in the morning, often standing up, and kept a daily count of his words. He liked to stop for the day when he knew what would happen next, so he could start easily the next morning.",
+    "moreStories": [
+      "In 1922 a suitcase holding almost all of his early manuscripts, including the carbon copies, was stolen from a train station in Paris.",
+      "In 1954 he survived two plane crashes in Africa on two days in a row, and some newspapers printed his obituary."
+    ],
     "about": "Hemingway started as a newspaper reporter, where he learned to write short, clear sentences. In the First World War he drove ambulances in Italy and was badly wounded. He believed a writer should show only the tip of the iceberg and leave the rest beneath the surface for the reader to feel. He won the Pulitzer Prize in 1953 and the Nobel Prize in Literature in 1954.",
     "works": [
       "The Old Man and the Sea",
@@ -412,6 +442,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Anna Karenina",
     "style": "Like Tolstoy, you see the big picture: families, cities, wars and history, with hundreds of lives crossing. You research and plan your world so it feels completely real.",
     "trueStory": "For War and Peace, Tolstoy read letters and memoirs from 1812 and visited the Borodino battlefield to study the ground where the battle was fought.",
+    "howTheyWorked": "Tolstoy wrote in the mornings at Yasnaya Polyana. His wife Sophia copied out his messy drafts by hand, again and again, so he could keep revising.",
+    "moreStories": [
+      "Tolstoy started a school for peasant children on his estate and wrote reading books for them himself.",
+      "At 82, in 1910, Tolstoy secretly left home one night. He fell ill on the train and died days later at a small railway station, Astapovo."
+    ],
     "about": "Tolstoy was born into a rich noble family on an estate called Yasnaya Polyana. As a young man he served as a soldier, including in the Crimean War, and later wrote some of the longest and most admired novels ever written. In his later life he gave up much of his wealth, lived simply and wrote about how people should live. His ideas about peaceful resistance later inspired Mahatma Gandhi.",
     "works": [
       "War and Peace",
@@ -480,6 +515,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "One Hundred Years of Solitude (translated by Gregory Rabassa)",
     "style": "Like García Márquez, you create places where the impossible happens and everyone treats it as normal. You discover your world as you write it, and it keeps getting richer and stranger.",
     "trueStory": "The idea for One Hundred Years of Solitude struck him while driving his family to Acapulco in 1965. He turned the car around and wrote for about a year and a half.",
+    "howTheyWorked": "García Márquez said he wrote best in the mornings and liked to have a yellow flower, ideally a yellow rose, on his desk. While he wrote One Hundred Years of Solitude, his wife Mercedes kept the family going on credit.",
+    "moreStories": [
+      "When the novel was finished, the couple could only afford the postage for half of the manuscript. They pawned a heater, a hairdryer and a blender to send the rest.",
+      "In the 1950s he was a newspaper correspondent in Europe and was left stranded in Paris when his paper in Colombia was shut down."
+    ],
     "about": "García Márquez spent his early childhood with his grandparents in the small town of Aracataca. His grandmother told the most fantastic stories with a completely straight face, and he later said that was the tone he wanted for his novels. He worked for years as a journalist. His style became known as magical realism, and he won the Nobel Prize in Literature in 1982.",
     "works": [
       "One Hundred Years of Solitude",
@@ -539,6 +579,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Les Misérables",
     "style": "Like Hugo, you care about places and the people history forgets: a cathedral, a city's streets, the poor and the outcast. Your world gets deeper with every draft.",
     "trueStory": "Hugo started Les Misérables in the 1840s, put it aside for years, and finished it in exile on the island of Guernsey. It was published in 1862.",
+    "howTheyWorked": "To finish The Hunchback of Notre-Dame on time, Hugo locked away his good clothes so he could not go out, and wrote wrapped in a big knitted shawl. In exile on Guernsey he wrote standing up in a glass-walled room at the top of his house.",
+    "moreStories": [
+      "Hugo started writing The Hunchback of Notre-Dame in earnest in September 1830 and finished it in January 1831, months after his publisher's deadline.",
+      "When Hugo died in 1885, his coffin lay in state under the Arc de Triomphe in Paris."
+    ],
     "about": "Hugo was a poet, playwright, novelist and politician. He spoke out against Napoleon III, who had seized power, and lived in exile on the islands of Jersey and Guernsey for almost 20 years. He wrote The Hunchback of Notre-Dame partly to make people care about saving old Gothic buildings. When he died, about two million people are said to have joined his funeral procession in Paris.",
     "works": [
       "Les Misérables",
@@ -604,6 +649,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "My Old Home",
     "style": "Like Lu Xun, you write with a clear aim, and you choose your words to hit hard. Your style is sharp, plain and often ironic, and it makes people think.",
     "trueStory": "Lu Xun's \"A Madman's Diary\" (1918) was one of the first major stories written in everyday spoken Chinese instead of formal classical Chinese.",
+    "howTheyWorked": "Lu Xun usually wrote late at night. Besides stories he wrote hundreds of short, sharp essays for magazines, using many different pen names to get past censors.",
+    "moreStories": [
+      "Lu Xun said that in Japan he saw a lantern slide of a Chinese man about to be executed while Chinese onlookers stood by, and this pushed him to leave medicine for literature.",
+      "He translated a great deal of foreign literature into Chinese and helped start a modern woodcut print movement."
+    ],
     "about": "Lu Xun was the pen name of Zhou Shuren. He went to Japan to study medicine, but decided that his country needed its thinking healed more than its bodies, so he turned to writing. He is often called the father of modern Chinese literature. His stories and essays criticize old habits and injustice with dark humor, and many are still taught in schools.",
     "works": [
       "A Madman's Diary",
@@ -658,6 +708,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Twilight of the Idols",
     "style": "Like Nietzsche, you write in a voice nobody could mistake: daring, poetic and full of energy. Your best thoughts arrive suddenly, and you catch them before they're gone.",
     "trueStory": "Nietzsche walked for hours a day in the Swiss Alps and jotted ideas in notebooks along the way. He said he wrote the first part of Thus Spoke Zarathustra in about ten days.",
+    "howTheyWorked": "Nietzsche believed the best thoughts come while walking and planned his days around long walks. As his eyesight failed he tried an early typewriter, the Malling-Hansen writing ball, in 1882.",
+    "moreStories": [
+      "Nietzsche and the composer Richard Wagner were close friends before they fell out bitterly.",
+      "In 1889 he collapsed in the street in Turin and never recovered his mind. A well-known story, which may not be true, says he threw his arms around a horse that was being whipped."
+    ],
     "about": "Nietzsche was a philosopher, not a novelist, but he wrote like a poet. He became a university professor in Basel at just 24, then left because of poor health and spent years traveling between Switzerland and Italy. He often wrote in short, punchy aphorisms. His ideas about values, power and creating your own meaning are still argued about today and are often misunderstood.",
     "works": [
       "Thus Spoke Zarathustra",
@@ -705,6 +760,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Spring View",
     "style": "Like Du Fu, you'll trade ten words for the perfect one. You work inside strict rules of rhythm and sound, and you polish until every line carries its full weight.",
     "trueStory": "Du Fu wrote that he would not rest, even in death, until his lines could startle readers.",
+    "howTheyWorked": "Du Fu worked carefully in regulated verse, a strict form where the tones and the pairs of parallel lines follow tight rules, and he was known for revising until every word was right.",
+    "moreStories": [
+      "During the An Lushan Rebellion he was trapped in the occupied capital, Chang'an, where he wrote \"Spring View\".",
+      "He spent his last years living on a boat on the rivers of Hunan and died there around 770."
+    ],
     "about": "Du Fu lived during the Tang dynasty, often called the golden age of Chinese poetry. He failed the imperial exams, lived through the An Lushan Rebellion, and spent years as a refugee in poverty. He wrote about war, hunger and ordinary people's suffering so truthfully that he is called the \"Poet-Historian\" and the \"Poet-Sage.\" His friendship with the poet Li Bai is famous too.",
     "works": [
       "Spring View",
@@ -767,6 +827,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Iliad",
     "style": "Like Homer, you think on a grand scale: heroes, gods, long journeys and the pull of home. You build your story from strong patterns that a listener can follow by ear.",
     "trueStory": "The Iliad and the Odyssey were made to be performed aloud. They are built from repeated phrases, like \"rosy-fingered dawn\", that helped a singer keep the rhythm.",
+    "howTheyWorked": "Singers in Homer's tradition did not recite a fixed text. They rebuilt each performance from stock phrases and familiar scenes, such as a warrior arming or a feast.",
+    "moreStories": [
+      "In the 1930s the scholar Milman Parry recorded singers in Yugoslavia who could perform epic songs thousands of lines long. This showed how poems like Homer's could be composed aloud.",
+      "In ancient Athens the Homeric poems were recited at the great Panathenaic festival, and children learned to read with them."
+    ],
     "about": "Almost nothing certain is known about Homer. Tradition describes a blind poet, and scholars still argue about whether one person or many singers shaped the poems. Either way, the two epics became the starting point of Western storytelling.",
     "works": [
       "The Iliad",
@@ -831,6 +896,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Fragment 147",
     "style": "Like Sappho, you write short and close. One moment of love, jealousy or longing is enough for a whole poem, and you say it so directly that it still feels fresh.",
     "trueStory": "Most of Sappho's poems are lost. What survives is mostly fragments, some of them recovered from scraps of papyrus found in Egypt.",
+    "howTheyWorked": "Sappho composed songs to be sung with a lyre, many for weddings and for the women and girls of her circle.",
+    "moreStories": [
+      "Scholars at the library of Alexandria collected her poems into nine books, almost all of which are now lost.",
+      "In 2014 a previously unknown poem by Sappho, now called the Brothers Poem, was identified on a papyrus."
+    ],
     "about": "Sappho lived on the island of Lesbos and wrote songs to be performed with a lyre. Ancient readers admired her so much that she was called \"the Tenth Muse\". A verse form, the Sapphic stanza, is named after her.",
     "works": [
       "Ode to Aphrodite",
@@ -896,6 +966,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Inferno",
     "style": "Like Dante, you design before you write. Your world has levels, rules and a place for everyone, and you put yourself inside it as the traveler.",
     "trueStory": "Dante was banished from Florence in 1302 and never went home. He wrote the Divine Comedy in exile and placed several of his real enemies in Hell.",
+    "howTheyWorked": "Dante built the Comedy around the number three: three parts, 33 cantos in each plus an opening one, and a rhyme scheme of linked three-line stanzas he invented, terza rima.",
+    "moreStories": [
+      "Dante wrote that he fell in love with Beatrice Portinari when they were both nine. In the Comedy she becomes his guide through Paradise.",
+      "Florence later offered to let him return if he paid a fine and admitted guilt. He refused."
+    ],
     "about": "Dante was a poet and politician in Florence. He chose to write his great poem in the Italian people spoke, not in Latin, which helped shape the Italian language. The Comedy has 100 cantos and follows a journey through Hell, Purgatory and Paradise.",
     "works": [
       "The Divine Comedy",
@@ -949,6 +1024,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Don Quixote",
     "style": "Like Cervantes, you pair characters who see the world in opposite ways and let them talk. Your comedy is kind: the fool is also the bravest person in the book.",
     "trueStory": "Cervantes was wounded at the Battle of Lepanto in 1571 and lost the use of his left hand. Later he was captured by pirates and held in Algiers for five years.",
+    "howTheyWorked": "Cervantes gathered material traveling the roads of southern Spain as a collector of supplies for the Armada and of taxes. In the prologue to Don Quixote he hints that the book was conceived in a prison.",
+    "moreStories": [
+      "During his five years as a captive in Algiers he tried to escape four times and each time took the blame himself.",
+      "After someone else published a fake sequel to Don Quixote in 1614, Cervantes mocked it inside his own Part Two."
+    ],
     "about": "Cervantes was a soldier, a tax collector and more than once a prisoner before he found success late in life. Don Quixote, about a man who reads so many adventure books that he sets out as a knight, is often called the first modern novel.",
     "works": [
       "Don Quixote",
@@ -1016,6 +1096,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Drinking Alone by Moonlight",
     "style": "Like Li Bai, you write freely and fast. Mountains, the moon, wine and friends turn into images nobody else would think of, and you don't mind breaking a rule to get there.",
     "trueStory": "About a thousand of Li Bai's poems survive. A famous legend, which is probably not true, says he drowned reaching from a boat for the moon's reflection.",
+    "howTheyWorked": "Li Bai was famous for writing quickly and freely, often while drinking. Du Fu wrote that Li Bai could produce a hundred poems over a jug of wine.",
+    "moreStories": [
+      "A famous story says that at the emperor's court Li Bai made the powerful official Gao Lishi pull off his boots.",
+      "Li Bai was sentenced to exile for joining a prince's failed rebellion, then pardoned while still on the way."
+    ],
     "about": "Li Bai lived in the Tang dynasty and spent most of his life wandering China. He served briefly at the emperor's court and was friends with Du Fu, who wrote poems about him. He is called the \"Immortal Poet\".",
     "works": [
       "Drinking Alone by Moonlight",
@@ -1075,6 +1160,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Narrow Road to the Deep North (translated by Sam Hamill)",
     "style": "Like Bashō, you notice. A frog, a crow, a summer field: you set one clear image down in a few words and trust the reader to feel the rest.",
     "trueStory": "In 1689 Bashō set out on foot through northern Japan, a journey of roughly 2,400 kilometers. It became The Narrow Road to the Deep North, which he kept revising for years.",
+    "howTheyWorked": "Bashō often wrote in groups, trading linked verses with other poets in renga sessions, and he kept polishing single poems for years.",
+    "moreStories": [
+      "His famous frog poem, about an old pond and the sound of a frog jumping in, dates from 1686.",
+      "Bashō died in Osaka in 1694 while on another journey. His last poem describes his dreams wandering over withered fields."
+    ],
     "about": "Bashō was a teacher of poetry in Edo (now Tokyo) who took his pen name from a banana plant by his hut. He turned the short hokku, now called haiku, into a serious art, and he mixed travel diary and poems in a form called haibun.",
     "works": [
       "The Narrow Road to the Deep North",
@@ -1148,6 +1238,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Masnavi (translated by R. A. Nicholson)",
     "style": "Like Rumi, you write out of longing. Your images spin from the everyday to the infinite, and you teach by telling stories rather than by explaining.",
     "trueStory": "Rumi's life changed in 1244 when he met a wandering mystic, Shams of Tabriz. After Shams disappeared, Rumi poured out thousands of verses.",
+    "howTheyWorked": "Rumi composed much of the Masnavi aloud, sometimes during music and turning, while his student Husam al-Din wrote the verses down.",
+    "moreStories": [
+      "A traditional story says that as a boy Rumi met the poet Attar, who gave him a book and foretold his greatness.",
+      "At his funeral in Konya in 1273, Christians and Jews are said to have walked with Muslims in the procession."
+    ],
     "about": "Rumi was a religious scholar and teacher whose family fled westward when he was a child. His Masnavi runs to about 25,000 couplets, much of it dictated to a student. His followers founded the order known for its whirling dance.",
     "works": [
       "The Masnavi",
@@ -1212,6 +1307,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Tale of Kiều",
     "style": "Like Nguyễn Du, you take a story people already know and make it deeper. You care about talented people crushed by bad luck, and you write their feelings with music and compassion.",
     "trueStory": "The Tale of Kiều is 3,254 lines of lục bát verse, retold from a Chinese novel. Many Vietnamese people can recite passages by heart.",
+    "howTheyWorked": "Nguyễn Du wrote The Tale of Kiều in chữ Nôm, the script for writing Vietnamese, not in classical Chinese, so the poem could sound like the spoken language.",
+    "moreStories": [
+      "People still \"consult\" The Tale of Kiều like a fortune book, opening it at random and reading the lines as an answer, a custom called bói Kiều.",
+      "Besides Kiều, he wrote many poems in classical Chinese, including poems from his journey to China as an envoy."
+    ],
     "about": "Nguyễn Du was born into a family of high officials who served the Lê dynasty. When that dynasty fell he lived through years of hardship before serving the new Nguyễn court, which sent him as an envoy to China in 1813.",
     "works": [
       "The Tale of Kiều (Truyện Kiều)",
@@ -1273,6 +1373,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Dream of the Red Chamber",
     "style": "Like Cao Xueqin, you write about a family and a house you can still see clearly. Dozens of characters, their meals, poems and quarrels, all come back as you revise.",
     "trueStory": "Cao's family was rich and close to the emperor until its property was seized when he was a child. He wrote his novel in poverty, and it passed around in handwritten copies before it was printed in 1791, after his death.",
+    "howTheyWorked": "Cao kept revising the novel for years. Early handwritten copies include notes by a commentator called Red Inkstone, who seems to have known him and the family.",
+    "moreStories": [
+      "Only the first 80 chapters are thought to be by Cao. The last 40 were completed by others and printed in 1791.",
+      "The novel is studied so closely in China that there is a whole field named after it, called Redology."
+    ],
     "about": "Dream of the Red Chamber follows the slow decline of a great household through the eyes of its young people. It is counted among the four great classical novels of China, and Cao is said to have worked on it for ten years.",
     "works": [
       "Dream of the Red Chamber (The Story of the Stone)"
@@ -1339,6 +1444,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Faust",
     "style": "Like Goethe, you can't stay in one form. Poems, plays, novels, science: each feeds the others, and your biggest project grows with you over the years.",
     "trueStory": "Goethe worked on Faust, on and off, for about sixty years. He finished Part Two only months before he died.",
+    "howTheyWorked": "Goethe often dictated to secretaries while walking up and down the room, and he kept several big projects going at once for decades.",
+    "moreStories": [
+      "The Sorrows of Young Werther was so popular that young men dressed like its hero, in a blue coat and yellow waistcoat.",
+      "Goethe sealed the finished manuscript of Faust Part Two and asked that it be published only after his death."
+    ],
     "about": "Goethe became famous across Europe in his twenties with The Sorrows of Young Werther. He spent most of his life in Weimar, where he was also a government minister and a scientist who studied plants and color.",
     "works": [
       "Faust",
@@ -1401,6 +1511,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Candide",
     "style": "Like Voltaire, you are quick, clear and funny on purpose. You take a comfortable belief, push it through a string of disasters and let the reader see it fall apart.",
     "trueStory": "As a young man Voltaire spent eleven months in the Bastille prison for his writing. Candide (1759) came out without his name, was banned, and sold anyway.",
+    "howTheyWorked": "Voltaire wrote fast and constantly, often dictating to secretaries, and he wrote letters all his life; more than 20,000 of them survive.",
+    "moreStories": [
+      "In 1729 Voltaire and a mathematician friend won a fortune by spotting a flaw in a French government lottery.",
+      "On his last visit to Paris in 1778, a bust of Voltaire was crowned with laurels on stage at a performance of his play Irène."
+    ],
     "about": "Voltaire was the pen name of François-Marie Arouet. He wrote plays, histories, tales and thousands of letters, lived for years away from Paris to stay out of trouble, and argued for tolerance and free speech.",
     "works": [
       "Candide",
@@ -1469,6 +1584,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Miser",
     "style": "Like Molière, you build comedy around one person's obsession: the miser, the hypocrite, the man sure he is ill. You know exactly when the audience will laugh, because you have stood on the stage.",
     "trueStory": "Molière's first theater company went bankrupt and he was briefly jailed for debt. Years later his play Tartuffe was banned, and it took him about five years to get it back on stage.",
+    "howTheyWorked": "Molière wrote fast to keep his company busy, sometimes finishing a play in weeks, and he wrote roles to fit himself and his actors.",
+    "moreStories": [
+      "In 1673 Molière collapsed on stage while playing the lead in The Imaginary Invalid and died a few hours later.",
+      "Because actors were then refused church burial, the king had to step in so Molière could be buried, at night, in a churchyard."
+    ],
     "about": "Molière was the stage name of Jean-Baptiste Poquelin, who gave up his family's upholstery business for the theater. He toured the provinces for more than a decade, then became the king's favorite playwright. He acted the lead in his own plays until the end.",
     "works": [
       "Tartuffe",
@@ -1532,6 +1652,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Frankenstein",
     "style": "Like Mary Shelley, you start from one bold idea and take its consequences seriously. Your monsters have feelings, and your real question is who is responsible.",
     "trueStory": "Frankenstein began in 1816 as her entry in a ghost-story contest among friends at Lake Geneva. She was 18. It was published two years later without her name.",
+    "howTheyWorked": "Mary Shelley drafted Frankenstein in notebooks, and Percy Shelley read them and suggested changes; both of their handwritings can still be seen in the manuscript.",
+    "moreStories": [
+      "She said the idea came to her as a waking dream one night at Lake Geneva: a student kneeling beside the creature he had made.",
+      "In 1831 she published a revised edition with a new introduction that tells how she came to write the book."
+    ],
     "about": "Mary Shelley was the daughter of two famous thinkers, Mary Wollstonecraft and William Godwin. Frankenstein is often called one of the first science fiction novels. She kept writing all her life, including The Last Man, about the end of humanity.",
     "works": [
       "Frankenstein",
@@ -1590,6 +1715,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Jane Eyre",
     "style": "Like Charlotte Brontë, you write in a strong first-person voice. Your heroine is poor and plain and refuses to be small, and she tells the reader exactly what she feels.",
     "trueStory": "Charlotte published Jane Eyre in 1847 under the name Currer Bell. As children, she and her brother and sisters wrote tiny handmade books about imaginary kingdoms.",
+    "howTheyWorked": "In the evenings at Haworth, Charlotte, Emily and Anne walked round and round the dining table, reading their work aloud and talking over their plots.",
+    "moreStories": [
+      "In 1837 Charlotte wrote to the poet Robert Southey, who replied that literature could not be the business of a woman's life. She kept writing.",
+      "In 1848 Charlotte and Anne traveled to London to prove to their publisher that \"Currer\" and \"Acton Bell\" were two different people."
+    ],
     "about": "Charlotte Brontë grew up in a parsonage on the Yorkshire moors and worked as a teacher and governess. Her sisters Emily and Anne were novelists too. Jane Eyre was an immediate success, and readers argued about who the mysterious author was.",
     "works": [
       "Jane Eyre",
@@ -1646,6 +1776,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "A Dream Within a Dream",
     "style": "Like Poe, you plan the effect first and then build toward it. Rhythm, repetition and a narrator who can't be trusted all work together to unsettle the reader.",
     "trueStory": "In his essay \"The Philosophy of Composition\", Poe claimed he built \"The Raven\" step by step, choosing the word \"Nevermore\" for its sound before writing the rest.",
+    "howTheyWorked": "Poe believed a short story should be read in one sitting and that every word should work toward a single effect, which he decided on before writing.",
+    "moreStories": [
+      "\"The Raven\" made Poe famous in 1845, but he was paid very little for it.",
+      "Poe died in Baltimore in 1849 after being found delirious in the street, and the cause of his death is still a mystery."
+    ],
     "about": "Poe was orphaned young and raised by a foster family in Virginia. He worked as a magazine editor and critic and was short of money most of his life. He is often credited with inventing the detective story in 1841.",
     "works": [
       "The Raven",
@@ -1724,6 +1859,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Poem 1263",
     "style": "Like Dickinson, you compress. A few short lines, an unexpected word, a dash where others would explain, and a huge subject like death or hope fits in the palm of a hand.",
     "trueStory": "Dickinson wrote nearly 1,800 poems, and only about ten were printed while she was alive. After she died, her sister found them, many sewn by hand into small booklets.",
+    "howTheyWorked": "Dickinson wrote on whatever was at hand, including envelopes and scraps of paper, and often noted several possible words in the margin without choosing one.",
+    "moreStories": [
+      "She sent hundreds of poems in letters to friends and family, especially to her sister-in-law Susan.",
+      "In 1862 she wrote to the editor Thomas Wentworth Higginson asking whether her verse was \"alive\". They wrote to each other for the rest of her life."
+    ],
     "about": "Emily Dickinson lived almost all her life in her family's house in Amherst, Massachusetts, and in later years rarely left it. She kept up friendships through letters. Her odd punctuation and slanted rhymes were \"corrected\" by early editors and restored much later.",
     "works": [
       "Because I could not stop for Death",
@@ -1786,6 +1926,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Song of Myself",
     "style": "Like Whitman, you write long, open lines and lists that keep going. You celebrate ordinary people and you say \"I\" in a way that means everybody.",
     "trueStory": "Whitman published Leaves of Grass himself in 1855 with twelve poems, and set some of the type with his own hands. He kept revising and enlarging it for the rest of his life.",
+    "howTheyWorked": "Whitman carried small notebooks everywhere and jotted down lines and overheard talk while riding ferries and buses around New York.",
+    "moreStories": [
+      "Ralph Waldo Emerson wrote Whitman a letter praising the first Leaves of Grass, and Whitman printed a line from it on the second edition without asking.",
+      "During the Civil War Whitman visited thousands of wounded soldiers in hospitals, bringing small gifts and writing letters home for them."
+    ],
     "about": "Whitman worked as a printer, teacher and newspaperman in New York. During the American Civil War he volunteered in army hospitals. His free verse, without regular rhyme or meter, shocked many readers and changed poetry.",
     "works": [
       "Leaves of Grass",
@@ -1836,6 +1981,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Pudd'nhead Wilson",
     "style": "Like Twain, you have an ear. Your narrator sounds like a real kid from a real place, and you use jokes to say serious things about how people treat each other.",
     "trueStory": "\"Mark Twain\" was a riverboat call meaning the water was two fathoms deep. He started Huckleberry Finn in 1876, put it away for years, and finished it in 1883.",
+    "howTheyWorked": "In summer Twain wrote in a small octagonal study his family built on a hill at Quarry Farm in Elmira, New York, far enough from the house that the noise of the children could not reach him.",
+    "moreStories": [
+      "Twain was one of the first authors to use a typewriter for his work.",
+      "Twain was born in 1835, when Halley's Comet appeared, and said he expected to go out with it. He died in 1910, the day after it passed closest to the Sun."
+    ],
     "about": "Samuel Clemens grew up in Hannibal, Missouri, on the Mississippi River. He was a printer, a riverboat pilot and a newspaper reporter before his humor made him one of the most famous Americans of his time.",
     "works": [
       "The Adventures of Tom Sawyer",
@@ -1892,6 +2042,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Butterfly",
     "style": "Like Andersen, you write simply, as if speaking aloud to a child, but the feeling underneath is grown-up. Your outsiders, such as a duckling, a tin soldier or a mermaid, carry real sadness.",
     "trueStory": "Andersen was the son of a shoemaker and a washerwoman. At 14 he left home alone for Copenhagen, hoping to become an actor.",
+    "howTheyWorked": "Andersen often made intricate paper cut-outs while telling stories aloud, unfolding the paper at the end to show the picture.",
+    "moreStories": [
+      "In 1857 Andersen stayed with Charles Dickens for five weeks, much longer than his hosts expected.",
+      "Many readers see \"The Ugly Duckling\" as Andersen's own life story, from a poor boy to a famous author."
+    ],
     "about": "Andersen wrote novels, plays and travel books, but he is remembered for more than 150 fairy tales. Unlike the Brothers Grimm, who collected old stories, he invented most of his own. He traveled constantly and never had a settled home.",
     "works": [
       "The Little Mermaid",
@@ -1955,6 +2110,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Alice's Adventures in Wonderland",
     "style": "Like Carroll, you play. You invent words, turn rules upside down and let a curious child argue with creatures who are sure they are right.",
     "trueStory": "Alice's Adventures in Wonderland began as a story Carroll made up on the spot for three young sisters during a boat trip in 1862.",
+    "howTheyWorked": "Carroll invented a \"nyctograph\", a card with a grid of holes, so he could write notes in the dark when ideas came at night.",
+    "moreStories": [
+      "He wrote out and illustrated a gift manuscript, Alice's Adventures Under Ground, for Alice Liddell.",
+      "Carroll was also a serious photographer and took thousands of portraits."
+    ],
     "about": "Lewis Carroll was the pen name of Charles Lutwidge Dodgson, who taught mathematics at Oxford. He loved puzzles and logic games. Words he invented in \"Jabberwocky\", such as \"chortle\", are still used.",
     "works": [
       "Alice's Adventures in Wonderland",
@@ -2014,6 +2174,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Twenty Thousand Leagues Under the Seas",
     "style": "Like Verne, you do the research. Your adventures are packed with real facts and careful calculations, so the reader believes the submarine and the trip to the moon.",
     "trueStory": "Verne studied law to please his father but wanted to write. Working with the publisher Hetzel, he produced a long series called the Extraordinary Voyages.",
+    "howTheyWorked": "Verne got up very early and wrote until about midday, then spent the afternoon reading science magazines and newspapers and copying facts onto note cards. He collected thousands of them.",
+    "moreStories": [
+      "In 1889 the journalist Nellie Bly raced around the world in 72 days to beat Phileas Fogg's 80, and visited Verne in Amiens on the way.",
+      "Verne served for many years on the city council of Amiens."
+    ],
     "about": "Verne grew up in the port city of Nantes, watching ships. His novels first ran in magazines, part by part. He is one of the most translated authors in the world and is often called a father of science fiction.",
     "works": [
       "Twenty Thousand Leagues Under the Seas",
@@ -2070,6 +2235,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Three Musketeers",
     "style": "Like Dumas, you love adventure, friendship and big dramatic turns. You throw your heroes into trouble and chase the story as fast as it runs.",
     "trueStory": "The Three Musketeers and The Count of Monte Cristo first came out in newspapers, a piece at a time, so each part had to end with a hook.",
+    "howTheyWorked": "Dumas worked with collaborators, above all Auguste Maquet, who researched and drafted plots that Dumas then rewrote in his lively style. He wrote fast and in huge amounts.",
+    "moreStories": [
+      "With his earnings Dumas built a fairy-tale house near Paris, the Château de Monte-Cristo, and soon lost it to debts.",
+      "In 2002 his remains were moved to the Panthéon in Paris, where France honors its great figures."
+    ],
     "about": "Dumas's father was a general in the French army, born in Saint-Domingue (now Haiti) to a French nobleman and an enslaved woman of African descent. Alexandre began as a playwright and often worked with a collaborator, Auguste Maquet.",
     "works": [
       "The Three Musketeers",
@@ -2132,6 +2302,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Madame Bovary",
     "style": "Like Flaubert, you would trade ten words for the perfect one. You keep yourself out of the story and let exact details do the judging.",
     "trueStory": "Flaubert spent about five years writing Madame Bovary and read his sentences aloud to test them. When the novel appeared he was put on trial for offending public morals, and he was acquitted.",
+    "howTheyWorked": "Flaubert might spend days on a single page. He tested his sentences by shouting them aloud in a room he called his \"gueuloir\", his shouting place.",
+    "moreStories": [
+      "His long letters to Louise Colet describe his struggle with Madame Bovary almost day by day.",
+      "His long journey to Egypt and the Middle East in 1849–1851 fed the vivid settings of his later novel Salammbô."
+    ],
     "about": "Flaubert was a surgeon's son from Rouen who gave up law to write. He worked slowly at his family home near the city. Later writers have called him a master of style and of the realistic novel.",
     "works": [
       "Madame Bovary",
@@ -2188,6 +2363,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Cherry Orchard",
     "style": "Like Chekhov, you don't explain or judge. Ordinary people talk about the weather while their hearts break, and you end the story before anything is solved.",
     "trueStory": "Chekhov trained as a doctor and wrote comic sketches for magazines to support his family. He said medicine was his lawful wife and literature his mistress.",
+    "howTheyWorked": "Chekhov wrote quickly and often; in his early years he published hundreds of short comic pieces under pen names such as Antosha Chekhonte. He believed in cutting hard and wrote that brevity is the sister of talent.",
+    "moreStories": [
+      "The Seagull failed badly on its first night in 1896. Two years later the Moscow Art Theatre staged it as a hit.",
+      "Chekhov died of tuberculosis in Germany in 1904, shortly after drinking a glass of champagne."
+    ],
     "about": "Chekhov was the grandson of a serf and grew up in a family that went bankrupt. He kept practicing medicine while writing hundreds of stories and four great plays. In 1890 he crossed Siberia to study conditions on the prison island of Sakhalin.",
     "works": [
       "The Lady with the Dog",
@@ -2251,6 +2431,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Eugene Onegin",
     "style": "Like Pushkin, you write with speed and grace. Your narrator chats with the reader, jokes, changes the subject, and still breaks their heart by the end.",
     "trueStory": "In the autumn of 1830 a cholera outbreak kept Pushkin stuck at his family's estate at Boldino. In three months he wrote the last chapters of Eugene Onegin, plus stories, plays and poems.",
+    "howTheyWorked": "Pushkin often wrote in the mornings, sometimes still in bed, and filled the margins of his manuscripts with quick drawings of faces and figures.",
+    "moreStories": [
+      "As a teenager at the Lyceum in Tsarskoye Selo, Pushkin read his poem at a public exam, and the old poet Derzhavin was deeply moved.",
+      "Pushkin died in 1837 after a duel with a French officer, Georges d'Anthès."
+    ],
     "about": "Pushkin is called the founder of modern Russian literature. His great-grandfather, Abram Gannibal, was born in Africa and rose to become a general in Russia. Pushkin was sent away from the capital for his poems and watched by censors all his life.",
     "works": [
       "Eugene Onegin",
@@ -2320,6 +2505,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Lady Windermere's Fan",
     "style": "Like Wilde, you love a line that flips an idea on its head. Your characters are elegant, your plots are full of secrets, and you treat serious things lightly and light things seriously.",
     "trueStory": "Wilde's comedy The Importance of Being Earnest opened in London in February 1895 to huge applause. A few months later he was sent to prison for two years.",
+    "howTheyWorked": "Wilde polished witty lines in his notebooks and reused the best ones across his plays, stories and talk.",
+    "moreStories": [
+      "Arriving in New York for a lecture tour in 1882, Wilde is said to have told customs officers he had nothing to declare except his genius.",
+      "In prison Wilde wrote a long letter that was later published as De Profundis."
+    ],
     "about": "Wilde grew up in Dublin, the son of a surgeon and a poet, and became famous in London for his wit before he had written much. He wrote fairy tales, one novel and a run of hit comedies in just a few years.",
     "works": [
       "The Importance of Being Earnest",
@@ -2391,6 +2581,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "a letter to Oskar Pollak, 1904",
     "style": "Like Kafka, you start with something impossible and report it plainly. Nobody in your story is surprised, the rules can't be found, and the reader feels the trap closing.",
     "trueStory": "Kafka asked his friend Max Brod to burn his unpublished manuscripts after his death. Brod refused, which is why we have The Trial and The Castle.",
+    "howTheyWorked": "Kafka worked at his insurance office until early afternoon, slept, and then wrote late into the night. He also kept a diary for years.",
+    "moreStories": [
+      "His friend Max Brod said that when Kafka read the first chapter of The Trial aloud, he and his friends laughed so much that Kafka sometimes could not go on.",
+      "Kafka was engaged to Felice Bauer twice and broke it off twice."
+    ],
     "about": "Kafka wrote in German and worked by day at an insurance institute in Prague, writing at night. He wrote his story \"The Judgment\" in a single night in 1912. Very little of his work was published while he lived.",
     "works": [
       "The Metamorphosis",
@@ -2447,6 +2642,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Waves",
     "style": "Like Woolf, you care less about what happens than about how it feels from inside. Your sentences drift from one mind to another, and a single day can hold a lifetime.",
     "trueStory": "In 1917 Woolf and her husband Leonard bought a small printing press and started the Hogarth Press at home, setting the type by hand. It published her novels.",
+    "howTheyWorked": "Woolf wrote in the mornings and kept a diary for decades. In later years she wrote in a garden lodge at Monk's House, her country home in Sussex.",
+    "moreStories": [
+      "In 1910 Woolf took part in the Dreadnought hoax, dressing up as an Abyssinian prince to fool the Royal Navy into giving a tour of a warship.",
+      "Her novel Orlando was inspired by her friend Vita Sackville-West. Vita's son later called it the longest and most charming love letter in literature."
+    ],
     "about": "Virginia Woolf grew up in a London house full of books. She was taught mostly at home and read widely in her father's library. She was at the center of a circle of writers and artists called the Bloomsbury Group. Her essay A Room of One's Own argues that a woman needs money and a room of her own to write.",
     "works": [
       "Mrs Dalloway",
@@ -2513,6 +2713,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Ulysses",
     "style": "Like Joyce, you treat style as an adventure. You pack one ordinary day with jokes, songs, memories and puzzles, and you expect the reader to keep up.",
     "trueStory": "All of Ulysses takes place on one day in Dublin, 16 June 1904. Joyce spent about seven years writing it, and it was banned in the United States until 1933.",
+    "howTheyWorked": "Joyce wrote slowly and revised constantly. As his eyesight failed he wrote in large letters with crayons and a big blue pencil, wearing a white coat to reflect more light onto the page.",
+    "moreStories": [
+      "Sylvia Beach's Paris bookshop, Shakespeare and Company, published Ulysses in 1922, on Joyce's fortieth birthday.",
+      "Joyce spent about seventeen years on his last book, Finnegans Wake, published in 1939."
+    ],
     "about": "Joyce left Ireland as a young man and lived in Trieste, Zurich and Paris, but he wrote only about Dublin. He struggled with poor eyesight and with publishers who were afraid of his books.",
     "works": [
       "Dubliners",
@@ -2584,6 +2789,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Time Regained",
     "style": "Like Proust, you write from memory. A smell, a tune or a piece of cake opens a door, and you follow it through long, winding sentences until a whole lost world returns.",
     "trueStory": "Proust wrote much of In Search of Lost Time at night, in bed, in a room lined with cork to keep out noise. After publishers turned down the first volume, he paid to have it printed.",
+    "howTheyWorked": "Proust kept adding to his novel even at the proof stage, gluing extra strips of paper, which his housekeeper called paperoles, to his pages. Some unfolded to more than a meter.",
+    "moreStories": [
+      "In his novel, the taste of a small cake called a madeleine dipped in tea brings back a flood of childhood memories, and \"madeleine\" became a word for that kind of memory.",
+      "In 1897 Proust fought a pistol duel with a critic who had insulted him. Neither man was hurt."
+    ],
     "about": "Proust grew up in Paris in a wealthy family and was often ill. His novel runs to seven volumes. In 1919 its second volume won France's top literary prize, the Prix Goncourt.",
     "works": [
       "Swann's Way",
@@ -2654,6 +2864,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Animal Farm",
     "style": "Like Orwell, you write to expose something. Your sentences are plain on purpose, your story is a warning, and you want the reader to finish it angry enough to notice the real thing.",
     "trueStory": "Orwell fought in the Spanish Civil War and was shot through the throat in 1937. Several publishers turned down Animal Farm before it came out in 1945.",
+    "howTheyWorked": "Orwell wrote on a typewriter and kept careful diaries. On the island of Jura, seriously ill, he typed much of Nineteen Eighty-Four himself.",
+    "moreStories": [
+      "During the Second World War Orwell worked for the BBC making broadcasts to India. Room 101 in the novel is thought to be named after a BBC meeting room where he sat through long meetings.",
+      "He took the name Orwell from the River Orwell in Suffolk."
+    ],
     "about": "George Orwell was the pen name of Eric Blair. He served as a police officer in Burma, then lived among poor workers in Paris and London to write about them. He wrote Nineteen Eighty-Four on the Scottish island of Jura while seriously ill.",
     "works": [
       "Animal Farm",
@@ -2713,6 +2928,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Man in the Mist",
     "style": "Like Christie, you plot backwards from the big reveal. You know who did it, how and why, and which tiny hint early on will make readers gasp at the end.",
     "trueStory": "Christie filled dozens of notebooks with plot ideas, lists of suspects and clues, and tried out different culprits before she chose one.",
+    "howTheyWorked": "Christie never had a proper study; she said she could write at any solid table. She once said the best time to plan a book was while doing the dishes.",
+    "moreStories": [
+      "In 1926 Christie disappeared for eleven days. She was found staying under another name at a hotel in Harrogate.",
+      "With her second husband, the archaeologist Max Mallowan, she spent many seasons on digs in Syria and Iraq, and set mysteries there."
+    ],
     "about": "Christie worked in a hospital dispensary during the First World War, where she learned about poisons. She created the detectives Hercule Poirot and Miss Marple, and her play The Mousetrap has run in London since 1952.",
     "works": [
       "And Then There Were None",
@@ -2772,6 +2992,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Fellowship of the Ring",
     "style": "Like Tolkien, you love languages, maps and deep history. Your world has its own logic, and readers can feel that someone built it with care over many years.",
     "trueStory": "Tolkien invented languages for years before Middle-earth had a story. He began The Hobbit by scribbling its first line on a blank exam paper he was marking.",
+    "howTheyWorked": "Tolkien revised endlessly. The Lord of the Rings took him about twelve years, and he typed much of the final copy himself.",
+    "moreStories": [
+      "Tolkien and C.S. Lewis read their drafts aloud to the Inklings, who often met at an Oxford pub, the Eagle and Child.",
+      "Tolkien drew his own maps and many illustrations for The Hobbit, including its cover design."
+    ],
     "about": "Tolkien fought at the Battle of the Somme in the First World War and later became a professor of Old English at Oxford. He shared drafts with a group of writer friends, the Inklings, which included C.S. Lewis.",
     "works": [
       "The Hobbit",
@@ -2840,6 +3065,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Gitanjali",
     "style": "Like Tagore, you move easily between poem, song and story. You write about rivers, seasons and ordinary village people with tenderness, and your lines want to be set to music.",
     "trueStory": "In 1913 Tagore became the first writer from outside Europe to win the Nobel Prize in Literature. He wrote more than 2,000 songs, and the national anthems of India and Bangladesh use his words.",
+    "howTheyWorked": "Tagore wrote in Bengali and often set his own poems to music. He translated Gitanjali into English prose himself, which brought him to readers in the West.",
+    "moreStories": [
+      "In 1919 Tagore gave up his British knighthood in protest after the Amritsar massacre.",
+      "In 1930 he met Albert Einstein, and their conversations were published."
+    ],
     "about": "Tagore grew up in a large, gifted family in Calcutta and was mostly taught at home. He wrote poems, novels, plays and stories in Bengali, painted late in life, and founded a school at Santiniketan where classes were held outdoors.",
     "works": [
       "Gitanjali",
@@ -2896,6 +3126,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Blindness, a lecture in Seven Nights",
     "style": "Like Borges, you build short stories out of thought experiments: an endless library, a map as large as the country. You mix invented books with real ones until the reader can't tell which is which.",
     "trueStory": "Borges worked for years in a small city library. In 1955 he was made director of Argentina's National Library, at about the time he lost his sight.",
+    "howTheyWorked": "After losing his sight, Borges composed poems in his head, using rhyme and fixed forms so he could remember them, and dictated them to his mother or to friends.",
+    "moreStories": [
+      "In 1946 the government of Juan Perón removed him from his library job and offered him a post as an inspector of poultry. He resigned.",
+      "With his friend Adolfo Bioy Casares he wrote detective stories under shared pen names."
+    ],
     "about": "Borges grew up in Buenos Aires reading in his father's English library. He started as a poet and never wrote a novel. His short stories made him one of the most influential writers of the twentieth century.",
     "works": [
       "Ficciones",
@@ -2959,6 +3194,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Twenty Love Poems and a Song of Despair",
     "style": "Like Neruda, you write with appetite. Love, the sea, a tomato, a pair of socks: you praise them all in images that are easy to feel and hard to forget.",
     "trueStory": "In 1949, wanted by his government, Neruda escaped from Chile by riding on horseback across the Andes mountains.",
+    "howTheyWorked": "Neruda wrote by hand, usually in green ink, and filled his houses with collections of shells, bottles and ship figureheads.",
+    "moreStories": [
+      "As a Chilean diplomat in 1939, Neruda helped organize the ship Winnipeg, which carried about 2,000 Spanish Civil War refugees to Chile.",
+      "He is thought to have taken his pen name partly from the Czech poet Jan Neruda."
+    ],
     "about": "Pablo Neruda was the pen name of Ricardo Neftalí Reyes Basoalto. He published Twenty Love Poems and a Song of Despair at 19, worked as a diplomat, and won the Nobel Prize in 1971. He liked to write in green ink.",
     "works": [
       "Twenty Love Poems and a Song of Despair",
@@ -3018,6 +3258,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Things Fall Apart",
     "style": "Like Achebe, you write to set the record straight. You show a whole community, with its proverbs, laws and quarrels, in clear and steady prose, and you let the reader watch it change.",
     "trueStory": "Achebe nearly lost Things Fall Apart. He mailed his only handwritten copy to a typing agency in London, which left it sitting for months until a colleague went there in person to ask about it.",
+    "howTheyWorked": "Achebe drew on the Igbo proverbs and stories he heard growing up and wrote an English shaped by Igbo speech, so his characters' wisdom sounds like their own.",
+    "moreStories": [
+      "The title Things Fall Apart comes from W.B. Yeats's poem \"The Second Coming\".",
+      "In 1962 Achebe became the first editor of Heinemann's African Writers Series, which published many African authors."
+    ],
     "about": "Achebe grew up in an Igbo town in Nigeria and worked in radio before his first novel appeared in 1958. Things Fall Apart, which tells of the arrival of colonial rule from an African point of view, has been translated into dozens of languages.",
     "works": [
       "Things Fall Apart",
@@ -3086,6 +3331,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Beloved",
     "style": "Like Morrison, you write about memory and what families carry. Your language is close to music, the past walks into the present, and you trust the reader to stay with hard things.",
     "trueStory": "Morrison wrote her first novel, The Bluest Eye, by getting up before dawn while raising two sons and working as a book editor.",
+    "howTheyWorked": "Morrison wrote first drafts in pencil on yellow legal pads, often before dawn, then typed and printed them to revise.",
+    "moreStories": [
+      "Beloved was inspired by the true story of Margaret Garner, who escaped slavery in 1856.",
+      "Morrison taught at Princeton University for seventeen years, and her papers are kept there."
+    ],
     "about": "Toni Morrison grew up in Ohio in a family that told stories and ghost tales. She was an editor in New York before she became known as a novelist. In 1993 she became the first Black woman to win the Nobel Prize in Literature.",
     "works": [
       "Beloved",
@@ -3167,6 +3417,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Harry Potter and the Philosopher's Stone",
     "style": "Like Rowling, you build a whole hidden world with its own rules, schools and history, then fill it with friends who would do anything for each other. You plant clues early and pay them off books later.",
     "trueStory": "The idea for Harry Potter came to Rowling in 1990, during a four-hour delay on a train from Manchester to London. She planned the story as seven books, one for each school year, and several publishers turned it down before Bloomsbury accepted it.",
+    "howTheyWorked": "Rowling plans her plots carefully, sometimes in hand-drawn grids that track every chapter and every subplot across a book.",
+    "moreStories": [
+      "She wrote much of the first Harry Potter book in cafés in Edinburgh.",
+      "Her publisher suggested initials so boys would not be put off by a woman's name. She has no middle name, so she added K, for her grandmother Kathleen."
+    ],
     "about": "Rowling grew up in the west of England and wrote much of the first Harry Potter book as a single mother in Edinburgh. The series follows a boy who learns he is a wizard and grows up over seven school years, while a war gathers around him. It became one of the best-selling book series in history.",
     "works": [
       "Harry Potter and the Philosopher's Stone",
@@ -3238,6 +3493,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "On Writing",
     "style": "Like King, you start with ordinary people in an ordinary town, then let something terrible creep in. Your characters talk like real people, and you discover the story by writing it.",
     "trueStory": "King threw the first pages of Carrie into the trash. His wife, Tabitha, fished them out, read them and told him to keep going. It became his first published novel in 1974.",
+    "howTheyWorked": "King aims for about 2,000 words a day, every day. In On Writing he advises writing the first draft with the door closed and revising with the door open.",
+    "moreStories": [
+      "In 1999 King was hit by a van while walking near his home in Maine and nearly died. He finished On Writing while he recovered.",
+      "He published several novels under a pen name, Richard Bachman, to see whether they would sell without his name."
+    ],
     "about": "King grew up in Maine, where most of his stories are set. He worked in a laundry and as a teacher while selling short stories to magazines. He has written more than 60 novels, and his memoir On Writing is a favorite guide for new writers. Many of his books are for adult readers.",
     "works": [
       "Carrie",
@@ -3295,6 +3555,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Great Gatsby",
     "style": "Like Fitzgerald, you write beautiful sentences about glamorous lives and the longing underneath them. Parties, money and old love all shine on the surface, and something sad waits below.",
     "trueStory": "Fitzgerald considered many titles for The Great Gatsby, including Trimalchio in West Egg. The book sold poorly in his lifetime, and he died believing he had failed.",
+    "howTheyWorked": "Fitzgerald revised heavily, even at the last moment: he rewrote large parts of The Great Gatsby on the printed proofs.",
+    "moreStories": [
+      "The success of his first novel, This Side of Paradise, in 1920 allowed him to marry Zelda Sayre.",
+      "During the Second World War, 155,000 free copies of The Great Gatsby were printed for American soldiers, which helped turn it into a classic."
+    ],
     "about": "Fitzgerald grew up in Minnesota and became famous young, with his wife Zelda, as a face of the Jazz Age, a name he helped make popular. His stories describe wealth, parties and broken dreams in 1920s America. The Great Gatsby became a classic only after his death.",
     "works": [
       "The Great Gatsby",
@@ -3357,6 +3622,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Snow White (translated by D. L. Ashliman)",
     "style": "Like the Grimms, you love stories that have been told for generations. You keep them simple and strong: a forest, a wolf, three tasks, a reward and a punishment.",
     "trueStory": "Jacob and Wilhelm Grimm collected their tales from storytellers, including Dorothea Viehmann. Wilhelm kept revising the collection through seven editions, from 1812 to 1857.",
+    "howTheyWorked": "The brothers wrote down tales told to them in Kassel, many by friends and neighbors, and Wilhelm then reshaped them so they read like folk tales.",
+    "moreStories": [
+      "Their first edition of 1812 was not really meant for children; later editions softened some tales and added more for young readers.",
+      "Jacob also described a famous rule of how sounds change between languages, now called Grimm's law."
+    ],
     "about": "The Grimm brothers were scholars of the German language who set out to save the folk tales they feared would be lost. Their Children's and Household Tales includes Hansel and Gretel, Rapunzel and Snow White. They also began a huge German dictionary.",
     "works": [
       "Children's and Household Tales",
@@ -3417,6 +3687,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Sign of the Four",
     "style": "Like Conan Doyle, you build stories around a puzzle and a brilliant mind. A loyal friend tells the story, and every clue is there for the reader to find.",
     "trueStory": "Conan Doyle based Sherlock Holmes partly on Joseph Bell, a doctor who taught him in Edinburgh. He killed Holmes off in 1893, but readers protested and he brought him back.",
+    "howTheyWorked": "Conan Doyle wrote fast and steadily, often around 3,000 words a day, alongside his medical work and many other projects.",
+    "moreStories": [
+      "Conan Doyle used Holmes-style detective work to help free George Edalji, a man wrongly convicted of a crime.",
+      "Later in life he believed in spirits and fairies and supported the famous Cottingley Fairies photographs."
+    ],
     "about": "Conan Doyle trained as a doctor and wrote stories while waiting for patients. Sherlock Holmes first appeared in A Study in Scarlet in 1887 and became the most famous detective in fiction. He also wrote historical novels and adventure stories such as The Lost World.",
     "works": [
       "A Study in Scarlet",
@@ -3477,6 +3752,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "To Kill a Mockingbird",
     "style": "Like Harper Lee, you tell a story about injustice through the eyes of a child. You show a whole small town, its kindness and its prejudice, and let the reader grow up with the narrator.",
     "trueStory": "In 1956 Lee's friends gave her a year's wages as a Christmas present so she could write full time. The result became To Kill a Mockingbird.",
+    "howTheyWorked": "Lee worked on To Kill a Mockingbird for about two and a half years with her editor, Tay Hohoff, who helped her reshape earlier drafts into the finished novel.",
+    "moreStories": [
+      "One night, frustrated, Lee threw the manuscript out of her window into the snow. She called Hohoff, who told her to go and pick it up.",
+      "Lee helped her friend Truman Capote research his book In Cold Blood in Kansas."
+    ],
     "about": "Lee grew up in Monroeville, Alabama, where her childhood friend was the writer Truman Capote, the model for the character Dill. To Kill a Mockingbird came out in 1960, won the Pulitzer Prize and became one of the most widely read American novels. An earlier draft, Go Set a Watchman, was published in 2015.",
     "works": [
       "To Kill a Mockingbird",
@@ -3535,6 +3815,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Alchemist",
     "style": "Like Coelho, you write simple stories that carry a big idea. A traveler follows a dream, reads the signs along the way and learns something about life.",
     "trueStory": "In 1986 Coelho walked the Camino de Santiago, a pilgrimage route in Spain, and wrote about it in The Pilgrimage. His next book, The Alchemist, first came out from a small Brazilian publisher that printed about 900 copies and then dropped it.",
+    "howTheyWorked": "Coelho starts a new book only after he finds a white feather, a sign he chose for himself before his first book. He has written a new book roughly every two years.",
+    "moreStories": [
+      "Coelho says he wrote The Alchemist in about two weeks, because the story was already in his life.",
+      "In 2002 he was elected to the Brazilian Academy of Letters."
+    ],
     "about": "Coelho was a songwriter in Brazil before he became a novelist. The Alchemist, about a shepherd boy traveling to find a treasure, became a worldwide bestseller and holds a Guinness World Record as the most translated book by a living author. His books mix travel, spirituality and short parables.",
     "works": [
       "The Alchemist",
@@ -3588,6 +3873,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Norwegian Wood",
     "style": "Like Murakami, you write about lonely people in ordinary cities, and then something strange slips in: a cat that talks, a well, a second moon. You tell it calmly, with music in the background.",
     "trueStory": "Murakami ran a jazz bar in Tokyo. He has said the idea of writing a novel came to him suddenly at a baseball game in 1978, and he wrote his first book at the kitchen table late at night.",
+    "howTheyWorked": "When he is writing a novel, Murakami gets up around 4 a.m., writes for five or six hours, then runs or swims in the afternoon.",
+    "moreStories": [
+      "To find his own voice for his first novel, Murakami wrote the opening in English and then translated it into Japanese.",
+      "He wrote Norwegian Wood while living in Europe; it sold millions of copies in Japan and made him a celebrity."
+    ],
     "about": "Murakami was born in Kyoto and grew up near Kobe. He has translated American writers, including F. Scott Fitzgerald, into Japanese. His novels mix everyday life with dreamlike events and are read around the world. He is also a long-distance runner who has written about running. Some of his books are for adult readers.",
     "works": [
       "Norwegian Wood",
@@ -3648,6 +3938,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "East of Eden",
     "style": "Like Steinbeck, you write about working people, the land they live on and the hard times that test them. Your stories are plain and warm, and they ask readers to care about people who are often ignored.",
     "trueStory": "In 1936 Steinbeck's young setter, Toby, chewed up about half of the only draft of Of Mice and Men, two months of work. Steinbeck wrote that the dog \"may have been acting critically.\"",
+    "howTheyWorked": "Steinbeck wrote in pencil and began each day with about 24 sharpened pencils. While writing East of Eden he warmed up each morning with a letter to his editor, Pascal Covici, on the facing page.",
+    "moreStories": [
+      "To research The Grapes of Wrath, Steinbeck traveled with migrant workers and visited their camps.",
+      "In 1960 he drove across America with his poodle, Charley, and wrote about the trip in Travels with Charley."
+    ],
     "about": "Steinbeck grew up in California's Salinas Valley and worked on ranches next to migrant workers. The Grapes of Wrath, about a family fleeing the Dust Bowl, won the Pulitzer Prize and was banned in some places. He won the Nobel Prize in Literature in 1962.",
     "works": [
       "Of Mice and Men",
@@ -3708,6 +4003,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Lion, the Witch and the Wardrobe (dedication)",
     "style": "Like Lewis, you open a door into another world: a wardrobe, a painting, a wood between worlds. Your adventures are also about big questions of right, wrong and faith.",
     "trueStory": "Lewis said Narnia began with a picture he had carried in his head since he was sixteen: a faun carrying an umbrella and parcels through a snowy wood.",
+    "howTheyWorked": "Lewis wrote everything by hand with a dip pen and answered a huge number of letters from readers himself.",
+    "moreStories": [
+      "A long night walk and talk with Tolkien and Hugo Dyson on Addison's Walk in Oxford in 1931 helped lead Lewis back to Christianity.",
+      "During the Second World War Lewis gave radio talks for the BBC that became the book Mere Christianity."
+    ],
     "about": "Lewis was born in Belfast and taught at Oxford and Cambridge. He belonged to the Inklings, a writers' group that included J.R.R. Tolkien, whose conversations helped him turn to Christianity. He wrote the seven Chronicles of Narnia as well as essays and other novels.",
     "works": [
       "The Lion, the Witch and the Wardrobe",
@@ -3765,6 +4065,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Folk of the Faraway Tree",
     "style": "Like Blyton, you write fast, fun adventures for young readers: a gang of friends, a secret, a picnic and a mystery to solve before the holidays end.",
     "trueStory": "Blyton was one of the most productive writers ever. She wrote more than 700 books and could type up to 10,000 words in a single day.",
+    "howTheyWorked": "Blyton typed with her typewriter on a board across her knees. She said she would close her eyes and her characters would appear in her mind like a film, and the story would come.",
+    "moreStories": [
+      "Blyton bought her first typewriter in 1927 and switched from writing by hand to typing.",
+      "Her Famous Five series ran to 21 books, from 1942 to 1963."
+    ],
     "about": "Blyton trained as a teacher before she became a full-time writer. Her series include the Famous Five, the Secret Seven, Malory Towers and the Faraway Tree, and her books have sold hundreds of millions of copies. Some critics and libraries dismissed her simple style, but generations of children learned to love reading with her books.",
     "works": [
       "Five on a Treasure Island",
@@ -3816,6 +4121,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Wuthering Heights",
     "style": "Like Emily Brontë, you write about wild places and wilder feelings. Love turns into obsession and revenge, and the story is passed between narrators who don't fully understand it.",
     "trueStory": "Emily published Wuthering Heights in 1847 under the name Ellis Bell. It was her only novel, and she died the next year, aged thirty.",
+    "howTheyWorked": "Emily wrote poems in tiny handwriting and copied the best into notebooks, one of them labeled as Gondal poems.",
+    "moreStories": [
+      "In 1845 Charlotte found Emily's poems and read them without asking. Emily was furious, but their joint book, Poems by Currer, Ellis and Acton Bell, came out in 1846 and sold only two copies.",
+      "Every few years Emily and Anne wrote short \"diary papers\" describing their day and guessing where they would be years later."
+    ],
     "about": "Emily grew up with her sisters Charlotte and Anne on the Yorkshire moors. As children, she and Anne invented an imaginary kingdom called Gondal and wrote poems and stories about it. Wuthering Heights shocked many first readers and is now one of the most famous love stories in English.",
     "works": [
       "Wuthering Heights",
@@ -3877,6 +4187,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Dracula",
     "style": "Like Stoker, you tell a frightening story through letters, diaries and newspaper reports. Each voice knows only part of the truth, and the reader puts the horror together.",
     "trueStory": "Stoker began making notes for Dracula in 1890 and spent about seven years on it before it came out in 1897. A visit to the seaside town of Whitby, where the Count comes ashore in the novel, gave him ideas for it.",
+    "howTheyWorked": "Stoker built Dracula out of diaries, letters and newspaper clippings, and he researched Transylvania in libraries without ever going there.",
+    "moreStories": [
+      "In Stoker's notes the novel's working title was The Un-Dead.",
+      "As a student at Trinity College Dublin he was a star athlete, despite his sickly childhood."
+    ],
     "about": "Stoker was so ill as a small child that he could hardly walk until about age seven. He later worked as manager of a London theater for the actor Henry Irving, writing novels in his spare time. Dracula has shaped almost every vampire story since.",
     "works": [
       "Dracula",
@@ -3924,6 +4239,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Time Machine",
     "style": "Like Wells, you start with a scientific \"what if\" and follow it to its end. Time travel, invisible men and invaders from Mars all become ways to look at society today.",
     "trueStory": "Wells studied biology under the scientist T.H. Huxley, the grandfather of Aldous Huxley. In 1938 a radio version of The War of the Worlds frightened some listeners who thought it was real news.",
+    "howTheyWorked": "Wells wrote fast and in enormous amounts: more than 100 books, from novels to histories, often working in the mornings.",
+    "moreStories": [
+      "In his 1914 novel The World Set Free, Wells imagined and named \"atomic bombs\", decades before they were built.",
+      "His Outline of History (1920) became a huge bestseller."
+    ],
     "about": "Wells grew up poor and worked as a shop apprentice before winning a scholarship to study science in London. The Time Machine, The Invisible Man and The War of the Worlds helped create modern science fiction. He also wrote histories and argued for social change.",
     "works": [
       "The Time Machine",
@@ -3975,6 +4295,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Foundation",
     "style": "Like Asimov, you build stories from ideas and rules: laws for robots, a science that predicts history. Your prose is plain, and the fun is in the logic puzzle.",
     "trueStory": "Asimov's Three Laws of Robotics were first stated in his 1942 story \"Runaround\". He wrote or edited around 500 books in his lifetime.",
+    "howTheyWorked": "Asimov typed very fast, worked from early morning almost every day of the year, and rarely revised more than once.",
+    "moreStories": [
+      "Asimov was afraid of flying and flew only twice in his life.",
+      "He wrote \"Nightfall\" in 1941, at 21. In 1968 the Science Fiction Writers of America voted it the best science fiction short story written before 1965."
+    ],
     "about": "Asimov's family moved from Russia to New York when he was a child, and he grew up reading the magazines in his father's candy store. He became a professor of biochemistry and wrote science fiction, popular science and much more. His Foundation and Robot series follow history across thousands of years.",
     "works": [
       "I, Robot",
@@ -4032,6 +4357,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Fahrenheit 451",
     "style": "Like Bradbury, you write poetic, image-filled stories that mix wonder and warning. Rockets, small towns and summer nights all glow in your sentences.",
     "trueStory": "Bradbury wrote the first version of Fahrenheit 451 on rented typewriters in the basement of a university library, paying ten cents for every half hour.",
+    "howTheyWorked": "Bradbury wrote every day and advised new writers to write a short story every week, because it is impossible to write 52 bad stories in a row.",
+    "moreStories": [
+      "As a boy, Bradbury met a carnival magician, Mr. Electrico, who touched him with a sword and told him to live forever. Soon after, he began writing every day.",
+      "Bradbury never learned to drive a car."
+    ],
     "about": "Bradbury never went to college; he said he educated himself in libraries. He wrote short stories almost every day and became one of the best-known science fiction writers, though many of his stories are closer to poetry or fantasy. Fahrenheit 451 imagines a future where books are burned.",
     "works": [
       "Fahrenheit 451",
@@ -4086,6 +4416,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Brave New World",
     "style": "Like Huxley, you write novels of ideas. You imagine a society that seems perfect, then show what it costs, with sharp humor and long arguments about how to live.",
     "trueStory": "Huxley briefly taught French at Eton, where one of his pupils was the young Eric Blair, later known as George Orwell.",
+    "howTheyWorked": "Huxley read enormously, though his eyes were badly damaged; for years he read with a strong magnifying glass.",
+    "moreStories": [
+      "The title Brave New World comes from a line spoken by Miranda in Shakespeare's The Tempest.",
+      "Huxley died on 22 November 1963, the same day as C.S. Lewis and President John F. Kennedy."
+    ],
     "about": "Huxley came from a famous family of scientists; his grandfather was T.H. Huxley. An eye illness at sixteen left him nearly blind for a time and ended his plan to become a doctor. Brave New World, published in 1932, imagines a world kept happy and controlled by pleasure. He later moved to California and wrote about spiritual experience.",
     "works": [
       "Brave New World",
@@ -4145,6 +4480,11 @@ var QUIZ_WRITERS = [
     "taglineFrom": "The Da Vinci Code",
     "style": "Like Dan Brown, you write fast thrillers built on codes, symbols and secret history. Short chapters end on cliffhangers, and the clock is always ticking.",
     "trueStory": "Brown has said that on Christmas mornings his parents hid the presents and set a treasure hunt of codes and clues for the children to solve. He gets up around 4 a.m. to write, every day of the week.",
+    "howTheyWorked": "Brown has said he uses gravity boots and hangs upside down when he is stuck on a plot problem, because it helps him see things differently.",
+    "moreStories": [
+      "Before his thrillers, Brown co-wrote a humor book, 187 Men to Avoid, under the pen name Danielle Brown.",
+      "In 1985 he studied art history at the University of Seville in Spain."
+    ],
     "about": "Brown taught English and wrote songs before turning to novels. The Da Vinci Code, published in 2003, became one of the best-selling novels ever. His hero, Robert Langdon, is a Harvard professor of symbols.",
     "works": [
       "The Da Vinci Code",

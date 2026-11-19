@@ -91,6 +91,16 @@
   .works ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0 0}
   .works li{background:#f3ece1;border-radius:99px;padding:5px 12px;font-size:14px;font-style:italic}
   .startw{margin-top:14px!important}
+  .stories{margin:6px 0 0;padding-left:20px}
+  .stories li{margin:0 0 8px;line-height:1.55}
+  .card .sub{color:var(--muted);font-size:14px;margin:4px 0 8px}
+  .why{list-style:none;padding:0;margin:0}
+  .why li{border-left:4px solid var(--why,#ccc);padding:6px 0 6px 12px;margin:0 0 10px}
+  .why li small{display:block;color:var(--muted);font-size:13px;margin-bottom:2px}
+  .nearby{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+  .nearby button{border:1px solid #e3d9ca;background:#fff;border-radius:99px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+  .nearby button i{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .nearby button b{font-weight:600;color:var(--muted)}
   footer{margin-top:44px;text-align:center;font-size:13px;color:var(--muted)}
   footer em{font-family:'Fraunces',serif;font-size:16px;color:var(--ink)}
   .opt.none{border-style:dashed;color:var(--muted)}
@@ -128,6 +138,8 @@
     <div class="rtop" id="rtop"></div>
     <div class="card"><h3>Your style</h3><p id="rdesc"></p></div>
     <div class="card"><h3>True story</h3><p id="rfact"></p></div>
+    <div class="card full-only" id="workcard"><h3>How they worked</h3><p id="rwork"></p></div>
+    <div class="card full-only" id="storiescard"><h3>More true stories</h3><ul class="stories" id="rstories"></ul></div>
     <div class="card meet"><h3 id="mtitle"></h3><div class="from" id="mfrom"></div><p id="mabout"></p>
       <div class="works"><b>Famous works</b><ul id="mworks"></ul></div>
       <p class="startw"><b>Start with:</b> <span id="mstart"></span></p></div>
@@ -137,6 +149,10 @@
     </div>
     <div class="card try"><h3>Try this exercise</h3><p id="rtry"></p></div>
     <div class="card" id="mixcard"><h3>Your closest writers</h3><div class="bars" id="mix"></div></div>
+    <div class="card full-only" id="whycard"><h3>Why you got this writer</h3><p class="sub">Some of your answers that match <span id="whyname"></span>:</p><ul class="why" id="rwhy"></ul></div>
+    <div class="card full-only" id="likecard"><h3>Writers like and unlike you</h3>
+      <p class="sub">Also close to you</p><div class="nearby" id="rlike"></div>
+      <p class="sub">Least like you</p><div class="nearby" id="runlike"></div></div>
     <div class="actions">
       <button class="btn" id="copy">Copy my result</button>
       <button class="btn ghost" id="again">Retake the quiz</button>
@@ -319,6 +335,50 @@
     $('rstr').textContent = w.superpower || '';
     $('rwatch').textContent = w.watchOut || '';
     $('rtry').textContent = w.exercise || '';
+
+    // Extra sections, only after the complete quiz.
+    const full = Boolean(mine && mine.questions > 25);
+    $('workcard').style.display = full && w.howTheyWorked ? '' : 'none';
+    $('rwork').textContent = w.howTheyWorked || '';
+    $('storiescard').style.display = full && (w.moreStories || []).length ? '' : 'none';
+    $('rstories').innerHTML = '';
+    (w.moreStories || []).forEach(t => $('rstories').appendChild(el('li', null, t)));
+    $('whycard').style.display = 'none';
+    $('likecard').style.display = 'none';
+    if (full && res) {
+      // Your answers that match this writer, rarest matches first.
+      const QS = {};
+      DATA.questions.forEach(q => { QS[q.id] = q; });
+      const shared = (qid, key) => DATA.writers.filter(x => (x.fit && x.fit[qid] || []).includes(key)).length;
+      const hits = res.answers
+        .filter(a => (w.fit && w.fit[a.q] || []).includes(a.a) && QS[a.q])
+        .map(a => ({ q: QS[a.q], a: QS[a.q].answers.find(x => x.key === a.a), n: shared(a.q, a.a) }))
+        .filter(h => h.a)
+        .sort((x, y) => x.n - y.n || x.q.number - y.q.number)
+        .slice(0, 4);
+      $('whyname').textContent = w.name;
+      $('rwhy').innerHTML = '';
+      $('rwhy').style.setProperty('--why', color);
+      hits.forEach(h => {
+        const li = el('li');
+        li.append(el('small', null, h.q.text), document.createTextNode('\u201C' + h.a.text + '\u201D'));
+        $('rwhy').appendChild(li);
+      });
+      $('whycard').style.display = hits.length ? '' : 'none';
+      // Writers 4 to 6, and the writer furthest from you.
+      const chip = r => {
+        const b = el('button');
+        const dot = el('i'); dot.style.background = colorOf(r.writer);
+        b.append(dot, document.createTextNode(r.writer.name + ' '), el('b', null, Math.round(r.agree / r.opportunities * 100) + '%'));
+        b.onclick = () => { renderResult(r.writer, null); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+        return b;
+      };
+      $('rlike').innerHTML = ''; $('runlike').innerHTML = '';
+      res.ranking.slice(3, 6).forEach(r => $('rlike').appendChild(chip(r)));
+      const last = res.ranking[res.ranking.length - 1];
+      if (last && res.ranking.length > 6) $('runlike').appendChild(chip(last));
+      $('likecard').style.display = res.ranking.length > 3 ? '' : 'none';
+    }
 
     $('mixcard').style.display = res ? '' : 'none';
     if (res) {
