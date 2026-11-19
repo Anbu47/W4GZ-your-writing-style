@@ -3156,6 +3156,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "rowling",
+    "portrait": "assets/writers/rowling.webp",
     "name": "J.K. Rowling",
     "years": "born 1965",
     "from": "England",
@@ -3226,6 +3227,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "king",
+    "portrait": "assets/writers/king.webp",
     "name": "Stephen King",
     "years": "born 1947",
     "from": "United States",
@@ -3282,6 +3284,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "fitzgerald",
+    "portrait": "assets/writers/fitzgerald.webp",
     "name": "F. Scott Fitzgerald",
     "years": "1896–1940",
     "from": "United States",
@@ -3343,6 +3346,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "grimm",
+    "portrait": "assets/writers/grimm.webp",
     "name": "Brothers Grimm",
     "years": "Jacob 1785–1863, Wilhelm 1786–1859",
     "from": "Germany",
@@ -3402,6 +3406,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "conan-doyle",
+    "portrait": "assets/writers/conan-doyle.webp",
     "name": "Arthur Conan Doyle",
     "years": "1859–1930",
     "from": "Scotland",
@@ -3461,6 +3466,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "harper-lee",
+    "portrait": "assets/writers/harper-lee.webp",
     "name": "Harper Lee",
     "years": "1926–2016",
     "from": "United States",
@@ -3518,6 +3524,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "coelho",
+    "portrait": "assets/writers/coelho.webp",
     "name": "Paulo Coelho",
     "years": "born 1947",
     "from": "Brazil",
@@ -3570,6 +3577,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "murakami",
+    "portrait": "assets/writers/murakami.webp",
     "name": "Haruki Murakami",
     "years": "born 1949",
     "from": "Japan",
@@ -3629,6 +3637,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "steinbeck",
+    "portrait": "assets/writers/steinbeck.webp",
     "name": "John Steinbeck",
     "years": "1902–1968",
     "from": "United States",
@@ -3688,6 +3697,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "cs-lewis",
+    "portrait": "assets/writers/cs-lewis.webp",
     "name": "C.S. Lewis",
     "years": "1898–1963",
     "from": "Northern Ireland",
@@ -3744,6 +3754,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "blyton",
+    "portrait": "assets/writers/blyton.webp",
     "name": "Enid Blyton",
     "years": "1897–1968",
     "from": "England",
@@ -3794,6 +3805,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "emily-bronte",
+    "portrait": "assets/writers/emily-bronte.webp",
     "name": "Emily Brontë",
     "years": "1818–1848",
     "from": "England",
@@ -3854,6 +3866,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "stoker",
+    "portrait": "assets/writers/stoker.webp",
     "name": "Bram Stoker",
     "years": "1847–1912",
     "from": "Ireland",
@@ -3900,6 +3913,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "wells",
+    "portrait": "assets/writers/wells.webp",
     "name": "H.G. Wells",
     "years": "1866–1946",
     "from": "England",
@@ -3950,6 +3964,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "asimov",
+    "portrait": "assets/writers/asimov.webp",
     "name": "Isaac Asimov",
     "years": "c. 1920–1992",
     "from": "United States (born in Russia)",
@@ -4006,6 +4021,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "bradbury",
+    "portrait": "assets/writers/bradbury.webp",
     "name": "Ray Bradbury",
     "years": "1920–2012",
     "from": "United States",
@@ -4059,6 +4075,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "huxley",
+    "portrait": "assets/writers/huxley.webp",
     "name": "Aldous Huxley",
     "years": "1894–1963",
     "from": "England",
@@ -4117,6 +4134,7 @@ var QUIZ_WRITERS = [
   },
   {
     "id": "dan-brown",
+    "portrait": "assets/writers/dan-brown.webp",
     "name": "Dan Brown",
     "years": "born 1964",
     "from": "United States",
