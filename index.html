@@ -147,7 +147,6 @@
       <div class="card"><h3>Your superpower</h3><p id="rstr"></p></div>
       <div class="card"><h3>Watch out for</h3><p id="rwatch"></p></div>
     </div>
-    <div class="card try"><h3>Try this exercise</h3><p id="rtry"></p></div>
     <div class="card" id="mixcard"><h3>Your closest writers</h3><div class="bars" id="mix"></div></div>
     <div class="card full-only" id="whycard"><h3>Why you got this writer</h3><p class="sub">Some of your answers that match <span id="whyname"></span>:</p><ul class="why" id="rwhy"></ul></div>
     <div class="card full-only" id="likecard"><h3>Writers like and unlike you</h3>
@@ -334,7 +333,6 @@
     $('mstart').textContent = w.startWith || '';
     $('rstr').textContent = w.superpower || '';
     $('rwatch').textContent = w.watchOut || '';
-    $('rtry').textContent = w.exercise || '';
 
     // Extra sections, only after the complete quiz.
     const full = Boolean(mine && mine.questions > 25);
@@ -342,7 +340,12 @@
     $('rwork').textContent = w.howTheyWorked || '';
     $('storiescard').style.display = full && (w.moreStories || []).length ? '' : 'none';
     $('rstories').innerHTML = '';
-    (w.moreStories || []).forEach(t => $('rstories').appendChild(el('li', null, t)));
+    (w.moreStories || []).forEach(t => {
+      const li = el('li');
+      if (t.label) li.append(el('b', null, t.label + ': '));
+      li.append(document.createTextNode(t.text || t));
+      $('rstories').appendChild(li);
+    });
     $('whycard').style.display = 'none';
     $('likecard').style.display = 'none';
     if (full && res) {

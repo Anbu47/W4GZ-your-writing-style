@@ -367,7 +367,7 @@
     // Writer text that the result page shows
     var styles = s.styles || {}, approaches = s.approaches || {};
     model.writers.forEach(function (w) {
-      var missing = ["name", "years", "from", "tagline", "style", "trueStory", "about", "startWith", "superpower", "watchOut", "exercise"]
+      var missing = ["name", "years", "from", "tagline", "style", "trueStory", "about", "startWith", "superpower", "watchOut"]
         .filter(function (f) { return typeof w[f] !== "string" || !w[f].trim(); });
       if (!Array.isArray(w.works) || !w.works.length) missing.push("works");
       if (missing.length) warnings.push(label(w) + " is missing: " + missing.join(", ") + ".");

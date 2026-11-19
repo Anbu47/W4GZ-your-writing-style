@@ -38,4 +38,4 @@ Run `node tools/portrait-test.js` to check all 68 portrait files, writer-to-imag
 
 ## Complete-quiz extras
 
-After the complete (100-question) quiz, the result page also shows: How they worked (`howTheyWorked`), More true stories (`moreStories`, two items), Why you got this writer (the person's own matching answers, rarest first) and Writers like and unlike you (ranks 4–6 and the lowest match). The 25-question result does not show these sections.
+After the complete (100-question) quiz, the result page also shows: How they worked (`howTheyWorked`), More true stories (`moreStories`, two items, each with a short `label` and `text`), Why you got this writer (the person's own matching answers, rarest first) and Writers like and unlike you (ranks 4–6 and the lowest match). The 25-question result does not show these sections.
