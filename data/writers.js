@@ -3165,7 +3165,7 @@ var QUIZ_WRITERS = [
     "tagline": "It does not do to dwell on dreams and forget to live.",
     "taglineFrom": "Harry Potter and the Philosopher's Stone",
     "style": "Like Rowling, you build a whole hidden world with its own rules, schools and history, then fill it with friends who would do anything for each other. You plant clues early and pay them off books later.",
-    "trueStory": "The idea for Harry Potter came to Rowling in 1990 on a delayed train from Manchester to London. She planned all seven books before the first one was published, and twelve publishers turned it down.",
+    "trueStory": "The idea for Harry Potter came to Rowling in 1990, during a four-hour delay on a train from Manchester to London. She planned the story as seven books, one for each school year, and several publishers turned it down before Bloomsbury accepted it.",
     "about": "Rowling grew up in the west of England and wrote much of the first Harry Potter book as a single mother in Edinburgh. The series follows a boy who learns he is a wizard and grows up over seven school years, while a war gathers around him. It became one of the best-selling book series in history.",
     "works": [
       "Harry Potter and the Philosopher's Stone",
@@ -3235,7 +3235,7 @@ var QUIZ_WRITERS = [
     "tagline": "Books are a uniquely portable magic.",
     "taglineFrom": "On Writing",
     "style": "Like King, you start with ordinary people in an ordinary town, then let something terrible creep in. Your characters talk like real people, and you discover the story by writing it.",
-    "trueStory": "King threw an early draft of Carrie into the trash. His wife, Tabitha, pulled it out and told him to finish it. It became his first published novel in 1974.",
+    "trueStory": "King threw the first pages of Carrie into the trash. His wife, Tabitha, fished them out, read them and told him to keep going. It became his first published novel in 1974.",
     "about": "King grew up in Maine, where most of his stories are set. He worked in a laundry and as a teacher while selling short stories to magazines. He has written more than 60 novels, and his memoir On Writing is a favorite guide for new writers. Many of his books are for adult readers.",
     "works": [
       "Carrie",
@@ -3350,7 +3350,7 @@ var QUIZ_WRITERS = [
     "color": "#0f1d6b",
     "approach": "reviser",
     "tagline": "Mirror, mirror on the wall, who in this land is fairest of all?",
-    "taglineFrom": "Snow White",
+    "taglineFrom": "Snow White (translated by D. L. Ashliman)",
     "style": "Like the Grimms, you love stories that have been told for generations. You keep them simple and strong: a forest, a wolf, three tasks, a reward and a punishment.",
     "trueStory": "Jacob and Wilhelm Grimm collected their tales from storytellers, including Dorothea Viehmann. Wilhelm kept revising the collection through seven editions, from 1812 to 1857.",
     "about": "The Grimm brothers were scholars of the German language who set out to save the folk tales they feared would be lost. Their Children's and Household Tales includes Hansel and Gretel, Rapunzel and Snow White. They also began a huge German dictionary.",
@@ -3527,8 +3527,8 @@ var QUIZ_WRITERS = [
     "tagline": "When you want something, all the universe conspires in helping you to achieve it.",
     "taglineFrom": "The Alchemist",
     "style": "Like Coelho, you write simple stories that carry a big idea. A traveler follows a dream, reads the signs along the way and learns something about life.",
-    "trueStory": "In 1986 Coelho walked the Camino de Santiago, a pilgrimage route in Spain, and wrote about it in The Pilgrimage. His next book, The Alchemist, had a tiny first print run in Brazil before it became a worldwide bestseller.",
-    "about": "Coelho was a songwriter and journalist in Brazil before he became a novelist. The Alchemist, about a shepherd boy traveling to find a treasure, has been translated into more than 80 languages. His books mix travel, spirituality and short parables.",
+    "trueStory": "In 1986 Coelho walked the Camino de Santiago, a pilgrimage route in Spain, and wrote about it in The Pilgrimage. His next book, The Alchemist, first came out from a small Brazilian publisher that printed about 900 copies and then dropped it.",
+    "about": "Coelho was a songwriter in Brazil before he became a novelist. The Alchemist, about a shepherd boy traveling to find a treasure, became a worldwide bestseller and holds a Guinness World Record as the most translated book by a living author. His books mix travel, spirituality and short parables.",
     "works": [
       "The Alchemist",
       "The Pilgrimage",
@@ -3580,7 +3580,7 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Norwegian Wood",
     "style": "Like Murakami, you write about lonely people in ordinary cities, and then something strange slips in: a cat that talks, a well, a second moon. You tell it calmly, with music in the background.",
     "trueStory": "Murakami ran a jazz bar in Tokyo. He has said the idea of writing a novel came to him suddenly at a baseball game in 1978, and he wrote his first book at the kitchen table late at night.",
-    "about": "Murakami grew up in Kobe and has also translated American writers, including F. Scott Fitzgerald, into Japanese. His novels mix everyday life with dreamlike events and are read around the world. He is also a long-distance runner who has written about running. Some of his books are for adult readers.",
+    "about": "Murakami was born in Kyoto and grew up near Kobe. He has translated American writers, including F. Scott Fitzgerald, into Japanese. His novels mix everyday life with dreamlike events and are read around the world. He is also a long-distance runner who has written about running. Some of his books are for adult readers.",
     "works": [
       "Norwegian Wood",
       "Kafka on the Shore",
@@ -3638,7 +3638,7 @@ var QUIZ_WRITERS = [
     "tagline": "And now that you don't have to be perfect, you can be good.",
     "taglineFrom": "East of Eden",
     "style": "Like Steinbeck, you write about working people, the land they live on and the hard times that test them. Your stories are plain and warm, and they ask readers to care about people who are often ignored.",
-    "trueStory": "Steinbeck's dog chewed up about half of an early draft of Of Mice and Men, and he had to rewrite it. He said the dog may have been acting as a critic.",
+    "trueStory": "In 1936 Steinbeck's young setter, Toby, chewed up about half of the only draft of Of Mice and Men, two months of work. Steinbeck wrote that the dog \"may have been acting critically.\"",
     "about": "Steinbeck grew up in California's Salinas Valley and worked on ranches next to migrant workers. The Grapes of Wrath, about a family fleeing the Dust Bowl, won the Pulitzer Prize and was banned in some places. He won the Nobel Prize in Literature in 1962.",
     "works": [
       "Of Mice and Men",
@@ -3753,7 +3753,7 @@ var QUIZ_WRITERS = [
     "tagline": "It is an absolutely marvellous name.",
     "taglineFrom": "The Folk of the Faraway Tree",
     "style": "Like Blyton, you write fast, fun adventures for young readers: a gang of friends, a secret, a picnic and a mystery to solve before the holidays end.",
-    "trueStory": "Blyton was one of the most productive writers ever. She wrote hundreds of books and could type several thousand words in a single day.",
+    "trueStory": "Blyton was one of the most productive writers ever. She wrote more than 700 books and could type up to 10,000 words in a single day.",
     "about": "Blyton trained as a teacher before she became a full-time writer. Her series include the Famous Five, the Secret Seven, Malory Towers and the Faraway Tree, and her books have sold hundreds of millions of copies. Some critics and libraries dismissed her simple style, but generations of children learned to love reading with her books.",
     "works": [
       "Five on a Treasure Island",
@@ -3804,7 +3804,7 @@ var QUIZ_WRITERS = [
     "taglineFrom": "Wuthering Heights",
     "style": "Like Emily Brontë, you write about wild places and wilder feelings. Love turns into obsession and revenge, and the story is passed between narrators who don't fully understand it.",
     "trueStory": "Emily published Wuthering Heights in 1847 under the name Ellis Bell. It was her only novel, and she died the next year, aged thirty.",
-    "about": "Emily grew up with her sisters Charlotte and Anne on the Yorkshire moors. As children they invented imaginary kingdoms and wrote tiny books about them. Wuthering Heights puzzled many first readers and is now one of the most famous love stories in English.",
+    "about": "Emily grew up with her sisters Charlotte and Anne on the Yorkshire moors. As children, she and Anne invented an imaginary kingdom called Gondal and wrote poems and stories about it. Wuthering Heights shocked many first readers and is now one of the most famous love stories in English.",
     "works": [
       "Wuthering Heights",
       "No Coward Soul Is Mine (poem)"
@@ -3863,7 +3863,7 @@ var QUIZ_WRITERS = [
     "tagline": "Welcome to my house! Enter freely and of your own will!",
     "taglineFrom": "Dracula",
     "style": "Like Stoker, you tell a frightening story through letters, diaries and newspaper reports. Each voice knows only part of the truth, and the reader puts the horror together.",
-    "trueStory": "Stoker spent years making notes for Dracula before it came out in 1897. A visit to the seaside town of Whitby, which appears in the novel, gave him ideas for it.",
+    "trueStory": "Stoker began making notes for Dracula in 1890 and spent about seven years on it before it came out in 1897. A visit to the seaside town of Whitby, where the Count comes ashore in the novel, gave him ideas for it.",
     "about": "Stoker was so ill as a small child that he could hardly walk until about age seven. He later worked as manager of a London theater for the actor Henry Irving, writing novels in his spare time. Dracula has shaped almost every vampire story since.",
     "works": [
       "Dracula",
@@ -4065,7 +4065,7 @@ var QUIZ_WRITERS = [
     "focus": "world",
     "color": "#063d74",
     "approach": "planner",
-    "tagline": "Words can be like X-rays if you use them properly—they'll go through anything.",
+    "tagline": "Words can be like X-rays, if you use them properly—they'll go through anything.",
     "taglineFrom": "Brave New World",
     "style": "Like Huxley, you write novels of ideas. You imagine a society that seems perfect, then show what it costs, with sharp humor and long arguments about how to live.",
     "trueStory": "Huxley briefly taught French at Eton, where one of his pupils was the young Eric Blair, later known as George Orwell.",
@@ -4126,8 +4126,8 @@ var QUIZ_WRITERS = [
     "tagline": "History is always written by the winners.",
     "taglineFrom": "The Da Vinci Code",
     "style": "Like Dan Brown, you write fast thrillers built on codes, symbols and secret history. Short chapters end on cliffhangers, and the clock is always ticking.",
-    "trueStory": "Brown has said that as a child he solved codes and treasure hunts his parents set up at Christmas. He writes early in the morning, with an hourglass on his desk to remind him to take breaks.",
-    "about": "Brown taught English and wrote songs before turning to novels. The Da Vinci Code, published in 2003, became one of the best-selling novels ever and sent readers to museums and churches around the world. His hero, Robert Langdon, is a professor of symbols.",
+    "trueStory": "Brown has said that on Christmas mornings his parents hid the presents and set a treasure hunt of codes and clues for the children to solve. He gets up around 4 a.m. to write, every day of the week.",
+    "about": "Brown taught English and wrote songs before turning to novels. The Da Vinci Code, published in 2003, became one of the best-selling novels ever. His hero, Robert Langdon, is a Harvard professor of symbols.",
     "works": [
       "The Da Vinci Code",
       "Angels & Demons",
