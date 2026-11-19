@@ -283,6 +283,13 @@
     if (res && res.runnerUp && !res.top.tiedWith.length) {
       const r = el('div', 'runner', 'Also close: ');
       r.appendChild(el('b', null, res.runnerUp.writer.name));
+      // When the 2nd and 3rd writers show the same percentage, name both.
+      const pct = x => Math.round(x.agree / x.opportunities * 100);
+      const third = res.ranking[2];
+      if (third && third.opportunities && res.runnerUp.opportunities && pct(third) === pct(res.runnerUp)) {
+        r.appendChild(document.createTextNode(' and '));
+        r.appendChild(el('b', null, third.writer.name));
+      }
       copy.appendChild(r);
     }
     const portraitSlot = $('writerPortrait');
