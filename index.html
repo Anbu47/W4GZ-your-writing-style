@@ -101,6 +101,23 @@
   .nearby button{border:1px solid #e3d9ca;background:#fff;border-radius:99px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
   .nearby button i{width:10px;height:10px;border-radius:50%;display:inline-block}
   .nearby button b{font-weight:600;color:var(--muted)}
+  .psum{font-family:'Fraunces',serif;font-size:19px;line-height:1.45;margin:6px 0 16px}
+  .scales{display:grid;gap:14px}
+  .scale .lab{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:4px}
+  .scale .lab b{color:var(--ink);font-weight:600}
+  .scale .line{position:relative;height:8px;border-radius:99px;background:#efe7da}
+  .scale .mid{position:absolute;left:33.3%;width:33.4%;top:0;bottom:0;background:#e3d9ca;border-radius:2px}
+  .scale .dot{position:absolute;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;border:3px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+  .scale .zone{font-size:13px;margin-top:5px}
+  details.trait{background:#fff;border-radius:18px;padding:16px 20px;margin:0 0 14px;box-shadow:0 1px 0 rgba(0,0,0,.04);border:1px solid #efe7da}
+  details.trait summary{cursor:pointer;list-style:none;font-family:'Fraunces',serif;font-size:19px;font-weight:600}
+  details.trait summary::-webkit-details-marker{display:none}
+  details.trait summary small{display:block;font-family:inherit;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+  details.trait summary::after{content:'+';float:right;color:var(--muted)}
+  details.trait[open] summary::after{content:'–'}
+  details.trait p{line-height:1.6}
+  details.trait .tip{margin:8px 0}
+  details.trait .tip b{display:block;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
   footer{margin-top:44px;text-align:center;font-size:13px;color:var(--muted)}
   footer em{font-family:'Fraunces',serif;font-size:16px;color:var(--ink)}
   .opt.none{border-style:dashed;color:var(--muted)}
@@ -148,6 +165,11 @@
       <div class="card"><h3>Watch out for</h3><p id="rwatch"></p></div>
     </div>
     <div class="card" id="mixcard"><h3>Your closest writers</h3><div class="bars" id="mix"></div></div>
+    <div class="card full-only" id="profilecard"><h3>Your writing profile</h3>
+      <p class="sub">Based on your 100 answers.</p>
+      <p class="psum" id="psum"></p>
+      <div class="scales" id="pscales"></div></div>
+    <div class="full-only" id="pdetails"></div>
     <div class="card full-only" id="whycard"><h3>Why you got this writer</h3><p class="sub">Some of your answers that match <span id="whyname"></span>:</p><ul class="why" id="rwhy"></ul></div>
     <div class="card full-only" id="likecard"><h3>Writers like and unlike you</h3>
       <p class="sub">Also close to you</p><div class="nearby" id="rlike"></div>
@@ -176,6 +198,7 @@
 <script src="data/settings.js"></script>
 <script src="data/questions.js"></script>
 <script src="data/writers.js"></script>
+<script src="data/traits.js"></script>
 <!-- The algorithm -->
 <script src="engine.js"></script>
 <!-- The page -->
@@ -284,6 +307,97 @@
     return row;
   }
 
+  // Trait profile (complete quiz only). Each answer moves 0-2 traits; scores are compared
+  // with the average answer to the same question, then with random answering (calibration).
+  const TR = typeof QUIZ_TRAITS !== 'undefined' ? QUIZ_TRAITS : null;
+  function traitVal(qid, key, d) {
+    const t = (TR.tags[qid] || {})[key];
+    if (!t) return 0;
+    return t.split(' ').reduce((sum, x) => sum + (x[0] === d ? (x[1] === '+' ? 1 : -1) : 0), 0);
+  }
+  function traitScores(picks) { // picks: { qid: [keys] }
+    const out = {};
+    TR.order.forEach(d => {
+      let u = 0, up = 0, down = 0;
+      DATA.questions.forEach(q => {
+        const ks = picks[q.id];
+        if (!ks || !ks.length) return;
+        const vs = q.answers.map(a => traitVal(q.id, a.key, d));
+        if (vs.every(v => v === 0)) return;
+        const mean = vs.reduce((a, b) => a + b, 0) / vs.length;
+        u += ks.reduce((sum, k) => sum + traitVal(q.id, k, d), 0) / ks.length - mean;
+        up += Math.max(...vs) - mean; down += mean - Math.min(...vs);
+      });
+      const raw = u >= 0 ? (up ? u / up : 0) : (down ? u / down : 0);
+      const cal = (TR.calibration || {})[d] || { mean: 0, sd: 0.15 };
+      out[d] = (raw - cal.mean) / cal.sd; // about -3..3; beyond ±1 counts as a clear leaning
+    });
+    return out;
+  }
+  let writerTraits = null;
+  function getWriterTraits() {
+    if (!writerTraits) writerTraits = DATA.writers.map(w => ({ w, z: traitScores(w.fit || {}) }));
+    return writerTraits;
+  }
+  const zoneOf = z => z < -1 ? 'left' : z > 1 ? 'right' : 'mid';
+  function renderProfile(res, color) {
+    const picks = {};
+    res.answers.forEach(a => { picks[a.q] = [a.a]; });
+    const z = traitScores(picks);
+    const ranked = TR.order.slice().sort((a, b) => Math.abs(z[b]) - Math.abs(z[a]));
+    const strong = ranked.filter(d => zoneOf(z[d]) !== 'mid');
+    // One-line summary from the strongest leanings.
+    const side = d => z[d] < 0 ? 'left' : 'right';
+    let sum;
+    if (strong.length >= 2) {
+      const [a, b, c] = strong;
+      sum = 'You write ' + TR.traits[a].phrase[side(a)] + ' that ' + TR.traits[b].clause[side(b)] +
+        (c ? ' and ' + TR.traits[c].clause[side(c)] : '') + '.';
+    } else {
+      // Few clear leanings: name the slight ones so the summary still feels personal.
+      const lean = ranked.filter(d => Math.abs(z[d]) > 0.4).slice(0, 2);
+      if (strong.length === 1) sum = 'You are an all-round writer with one clear signature: you ' + TR.traits[strong[0]].clause[side(strong[0])];
+      else sum = 'You are an all-round writer who can adapt to almost any story';
+      const extra = lean.filter(d => d !== strong[0]);
+      sum += extra.length ? (strong.length ? '. You also lean slightly toward ' : '. If anything, you lean toward ') + extra.map(d => '\u201C' + TR.traits[d][side(d)].toLowerCase() + '\u201D').join(' and ') + '.' : '.';
+    }
+    $('psum').textContent = sum;
+    $('pscales').innerHTML = '';
+    TR.order.forEach(d => {
+      const t = TR.traits[d], zone = zoneOf(z[d]);
+      const row = el('div', 'scale');
+      const lab = el('div', 'lab');
+      lab.append(el(zone === 'left' ? 'b' : 'span', null, t.left), el(zone === 'right' ? 'b' : 'span', null, t.right));
+      const line = el('div', 'line'); line.appendChild(el('div', 'mid'));
+      const dot = el('div', 'dot');
+      dot.style.left = Math.max(4, Math.min(96, 50 + z[d] * 16.7)) + '%';
+      dot.style.background = color;
+      line.appendChild(dot);
+      row.append(lab, line, el('div', 'zone', t.zones[zone].title));
+      $('pscales').appendChild(row);
+    });
+    $('profilecard').style.display = '';
+    // Long analysis: one section per trait, strongest first; the first three start open.
+    const WT = getWriterTraits();
+    ranked.forEach((d, i) => {
+      const t = TR.traits[d], zone = zoneOf(z[d]), info = t.zones[zone];
+      const box = el('details', 'trait');
+      if (i < 3) box.open = true;
+      const sm = el('summary');
+      sm.append(el('small', null, t.name + (zone === 'mid' ? ' · balanced' : ' · ' + (zone === 'left' ? t.left : t.right))), document.createTextNode(info.title));
+      box.appendChild(sm);
+      box.appendChild(el('p', null, info.text));
+      [['Your strength', info.strength], ['Watch out for', info.watch], ['Try this', info.try]].forEach(([h, txt]) => {
+        const p = el('p', 'tip'); p.append(el('b', null, h), document.createTextNode(txt)); box.appendChild(p);
+      });
+      const peers = WT.slice().sort((a, b) => zone === 'mid' ? Math.abs(a.z[d]) - Math.abs(b.z[d]) : (zone === 'left' ? a.z[d] - b.z[d] : b.z[d] - a.z[d])).slice(0, 3);
+      const pp = el('p', 'tip');
+      pp.append(el('b', null, zone === 'mid' ? 'Writers in the middle too' : 'Writers on your side'), document.createTextNode(peers.map(x => x.w.name).join(', ')));
+      box.appendChild(pp);
+      $('pdetails').appendChild(box);
+    });
+  }
+
   // w = the writer to show. res = my result when it is my own writer, or null when browsing.
   function renderResult(w, res) {
     const color = colorOf(w);
@@ -347,6 +461,9 @@
       $('rstories').appendChild(li);
     });
     $('whycard').style.display = 'none';
+    $('profilecard').style.display = 'none';
+    $('pdetails').innerHTML = '';
+    if (full && res && typeof QUIZ_TRAITS !== 'undefined') renderProfile(res, color);
     $('likecard').style.display = 'none';
     if (full && res) {
       // Your answers that match this writer, rarest matches first.
