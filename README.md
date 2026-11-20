@@ -1,6 +1,6 @@
 # Which Famous Writer Are You? — W4GZ
 
-A quiz exploring literary affinities with 68 writers. Choose the short 25-question quiz or the complete 100-question quiz. Answer order is randomized; question order and the 624 writer assignments match the editorial source.
+A quiz exploring literary affinities with 68 writers. Choose the short 25-question quiz or the complete 100-question quiz. Answer order is randomized; question order and the 864 writer assignments match the editorial source.
 
 ## Source
 
@@ -8,7 +8,11 @@ A quiz exploring literary affinities with 68 writers. Choose the short 25-questi
 
 The source text, reference index, historical qualifications, and verification links are preserved in [docs/editorial-source.md](docs/editorial-source.md).
 
-The current edition incorporates the revised wording of questions 37 and 56 and more general answer choices across all 100 questions. Direct genre and setting giveaways were reduced while preserving all 624 writer assignments. The editorial source in this repository reflects these wording updates.
+The current edition incorporates the revised wording of questions 37 and 56 and more general answer choices across all 100 questions. Direct genre and setting giveaways were reduced while preserving the editorial writer assignments. The editorial source in this repository reflects these wording updates.
+
+## Balanced short quiz
+
+Every writer appears in 5 or 6 of questions 1–25 (previously 3–6). 62 assignments were added, each tied to a named work, and listed under *Coverage balancing for questions 1 to 25* in [docs/editorial-source.md](docs/editorial-source.md). No earlier assignment was removed and no answer carries more than five writers. In a simulation where a person shares 80% of their writer's answers, the 25-question quiz now ranks that writer first about 70% of the time (was 59%) and in the top three about 89% (was 81%).
 
 ## Scoring
 

@@ -35,11 +35,11 @@ questions.forEach((expected, i) => {
     assignments += mapped.length;
   });
 });
-assert.equal(assignments, 802);
-// Every writer appears at least 3 times in the short quiz, so no result rests on one or two answers.
+assert.equal(assignments, 864);
+// Coverage is balanced: every writer appears 5 or 6 times in the short quiz (questions 1-25).
 for (const w of data.writers) {
   const short = Object.keys(w.fit).filter(id => data.questions.find(q => q.id === id).number <= 25).length;
-  assert(short >= 3, w.name + ' appears only ' + short + ' times in questions 1-25');
+  assert(short >= 5 && short <= 6, w.name + " appears " + short + " times in questions 1-25");
 }
 for (const limit of [25, 100]) {
   const model = Engine.compile(data, { limit });
@@ -84,5 +84,5 @@ assert(!result.ranking.some(r => r.id === 'd'));
 fixture.writers[1].fit.q2 = ['a'];
 const tied = Engine.step(Engine.compile(fixture, { limit: 2 }), [{ q: 'q1', a: 'a' }, { q: 'q2', a: 'a' }]).result;
 assert(tied.top.tiedWith.length === 1);
-console.log('PASS: 100 questions, 400 answers, 802 assignments, 68 writers; 25/100 lengths, scoring, ties, and zero opportunities.');
+console.log('PASS: 100 questions, 400 answers, 864 assignments, 68 writers; 25/100 lengths, scoring, ties, and zero opportunities.');
 
