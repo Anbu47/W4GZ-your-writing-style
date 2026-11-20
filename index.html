@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Which Famous Writer Are You? — W4GZ Quiz</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#fbf6ee; --ink:#1f1a17; --muted:#6b625b; --card:#ffffff; --line:#e9e0d3;
@@ -25,21 +25,31 @@
 
   /* intro */
   .hero{margin-top:40px}
-  /* Floating writer bubbles on the start page */
+  /* Floating writer bubbles on the start page, styled to the W4GZ brand guideline v3.2:
+     stone background with paper grain, flat colours (no shadows or gradients), navy as structure,
+     hematite only for the keyboard focus ring, IBM Plex Mono uppercase for labels. */
   #intro{position:relative}
   #intro.on{min-height:calc(100vh - 120px);display:flex;align-items:center;justify-content:center}
-  #intro .hero{position:relative;z-index:2;text-align:center;margin:0 auto;padding:34px 28px;max-width:600px;border-radius:32px;
-    background:radial-gradient(closest-side,rgba(250,245,236,.97) 70%,rgba(250,245,236,.85) 100%);box-shadow:0 0 60px 30px rgba(250,245,236,.9)}
+  #intro .hero{position:relative;z-index:2;text-align:center;margin:0 auto;padding:24px 20px;max-width:600px}
   #intro .hero p.lead{margin-left:auto;margin-right:auto}
   #intro .actions{justify-content:center}
-  .bubbles{position:fixed;inset:0;z-index:1;overflow:hidden}
-  .bubble{position:absolute;left:0;top:0;border-radius:50%;padding:0;border:3px solid #fff;cursor:pointer;will-change:transform;
-    background:#f3ece0 center 30%/150% no-repeat;box-shadow:0 4px 14px rgba(60,40,20,.16);transition:box-shadow .2s}
-  .bubble::after{content:attr(data-name);position:absolute;left:50%;top:100%;transform:translate(-50%,6px);white-space:nowrap;
-    font-size:12px;font-weight:600;background:#2b2118;color:#fff;padding:3px 8px;border-radius:99px;opacity:0;pointer-events:none;transition:opacity .15s}
-  .bubble:hover,.bubble:focus-visible{box-shadow:0 6px 22px rgba(60,40,20,.3);z-index:3}
-  .bubble:hover::after,.bubble:focus-visible::after{opacity:1}
+  body.intro-on{background:#F4F1EA}
+  .bubbles{position:fixed;inset:0;z-index:1;overflow:hidden;background:#F4F1EA}
+  .bubbles::before{content:"";position:absolute;inset:0;background:url(assets/brand/paper.webp) 0 0/640px 640px repeat;opacity:.45;pointer-events:none}
+  .bubble{position:absolute;left:0;top:0;padding:0;border:0;background:none;cursor:pointer;will-change:transform,opacity;
+    opacity:0;transition:opacity 1.4s ease;display:flex;flex-direction:column;align-items:center;gap:8px;color:#736D61}
+  .bubble.in{opacity:1}
+  .bubble .face{display:block;width:var(--d);height:var(--d);border-radius:50%;background:#FAF8F3 center 28%/150% no-repeat;
+    border:1.5px solid #D8D2C4;transition:border-color .2s}
+  .bubble .tag{font:400 11px/1.2 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;
+    background:#F4F1EA;padding:2px 6px}
+  .bubble:hover .face{border-color:#2C4463}
+  .bubble:hover .tag{color:#2C4463}
+  .bubble:focus{outline:none}
+  .bubble:focus-visible .face{border:2px solid #B02829}
   body:not(.intro-on) .bubbles{display:none}
+  body.intro-on .brand,body.intro-on footer{position:relative;z-index:2}
+  @media(max-width:600px){#intro.on{align-items:flex-start;padding-top:190px;min-height:0}}
   .hero h1{font-size:clamp(36px,7vw,58px)}
   .hero h1 em{font-style:italic;color:var(--heart)}
   .hero p.lead{font-size:18px;color:var(--muted);max-width:540px;margin:18px 0 26px}
@@ -542,110 +552,153 @@
   }
 
   /* ---------- floating writer bubbles ---------- */
+  // A calm field of large portrait bubbles around the title. Only some writers are shown at once;
+  // every few seconds one fades out and another writer fades in somewhere free, so all 68 appear over time.
   (function bubbles() {
     if (typeof document.querySelector !== 'function' || typeof window.matchMedia !== 'function' ||
         typeof requestAnimationFrame !== 'function' || typeof MutationObserver !== 'function' || !$('bubbles')) return;
-    const box = $('bubbles'), hero = document.querySelector('#intro .hero');
+    const field = $('bubbles');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const items = model.writers.filter(x => x.portrait).map(x => {
+    const blockers = [document.querySelector('#intro .hero'), document.querySelector('.brand'), document.querySelector('footer')].filter(Boolean);
+    const pool = model.writers.filter(x => x.portrait).sort(() => Math.random() - 0.5).map(x => {
       const b = el('button', 'bubble');
       b.type = 'button';
-      b.dataset.name = x.name;
       b.setAttribute('aria-label', 'Meet ' + x.name);
-      b.style.backgroundImage = 'url(' + x.portrait + ')';
-      b.style.borderColor = colorOf(x);
+      b.tabIndex = -1;
+      const face = el('span', 'face');
+      face.style.backgroundImage = 'url(' + x.portrait + ')';
+      b.append(face, el('span', 'tag', x.name));
       b.onclick = () => { renderResult(x, null); show('result'); };
-      box.appendChild(b);
-      return { b, x: 0, y: 0, vx: 0, vy: 0, r: 0 };
+      b.style.display = 'none';
+      field.appendChild(b);
+      return { b, x: 0, y: 0, vx: 0, vy: 0, r: 0, live: false, born: 0 };
     });
-    let W = 0, H = 0;
-    // A random order each visit, so small screens show a different set of writers each time.
-    items.sort(() => Math.random() - 0.5);
-    let shown = items;
-    function size() {
-      W = window.innerWidth; H = window.innerHeight;
-      const free = Math.max(0, W * H - rects().reduce((a, h) => a + (h.r - h.l) * (h.b - h.t), 0));
-      const base = Math.max(40, Math.min(70, Math.sqrt(W * H / items.length) * 0.42));
-      const fit = Math.floor(free / (base * base * 2.6));
-      shown = items.slice(0, Math.max(12, Math.min(items.length, fit)));
-      items.forEach(it => { it.b.style.display = shown.includes(it) ? '' : 'none'; });
-      items.forEach((it, i) => {
-        it.r = base * (0.8 + ((i * 37) % 10) / 25) / 2;
-        it.b.style.width = it.b.style.height = it.r * 2 + 'px';
-      });
-    }
-    const blockers = [hero, document.querySelector('.brand'), document.querySelector('footer')].filter(Boolean);
+    let W = 0, H = 0, D = 100, target = 0;
+    const live = () => pool.filter(p => p.live);
     function rects() {
       return blockers.map(e => e.getBoundingClientRect()).filter(r => r.width && r.height)
-        .map(r => ({ l: r.left - 10, t: r.top - 10, r: r.right + 10, b: r.bottom + 10 }));
+        .map(r => ({ l: r.left - 16, t: r.top - 16, r: r.right + 16, b: r.bottom + 16 }));
     }
-    const heroRect = () => rects()[0];
-    function place() {
-      const rs = rects();
-      items.forEach(it => {
-        for (let tries = 0; tries < 60; tries++) {
-          it.x = it.r + Math.random() * (W - 2 * it.r);
-          it.y = it.r + Math.random() * (H - 2 * it.r);
-          const blocked = rs.some(h => it.x > h.l - it.r && it.x < h.r + it.r && it.y > h.t - it.r && it.y < h.b + it.r);
-          if (!blocked) break;
-        }
-        const a = Math.random() * Math.PI * 2, sp = 0.15 + Math.random() * 0.25;
-        it.vx = Math.cos(a) * sp; it.vy = Math.sin(a) * sp;
+    // Each bubble's footprint is a box: the circle plus the name label underneath, which can be wider.
+    const half = p => Math.max(p.r, (p.tagW || 0) / 2) + 6;
+    const box = p => ({ l: p.x - half(p), r: p.x + half(p), t: p.y - p.r - 4, b: p.y + p.r + 26 });
+    const overlapX = (a, b) => Math.min(a.r, b.r) - Math.max(a.l, b.l);
+    const overlapY = (a, b) => Math.min(a.b, b.b) - Math.max(a.t, b.t);
+    const gapBetween = (a, b) => Math.max(-overlapX(a, b), -overlapY(a, b)); // < 0 means they overlap
+    function size() {
+      W = window.innerWidth; H = window.innerHeight;
+      D = Math.round(Math.max(W < 600 ? 60 : 76, Math.min(128, Math.min(W, H) * 0.13)));
+      const free = Math.max(0, W * H - rects().reduce((a, h) => a + (h.r - h.l) * (h.b - h.t), 0));
+      target = Math.max(2, Math.min(20, Math.floor(free / (D * D * 4))));
+      pool.forEach((p, i) => {
+        const d = Math.round(D * (0.86 + (i % 5) * 0.07));
+        p.r = d / 2;
+        p.b.style.setProperty('--d', d + 'px');
+        p.tagW = 0;
       });
     }
-    function draw() { shown.forEach(it => { it.b.style.transform = 'translate(' + (it.x - it.r) + 'px,' + (it.y - it.r) + 'px)'; }); }
+    function freeSpot(p) {
+      const rs = rects(), others = live().map(box);
+      let best = null, bestGap = -Infinity;
+      const hw = half(p);
+      for (let t = 0; t < 60; t++) {
+        p.x = hw + Math.random() * Math.max(1, W - 2 * hw);
+        p.y = p.r + 4 + Math.random() * Math.max(1, H - 2 * p.r - 30);
+        const me = box(p);
+        if (rs.some(h => gapBetween(me, h) < 0)) continue;
+        const gap = others.reduce((m, o) => Math.min(m, gapBetween(me, o)), 1e9);
+        if (gap > bestGap) { best = { x: p.x, y: p.y }; bestGap = gap; }
+        if (gap > 40) break;
+      }
+      return bestGap > 8 ? best : null; // no room: wait for a later turn
+    }
+    function spawn(p) {
+      if (!p.tagW) { p.b.style.visibility = 'hidden'; p.b.style.display = ''; p.tagW = p.b.querySelector('.tag').offsetWidth; p.b.style.display = 'none'; p.b.style.visibility = ''; }
+      const spot = freeSpot(p);
+      if (!spot) return false;
+      p.x = spot.x; p.y = spot.y;
+      const a = Math.random() * Math.PI * 2;
+      p.vx = Math.cos(a) * 0.18; p.vy = Math.sin(a) * 0.18;
+      p.live = true; p.leaving = false; p.born = performance.now();
+      p.b.style.display = '';
+      p.b.tabIndex = 0;
+      draw(p);
+      requestAnimationFrame(() => p.b.classList.add('in'));
+      return true;
+    }
+    function retire(p) {
+      p.b.classList.remove('in');
+      p.b.tabIndex = -1;
+      p.leaving = true;
+      setTimeout(() => { p.live = false; p.leaving = false; p.b.style.display = 'none'; pool.push(pool.splice(pool.indexOf(p), 1)[0]); }, 1400);
+    }
+    function draw(p) { p.b.style.transform = 'translate(' + (p.x - half(p)) + 'px,' + (p.y - p.r) + 'px)'; p.b.style.width = 2 * half(p) + 'px'; }
+    function fill() {
+      let n = live().filter(p => !p.leaving).length;
+      for (const p of pool) { if (n >= target) break; if (!p.live && spawn(p)) n++; }
+      live().filter(p => !p.leaving).slice(target).forEach(retire);
+    }
+    // Push a bubble out of a box along the shorter way.
+    function pushOut(a, ba, o, k) {
+      const ox = overlapX(ba, o), oy = overlapY(ba, o);
+      if (ox <= 0 || oy <= 0) return;
+      if (ox < oy) a.vx += (a.x < (o.l + o.r) / 2 ? -1 : 1) * k;
+      else a.vy += (a.y < (o.t + o.b) / 2 ? -1 : 1) * k;
+    }
     function step() {
-      const rs = rects();
-      for (let i = 0; i < shown.length; i++) {
-        const a = shown[i];
-        // Walls.
-        if (a.x < a.r) { a.x = a.r; a.vx = Math.abs(a.vx); }
-        if (a.x > W - a.r) { a.x = W - a.r; a.vx = -Math.abs(a.vx); }
-        if (a.y < a.r) { a.y = a.r; a.vy = Math.abs(a.vy); }
-        if (a.y > H - a.r) { a.y = H - a.r; a.vy = -Math.abs(a.vy); }
-        // Keep clear of the title card, logo and footer: push out toward the nearest side.
-        rs.forEach(h => {
-          const cx = Math.max(h.l, Math.min(a.x, h.r)), cy = Math.max(h.t, Math.min(a.y, h.b));
-          const dx = a.x - cx, dy = a.y - cy, d = Math.hypot(dx, dy);
-          if (d < a.r) {
-            if (d > 0.01) { a.vx += dx / d * 0.05; a.vy += dy / d * 0.05; }
-            else { a.vy += (a.y < (h.t + h.b) / 2 ? -0.1 : 0.1); }
-          }
-        });
-        // Gentle push between bubbles so they drift apart instead of piling up.
-        for (let j = i + 1; j < shown.length; j++) {
-          const b = shown[j], ex = b.x - a.x, ey = b.y - a.y, dist = Math.hypot(ex, ey), min = a.r + b.r + 4;
-          if (dist < min && dist > 0.01) {
-            const f = (min - dist) / min * 0.04, ux = ex / dist, uy = ey / dist;
-            a.vx -= ux * f; a.vy -= uy * f; b.vx += ux * f; b.vy += uy * f;
+      const rs = rects(), L = live();
+      for (let i = 0; i < L.length; i++) {
+        const a = L[i], hw = half(a);
+        if (a.x < hw) { a.x = hw; a.vx = Math.abs(a.vx); }
+        if (a.x > W - hw) { a.x = W - hw; a.vx = -Math.abs(a.vx); }
+        if (a.y < a.r + 4) { a.y = a.r + 4; a.vy = Math.abs(a.vy); }
+        if (a.y > H - a.r - 26) { a.y = H - a.r - 26; a.vy = -Math.abs(a.vy); }
+        const ba = box(a);
+        rs.forEach(h => pushOut(a, ba, h, 0.05));
+        for (let j = i + 1; j < L.length; j++) {
+          const b = L[j], bb = box(b);
+          const grow = o => ({ l: o.l - 8, r: o.r + 8, t: o.t - 8, b: o.b + 8 });
+          const ox = overlapX(grow(ba), bb), oy = overlapY(grow(ba), bb);
+          if (ox > 0 && oy > 0) {
+            const k = 0.03;
+            if (ox < oy) { const sx = a.x < b.x ? -1 : 1; a.vx += sx * k; b.vx -= sx * k; }
+            else { const sy = a.y < b.y ? -1 : 1; a.vy += sy * k; b.vy -= sy * k; }
           }
         }
       }
-      shown.forEach(it => {
-        // Keep a calm, steady speed.
-        const sp = Math.hypot(it.vx, it.vy), target = 0.3;
-        if (sp > 0.001) { const k = 1 + (target - sp) * 0.02; it.vx *= k; it.vy *= k; }
-        it.x += it.vx; it.y += it.vy;
+      L.forEach(p => {
+        const sp = Math.hypot(p.vx, p.vy);
+        if (sp > 0.001) { const k = 1 + (0.18 - sp) * 0.03; p.vx *= k; p.vy *= k; }
+        p.x += p.vx; p.y += p.vy;
+        draw(p);
       });
-      draw();
     }
-    let running = false, last = 0;
+    let running = false, last = 0, lastSwap = 0;
     function loop(t) {
       if (!running) return;
       const n = Math.min(4, Math.max(1, Math.round((t - last) / 16.7 || 1)));
       last = t;
       for (let k = 0; k < n; k++) step();
+      // Every 3.5 seconds, the writer shown longest makes room for one not on screen.
+      if (t - lastSwap > 3500) {
+        lastSwap = t;
+        fill(); // top up if earlier attempts found no room (e.g. before the layout settled)
+        const L = live().filter(p => !p.leaving).sort((a, b) => a.born - b.born);
+        const next = pool.find(p => !p.live);
+        if (L.length && next) { retire(L[0]); setTimeout(() => { if (running) spawn(next); }, 700); }
+      }
       requestAnimationFrame(loop);
     }
     function sync() {
       const on = $('intro').classList.contains('on');
       document.body.classList.toggle('intro-on', on);
+      if (on) fill();
       const want = on && !document.hidden && !reduce;
-      if (want && !running) { running = true; last = performance.now(); requestAnimationFrame(loop); }
+      if (want && !running) { running = true; last = lastSwap = performance.now(); requestAnimationFrame(loop); }
       if (!want) running = false;
     }
-    size(); place(); draw();
-    window.addEventListener('resize', () => { const oldW = W, oldH = H, before = shown; size(); items.forEach(it => { it.x *= W / oldW; it.y *= H / oldH; }); if (shown.length > before.length) place(); draw(); });
+    size();
+    window.addEventListener('resize', () => { size(); live().forEach(p => { p.tagW = p.b.querySelector('.tag').offsetWidth; p.x = Math.min(p.x, W - half(p)); p.y = Math.min(p.y, H - p.r - 26); draw(p); }); fill(); });
     document.addEventListener('visibilitychange', sync);
     new MutationObserver(sync).observe($('intro'), { attributes: true, attributeFilter: ['class'] });
     sync();
