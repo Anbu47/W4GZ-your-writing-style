@@ -105,7 +105,13 @@ var QUIZ_WRITERS = [
       "q008": [
         "b"
       ],
+      "q009": [
+        "a"
+      ],
       "q014": [
+        "c"
+      ],
+      "q023": [
         "c"
       ],
       "q036": [
@@ -438,6 +444,12 @@ var QUIZ_WRITERS = [
       ],
       "q010": [
         "a"
+      ],
+      "q013": [
+        "b"
+      ],
+      "q020": [
+        "c"
       ],
       "q027": [
         "c"
@@ -779,10 +791,16 @@ var QUIZ_WRITERS = [
     "superpower": "A powerful, original voice. Readers feel you talking straight to them.",
     "watchOut": "Voice can carry you right past structure. Readers still need a path.",
     "fit": {
+      "q010": [
+        "c"
+      ],
       "q011": [
         "c"
       ],
       "q021": [
+        "d"
+      ],
+      "q022": [
         "d"
       ],
       "q024": [
@@ -1128,6 +1146,12 @@ var QUIZ_WRITERS = [
       "q015": [
         "c"
       ],
+      "q021": [
+        "d"
+      ],
+      "q023": [
+        "b"
+      ],
       "q036": [
         "c"
       ],
@@ -1205,6 +1229,9 @@ var QUIZ_WRITERS = [
       ],
       "q008": [
         "d"
+      ],
+      "q011": [
+        "a"
       ],
       "q023": [
         "a"
@@ -1357,6 +1384,12 @@ var QUIZ_WRITERS = [
       "q021": [
         "b"
       ],
+      "q022": [
+        "a"
+      ],
+      "q023": [
+        "a"
+      ],
       "q031": [
         "d"
       ],
@@ -1425,11 +1458,17 @@ var QUIZ_WRITERS = [
       "q002": [
         "c"
       ],
+      "q004": [
+        "a"
+      ],
       "q013": [
         "c"
       ],
       "q015": [
         "a"
+      ],
+      "q020": [
+        "b"
       ],
       "q055": [
         "c"
@@ -1573,8 +1612,14 @@ var QUIZ_WRITERS = [
       "q002": [
         "c"
       ],
+      "q007": [
+        "c"
+      ],
       "q014": [
         "b"
+      ],
+      "q015": [
+        "d"
       ],
       "q019": [
         "c"
@@ -1804,6 +1849,9 @@ var QUIZ_WRITERS = [
       "q017": [
         "c"
       ],
+      "q021": [
+        "a"
+      ],
       "q040": [
         "b"
       ],
@@ -1863,6 +1911,12 @@ var QUIZ_WRITERS = [
     "fit": {
       "q005": [
         "a"
+      ],
+      "q013": [
+        "a"
+      ],
+      "q014": [
+        "b"
       ],
       "q016": [
         "d"
@@ -2093,8 +2147,14 @@ var QUIZ_WRITERS = [
       "q011": [
         "b"
       ],
+      "q014": [
+        "d"
+      ],
       "q015": [
         "b"
+      ],
+      "q023": [
+        "c"
       ],
       "q037": [
         "a"
@@ -2217,6 +2277,12 @@ var QUIZ_WRITERS = [
       "q004": [
         "d"
       ],
+      "q005": [
+        "a"
+      ],
+      "q014": [
+        "d"
+      ],
       "q018": [
         "c"
       ],
@@ -2289,6 +2355,9 @@ var QUIZ_WRITERS = [
       "q006": [
         "d"
       ],
+      "q011": [
+        "d"
+      ],
       "q015": [
         "c"
       ],
@@ -2355,10 +2424,16 @@ var QUIZ_WRITERS = [
     "superpower": "Convincing detail. Readers trust your world.",
     "watchOut": "Pages of facts that stop the adventure.",
     "fit": {
+      "q003": [
+        "c"
+      ],
       "q008": [
         "c"
       ],
       "q017": [
+        "c"
+      ],
+      "q022": [
         "c"
       ],
       "q025": [
@@ -2421,6 +2496,9 @@ var QUIZ_WRITERS = [
     "superpower": "Energy, momentum and cliffhangers.",
     "watchOut": "Endings. A story that starts strong can stall when the excitement runs out.",
     "fit": {
+      "q001": [
+        "d"
+      ],
       "q002": [
         "b"
       ],
@@ -2429,6 +2507,9 @@ var QUIZ_WRITERS = [
       ],
       "q016": [
         "b"
+      ],
+      "q022": [
+        "c"
       ],
       "q038": [
         "a"
@@ -2493,6 +2574,9 @@ var QUIZ_WRITERS = [
     "superpower": "Precise word choice and a clear eye.",
     "watchOut": "Polishing one paragraph while the rest of the story waits.",
     "fit": {
+      "q010": [
+        "a"
+      ],
       "q013": [
         "a"
       ],
@@ -2501,6 +2585,9 @@ var QUIZ_WRITERS = [
       ],
       "q019": [
         "c"
+      ],
+      "q024": [
+        "b"
       ],
       "q027": [
         "b"
@@ -2642,6 +2729,12 @@ var QUIZ_WRITERS = [
       "q015": [
         "a"
       ],
+      "q016": [
+        "b"
+      ],
+      "q019": [
+        "d"
+      ],
       "q042": [
         "c"
       ],
@@ -2720,6 +2813,9 @@ var QUIZ_WRITERS = [
       "q010": [
         "c"
       ],
+      "q020": [
+        "d"
+      ],
       "q024": [
         "b"
       ],
@@ -2792,6 +2888,12 @@ var QUIZ_WRITERS = [
     "superpower": "A strange idea treated with complete seriousness.",
     "watchOut": "No way out for the character or the reader.",
     "fit": {
+      "q004": [
+        "b"
+      ],
+      "q007": [
+        "b"
+      ],
       "q018": [
         "a"
       ],
@@ -3095,10 +3197,16 @@ var QUIZ_WRITERS = [
     "superpower": "Clarity and purpose.",
     "watchOut": "A message so loud that the story feels like a lecture.",
     "fit": {
+      "q006": [
+        "c"
+      ],
       "q007": [
         "b"
       ],
       "q010": [
+        "a"
+      ],
+      "q012": [
         "a"
       ],
       "q024": [
@@ -3173,6 +3281,12 @@ var QUIZ_WRITERS = [
       "q019": [
         "b"
       ],
+      "q022": [
+        "b"
+      ],
+      "q024": [
+        "c"
+      ],
       "q032": [
         "c"
       ],
@@ -3233,7 +3347,13 @@ var QUIZ_WRITERS = [
     "superpower": "Immersive, consistent worlds.",
     "watchOut": "Explaining the whole history before the story starts.",
     "fit": {
+      "q002": [
+        "c"
+      ],
       "q003": [
+        "c"
+      ],
+      "q012": [
         "c"
       ],
       "q016": [
@@ -3314,11 +3434,17 @@ var QUIZ_WRITERS = [
       "q011": [
         "b"
       ],
+      "q014": [
+        "d"
+      ],
       "q020": [
         "b"
       ],
       "q021": [
         "b"
+      ],
+      "q023": [
+        "a"
       ],
       "q031": [
         "d"
@@ -3383,6 +3509,9 @@ var QUIZ_WRITERS = [
       ],
       "q011": [
         "d"
+      ],
+      "q015": [
+        "c"
       ],
       "q021": [
         "d"
@@ -3450,6 +3579,9 @@ var QUIZ_WRITERS = [
     "superpower": "Vivid images and open feeling.",
     "watchOut": "Too many images for one poem.",
     "fit": {
+      "q001": [
+        "c"
+      ],
       "q007": [
         "c"
       ],
@@ -3773,11 +3905,17 @@ var QUIZ_WRITERS = [
       "q004": [
         "b"
       ],
+      "q016": [
+        "a"
+      ],
       "q018": [
         "a"
       ],
       "q020": [
         "a"
+      ],
+      "q024": [
+        "c"
       ],
       "q026": [
         "b"
@@ -3917,6 +4055,9 @@ var QUIZ_WRITERS = [
       ],
       "q017": [
         "b"
+      ],
+      "q020": [
+        "a"
       ],
       "q022": [
         "a"
@@ -4122,8 +4263,14 @@ var QUIZ_WRITERS = [
       "q008": [
         "c"
       ],
+      "q017": [
+        "b"
+      ],
       "q021": [
         "b"
+      ],
+      "q025": [
+        "a"
       ],
       "q035": [
         "a"
@@ -4253,6 +4400,9 @@ var QUIZ_WRITERS = [
       "q001": [
         "a"
       ],
+      "q005": [
+        "d"
+      ],
       "q012": [
         "a"
       ],
@@ -4320,6 +4470,9 @@ var QUIZ_WRITERS = [
     "superpower": "Wonder, and a clear sense of what is at stake.",
     "watchOut": "Letting the lesson take over the adventure.",
     "fit": {
+      "q004": [
+        "d"
+      ],
       "q005": [
         "c"
       ],
@@ -4327,6 +4480,9 @@ var QUIZ_WRITERS = [
         "b"
       ],
       "q018": [
+        "b"
+      ],
+      "q021": [
         "b"
       ],
       "q035": [
@@ -4395,6 +4551,12 @@ var QUIZ_WRITERS = [
       ],
       "q019": [
         "b"
+      ],
+      "q020": [
+        "a"
+      ],
+      "q022": [
+        "c"
       ],
       "q029": [
         "d"
@@ -4518,8 +4680,14 @@ var QUIZ_WRITERS = [
     "superpower": "Building dread from many points of view.",
     "watchOut": "Too many documents slowing the story down.",
     "fit": {
+      "q003": [
+        "a"
+      ],
       "q004": [
         "b"
+      ],
+      "q008": [
+        "c"
       ],
       "q015": [
         "d"
@@ -4581,6 +4749,12 @@ var QUIZ_WRITERS = [
       ],
       "q017": [
         "c"
+      ],
+      "q018": [
+        "b"
+      ],
+      "q024": [
+        "a"
       ],
       "q025": [
         "a"
@@ -4645,6 +4819,9 @@ var QUIZ_WRITERS = [
       ],
       "q017": [
         "c"
+      ],
+      "q018": [
+        "b"
       ],
       "q023": [
         "d"
@@ -4715,6 +4892,9 @@ var QUIZ_WRITERS = [
       ],
       "q010": [
         "d"
+      ],
+      "q018": [
+        "a"
       ],
       "q033": [
         "c"
@@ -4837,10 +5017,16 @@ var QUIZ_WRITERS = [
     "superpower": "Pace and puzzles that keep readers up all night.",
     "watchOut": "Information dumps between the action.",
     "fit": {
+      "q003": [
+        "a"
+      ],
       "q011": [
         "d"
       ],
       "q019": [
+        "b"
+      ],
+      "q022": [
         "b"
       ],
       "q025": [
