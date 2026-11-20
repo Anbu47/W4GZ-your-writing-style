@@ -245,7 +245,7 @@
 
   /* ---------- intro ---------- */
   const count = m => m.settings.linear ? m.settings.linearCount : m.settings.maxQuestions;
-  const minutes = m => Math.max(2, Math.round(count(m) / 4));
+  const minutes = m => Math.max(2, Math.floor(count(m) / 2)); // about 30 seconds per question
   $('lead').textContent = 'Choose the writing you would like to create and explore literary affinities with ' + model.W + ' writers. These are connections with their work, not a personality assessment.';
   $('startShort').textContent = 'Short quiz · ' + count(SHORT) + ' questions';
   $('startComplete').textContent = 'Complete quiz · 100 questions';
