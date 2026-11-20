@@ -51,6 +51,9 @@
   .bubble:focus-visible .face{border:2px solid #B02829}
   body:not(.intro-on) .bubbles{display:none}
   body.intro-on .brand,body.intro-on footer{position:relative;z-index:2}
+  /* Front page: logo centred at the top, in navy-600 as the brand guideline asks for the wordmark */
+  body.intro-on .brand{justify-content:center}
+  body.intro-on .brand-logo{background:#2C4463}
   @media(max-width:600px){#intro.on{align-items:flex-start;padding-top:190px;min-height:0}}
   .hero h1{font-size:clamp(36px,7vw,58px)}
   .hero h1 em{font-style:italic;color:var(--heart)}
