@@ -39,8 +39,10 @@
   .bubble{position:absolute;left:0;top:0;padding:0;border:0;background:none;cursor:pointer;will-change:transform,opacity;
     opacity:0;transition:opacity 1.4s ease;display:flex;flex-direction:column;align-items:center;gap:8px;color:#736D61}
   .bubble.in{opacity:1}
-  .bubble .face{display:block;width:var(--d);height:var(--d);border-radius:50%;background:#FAF8F3 center 28%/150% no-repeat;
+  .bubble .face{display:block;position:relative;overflow:hidden;width:var(--d);height:var(--d);border-radius:50%;background:#FAF8F3;
     border:1.5px solid #D8D2C4;transition:border-color .2s}
+  /* Shows the top half of the figure: head and shoulders, never a cut-off head (see portraitCrop in writers.js). */
+  .bubble .face img{position:absolute;max-width:none;left:calc(var(--d) * var(--cx) * -1);top:calc(var(--d) * var(--cy) * -1);width:calc(var(--d) * var(--cw));height:auto}
   .bubble .tag{font:400 11px/1.2 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;
     background:#F4F1EA;padding:2px 6px}
   .bubble:hover .face{border-color:#2C4463}
@@ -566,7 +568,11 @@
       b.setAttribute('aria-label', 'Meet ' + x.name);
       b.tabIndex = -1;
       const face = el('span', 'face');
-      face.style.backgroundImage = 'url(' + x.portrait + ')';
+      const img = el('img');
+      img.src = x.portrait; img.alt = ''; img.decoding = 'async';
+      const c = x.portraitCrop || { x: 0, y: 0, w: 1 };
+      face.style.setProperty('--cx', c.x); face.style.setProperty('--cy', c.y); face.style.setProperty('--cw', c.w);
+      face.appendChild(img);
       b.append(face, el('span', 'tag', x.name));
       b.onclick = () => { renderResult(x, null); show('result'); };
       b.style.display = 'none';
