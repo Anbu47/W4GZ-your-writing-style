@@ -606,6 +606,7 @@
       return { b, x: 0, y: 0, vx: 0, vy: 0, r: 0, live: false, born: 0 };
     });
     let W = 0, H = 0, D = 100, target = 0;
+    const SPEED = 0.36; // pixels per frame (about 22 px a second); raise for faster bubbles
     const live = () => pool.filter(p => p.live);
     function rects() {
       return blockers.map(e => e.getBoundingClientRect()).filter(r => r.width && r.height)
@@ -652,7 +653,7 @@
       if (!spot) return false;
       p.x = spot.x; p.y = spot.y;
       const a = Math.random() * Math.PI * 2;
-      p.vx = Math.cos(a) * 0.18; p.vy = Math.sin(a) * 0.18;
+      p.vx = Math.cos(a) * SPEED; p.vy = Math.sin(a) * SPEED;
       p.live = true; p.leaving = false; p.born = performance.now();
       p.b.style.display = '';
       p.b.tabIndex = 0;
@@ -681,20 +682,20 @@
       // Speed stays the same, so they glide around one another instead of bouncing.
       for (let i = 0; i < L.length; i++) {
         for (let j = i + 1; j < L.length; j++) {
-          const a = L[i], c = L[j], ba = box(a), bc = box(c), m = 40;
+          const a = L[i], c = L[j], ba = box(a), bc = box(c), m = 50;
           const ox = Math.min(ba.r + m, bc.r + m) - Math.max(ba.l - m, bc.l - m);
           const oy = Math.min(ba.b + m, bc.b + m) - Math.max(ba.t - m, bc.t - m);
           if (ox <= 0 || oy <= 0) continue;
           const dx = c.x - a.x || 0.01, dy = c.y - a.y || 0.01, d = Math.hypot(dx, dy);
-          const ux = dx / d, uy = dy / d, k = 0.03;
+          const ux = dx / d, uy = dy / d, k = 0.03 * SPEED / 0.18;
           a.vx -= ux * k; a.vy -= uy * k; c.vx += ux * k; c.vy += uy * k;
           // If they already overlap (e.g. one just came in from the edge), ease them apart.
-          if (gapBetween(ba, bc) < 10) { a.x -= ux; a.y -= uy; c.x += ux; c.y += uy; }
+          if (gapBetween(ba, bc) < 14) { const e = SPEED / 0.18; a.x -= ux * e; a.y -= uy * e; c.x += ux * e; c.y += uy * e; }
         }
       }
       L.forEach(p => {
         const sp = Math.hypot(p.vx, p.vy) || 1;
-        p.vx = p.vx / sp * 0.18; p.vy = p.vy / sp * 0.18;
+        p.vx = p.vx / sp * SPEED; p.vy = p.vy / sp * SPEED;
         p.x += p.vx; p.y += p.vy;
         const hw = half(p), top = p.r + 4, bottom = p.r + 26;
         if (p.x < -hw) { p.x = W + hw; p.wrapped = true; }
