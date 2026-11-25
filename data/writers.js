@@ -2712,83 +2712,6 @@ var QUIZ_WRITERS = [
     }
   },
   {
-    "id": "flaubert",
-    "name": "Gustave Flaubert",
-    "years": "1821–1880",
-    "from": "France",
-    "focus": "voice",
-    "color": "#280d73",
-    "approach": "reviser",
-    "tagline": "Human speech is like a cracked kettle on which we tap crude rhythms.",
-    "taglineFrom": "Madame Bovary",
-    "style": "Like Flaubert, you would trade ten words for the perfect one. You keep yourself out of the story and let exact details do the judging.",
-    "trueStory": "Flaubert spent about five years writing Madame Bovary and read his sentences aloud to test them. When the novel appeared he was put on trial for offending public morals, and he was acquitted.",
-    "howTheyWorked": "He could spend days on one page. He tested each sentence by shouting it out loud in a room he called his \"shouting room\".",
-    "moreStories": [
-      {
-        "label": "Diary in letters",
-        "text": "In long letters to a friend he described his fight with Madame Bovary almost day by day."
-      },
-      {
-        "label": "Big trip",
-        "text": "His long journey to Egypt and the Middle East gave him colors and places for a later novel."
-      }
-    ],
-    "about": "Flaubert was a surgeon's son from Rouen who gave up law to write. He worked slowly at his family home near the city. Later writers have called him a master of style and of the realistic novel.",
-    "works": [
-      "Madame Bovary",
-      "Sentimental Education",
-      "Three Tales"
-    ],
-    "startWith": "\"A Simple Heart\", a short story in Three Tales.",
-    "superpower": "Precise word choice and a clear eye.",
-    "watchOut": "Polishing one paragraph while the rest of the story waits.",
-    "fit": {
-      "q010": [
-        "a"
-      ],
-      "q013": [
-        "a"
-      ],
-      "q014": [
-        "a"
-      ],
-      "q019": [
-        "c"
-      ],
-      "q024": [
-        "b"
-      ],
-      "q027": [
-        "b"
-      ],
-      "q028": [
-        "c"
-      ],
-      "q031": [
-        "c"
-      ],
-      "q046": [
-        "c"
-      ],
-      "q049": [
-        "b"
-      ],
-      "q082": [
-        "d"
-      ],
-      "q094": [
-        "d"
-      ]
-    },
-    "portrait": "assets/writers/flaubert.webp",
-    "portraitCrop": {
-      "x": 0.2726,
-      "y": -0.0768,
-      "w": 1.5656
-    }
-  },
-  {
     "id": "chekhov",
     "name": "Anton Chekhov",
     "years": "1860–1904",
@@ -4809,78 +4732,6 @@ var QUIZ_WRITERS = [
     }
   },
   {
-    "id": "blyton",
-    "portrait": "assets/writers/blyton.webp",
-    "portraitCrop": {
-      "x": 0.3905,
-      "y": -0.0624,
-      "w": 1.7765
-    },
-    "name": "Enid Blyton",
-    "years": "1897–1968",
-    "from": "England",
-    "focus": "spark",
-    "color": "#05614f",
-    "approach": "explorer",
-    "tagline": "It is an absolutely marvellous name.",
-    "taglineFrom": "The Folk of the Faraway Tree",
-    "style": "Like Blyton, you write fast, fun adventures for young readers: a gang of friends, a secret, a picnic and a mystery to solve before the holidays end.",
-    "trueStory": "Blyton was one of the most productive writers ever. She wrote more than 700 books and could type up to 10,000 words in a single day.",
-    "howTheyWorked": "She typed with her typewriter on a board on her knees. She said she closed her eyes and her characters appeared like a film, and the story came by itself.",
-    "moreStories": [
-      {
-        "label": "New tool",
-        "text": "She bought her first typewriter in 1927 and stopped writing by hand."
-      },
-      {
-        "label": "Famous series",
-        "text": "Her Famous Five series grew to 21 books, from 1942 to 1963."
-      }
-    ],
-    "about": "Blyton trained as a teacher before she became a full-time writer. Her series include the Famous Five, the Secret Seven, Malory Towers and the Faraway Tree, and her books have sold hundreds of millions of copies. Some critics and libraries dismissed her simple style, but generations of children learned to love reading with her books.",
-    "works": [
-      "Five on a Treasure Island",
-      "The Enchanted Wood",
-      "Malory Towers",
-      "The Secret Seven"
-    ],
-    "startWith": "The Enchanted Wood, the first Faraway Tree book.",
-    "superpower": "Momentum. Readers can't wait to turn the page.",
-    "watchOut": "Characters who all sound the same.",
-    "fit": {
-      "q001": [
-        "d"
-      ],
-      "q004": [
-        "d"
-      ],
-      "q019": [
-        "b"
-      ],
-      "q020": [
-        "a"
-      ],
-      "q022": [
-        "c"
-      ],
-      "q029": [
-        "d"
-      ],
-      "q037": [
-        "c"
-      ],
-      "q044": [
-        "d"
-      ],
-      "q087": [
-        "c"
-      ],
-      "q090": [
-        "a"
-      ]
-    }
-  },
-  {
     "id": "emily-bronte",
     "portrait": "assets/writers/emily-bronte.webp",
     "portraitCrop": {
@@ -5390,6 +5241,1000 @@ var QUIZ_WRITERS = [
       "q082": [
         "a"
       ]
+    }
+  },
+  {
+    "id": "sophocles",
+    "name": "Sophocles",
+    "years": "c. 497–406 BC",
+    "from": "Ancient Greece",
+    "focus": "spark",
+    "color": "#5a3e1b",
+    "approach": "planner",
+    "tagline": "Wonders are many, and none is more wonderful than man.",
+    "taglineFrom": "Antigone (translated by R. C. Jebb)",
+    "style": "Like Sophocles, you put people on a stage and push them to the edge. Your characters argue about what is right, and the truth they find often costs them everything.",
+    "trueStory": "Sophocles wrote about 120 plays, but only seven survive complete. He won first prize at Athens's great drama festival many times, and is said never to have finished lower than second.",
+    "howTheyWorked": "According to Aristotle, Sophocles added a third actor to the stage and introduced painted scenery. With three actors, more characters could argue at once, and the drama became tighter and faster.",
+    "moreStories": [
+      {
+        "label": "A general too",
+        "text": "Besides writing plays, he served Athens as a general alongside Pericles, and as a treasurer."
+      },
+      {
+        "label": "A famous courtroom tale",
+        "text": "An old story says his sons claimed he was too old to manage his affairs. He read from his new play, Oedipus at Colonus, to the judges, and they threw the case out. It may be a legend."
+      }
+    ],
+    "about": "Sophocles was one of the three great tragic playwrights of ancient Athens, with Aeschylus and Euripides. He lived for about ninety years and saw Athens at its height. His plays set human choices against fate and the gods, and they are still performed all over the world.",
+    "works": [
+      "Oedipus the King",
+      "Antigone",
+      "Electra",
+      "Oedipus at Colonus"
+    ],
+    "startWith": "Antigone, short and gripping.",
+    "superpower": "Drama that closes in like a trap.",
+    "watchOut": "Endings so harsh they crush all hope.",
+    "fit": {
+      "q001": [
+        "d"
+      ],
+      "q005": [
+        "c"
+      ],
+      "q007": [
+        "d"
+      ],
+      "q019": [
+        "c"
+      ],
+      "q024": [
+        "c"
+      ],
+      "q029": [
+        "c"
+      ],
+      "q032": [
+        "d"
+      ],
+      "q035": [
+        "b"
+      ],
+      "q048": [
+        "a"
+      ],
+      "q052": [
+        "b"
+      ],
+      "q054": [
+        "b"
+      ],
+      "q056": [
+        "a"
+      ],
+      "q064": [
+        "c"
+      ],
+      "q097": [
+        "d"
+      ],
+      "q099": [
+        "a"
+      ]
+    },
+    "portrait": "assets/writers/sophocles.webp",
+    "portraitCrop": {
+      "x": 0.3639,
+      "y": -0.0547,
+      "w": 1.7933
+    }
+  },
+  {
+    "id": "ibsen",
+    "name": "Henrik Ibsen",
+    "years": "1828–1906",
+    "from": "Norway",
+    "focus": "spark",
+    "color": "#2f4a3a",
+    "approach": "reviser",
+    "tagline": "I must stand quite alone.",
+    "taglineFrom": "A Doll's House (translated by William Archer)",
+    "style": "Like Ibsen, you write plays about ordinary homes with secrets inside. Your characters finally say what everyone has been afraid to say.",
+    "trueStory": "At 15 Ibsen left home to work as a pharmacist's apprentice in a small coastal town. He wrote his first play there, at night, after work.",
+    "howTheyWorked": "He worked slowly and carefully, usually finishing one play every two years. He kept a portrait of his rival, the Swedish playwright August Strindberg, above his desk while he wrote.",
+    "moreStories": [
+      {
+        "label": "The slammed door",
+        "text": "At the end of A Doll's House, Nora walks out on her husband and children. Audiences in 1879 were shocked, and one German actress refused to play the ending, so Ibsen unwillingly wrote a different one for her."
+      },
+      {
+        "label": "Last words",
+        "text": "Near the end of his life, a nurse told visitors he seemed a little better. Ibsen is said to have answered: \"On the contrary.\" They were his last words."
+      }
+    ],
+    "about": "Ibsen is often called the father of modern drama. He moved theatre away from kings and heroes into ordinary living rooms, where families hide debts, lies and old sins. His plays about women's freedom and public hypocrisy caused scandals, and today he is one of the most performed playwrights in the world.",
+    "works": [
+      "A Doll's House",
+      "Ghosts",
+      "An Enemy of the People",
+      "Hedda Gabler",
+      "Peer Gynt"
+    ],
+    "startWith": "A Doll's House, for its famous last scene.",
+    "superpower": "Saying out loud what families keep hidden.",
+    "watchOut": "Characters who turn into arguments instead of people.",
+    "fit": {
+      "q001": [
+        "d"
+      ],
+      "q007": [
+        "d"
+      ],
+      "q013": [
+        "c"
+      ],
+      "q018": [
+        "d"
+      ],
+      "q024": [
+        "b"
+      ],
+      "q027": [
+        "b"
+      ],
+      "q039": [
+        "a"
+      ],
+      "q046": [
+        "b"
+      ],
+      "q055": [
+        "b"
+      ],
+      "q056": [
+        "b"
+      ],
+      "q061": [
+        "d"
+      ],
+      "q070": [
+        "c"
+      ],
+      "q079": [
+        "b"
+      ],
+      "q085": [
+        "a"
+      ],
+      "q095": [
+        "d"
+      ]
+    },
+    "portrait": "assets/writers/ibsen.webp",
+    "portraitCrop": {
+      "x": 0.3896,
+      "y": -0.0594,
+      "w": 1.7838
+    }
+  },
+  {
+    "id": "jm-barrie",
+    "name": "J.M. Barrie",
+    "years": "1860–1937",
+    "from": "Scotland",
+    "focus": "world",
+    "color": "#2e5d4b",
+    "approach": "explorer",
+    "tagline": "To die will be an awfully big adventure.",
+    "taglineFrom": "Peter Pan",
+    "style": "Like Barrie, you write magic for children with a grown-up ache underneath. Your stories fly off to other worlds, but they are really about growing up.",
+    "trueStory": "When Barrie was six, his older brother David died in a skating accident. Their mother found comfort in the thought that David would stay a boy forever, an idea Barrie later turned into Peter Pan.",
+    "howTheyWorked": "Peter Pan grew out of the stories and games Barrie made up for the five Llewelyn Davies boys, whom he met in Kensington Gardens in London. He tried the story out on them long before it became a play.",
+    "moreStories": [
+      {
+        "label": "A gift to children",
+        "text": "In 1929 he gave the rights to Peter Pan to Great Ormond Street Hospital for children in London, which still benefits from it today."
+      },
+      {
+        "label": "A writers' cricket team",
+        "text": "He started an amateur cricket team whose players included Arthur Conan Doyle and A. A. Milne."
+      }
+    ],
+    "about": "Barrie was a Scottish novelist and playwright, the son of a weaver. He first became famous for stories about Scottish village life, then for witty plays. In 1904 his play Peter Pan, about the boy who wouldn't grow up, became a huge success, and he later turned it into the novel Peter and Wendy.",
+    "works": [
+      "Peter Pan",
+      "Peter and Wendy",
+      "The Admirable Crichton",
+      "Mary Rose"
+    ],
+    "startWith": "Peter and Wendy, the novel version of Peter Pan.",
+    "superpower": "Magic with a grown-up ache.",
+    "watchOut": "Whimsy that slips into sugar.",
+    "fit": {
+      "q001": [
+        "d"
+      ],
+      "q004": [
+        "d"
+      ],
+      "q006": [
+        "b"
+      ],
+      "q008": [
+        "c"
+      ],
+      "q018": [
+        "c"
+      ],
+      "q021": [
+        "b"
+      ],
+      "q033": [
+        "d"
+      ],
+      "q044": [
+        "d"
+      ],
+      "q050": [
+        "d"
+      ],
+      "q053": [
+        "b"
+      ],
+      "q062": [
+        "a"
+      ],
+      "q086": [
+        "d"
+      ],
+      "q087": [
+        "c"
+      ],
+      "q090": [
+        "a"
+      ],
+      "q094": [
+        "a"
+      ]
+    },
+    "portrait": "assets/writers/jm-barrie.webp",
+    "portraitCrop": {
+      "x": 0.3943,
+      "y": -0.05,
+      "w": 1.798
+    }
+  },
+  {
+    "id": "anne-frank",
+    "name": "Anne Frank",
+    "years": "1929–1945",
+    "from": "Germany / Netherlands",
+    "focus": "heart",
+    "color": "#6b3a4a",
+    "approach": "explorer",
+    "tagline": "In spite of everything I still believe that people are really good at heart.",
+    "taglineFrom": "The Diary of a Young Girl",
+    "style": "Like Anne Frank, you write honestly in your own voice. Plain words, real days and private feelings are enough for you, and you keep hope even when things are hard.",
+    "trueStory": "Anne was given a red-and-white checked diary for her 13th birthday in June 1942. A few weeks later her family went into hiding in a secret annex behind her father's office in Amsterdam.",
+    "howTheyWorked": "In 1944 she heard a radio broadcast asking people to keep their wartime diaries. She began rewriting her diary on loose sheets so it could become a book, which she planned to call The Secret Annex.",
+    "moreStories": [
+      {
+        "label": "Dear Kitty",
+        "text": "She wrote many of her entries as letters to an imaginary friend she called Kitty."
+      },
+      {
+        "label": "The pages that survived",
+        "text": "Her father Otto was the only one of the eight people in hiding to survive. Miep Gies, who had helped hide them, saved Anne's papers, and Otto published the diary in 1947."
+      }
+    ],
+    "about": "Anne Frank was a Jewish girl who hid with her family and four others in Amsterdam for two years during the Nazi occupation. She dreamed of becoming a writer and journalist. The hiding place was discovered in 1944, and Anne died in the Bergen-Belsen camp in early 1945, at 15. Her diary has been translated into more than 70 languages.",
+    "works": [
+      "The Diary of a Young Girl",
+      "Tales from the Secret Annex"
+    ],
+    "startWith": "The Diary of a Young Girl, a few entries at a time.",
+    "superpower": "Honesty that feels like a friend talking.",
+    "watchOut": "Writing only for yourself, so others can't follow.",
+    "fit": {
+      "q001": [
+        "c"
+      ],
+      "q002": [
+        "d"
+      ],
+      "q011": [
+        "a"
+      ],
+      "q014": [
+        "b"
+      ],
+      "q020": [
+        "a"
+      ],
+      "q023": [
+        "b"
+      ],
+      "q033": [
+        "a"
+      ],
+      "q039": [
+        "d"
+      ],
+      "q042": [
+        "a"
+      ],
+      "q043": [
+        "a"
+      ],
+      "q044": [
+        "b"
+      ],
+      "q045": [
+        "b"
+      ],
+      "q060": [
+        "a"
+      ],
+      "q061": [
+        "a"
+      ],
+      "q088": [
+        "c"
+      ],
+      "q093": [
+        "d"
+      ],
+      "q095": [
+        "c"
+      ]
+    },
+    "portrait": "assets/writers/anne-frank.webp",
+    "portraitCrop": {
+      "x": 0.3826,
+      "y": -0.0547,
+      "w": 1.7933
+    }
+  },
+  {
+    "id": "angelou",
+    "name": "Maya Angelou",
+    "years": "1928–2014",
+    "from": "United States",
+    "focus": "voice",
+    "color": "#7a3b1f",
+    "approach": "reviser",
+    "tagline": "There is no greater agony than bearing an untold story inside you.",
+    "taglineFrom": "I Know Why the Caged Bird Sings",
+    "style": "Like Maya Angelou, you turn your own life into poems and stories that speak out. Your words have rhythm, and they stand up against unfairness.",
+    "trueStory": "After a traumatic event when she was eight, Angelou stopped speaking for almost five years. A neighbour, Bertha Flowers, helped bring her back to words through books and poems read aloud.",
+    "howTheyWorked": "She rented a small hotel room just for writing. She arrived early in the morning with a Bible, a dictionary and a deck of cards, and asked the staff to take every picture off the walls.",
+    "moreStories": [
+      {
+        "label": "Many lives",
+        "text": "Before she became famous as a writer, she was a dancer, a singer, an actress and San Francisco's first Black woman streetcar conductor."
+      },
+      {
+        "label": "A poem for a president",
+        "text": "In 1993 she read her poem \"On the Pulse of Morning\" at President Bill Clinton's inauguration."
+      }
+    ],
+    "about": "Maya Angelou was an American poet, memoirist and civil rights activist who worked with Martin Luther King Jr. and Malcolm X. Her first memoir, I Know Why the Caged Bird Sings (1969), told the story of her childhood with an honesty that was rare at the time. She wrote seven memoirs and many books of poetry.",
+    "works": [
+      "I Know Why the Caged Bird Sings",
+      "Still I Rise",
+      "Phenomenal Woman",
+      "On the Pulse of Morning"
+    ],
+    "startWith": "The poem \"Still I Rise\", read aloud.",
+    "superpower": "A voice that rises out of pain.",
+    "watchOut": "Speeches that tell instead of show.",
+    "fit": {
+      "q001": [
+        "c"
+      ],
+      "q005": [
+        "a"
+      ],
+      "q012": [
+        "a"
+      ],
+      "q016": [
+        "d"
+      ],
+      "q022": [
+        "a"
+      ],
+      "q024": [
+        "d"
+      ],
+      "q033": [
+        "c"
+      ],
+      "q038": [
+        "c"
+      ],
+      "q039": [
+        "c"
+      ],
+      "q042": [
+        "a"
+      ],
+      "q045": [
+        "b"
+      ],
+      "q048": [
+        "b"
+      ],
+      "q055": [
+        "d"
+      ],
+      "q060": [
+        "c"
+      ],
+      "q075": [
+        "b"
+      ],
+      "q080": [
+        "b"
+      ],
+      "q093": [
+        "a"
+      ],
+      "q095": [
+        "b"
+      ]
+    },
+    "portrait": "assets/writers/angelou.webp",
+    "portraitCrop": {
+      "x": 0.3826,
+      "y": -0.0452,
+      "w": 1.8028
+    }
+  },
+  {
+    "id": "saint-exupery",
+    "name": "Antoine de Saint-Exupéry",
+    "years": "1900–1944",
+    "from": "France",
+    "focus": "heart",
+    "color": "#2b4f7a",
+    "approach": "explorer",
+    "tagline": "What is essential is invisible to the eye.",
+    "taglineFrom": "The Little Prince",
+    "style": "Like Saint-Exupéry, you write short, simple stories that both children and adults can read. Behind a journey or a small friendship, you ask what really matters in life.",
+    "trueStory": "He was a pilot who flew mail routes over the Sahara and the Andes. In 1935 he crashed in the Sahara and nearly died of thirst before a Bedouin found him and saved him.",
+    "howTheyWorked": "He painted the watercolour pictures for The Little Prince himself. He wrote much of the book in New York in 1942, while living in exile during the Second World War.",
+    "moreStories": [
+      {
+        "label": "The last flight",
+        "text": "In July 1944 he took off on a reconnaissance flight and never came back. Parts of his plane were found in the sea near Marseille decades later."
+      },
+      {
+        "label": "A bracelet in a net",
+        "text": "In 1998 a fisherman pulled up a silver bracelet engraved with his name and his wife's name from the sea near Marseille."
+      }
+    ],
+    "about": "Antoine de Saint-Exupéry was a French writer and pioneering aviator. His books about flying, such as Wind, Sand and Stars, turned real adventures into reflections on friendship and courage. The Little Prince, published in 1943, is one of the most translated books in the world.",
+    "works": [
+      "The Little Prince",
+      "Wind, Sand and Stars",
+      "Night Flight",
+      "Southern Mail"
+    ],
+    "startWith": "The Little Prince. It takes an hour and stays for life.",
+    "superpower": "Simple stories that hold deep truths.",
+    "watchOut": "Lessons that sound like sermons.",
+    "fit": {
+      "q004": [
+        "d"
+      ],
+      "q008": [
+        "d"
+      ],
+      "q019": [
+        "a"
+      ],
+      "q021": [
+        "b"
+      ],
+      "q022": [
+        "d"
+      ],
+      "q025": [
+        "a"
+      ],
+      "q030": [
+        "b"
+      ],
+      "q033": [
+        "d"
+      ],
+      "q040": [
+        "a"
+      ],
+      "q050": [
+        "a"
+      ],
+      "q053": [
+        "b"
+      ],
+      "q062": [
+        "c"
+      ],
+      "q071": [
+        "d"
+      ],
+      "q077": [
+        "b"
+      ],
+      "q083": [
+        "c"
+      ],
+      "q088": [
+        "b"
+      ],
+      "q092": [
+        "a"
+      ],
+      "q100": [
+        "d"
+      ]
+    },
+    "portrait": "assets/writers/saint-exupery.webp",
+    "portraitCrop": {
+      "x": 0.3686,
+      "y": -0.05,
+      "w": 1.798
+    }
+  },
+  {
+    "id": "dr-seuss",
+    "name": "Dr. Seuss",
+    "years": "1904–1991",
+    "from": "United States",
+    "focus": "voice",
+    "color": "#7d3b5a",
+    "approach": "reviser",
+    "tagline": "You have brains in your head. You have feet in your shoes.",
+    "taglineFrom": "Oh, the Places You'll Go!",
+    "style": "Like Dr. Seuss, you play with rhyme, rhythm and silly words. Your funny creatures and bouncing lines often carry a serious message.",
+    "trueStory": "His first children's book, And to Think That I Saw It on Mulberry Street, was turned down by more than 20 publishers. Then he met an old college friend on the street who had just started working at a publishing house, and the book was published.",
+    "howTheyWorked": "For The Cat in the Hat, his publisher gave him a list of a few hundred simple words that beginning readers should know. He built the whole book from 236 of them.",
+    "moreStories": [
+      {
+        "label": "A bet",
+        "text": "His publisher bet him he couldn't write a book using only 50 different words. He won the bet with Green Eggs and Ham."
+      },
+      {
+        "label": "Not a real doctor",
+        "text": "The \"Dr.\" was a joke: he never finished his doctorate at Oxford. Seuss was his middle name and his mother's family name."
+      }
+    ],
+    "about": "Dr. Seuss was the pen name of Theodor Seuss Geisel, an American writer and cartoonist. His rhyming books, full of invented creatures and made-up words, changed how children learn to read. Many of his stories, like The Lorax and The Sneetches, carry serious messages about nature, fairness and prejudice.",
+    "works": [
+      "The Cat in the Hat",
+      "Green Eggs and Ham",
+      "How the Grinch Stole Christmas!",
+      "The Lorax",
+      "Oh, the Places You'll Go!"
+    ],
+    "startWith": "The Lorax, a funny rhyme with a serious message.",
+    "superpower": "Rhythm that makes words dance.",
+    "watchOut": "Messages that leave readers no room to think.",
+    "fit": {
+      "q004": [
+        "d"
+      ],
+      "q006": [
+        "b"
+      ],
+      "q015": [
+        "c"
+      ],
+      "q020": [
+        "d"
+      ],
+      "q022": [
+        "a"
+      ],
+      "q028": [
+        "b"
+      ],
+      "q030": [
+        "d"
+      ],
+      "q033": [
+        "d"
+      ],
+      "q034": [
+        "d"
+      ],
+      "q038": [
+        "b"
+      ],
+      "q048": [
+        "b"
+      ],
+      "q050": [
+        "b"
+      ],
+      "q058": [
+        "a"
+      ],
+      "q080": [
+        "b"
+      ]
+    },
+    "portrait": "assets/writers/dr-seuss.webp",
+    "portraitCrop": {
+      "x": 0.3384,
+      "y": -0.0547,
+      "w": 1.7885
+    }
+  },
+  {
+    "id": "dahl",
+    "name": "Roald Dahl",
+    "years": "1916–1990",
+    "from": "United Kingdom",
+    "focus": "spark",
+    "color": "#4a3b6b",
+    "approach": "reviser",
+    "tagline": "Those who don't believe in magic will never find it.",
+    "taglineFrom": "The Minpins",
+    "style": "Like Roald Dahl, you take the side of clever children against mean adults. Your stories are funny, a little dark, and full of surprises.",
+    "trueStory": "At boarding school, Dahl and his classmates were sent new chocolate bars from a chocolate company to test. He dreamed of inventing a chocolate bar himself, which later helped inspire Charlie and the Chocolate Factory.",
+    "howTheyWorked": "He wrote in a small hut at the bottom of his garden, sitting in an old armchair with a writing board on his lap, using yellow pencils and yellow paper.",
+    "moreStories": [
+      {
+        "label": "Fighter pilot",
+        "text": "In the Second World War he flew as a fighter pilot for the Royal Air Force and survived a serious crash in the Libyan desert."
+      },
+      {
+        "label": "Gobblefunk",
+        "text": "He invented hundreds of words, like \"whizzpopper\" and \"snozzcumber\" in The BFG. Some of them are now in the Oxford English Dictionary."
+      }
+    ],
+    "about": "Roald Dahl was a British writer, born in Wales to Norwegian parents. He wrote dark, twisty short stories for adults before becoming one of the world's best-loved children's authors. His books take the side of clever children against cruel or foolish adults, with wild humour and a little danger.",
+    "works": [
+      "Charlie and the Chocolate Factory",
+      "Matilda",
+      "The BFG",
+      "James and the Giant Peach",
+      "Tales of the Unexpected"
+    ],
+    "startWith": "Matilda, or Boy, his memoir of childhood.",
+    "superpower": "Mischief readers can't resist.",
+    "watchOut": "Cruelty played only for laughs.",
+    "fit": {
+      "q005": [
+        "a"
+      ],
+      "q006": [
+        "b"
+      ],
+      "q018": [
+        "a"
+      ],
+      "q019": [
+        "b"
+      ],
+      "q020": [
+        "d"
+      ],
+      "q026": [
+        "b"
+      ],
+      "q028": [
+        "b"
+      ],
+      "q033": [
+        "a"
+      ],
+      "q038": [
+        "a"
+      ],
+      "q039": [
+        "d"
+      ],
+      "q044": [
+        "a"
+      ],
+      "q049": [
+        "c"
+      ],
+      "q058": [
+        "b"
+      ],
+      "q085": [
+        "b"
+      ],
+      "q089": [
+        "c"
+      ],
+      "q092": [
+        "c"
+      ]
+    },
+    "portrait": "assets/writers/dahl.webp",
+    "portraitCrop": {
+      "x": 0.3594,
+      "y": -0.0594,
+      "w": 1.7838
+    }
+  },
+  {
+    "id": "o-henry",
+    "name": "O. Henry",
+    "years": "1862–1910",
+    "from": "United States",
+    "focus": "spark",
+    "color": "#5b4a2a",
+    "approach": "planner",
+    "tagline": "Of all who give and receive gifts, such as they are wisest.",
+    "taglineFrom": "The Gift of the Magi",
+    "style": "Like O. Henry, you write short stories about ordinary city people. A small kindness, a twist at the end, and a smile with a tear in it.",
+    "trueStory": "He wrote some of his first stories in prison, where he was serving time for taking money from the bank where he had worked. He published them under a new name to hide his past.",
+    "howTheyWorked": "In New York he wrote a story a week for a newspaper, often racing a deadline. He found his characters among the shop girls, clerks and dreamers he met in cafés and on the street.",
+    "moreStories": [
+      {
+        "label": "The twist",
+        "text": "His surprise endings are so famous that a twist ending is sometimes called an \"O. Henry ending\"."
+      },
+      {
+        "label": "Hundreds of stories",
+        "text": "He wrote around 600 short stories in about ten years."
+      }
+    ],
+    "about": "O. Henry was the pen name of William Sydney Porter, an American short story writer. He worked as a pharmacist, bank teller and journalist before turning to fiction. His warm, funny stories about ordinary people in New York made him one of the most popular writers of his time, and \"The Last Leaf\" is read in schools in many countries, including Vietnam.",
+    "works": [
+      "The Gift of the Magi",
+      "The Last Leaf",
+      "The Ransom of Red Chief",
+      "Cabbages and Kings"
+    ],
+    "startWith": "\"The Gift of the Magi\", ten minutes long, with an ending you won't forget.",
+    "superpower": "Endings that turn the whole story around.",
+    "watchOut": "Twists that feel like tricks.",
+    "fit": {
+      "q002": [
+        "d"
+      ],
+      "q006": [
+        "a"
+      ],
+      "q008": [
+        "a"
+      ],
+      "q013": [
+        "a"
+      ],
+      "q019": [
+        "b"
+      ],
+      "q020": [
+        "d"
+      ],
+      "q028": [
+        "b"
+      ],
+      "q029": [
+        "d"
+      ],
+      "q031": [
+        "b"
+      ],
+      "q036": [
+        "a"
+      ],
+      "q044": [
+        "a"
+      ],
+      "q049": [
+        "d"
+      ],
+      "q052": [
+        "b"
+      ],
+      "q057": [
+        "c"
+      ],
+      "q066": [
+        "c"
+      ],
+      "q067": [
+        "a"
+      ],
+      "q073": [
+        "a"
+      ],
+      "q084": [
+        "c"
+      ]
+    },
+    "portrait": "assets/writers/o-henry.webp",
+    "portraitCrop": {
+      "x": 0.371,
+      "y": -0.0594,
+      "w": 1.7838
+    }
+  },
+  {
+    "id": "jack-london",
+    "name": "Jack London",
+    "years": "1876–1916",
+    "from": "United States",
+    "focus": "world",
+    "color": "#3e4f5a",
+    "approach": "explorer",
+    "style": "Like Jack London, you send your characters, human or animal, into the wild. Cold, hunger and danger test them, and your stories never stop moving.",
+    "trueStory": "At 21 he joined the Klondike Gold Rush in the Canadian Yukon. He found almost no gold, but the frozen North gave him the stories that made him famous.",
+    "howTheyWorked": "He made himself write 1,000 words every day, usually in the morning, and kept to it even while travelling.",
+    "moreStories": [
+      {
+        "label": "Oyster pirate",
+        "text": "As a teenager in California he bought a small boat and raided oyster beds as an \"oyster pirate\". Later he switched sides and joined the fish patrol."
+      },
+      {
+        "label": "A best-paid writer",
+        "text": "By the early 1900s he was one of the best-paid and most famous writers in the world."
+      }
+    ],
+    "about": "Jack London was an American writer who grew up poor in California and worked as a sailor, factory hand and gold-seeker before he became a writer. His adventure stories set people and animals against the wild, especially in the frozen Yukon, and test how far courage and will can go.",
+    "works": [
+      "The Call of the Wild",
+      "White Fang",
+      "To Build a Fire",
+      "Love of Life",
+      "Martin Eden"
+    ],
+    "startWith": "The Call of the Wild, told through the eyes of a dog.",
+    "superpower": "Stories that move like an adventure.",
+    "watchOut": "Toughness that leaves no room for feeling.",
+    "fit": {
+      "q003": [
+        "c"
+      ],
+      "q008": [
+        "c"
+      ],
+      "q012": [
+        "a"
+      ],
+      "q013": [
+        "a"
+      ],
+      "q025": [
+        "a"
+      ],
+      "q027": [
+        "c"
+      ],
+      "q030": [
+        "b"
+      ],
+      "q038": [
+        "a"
+      ],
+      "q044": [
+        "d"
+      ],
+      "q049": [
+        "d"
+      ],
+      "q050": [
+        "b"
+      ],
+      "q071": [
+        "c"
+      ],
+      "q077": [
+        "d"
+      ],
+      "q078": [
+        "a"
+      ],
+      "q089": [
+        "c"
+      ],
+      "q090": [
+        "a"
+      ],
+      "q097": [
+        "d"
+      ]
+    },
+    "portrait": "assets/writers/jack-london.webp",
+    "portraitCrop": {
+      "x": 0.3803,
+      "y": -0.0546,
+      "w": 1.798
+    }
+  },
+  {
+    "id": "harari",
+    "name": "Yuval Noah Harari",
+    "years": "born 1976",
+    "from": "Israel",
+    "focus": "world",
+    "color": "#2f3e55",
+    "approach": "planner",
+    "tagline": "Large numbers of strangers can cooperate successfully by believing in common myths.",
+    "taglineFrom": "Sapiens",
+    "style": "Like Harari, you look at the whole of human history to answer big questions. You explain big ideas in plain words, and you love to challenge what people take for granted.",
+    "trueStory": "Sapiens began as a world history course Harari taught to students at the Hebrew University of Jerusalem. It was first published in Hebrew in 2011.",
+    "howTheyWorked": "He meditates for about two hours every day and goes on a long silent retreat each year. He says it helps him see clearly what matters.",
+    "moreStories": [
+      {
+        "label": "For young readers",
+        "text": "He also wrote Unstoppable Us, an illustrated series that tells the history of humankind for children."
+      },
+      {
+        "label": "Guarding his attention",
+        "text": "For many years he avoided owning a smartphone, to protect his time and attention."
+      }
+    ],
+    "about": "Yuval Noah Harari is an Israeli historian and professor at the Hebrew University of Jerusalem. His book Sapiens: A Brief History of Humankind tells the story of our species in plain, lively language and has sold millions of copies. He writes about big questions: how humans came to rule the world, and where technology may take us next.",
+    "works": [
+      "Sapiens",
+      "Homo Deus",
+      "21 Lessons for the 21st Century",
+      "Unstoppable Us",
+      "Nexus"
+    ],
+    "startWith": "Sapiens, or Unstoppable Us if you are younger.",
+    "superpower": "Huge ideas in plain words.",
+    "watchOut": "Big claims that move faster than the evidence.",
+    "fit": {
+      "q011": [
+        "c"
+      ],
+      "q016": [
+        "c"
+      ],
+      "q017": [
+        "b"
+      ],
+      "q021": [
+        "d"
+      ],
+      "q023": [
+        "d"
+      ],
+      "q024": [
+        "a"
+      ],
+      "q028": [
+        "d"
+      ],
+      "q035": [
+        "d"
+      ],
+      "q038": [
+        "d"
+      ],
+      "q051": [
+        "a"
+      ],
+      "q052": [
+        "c"
+      ],
+      "q059": [
+        "c"
+      ],
+      "q062": [
+        "b"
+      ],
+      "q074": [
+        "d"
+      ]
+    },
+    "portrait": "assets/writers/harari.webp",
+    "portraitCrop": {
+      "x": 0.3803,
+      "y": -0.05,
+      "w": 1.798
     }
   }
 ];
