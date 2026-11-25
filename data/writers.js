@@ -6068,6 +6068,8 @@ var QUIZ_WRITERS = [
     "focus": "world",
     "color": "#3e4f5a",
     "approach": "explorer",
+    "tagline": "There is an ecstasy that marks the summit of life, and beyond which life cannot rise.",
+    "taglineFrom": "The Call of the Wild",
     "style": "Like Jack London, you send your characters, human or animal, into the wild. Cold, hunger and danger test them, and your stories never stop moving.",
     "trueStory": "At 21 he joined the Klondike Gold Rush in the Canadian Yukon. He found almost no gold, but the frozen North gave him the stories that made him famous.",
     "howTheyWorked": "He made himself write 1,000 words every day, usually in the morning, and kept to it even while travelling.",
