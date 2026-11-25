@@ -67,10 +67,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dickens.webp",
     "portraitCrop": {
-      "x": 0.22,
-      "y": -0.1017,
-      "w": 1.459
-    }
+      "x": 0.5614,
+      "y": 0.0585,
+      "w": 1.6157
+    },
+    "portraitBg": "#fbf3ea"
   },
   {
     "id": "murasaki",
@@ -149,10 +150,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/murasaki.webp",
     "portraitCrop": {
-      "x": 0.4082,
-      "y": -0.0518,
-      "w": 1.8071
-    }
+      "x": 0.6582,
+      "y": 0.1483,
+      "w": 1.6915
+    },
+    "portraitBg": "#fdf6ee"
   },
   {
     "id": "austen",
@@ -257,10 +259,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/austen.webp",
     "portraitCrop": {
-      "x": 0.3785,
-      "y": -0.0561,
-      "w": 1.7944
-    }
+      "x": 0.5659,
+      "y": 0.0685,
+      "w": 1.6227
+    },
+    "portraitBg": "#fbf3ea"
   },
   {
     "id": "shakespeare",
@@ -335,10 +338,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/shakespeare.webp",
     "portraitCrop": {
-      "x": 0.3052,
-      "y": -0.0751,
-      "w": 1.6021
-    }
+      "x": 0.5955,
+      "y": 0.1673,
+      "w": 1.55
+    },
+    "portraitBg": "#fcf5e8"
   },
   {
     "id": "dostoevsky",
@@ -422,10 +426,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dostoevsky.webp",
     "portraitCrop": {
-      "x": 0.4085,
-      "y": -0.0469,
-      "w": 1.8028
-    }
+      "x": 0.6549,
+      "y": 0.1102,
+      "w": 1.6582
+    },
+    "portraitBg": "#fbf2ea"
   },
   {
     "id": "hemingway",
@@ -497,10 +502,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/hemingway.webp",
     "portraitCrop": {
-      "x": 0.3852,
-      "y": -0.0562,
-      "w": 1.7986
-    }
+      "x": 0.5623,
+      "y": 0.0237,
+      "w": 1.5853
+    },
+    "portraitBg": "#fdf7f0"
   },
   {
     "id": "tolstoy",
@@ -580,10 +586,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/tolstoy.webp",
     "portraitCrop": {
-      "x": 0.3442,
-      "y": -0.0693,
-      "w": 1.6973
-    }
+      "x": 0.5566,
+      "y": 0.0585,
+      "w": 1.6157
+    },
+    "portraitBg": "#f7f0e7"
   },
   {
     "id": "garcia-marquez",
@@ -654,10 +661,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/garcia-marquez.webp",
     "portraitCrop": {
-      "x": 0.392,
-      "y": -0.0469,
-      "w": 1.8028
-    }
+      "x": 0.5966,
+      "y": 0.0953,
+      "w": 1.6545
+    },
+    "portraitBg": "#fdf8ee"
   },
   {
     "id": "hugo",
@@ -734,10 +742,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/hugo.webp",
     "portraitCrop": {
-      "x": 0.3837,
-      "y": -0.0605,
-      "w": 1.786
-    }
+      "x": 0.5669,
+      "y": 0.0283,
+      "w": 1.5853
+    },
+    "portraitBg": "#fcf5ea"
   },
   {
     "id": "lu-xun",
@@ -803,10 +812,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/lu-xun.webp",
     "portraitCrop": {
-      "x": 0.3729,
-      "y": -0.0424,
-      "w": 1.8071
-    }
+      "x": 0.5878,
+      "y": 0.0334,
+      "w": 1.592
+    },
+    "portraitBg": "#f5f0e8"
   },
   {
     "id": "nietzsche",
@@ -871,10 +881,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/nietzsche.webp",
     "portraitCrop": {
-      "x": 0.4019,
-      "y": -0.0561,
-      "w": 1.7944
-    }
+      "x": 0.5946,
+      "y": 0.0389,
+      "w": 1.6055
+    },
+    "portraitBg": "#faf2e7"
   },
   {
     "id": "du-fu",
@@ -948,10 +959,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/du-fu.webp",
     "portraitCrop": {
-      "x": 0.4485,
-      "y": -0.0562,
-      "w": 1.7986
-    }
+      "x": 0.6159,
+      "y": 0.059,
+      "w": 1.6227
+    },
+    "portraitBg": "#f8f2ea"
   },
   {
     "id": "homer",
@@ -1027,10 +1039,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/homer.webp",
     "portraitCrop": {
-      "x": 0.3138,
-      "y": -0.077,
-      "w": 1.6405
-    }
+      "x": 0.5317,
+      "y": 0.024,
+      "w": 1.592
+    },
+    "portraitBg": "#f7f1ea"
   },
   {
     "id": "sappho",
@@ -1107,10 +1120,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/sappho.webp",
     "portraitCrop": {
-      "x": 0.3547,
-      "y": -0.0658,
-      "w": 1.7229
-    }
+      "x": 0.5854,
+      "y": 0.0474,
+      "w": 1.592
+    },
+    "portraitBg": "#fcf6ef"
   },
   {
     "id": "dante",
@@ -1175,10 +1189,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dante.webp",
     "portraitCrop": {
-      "x": 0.3995,
-      "y": -0.0561,
-      "w": 1.7944
-    }
+      "x": 0.5675,
+      "y": -0.0141,
+      "w": 1.5657
+    },
+    "portraitBg": "#f7f0e8"
   },
   {
     "id": "cervantes",
@@ -1263,10 +1278,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/cervantes.webp",
     "portraitCrop": {
-      "x": 0.3876,
-      "y": -0.0562,
-      "w": 1.7986
-    }
+      "x": 0.6064,
+      "y": 0.0393,
+      "w": 1.6123
+    },
+    "portraitBg": "#fdf5ea"
   },
   {
     "id": "li-bai",
@@ -1340,10 +1356,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/li-bai.webp",
     "portraitCrop": {
-      "x": 0.4415,
-      "y": -0.0515,
-      "w": 1.7986
-    }
+      "x": 0.6719,
+      "y": 0.081,
+      "w": 1.6582
+    },
+    "portraitBg": "#f6f0e9"
   },
   {
     "id": "basho",
@@ -1428,10 +1445,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/basho.webp",
     "portraitCrop": {
-      "x": 0.4043,
-      "y": -0.0191,
-      "w": 1.8373
-    }
+      "x": 0.6038,
+      "y": 0.1211,
+      "w": 1.6691
+    },
+    "portraitBg": "#f7f3eb"
   },
   {
     "id": "rumi",
@@ -1513,10 +1531,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/rumi.webp",
     "portraitCrop": {
-      "x": 0.3692,
-      "y": -0.0561,
-      "w": 1.7944
-    }
+      "x": 0.5532,
+      "y": 0.0141,
+      "w": 1.5787
+    },
+    "portraitBg": "#fdf7f0"
   },
   {
     "id": "nguyen-du",
@@ -1595,10 +1614,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/nguyen-du.webp",
     "portraitCrop": {
-      "x": 0.3689,
-      "y": -0.0515,
-      "w": 1.7986
-    }
+      "x": 0.521,
+      "y": 0.0001,
+      "w": 1.5754
+    },
+    "portraitBg": "#f7f0e7"
   },
   {
     "id": "cao-xueqin",
@@ -1676,10 +1696,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/cao-xueqin.webp",
     "portraitCrop": {
-      "x": 0.3785,
-      "y": -0.0561,
-      "w": 1.7944
-    }
+      "x": 0.6975,
+      "y": 0.1672,
+      "w": 1.684
+    },
+    "portraitBg": "#f9f4ee"
   },
   {
     "id": "goethe",
@@ -1759,10 +1780,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/goethe.webp",
     "portraitCrop": {
-      "x": 0.3925,
-      "y": -0.0561,
-      "w": 1.7944
-    }
+      "x": 0.5734,
+      "y": 0.0485,
+      "w": 1.6089
+    },
+    "portraitBg": "#fcf6ef"
   },
   {
     "id": "voltaire",
@@ -1842,10 +1864,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/voltaire.webp",
     "portraitCrop": {
-      "x": 0.3837,
-      "y": -0.0583,
-      "w": 1.7493
-    }
+      "x": 0.6063,
+      "y": 0.0856,
+      "w": 1.6545
+    },
+    "portraitBg": "#fdf4e8"
   },
   {
     "id": "moliere",
@@ -1920,10 +1943,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/moliere.webp",
     "portraitCrop": {
-      "x": 0.2889,
-      "y": -0.0815,
-      "w": 1.5656
-    }
+      "x": 0.6254,
+      "y": 0.0685,
+      "w": 1.6227
+    },
+    "portraitBg": "#fcf5eb"
   },
   {
     "id": "mary-shelley",
@@ -1996,10 +2020,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/mary-shelley.webp",
     "portraitCrop": {
-      "x": 0.3923,
-      "y": -0.0515,
-      "w": 1.7986
-    }
+      "x": 0.5967,
+      "y": 0.118,
+      "w": 1.6402
+    },
+    "portraitBg": "#f6efe8"
   },
   {
     "id": "charlotte-bronte",
@@ -2073,10 +2098,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/charlotte-bronte.webp",
     "portraitCrop": {
-      "x": 0.3743,
-      "y": -0.0421,
-      "w": 1.7857
-    }
+      "x": 0.6866,
+      "y": 0.1398,
+      "w": 1.6618
+    },
+    "portraitBg": "#f8f4ee"
   },
   {
     "id": "poe",
@@ -2166,10 +2192,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/poe.webp",
     "portraitCrop": {
-      "x": 0.3442,
-      "y": -0.0655,
-      "w": 1.6973
-    }
+      "x": 0.5718,
+      "y": 0.0324,
+      "w": 1.5754
+    },
+    "portraitBg": "#fcf5e8"
   },
   {
     "id": "dickinson",
@@ -2243,10 +2270,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dickinson.webp",
     "portraitCrop": {
-      "x": 0.3967,
-      "y": -0.0469,
-      "w": 1.8028
-    }
+      "x": 0.6739,
+      "y": 0.1381,
+      "w": 1.6473
+    },
+    "portraitBg": "#f8f2eb"
   },
   {
     "id": "whitman",
@@ -2314,10 +2342,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/whitman.webp",
     "portraitCrop": {
-      "x": 0.2321,
-      "y": -0.0861,
-      "w": 1.5238
-    }
+      "x": 0.4117,
+      "y": 0.0131,
+      "w": 1.3848
+    },
+    "portraitBg": "#fbf4e8"
   },
   {
     "id": "twain",
@@ -2385,10 +2414,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/twain.webp",
     "portraitCrop": {
-      "x": 0.2838,
-      "y": -0.09,
-      "w": 1.58
-    }
+      "x": 0.4849,
+      "y": 0.0088,
+      "w": 1.4667
+    },
+    "portraitBg": "#fdf7f0"
   },
   {
     "id": "andersen",
@@ -2469,10 +2499,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/andersen.webp",
     "portraitCrop": {
-      "x": 0.3767,
-      "y": -0.0506,
-      "w": 1.7765
-    }
+      "x": 0.6301,
+      "y": 0.0494,
+      "w": 1.6227
+    },
+    "portraitBg": "#fbf4e8"
   },
   {
     "id": "carroll",
@@ -2546,10 +2577,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/carroll.webp",
     "portraitCrop": {
-      "x": 0.3335,
-      "y": -0.0629,
-      "w": 1.689
-    }
+      "x": 0.5729,
+      "y": 0.069,
+      "w": 1.6296
+    },
+    "portraitBg": "#fcf5ea"
   },
   {
     "id": "verne",
@@ -2623,10 +2655,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/verne.webp",
     "portraitCrop": {
-      "x": 0.385,
-      "y": -0.0469,
-      "w": 1.8028
-    }
+      "x": 0.6233,
+      "y": 0.1199,
+      "w": 1.6582
+    },
+    "portraitBg": "#fcf5ea"
   },
   {
     "id": "dumas",
@@ -2706,10 +2739,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dumas.webp",
     "portraitCrop": {
-      "x": 0.2613,
-      "y": -0.0953,
-      "w": 1.5306
-    }
+      "x": 0.5564,
+      "y": 0.0352,
+      "w": 1.6227
+    },
+    "portraitBg": "#fdf5ea"
   },
   {
     "id": "chekhov",
@@ -2784,10 +2818,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/chekhov.webp",
     "portraitCrop": {
-      "x": 0.3829,
-      "y": -0.0515,
-      "w": 1.7986
-    }
+      "x": 0.599,
+      "y": 0.0898,
+      "w": 1.6473
+    },
+    "portraitBg": "#fcf5ea"
   },
   {
     "id": "pushkin",
@@ -2874,10 +2909,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/pushkin.webp",
     "portraitCrop": {
-      "x": 0.3744,
-      "y": -0.0598,
-      "w": 1.7673
-    }
+      "x": 0.651,
+      "y": 0.0572,
+      "w": 1.5987
+    },
+    "portraitBg": "#f3ebe3"
   },
   {
     "id": "wilde",
@@ -2963,10 +2999,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/wilde.webp",
     "portraitCrop": {
-      "x": 0.331,
-      "y": -0.0686,
-      "w": 1.6973
-    }
+      "x": 0.6231,
+      "y": 0.069,
+      "w": 1.6296
+    },
+    "portraitBg": "#fbf4e8"
   },
   {
     "id": "kafka",
@@ -3040,10 +3077,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/kafka.webp",
     "portraitCrop": {
-      "x": 0.3618,
-      "y": -0.0562,
-      "w": 1.7986
-    }
+      "x": 0.5992,
+      "y": 0.0834,
+      "w": 1.6296
+    },
+    "portraitBg": "#f9f2e9"
   },
   {
     "id": "woolf",
@@ -3121,10 +3159,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/woolf.webp",
     "portraitCrop": {
-      "x": 0.3712,
-      "y": -0.0515,
-      "w": 1.7986
-    }
+      "x": 0.5878,
+      "y": 0.038,
+      "w": 1.592
+    },
+    "portraitBg": "#f9f0e5"
   },
   {
     "id": "joyce",
@@ -3207,10 +3246,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/joyce.webp",
     "portraitCrop": {
-      "x": 0.3803,
-      "y": -0.0516,
-      "w": 1.8028
-    }
+      "x": 0.5737,
+      "y": 0.0382,
+      "w": 1.5953
+    },
+    "portraitBg": "#fcf4ec"
   },
   {
     "id": "proust",
@@ -3292,10 +3332,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/proust.webp",
     "portraitCrop": {
-      "x": 0.3915,
-      "y": -0.0377,
-      "w": 1.8113
-    }
+      "x": 0.5534,
+      "y": 0.0093,
+      "w": 1.5754
+    },
+    "portraitBg": "#fdf3e6"
   },
   {
     "id": "orwell",
@@ -3372,10 +3413,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/orwell.webp",
     "portraitCrop": {
-      "x": 0.3635,
-      "y": -0.0424,
-      "w": 1.8071
-    }
+      "x": 0.5714,
+      "y": 0.052,
+      "w": 1.592
+    },
+    "portraitBg": "#f5f2ec"
   },
   {
     "id": "christie",
@@ -3452,10 +3494,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/christie.webp",
     "portraitCrop": {
-      "x": 0.3858,
-      "y": -0.0527,
-      "w": 1.7951
-    }
+      "x": 0.5507,
+      "y": 0.0283,
+      "w": 1.5853
+    },
+    "portraitBg": "#fcf5ed"
   },
   {
     "id": "tolkien",
@@ -3541,10 +3584,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/tolkien.webp",
     "portraitCrop": {
-      "x": 0.4028,
-      "y": -0.0332,
-      "w": 1.8199
-    }
+      "x": 0.5842,
+      "y": 0.1158,
+      "w": 1.6654
+    },
+    "portraitBg": "#fbf4ea"
   },
   {
     "id": "tagore",
@@ -3618,10 +3662,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/tagore.webp",
     "portraitCrop": {
-      "x": 0.3462,
-      "y": -0.0681,
-      "w": 1.7058
-    }
+      "x": 0.6379,
+      "y": 0.1252,
+      "w": 1.6618
+    },
+    "portraitBg": "#fcf5ea"
   },
   {
     "id": "borges",
@@ -3699,10 +3744,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/borges.webp",
     "portraitCrop": {
-      "x": 0.3756,
-      "y": -0.0469,
-      "w": 1.8028
-    }
+      "x": 0.6422,
+      "y": 0.0885,
+      "w": 1.6331
+    },
+    "portraitBg": "#fcf7f0"
   },
   {
     "id": "neruda",
@@ -3776,10 +3822,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/neruda.webp",
     "portraitCrop": {
-      "x": 0.3551,
-      "y": -0.0285,
-      "w": 1.8242
-    }
+      "x": 0.631,
+      "y": 0.1443,
+      "w": 1.6991
+    },
+    "portraitBg": "#fdf4e8"
   },
   {
     "id": "achebe",
@@ -3859,10 +3906,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/achebe.webp",
     "portraitCrop": {
-      "x": 0.4014,
-      "y": -0.0469,
-      "w": 1.8028
-    }
+      "x": 0.6561,
+      "y": 0.0585,
+      "w": 1.6157
+    },
+    "portraitBg": "#fef8f1"
   },
   {
     "id": "morrison",
@@ -3954,19 +4002,21 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/morrison.webp",
     "portraitCrop": {
-      "x": 0.3731,
-      "y": -0.0592,
-      "w": 1.689
-    }
+      "x": 0.6272,
+      "y": 0.0138,
+      "w": 1.5722
+    },
+    "portraitBg": "#fdf4ea"
   },
   {
     "id": "rowling",
     "portrait": "assets/writers/rowling.webp",
     "portraitCrop": {
-      "x": 0.3925,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.5734,
+      "y": 0.0674,
+      "w": 1.6089
     },
+    "portraitBg": "#fdf6eb",
     "name": "J.K. Rowling",
     "years": "born 1965",
     "from": "England",
@@ -4049,10 +4099,11 @@ var QUIZ_WRITERS = [
     "id": "king",
     "portrait": "assets/writers/king.webp",
     "portraitCrop": {
-      "x": 0.3946,
-      "y": -0.0515,
-      "w": 1.7986
+      "x": 0.5181,
+      "y": -0.001,
+      "w": 1.5465
     },
+    "portraitBg": "#fcf6ed",
     "name": "Stephen King",
     "years": "born 1947",
     "from": "United States",
@@ -4127,10 +4178,11 @@ var QUIZ_WRITERS = [
     "id": "fitzgerald",
     "portrait": "assets/writers/fitzgerald.webp",
     "portraitCrop": {
-      "x": 0.3779,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5544,
+      "y": 0.0629,
+      "w": 1.6123
     },
+    "portraitBg": "#f4f1e9",
     "name": "F. Scott Fitzgerald",
     "years": "1896–1940",
     "from": "United States",
@@ -4204,10 +4256,11 @@ var QUIZ_WRITERS = [
     "id": "grimm",
     "portrait": "assets/writers/grimm.webp",
     "portraitCrop": {
-      "x": 0.0317,
-      "y": -0.1383,
-      "w": 1.0919
+      "x": 0.2679,
+      "y": 0.1614,
+      "w": 1.2179
     },
+    "portraitBg": "#fcf6ed",
     "name": "Brothers Grimm",
     "years": "Jacob 1785–1863, Wilhelm 1786–1859",
     "from": "Germany",
@@ -4282,10 +4335,11 @@ var QUIZ_WRITERS = [
     "id": "conan-doyle",
     "portrait": "assets/writers/conan-doyle.webp",
     "portraitCrop": {
-      "x": 0.3837,
-      "y": -0.0605,
-      "w": 1.786
+      "x": 0.6815,
+      "y": 0.1612,
+      "w": 1.7144
     },
+    "portraitBg": "#faf5ee",
     "name": "Arthur Conan Doyle",
     "years": "1859–1930",
     "from": "Scotland",
@@ -4357,10 +4411,11 @@ var QUIZ_WRITERS = [
     "id": "harper-lee",
     "portrait": "assets/writers/harper-lee.webp",
     "portraitCrop": {
-      "x": 0.3478,
-      "y": -0.0678,
-      "w": 1.7316
+      "x": 0.5342,
+      "y": 0.0332,
+      "w": 1.5886
     },
+    "portraitBg": "#fbf4e8",
     "name": "Harper Lee",
     "years": "1926–2016",
     "from": "United States",
@@ -4430,10 +4485,11 @@ var QUIZ_WRITERS = [
     "id": "coelho",
     "portrait": "assets/writers/coelho.webp",
     "portraitCrop": {
-      "x": 0.3962,
-      "y": -0.0377,
-      "w": 1.8113
+      "x": 0.6231,
+      "y": 0.0843,
+      "w": 1.6402
     },
+    "portraitBg": "#f5f0e9",
     "name": "Paulo Coelho",
     "years": "born 1947",
     "from": "Brazil",
@@ -4504,10 +4560,11 @@ var QUIZ_WRITERS = [
     "id": "murakami",
     "portrait": "assets/writers/murakami.webp",
     "portraitCrop": {
-      "x": 0.392,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5849,
+      "y": 0.0497,
+      "w": 1.6261
     },
+    "portraitBg": "#f7f3eb",
     "name": "Haruki Murakami",
     "years": "born 1949",
     "from": "Japan",
@@ -4579,10 +4636,11 @@ var QUIZ_WRITERS = [
     "id": "steinbeck",
     "portrait": "assets/writers/steinbeck.webp",
     "portraitCrop": {
-      "x": 0.3628,
-      "y": -0.0605,
-      "w": 1.786
+      "x": 0.58,
+      "y": 0.0834,
+      "w": 1.6296
     },
+    "portraitBg": "#fdf7f2",
     "name": "John Steinbeck",
     "years": "1902–1968",
     "from": "United States",
@@ -4657,10 +4715,11 @@ var QUIZ_WRITERS = [
     "id": "cs-lewis",
     "portrait": "assets/writers/cs-lewis.webp",
     "portraitCrop": {
-      "x": 0.3791,
-      "y": -0.0651,
-      "w": 1.786
+      "x": 0.6793,
+      "y": 0.1252,
+      "w": 1.6618
     },
+    "portraitBg": "#f9f3e9",
     "name": "C.S. Lewis",
     "years": "1898–1963",
     "from": "Northern Ireland",
@@ -4735,10 +4794,11 @@ var QUIZ_WRITERS = [
     "id": "emily-bronte",
     "portrait": "assets/writers/emily-bronte.webp",
     "portraitCrop": {
-      "x": 0.3723,
-      "y": -0.0603,
-      "w": 1.7582
+      "x": 0.63,
+      "y": 0.0913,
+      "w": 1.6123
     },
+    "portraitBg": "#f2ede5",
     "name": "Emily Brontë",
     "years": "1818–1848",
     "from": "England",
@@ -4811,10 +4871,11 @@ var QUIZ_WRITERS = [
     "id": "stoker",
     "portrait": "assets/writers/stoker.webp",
     "portraitCrop": {
-      "x": 0.3949,
-      "y": -0.0514,
-      "w": 1.7944
+      "x": 0.5787,
+      "y": 0.028,
+      "w": 1.5787
     },
+    "portraitBg": "#fdf7ed",
     "name": "Bram Stoker",
     "years": "1847–1912",
     "from": "Ireland",
@@ -4879,10 +4940,11 @@ var QUIZ_WRITERS = [
     "id": "wells",
     "portrait": "assets/writers/wells.webp",
     "portraitCrop": {
-      "x": 0.4014,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5918,
+      "y": 0.1091,
+      "w": 1.6473
     },
+    "portraitBg": "#fcf5ea",
     "name": "H.G. Wells",
     "years": "1866–1946",
     "from": "England",
@@ -4951,10 +5013,11 @@ var QUIZ_WRITERS = [
     "id": "asimov",
     "portrait": "assets/writers/asimov.webp",
     "portraitCrop": {
-      "x": 0.3044,
-      "y": -0.0795,
-      "w": 1.6173
+      "x": 0.6206,
+      "y": 0.0635,
+      "w": 1.6192
     },
+    "portraitBg": "#fdf7f0",
     "name": "Isaac Asimov",
     "years": "c. 1920–1992",
     "from": "United States (born in Russia)",
@@ -5026,10 +5089,11 @@ var QUIZ_WRITERS = [
     "id": "bradbury",
     "portrait": "assets/writers/bradbury.webp",
     "portraitCrop": {
-      "x": 0.3756,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5411,
+      "y": 0.024,
+      "w": 1.592
     },
+    "portraitBg": "#faf5ee",
     "name": "Ray Bradbury",
     "years": "1920–2012",
     "from": "United States",
@@ -5098,10 +5162,11 @@ var QUIZ_WRITERS = [
     "id": "huxley",
     "portrait": "assets/writers/huxley.webp",
     "portraitCrop": {
-      "x": 0.3879,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.4977,
+      "y": -0.0056,
+      "w": 1.5465
     },
+    "portraitBg": "#faf4e8",
     "name": "Aldous Huxley",
     "years": "1894–1963",
     "from": "England",
@@ -5172,10 +5237,11 @@ var QUIZ_WRITERS = [
     "id": "dan-brown",
     "portrait": "assets/writers/dan-brown.webp",
     "portraitCrop": {
-      "x": 0.3692,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.6452,
+      "y": 0.1008,
+      "w": 1.6618
     },
+    "portraitBg": "#fcf6ef",
     "name": "Dan Brown",
     "years": "born 1964",
     "from": "United States",
@@ -5325,10 +5391,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/sophocles.webp",
     "portraitCrop": {
-      "x": 0.3639,
-      "y": -0.0547,
-      "w": 1.7933
-    }
+      "x": 0.523,
+      "y": 0.0235,
+      "w": 1.582
+    },
+    "portraitBg": "#fdf6ed"
   },
   {
     "id": "ibsen",
@@ -5413,10 +5480,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/ibsen.webp",
     "portraitCrop": {
-      "x": 0.3896,
-      "y": -0.0594,
-      "w": 1.7838
-    }
+      "x": 0.5425,
+      "y": -0.0097,
+      "w": 1.5592
+    },
+    "portraitBg": "#f8f2e7"
   },
   {
     "id": "jm-barrie",
@@ -5500,10 +5568,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/jm-barrie.webp",
     "portraitCrop": {
-      "x": 0.3943,
-      "y": -0.05,
-      "w": 1.798
-    }
+      "x": 0.6136,
+      "y": 0.1064,
+      "w": 1.6691
+    },
+    "portraitBg": "#fbf2e9"
   },
   {
     "id": "anne-frank",
@@ -5591,10 +5660,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/anne-frank.webp",
     "portraitCrop": {
-      "x": 0.3826,
-      "y": -0.0547,
-      "w": 1.7933
-    }
+      "x": 0.6279,
+      "y": 0.1172,
+      "w": 1.6331
+    },
+    "portraitBg": "#f7f1ec"
   },
   {
     "id": "angelou",
@@ -5687,10 +5757,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/angelou.webp",
     "portraitCrop": {
-      "x": 0.3826,
-      "y": -0.0452,
-      "w": 1.8028
-    }
+      "x": 0.5558,
+      "y": 0.0092,
+      "w": 1.5722
+    },
+    "portraitBg": "#fdf4eb"
   },
   {
     "id": "saint-exupery",
@@ -5783,10 +5854,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/saint-exupery.webp",
     "portraitCrop": {
-      "x": 0.3686,
-      "y": -0.05,
-      "w": 1.798
-    }
+      "x": 0.558,
+      "y": 0.0994,
+      "w": 1.6473
+    },
+    "portraitBg": "#f5efe9"
   },
   {
     "id": "dr-seuss",
@@ -5868,10 +5940,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dr-seuss.webp",
     "portraitCrop": {
-      "x": 0.3384,
-      "y": -0.0547,
-      "w": 1.7885
-    }
+      "x": 0.5525,
+      "y": 0.0478,
+      "w": 1.5987
+    },
+    "portraitBg": "#f6f0e9"
   },
   {
     "id": "dahl",
@@ -5959,10 +6032,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dahl.webp",
     "portraitCrop": {
-      "x": 0.3594,
-      "y": -0.0594,
-      "w": 1.7838
-    }
+      "x": 0.5149,
+      "y": 0.0087,
+      "w": 1.5624
+    },
+    "portraitBg": "#f5f2ea"
   },
   {
     "id": "o-henry",
@@ -6055,10 +6129,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/o-henry.webp",
     "portraitCrop": {
-      "x": 0.371,
-      "y": -0.0594,
-      "w": 1.7838
-    }
+      "x": 0.5889,
+      "y": 0.1322,
+      "w": 1.6802
+    },
+    "portraitBg": "#f9f2eb"
   },
   {
     "id": "jack-london",
@@ -6149,10 +6224,11 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/jack-london.webp",
     "portraitCrop": {
-      "x": 0.3803,
-      "y": -0.0546,
-      "w": 1.798
-    }
+      "x": 0.5923,
+      "y": 0.0577,
+      "w": 1.6055
+    },
+    "portraitBg": "#faf2e7"
   },
   {
     "id": "harari",
@@ -6234,9 +6310,10 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/harari.webp",
     "portraitCrop": {
-      "x": 0.3803,
-      "y": -0.05,
-      "w": 1.798
-    }
+      "x": 0.5948,
+      "y": 0.0423,
+      "w": 1.5853
+    },
+    "portraitBg": "#f9f6ee"
   }
 ];
