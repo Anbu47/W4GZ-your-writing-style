@@ -875,7 +875,15 @@
   }
   // Direction match (cosine) between your answers and each writer. For forms, kinds and themes a dislike
   // only counts against writers known for that thing, and liking something a writer never did counts half.
+  // If the answers barely lean anywhere (almost all Neutral or Both), there is no direction to compare,
+  // so the closest writers are the most balanced ones: those nearest the middle of the style scales.
+  const isNeutral = u => { const a = u.filter(x => x != null); return !a.length || Math.sqrt(a.reduce((s, x) => s + x * x, 0) / a.length) < 0.12; };
   function fullRank(u) {
+    if (isNeutral(u)) return DATA.writers.map(w => {
+      const v = vec(w); let d = 0, n = 0;
+      DIM.forEach((dm, j) => { if (dm.group !== 'style') return; d += (v[j] - (u[j] || 0)) ** 2; n++; });
+      return { w, sim: 1 - Math.sqrt(d / n) };
+    }).sort((p, q) => q.sim - p.sim);
     return DATA.writers.map(w => {
       const v = vec(w); let a = 0, b = 0, c = 0;
       u.forEach((x, j) => {
@@ -967,7 +975,7 @@
       full: true, top: rows[0], runnerUp: rows[1], ranking: rows,
       questions: PR.items.length + fq.qs.length,
       answers: fq.qs.map((q, k) => fq.ans2[k] ? { q: q.id, a: fq.ans2[k] } : null).filter(Boolean),
-      u: fq.u, sliders: fq.ans.slice(), asked: fq.qs.length
+      u: fq.u, sliders: fq.ans.slice(), asked: fq.qs.length, neutral: isNeutral(fq.u)
     };
     renderResult(mine.top.writer, mine);
     show('result');
@@ -1009,9 +1017,9 @@
       arr.forEach(s => { const li = el('li'), m = s.match(/^([^.]+\.)\s*(.*)$/); if (bold && m) li.append(el('b', null, m[1] + ' '), document.createTextNode(m[2])); else li.textContent = s; ul.appendChild(li); });
       box.append(el('h4', null, t), ul);
     };
-    $('ptitle').textContent = low ? 'Why your match is under 50%' : 'Your writing profile';
+    $('ptitle').textContent = low && !res.neutral ? 'Why your match is under 50%' : 'Your writing profile';
     $('psub').textContent = 'Based on your ' + res.questions + ' answers.';
-    $('psum').textContent = low ? 'Your answers make a mix that none of our ' + W.length + ' writers has in full. ' + w.name + ' is the closest. That is not a bad result: it means your writing voice is your own.' :
+    $('psum').textContent = res.neutral ? 'You chose the middle on almost every slider, so your answers do not lean toward any one kind of writer. Your closest writers are the most balanced ones in our list: like you, they do not lean hard to either side.' : low ? 'Your answers make a mix that none of our ' + W.length + ' writers has in full. ' + w.name + ' is the closest. That is not a bad result: it means your writing voice is your own.' :
       'What your answers say about you as a writer.';
     // What stands out: the strongest answers, as small labels
     const strongAll = DIM.map((d, j) => ({ d, j, x: u[j] })).filter(o => o.x != null && Math.abs(o.x) >= 0.33).sort((a, b) => Math.abs(b.x) - Math.abs(a.x));
