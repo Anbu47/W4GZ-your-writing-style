@@ -45,7 +45,8 @@ for(const writer of drawn){
  const portraits=slot.children.filter(c=>c.tagName==='IMG');
  assert.equal(top.children.filter(c=>c.tagName==='IMG').length,0);
  assert.equal(portraits.length,1,writer.name);
- assert.equal(portraits[0].src,writer.portrait);
+ assert.equal(portraits[0].src,writer.portrait.replace('assets/writers/','assets/writers/cut/'));
+ assert(fs.existsSync(path.join(root,portraits[0].src)),writer.name);
  assert.equal(portraits[0].alt,'Chibi portrait of '+writer.name);
  assert.equal(slot.hidden,false);
  portraits[0].onerror();

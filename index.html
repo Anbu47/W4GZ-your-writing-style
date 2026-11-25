@@ -103,11 +103,12 @@
   /* result */
   .rtop{margin-top:34px;border-radius:16px;padding:30px 26px;color:#F4F1EA;background:var(--night);border-top:6px solid var(--writer-color,#2C4463);position:relative;overflow:hidden}
   .rtop .writer-copy{position:relative;z-index:1;min-width:0;overflow-wrap:anywhere}
-  /* Result hero with a full-figure portrait: one light card in the portrait's own paper colour,
+  /* Result hero with a full-figure portrait: one light card on the brand paper for every writer,
+     using the cut-out copy of the portrait (assets/writers/cut, made by tools/cut-portraits.py),
      words on the left, the writer standing on the right (stacked on phones). Without a portrait the dark card above is used. */
   .rhero{position:relative}
   .writer-portrait[hidden]{display:none}
-  .rhero.has-portrait{margin-top:34px;border-radius:16px;overflow:hidden;background:var(--pbg,#F9EFE7);border:1px solid var(--line);border-top:6px solid var(--writer-color,#2C4463)}
+  .rhero.has-portrait{margin-top:34px;border-radius:16px;overflow:hidden;background:#EDE6DB url(assets/brand/paper.webp) 0 0/640px 640px repeat;border:1px solid var(--line);border-top:6px solid var(--writer-color,#2C4463)}
   .rhero.has-portrait .writer-portrait{position:absolute;top:0;right:0;bottom:0;width:46%}
   .rhero.has-portrait .writer-chibi{position:absolute;right:0;bottom:0;height:100%;width:auto;max-width:none}
   .rhero.has-portrait .rtop{margin:0;min-height:440px;padding:30px 44% 30px 28px;background:transparent;border:0;border-radius:0;color:var(--ink);text-align:left}
@@ -557,7 +558,6 @@
     portraitSlot.hidden = !w.portrait;
     const hero = $('rhero');
     hero.style.setProperty('--writer-color', color);
-    hero.style.setProperty('--pbg', w.portraitBg || '#F9EFE7');
     hero.classList.toggle('has-portrait', Boolean(w.portrait));
     top.classList.toggle('has-portrait', Boolean(w.portrait));
     if (w.portrait) {
@@ -567,7 +567,7 @@
       portrait.height = 512;
       portrait.decoding = 'async';
       portrait.onerror = () => { portrait.remove(); portraitSlot.hidden = true; top.classList.remove('has-portrait'); hero.classList.remove('has-portrait'); };
-      portrait.src = w.portrait;
+      portrait.src = w.portrait.replace('assets/writers/', 'assets/writers/cut/'); // background removed, sits on the card's paper
       portraitSlot.appendChild(portrait);
     }
 
