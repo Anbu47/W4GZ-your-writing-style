@@ -2,10 +2,10 @@ const assert=require('assert'),fs=require('fs'),path=require('path'),vm=require(
 const root=path.join(__dirname,'..'),box=vm.createContext({});
 vm.runInContext(fs.readFileSync(path.join(root,'data/writers.js'),'utf8'),box);
 const writers=box.QUIZ_WRITERS;
-assert.equal(writers.length,68);
+assert.equal(writers.length,77);
 const drawn=writers.filter(w=>w.portrait);
-assert.equal(drawn.length,68);
-assert.equal(new Set(drawn.map(w=>w.portrait)).size,68);
+assert.equal(drawn.length,77);
+assert.equal(new Set(drawn.map(w=>w.portrait)).size,77);
 for(const w of drawn){
  assert.equal(w.portrait,'assets/writers/'+w.id+'.webp');
  const image=fs.readFileSync(path.join(root,w.portrait));

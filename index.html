@@ -172,6 +172,38 @@
   footer{margin-top:44px;text-align:center;font-size:13px;color:var(--muted)}
   footer em{font:italic 400 20px/1.12 var(--serif);color:var(--ink)}
   .opt.none{border-style:dashed;color:var(--muted)}
+  /* complete quiz sliders (brand: flat navy on stone, mono labels, hematite focus only) */
+  .ask{margin:22px 0 -10px}
+  .ask:empty{display:none}
+  .slider{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:22px 20px 18px}
+  .slider .now{text-align:center;font:500 18px/1.3 var(--sans);color:var(--ink-strong);min-height:24px;margin-bottom:16px}
+  .slider .now.mid{color:var(--muted)}
+  .slider input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:36px;background:transparent;margin:0;cursor:pointer;touch-action:pan-y}
+  .slider input[type=range]::-webkit-slider-runnable-track{height:8px;border-radius:99px;background:var(--fill,#E8E3D8)}
+  .slider input[type=range]::-moz-range-track{height:8px;border-radius:99px;background:var(--fill,#E8E3D8)}
+  .slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;margin-top:-11px;border-radius:50%;background:var(--ink);border:4px solid var(--card);box-shadow:0 0 0 1.5px var(--ink)}
+  .slider input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--ink);border:4px solid var(--card);box-shadow:0 0 0 1.5px var(--ink)}
+  .slider .ticks{display:flex;justify-content:space-between;padding:0 14px;margin-top:-4px}
+  .slider .ticks i{width:2px;height:8px;background:var(--line)}
+  .slider .ends{display:grid;grid-template-columns:1fr 90px 1fr;gap:8px;font:500 14px/1.35 var(--sans);color:var(--ink);margin-top:8px}
+  .slider .ends span:nth-child(2){text-align:center;font:400 11px/1.35 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .slider .ends span:last-child{text-align:right}
+  .snext{display:flex;justify-content:space-between;align-items:center;margin-top:22px}
+  .snext.center{justify-content:center}
+  .snext[hidden],#slidebox[hidden],.opts[hidden]{display:none}
+  .linkbtn{background:none;border:0;padding:0;cursor:pointer;font:400 12px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+  .linkbtn:hover{text-decoration:underline}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 0}
+  .pill{border:1.5px solid var(--ink);border-radius:99px;padding:5px 13px;font-size:15px;color:var(--ink);background:var(--card)}
+  .readout:empty{display:none}
+  .readout{margin:0 0 18px}
+  .readout h4{font:400 11px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
+  .readout p{margin:0 0 6px;font-size:16px}
+  .readout ul{margin:0;padding-left:18px;font-size:16px}
+  .readout li{margin:3px 0}
+  .readout li b{font-weight:600}
+  #runwhy{margin-top:4px;font-size:15px}
+  #runwhy:empty{display:none}
   .opt.none.picked{color:var(--ink)}
 </style>
 </head>
@@ -199,8 +231,31 @@
   <section class="screen" id="quiz">
     <div class="progress"><i id="bar"></i></div>
     <div class="qcount"><span id="qnum"></span><button id="back">← Back</button></div>
+    <div class="label ask" id="ask"></div>
     <h2 class="question" id="qtext"></h2>
     <div class="opts" id="opts"></div>
+    <!-- complete quiz, part 1: one slider per statement -->
+    <div id="slidebox" hidden>
+      <div class="slider">
+        <div class="now mid" id="now">Neutral</div>
+        <input type="range" id="slider" min="-3" max="3" step="1" value="0" aria-label="Your answer">
+        <div class="ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="ends"><span id="endl"></span><span id="endm"></span><span id="endr"></span></div>
+      </div>
+      <div class="snext"><button class="linkbtn" id="skip">Skip</button><button class="btn" id="go">Next →</button></div>
+    </div>
+    <!-- complete quiz, part 2 -->
+    <div class="snext center" id="nonebox" hidden><button class="linkbtn" id="none">None of these →</button></div>
+  </section>
+
+  <!-- COMPLETE QUIZ: between part 1 and part 2 -->
+  <section class="screen" id="mid">
+    <div class="hero" style="margin-top:56px">
+      <div class="label">Part 2 of 2</div>
+      <h1 style="font-size:clamp(36px,6vw,56px);margin-top:12px">Down to <em id="ncand">6</em> writers</h1>
+      <p class="lead">Your answers so far point to a small group of writers. Now <span id="midq">10</span> quick questions to choose between them. Pick the answer closest to you, or "None of these".</p>
+      <div class="actions"><button class="btn" id="cont">Continue</button><button class="btn ghost" id="mback">← Back</button></div>
+    </div>
   </section>
 
   <!-- RESULT -->
@@ -220,15 +275,16 @@
       <div class="card"><h3>Watch out for</h3><p id="rwatch"></p></div>
     </div>
     <div class="card" id="mixcard"><h3>Your closest writers</h3><div class="bars" id="mix"></div></div>
-    <div class="card full-only" id="profilecard"><h3>Your writing profile</h3>
-      <p class="sub">Based on your 100 answers.</p>
+    <div class="card full-only" id="profilecard"><h3 id="ptitle">Your writing profile</h3>
+      <p class="sub" id="psub">Based on your 100 answers.</p>
       <p class="psum" id="psum"></p>
+      <div class="readout" id="pread"></div>
       <div class="scales" id="pscales"></div></div>
     <div class="full-only" id="pdetails"></div>
     <div class="card full-only" id="whycard"><h3>Why you got this writer</h3><p class="sub">Some of your answers that match <span id="whyname"></span>:</p><ul class="why" id="rwhy"></ul></div>
     <div class="card full-only" id="likecard"><h3>Writers like and unlike you</h3>
       <p class="sub">Also close to you</p><div class="nearby" id="rlike"></div>
-      <p class="sub">Least like you</p><div class="nearby" id="runlike"></div></div>
+      <p class="sub">Least like you</p><div class="nearby" id="runlike"></div><p id="runwhy"></p></div>
     <div class="actions">
       <button class="btn" id="copy">Copy my result</button>
       <button class="btn ghost" id="again">Retake the quiz</button>
@@ -254,6 +310,7 @@
 <script src="data/questions.js"></script>
 <script src="data/writers.js"></script>
 <script src="data/traits.js"></script>
+<script src="data/profile.js"></script>
 <!-- The algorithm -->
 <script src="engine.js"></script>
 <!-- The page -->
@@ -303,8 +360,11 @@
   const minutes = m => Math.max(2, Math.floor(count(m) / 2)); // about 30 seconds per question
   $('lead').textContent = 'Choose the writing you would like to create and explore literary affinities with ' + model.W + ' writers. These are connections with their work, not a personality assessment.';
   $('startShort').textContent = 'Short quiz · ' + count(SHORT) + ' questions';
-  $('startComplete').textContent = 'Complete quiz · 100 questions';
-  $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Complete: about ' + minutes(COMPLETE) + ' minutes.';
+  const FULLN = typeof QUIZ_PROFILE !== 'undefined' ? QUIZ_PROFILE.items.length + 10 : 100;
+  $('startComplete').textContent = 'Complete quiz · ' + FULLN + ' questions';
+  // Complete quiz: about 10 seconds per slider and 30 per question.
+  $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Complete: about ' +
+    (FULLN === 100 ? minutes(COMPLETE) : Math.round((FULLN - 10) / 6 + 5)) + ' minutes.';
   $('alltitle').textContent = 'All ' + model.W + ' writers';
 
   /* ---------- quiz ---------- */
@@ -314,7 +374,7 @@
   let mine = null;       // my result, once the quiz is finished
   let busy = false;
 
-  function start(which) { $('rback').hidden = true; model = which; history = []; picked = {}; order = {}; mine = null; busy = false; show('quiz'); next(); }
+  function start(which) { $('rback').hidden = true; fq = null; model = which; history = []; picked = {}; order = {}; mine = null; busy = false; show('quiz'); next(); }
 
   // Ask the engine what happens next: another question, or the result.
   function next() {
@@ -327,6 +387,7 @@
       return;
     }
     const q = s.question;
+    quizMode('choice');
     $('bar').style.width = (history.length / count(model) * 100) + '%';
     $('qnum').textContent = 'Question ' + s.number + (S.linear ? ' of ' + count(model) : '');
     $('back').disabled = false; // on question 1, Back returns to the front page
@@ -517,7 +578,10 @@
     $('whycard').style.display = 'none';
     $('profilecard').style.display = 'none';
     $('pdetails').innerHTML = '';
-    if (full && res && typeof QUIZ_TRAITS !== 'undefined') renderProfile(res, color);
+    $('pread').innerHTML = '';
+    $('runwhy').textContent = '';
+    if (full && res && res.full && PR) renderFullProfile(res, w);
+    else if (full && res && typeof QUIZ_TRAITS !== 'undefined') renderProfile(res, color);
     $('likecard').style.display = 'none';
     if (full && res) {
       // Your answers that match this writer, rarest matches first.
@@ -551,6 +615,7 @@
       res.ranking.slice(3, 6).forEach(r => $('rlike').appendChild(chip(r)));
       const last = res.ranking[res.ranking.length - 1];
       if (last && res.ranking.length > 6) $('runlike').appendChild(chip(last));
+      if (last && res.full && PR) $('runwhy').textContent = leastLikeText(res);
       $('likecard').style.display = res.ranking.length > 3 ? '' : 'none';
     }
 
@@ -581,7 +646,7 @@
 
   /* ---------- floating writer bubbles ---------- */
   // A calm field of large portrait bubbles around the title. Only some writers are shown at once;
-  // every few seconds one fades out and another writer fades in somewhere free, so all 68 appear over time.
+  // every few seconds one fades out and another writer fades in somewhere free, so every writer appears over time.
   (function bubbles() {
     if (typeof document.querySelector !== 'function' || typeof window.matchMedia !== 'function' ||
         typeof requestAnimationFrame !== 'function' || typeof MutationObserver !== 'function' || !$('bubbles')) return;
@@ -744,10 +809,348 @@
     sync();
   })();
 
+  /* ---------- complete quiz ----------
+     Part 1: 58 sliders (data/profile.js). "like" sliders ask how much you would enjoy a form, kind of
+     story or theme; "pair" sliders place you between the two sides of a style trait. Each answer is -1..1.
+     Part 2: 10 questions from questions.js, picked to split the 6 writers closest after part 1;
+     each answer votes for the writers mapped to it (as in the short quiz). */
+  const PR = typeof QUIZ_PROFILE !== 'undefined' ? QUIZ_PROFILE : null;
+  const K = 6, NQ = 10, LAM = 0.08;
+  const DIM = PR ? PR.dims : [];
+  const DIX = {}; DIM.forEach((d, j) => { DIX[d.id] = j; });
+  const vec = w => (PR && PR.vectors[w.id]) || DIM.map(() => 0);
+  const LIKEW = ['Not for me at all', 'Not for me', 'Probably not', 'Neutral', 'Maybe', 'I would like it', 'I would love it'];
+  const PAIRW = ['Very much: ', 'Mostly: ', 'A little more: ', 'Both equally', 'A little more: ', 'Mostly: ', 'Very much: '];
+  let fq = null; // the complete quiz in progress: { ans, i, phase, R1, u, cands, qs, ans2, j, order }
+
+  function sliderWord(v, it) {
+    if (it.type === 'like') return LIKEW[v + 3];
+    return v === 0 ? PAIRW[3] : PAIRW[v + 3] + (v < 0 ? it.left : it.right);
+  }
+  function paintSlider() {
+    const sl = $('slider'), v = +sl.value, it = PR.items[fq.i], pc = (v + 3) / 6 * 100;
+    $('now').textContent = sliderWord(v, it);
+    $('now').classList.toggle('mid', v === 0);
+    const a = Math.min(pc, 50), b = Math.max(pc, 50);
+    sl.style.setProperty('--fill', 'linear-gradient(to right,#E8E3D8 ' + a + '%,#2C4463 ' + a + '%,#2C4463 ' + b + '%,#E8E3D8 ' + b + '%)');
+  }
+  function quizMode(kind) { // 'choice' (short quiz and part 2) or 'slider' (part 1)
+    $('slidebox').hidden = kind !== 'slider';
+    $('opts').hidden = kind === 'slider';
+    $('nonebox').hidden = !(kind === 'choice' && fq);
+    if (!fq) $('ask').textContent = '';
+  }
+  const fullTotal = () => PR.items.length + NQ;
+
+  function startFull() {
+    $('rback').hidden = true; model = COMPLETE; mine = null; busy = false;
+    fq = { ans: [], i: 0, phase: 1, ans2: [], j: 0, order: {} };
+    show('quiz'); renderSlider();
+  }
+  function renderSlider() {
+    fq.phase = 1; quizMode('slider');
+    const it = PR.items[fq.i];
+    $('qnum').textContent = 'Part 1 · ' + (fq.i + 1) + ' of ' + PR.items.length;
+    $('bar').style.width = (fq.i / fullTotal() * 100) + '%';
+    $('back').disabled = false;
+    $('qtext').textContent = it.text;
+    if (it.type === 'like') {
+      $('ask').textContent = 'How much would you enjoy this?';
+      $('endl').textContent = 'Not for me'; $('endm').textContent = 'Neutral'; $('endr').textContent = 'I would love it';
+    } else {
+      $('ask').textContent = 'Which is more like you?';
+      $('endl').textContent = it.left; $('endm').textContent = 'Both'; $('endr').textContent = it.right;
+    }
+    $('slider').value = fq.ans[fq.i] == null ? 0 : Math.round(fq.ans[fq.i] * 3);
+    paintSlider();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function nextSlider() { fq.i++; if (fq.i >= PR.items.length) toPart2(); else renderSlider(); }
+
+  // Average answer per dimension (null if every slider for it was skipped).
+  function fullScores(ans) {
+    const s = DIM.map(() => [0, 0]);
+    PR.items.forEach((it, k) => { if (ans[k] == null) return; const j = DIX[it.d]; s[j][0] += ans[k]; s[j][1]++; });
+    return s.map(([a, n]) => n ? a / n : null);
+  }
+  // Direction match (cosine) between your answers and each writer. For forms, kinds and themes a dislike
+  // only counts against writers known for that thing, and liking something a writer never did counts half.
+  function fullRank(u) {
+    return DATA.writers.map(w => {
+      const v = vec(w); let a = 0, b = 0, c = 0;
+      u.forEach((x, j) => {
+        if (x == null) return;
+        let y = v[j];
+        if (DIM[j].group !== 'style') { if (x < 0 && y < 0) return; if (x > 0 && y < 0) y *= 0.5; }
+        a += x * y; b += x * x; c += y * y;
+      });
+      return { w, sim: b && c ? a / Math.sqrt(b * c) : 0 };
+    }).sort((p, q) => q.sim - p.sim);
+  }
+  // Part 2: the questions whose answers best split the closest writers.
+  function selectQs(cands) {
+    const cov = cands.map(() => 0), used = {}, out = [];
+    for (let s = 0; s < NQ; s++) {
+      let best = null, bs = -1;
+      DATA.questions.forEach(q => {
+        if (used[q.id]) return;
+        const ks = cands.map(w => ((w.fit || {})[q.id] || [])[0] || null);
+        const have = ks.map((k, x) => k ? x : -1).filter(x => x >= 0);
+        if (!have.length) return;
+        const distinct = new Set(have.map(x => ks[x])).size;
+        const sc = have.reduce((t, x) => t + 1 / (1 + cov[x]), 0) + 0.6 * (distinct - 1);
+        if (sc > bs) { bs = sc; best = q; }
+      });
+      if (!best) break;
+      used[best.id] = true; out.push(best);
+      cands.forEach((w, x) => { if ((w.fit || {})[best.id]) cov[x]++; });
+    }
+    return out;
+  }
+  function toPart2() {
+    fq.u = fullScores(fq.ans);
+    fq.R1 = fullRank(fq.u);
+    fq.cands = fq.R1.slice(0, K).map(r => r.w);
+    fq.qs = selectQs(fq.cands);
+    fq.ans2 = []; fq.j = 0;
+    $('ncand').textContent = fq.cands.length;
+    $('midq').textContent = fq.qs.length;
+    show('mid');
+  }
+  function renderPart2() {
+    fq.phase = 2; quizMode('choice');
+    const q = fq.qs[fq.j];
+    $('qnum').textContent = 'Part 2 · ' + (fq.j + 1) + ' of ' + fq.qs.length;
+    $('bar').style.width = ((PR.items.length + fq.j) / fullTotal() * 100) + '%';
+    $('ask').textContent = 'Pick the closest';
+    $('qtext').textContent = q.text;
+    if (!fq.order[q.id]) fq.order[q.id] = shuffle(q.answers.filter(a => !a.none));
+    $('opts').innerHTML = '';
+    fq.order[q.id].forEach((a, i) => {
+      const b = el('button', 'opt' + (fq.ans2[fq.j] === a.key ? ' picked' : ''));
+      b.append(el('span', 'k', 'ABCDEFGHIJKLMNOP'[i] || '•'), el('span', null, a.text));
+      b.onclick = () => {
+        if (busy) return; busy = true;
+        fq.ans2[fq.j] = a.key;
+        document.querySelectorAll('.opt').forEach(o => o.classList.remove('picked'));
+        b.classList.add('picked');
+        setTimeout(() => { busy = false; nextPart2(); }, 220);
+      };
+      $('opts').appendChild(b);
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function nextPart2() { fq.j++; if (fq.j >= fq.qs.length) finishFull(); else renderPart2(); }
+
+  function finishFull() {
+    $('bar').style.width = '100%';
+    const fit = w => w.fit || {};
+    // Part-1 match for everyone, plus part-2 votes for the closest writers.
+    const rows = fq.R1.map(r => {
+      const isCand = fq.cands.indexOf(r.w) >= 0;
+      let s = r.sim;
+      if (isCand) fq.qs.forEach((q, k) => {
+        const f = fit(r.w)[q.id], a = fq.ans2[k];
+        if (!f || !a) return;
+        s += f.includes(a) ? LAM : -LAM * 0.3;
+      });
+      return { writer: r.w, id: r.w.id, sim: r.sim, fin: isCand ? s : r.sim - 1, cand: isCand, tiedWith: [], opportunities: 100 };
+    }).sort((a, b) => b.fin - a.fin);
+    // % = part-1 closeness plus the part-2 bonus; if the winner passes 100, everyone is scaled down together.
+    const SC = Math.max(1, rows[0].fin);
+    let floor = 100;
+    rows.forEach(r => {
+      if (r.cand) { r.agree = Math.max(0, Math.round(100 * r.fin / SC)); floor = Math.min(floor, r.agree); }
+      else r.agree = Math.min(floor, Math.max(0, Math.round(100 * r.sim / SC)));
+    });
+    mine = {
+      full: true, top: rows[0], runnerUp: rows[1], ranking: rows,
+      questions: PR.items.length + fq.qs.length,
+      answers: fq.qs.map((q, k) => fq.ans2[k] ? { q: q.id, a: fq.ans2[k] } : null).filter(Boolean),
+      u: fq.u, sliders: fq.ans.slice(), asked: fq.qs.length
+    };
+    renderResult(mine.top.writer, mine);
+    show('result');
+  }
+
+  // The written profile after the complete quiz.
+  const NICE = { poetry: 'poetry', drama: 'plays', novel: 'novels', short: 'short stories', nonfiction: 'non-fiction', speculative: 'fantasy and sci-fi', suspense: 'mystery, crime and horror', young: 'stories for young readers', love: 'love and longing', nature: 'nature, places and journeys', faith: 'faith and the meaning of life' };
+  const NOPE = { poetry: 'poetry', drama: 'plays', novel: 'novels', short: 'short stories', nonfiction: 'non-fiction', speculative: 'fantasy or sci-fi', suspense: 'mystery or horror', young: 'stories for young readers', love: 'love stories', nature: 'nature writing', faith: 'faith and meaning' };
+  const SH = { S: ['small moments', 'big panoramas'], L: ['inner thoughts', 'outward action'], W: ['real life', 'invented worlds'], D: ['starting from a feeling', 'starting from an idea'], T: ['a serious tone', 'humour'], V: ['plain words', 'musical words'], C: ['a caring view', 'a challenging voice'], P: ['the here and now', 'the past and memory'], R: ['free form', 'set patterns'], I: ['your own "I" voice', 'invented characters'], A: ['mood over plot', 'strong plots'], E: ['dark endings', 'hopeful endings'] };
+  const MIDW = { S: 'big or small stories', L: 'inner thoughts or outward action', W: 'real or invented worlds', D: 'feeling or idea', T: 'serious or funny', V: 'plain or musical words', C: 'caring or challenging', P: 'now or the past', R: 'free or set form', I: 'your own voice or characters', A: 'mood or plot', E: 'dark or hopeful endings' };
+  const POLE = { S: ['You like to zoom in on one small moment and make it count.', 'You think big: whole families, cities or eras.'],
+    L: ['You care most about what happens inside people\'s heads.', 'You show people through what they say and do.'],
+    W: ['You stay close to real, everyday life.', 'You are drawn to the strange, the magical and the impossible.'],
+    D: ['You start from a feeling and want readers to feel it too.', 'You start from an idea or a question and use the story to explore it.'],
+    T: ['Your tone is serious, and you are not afraid of heavy subjects.', 'Humour comes naturally to you.'],
+    V: ['You prefer plain, clear words.', 'You care how your sentences sound, almost like music.'],
+    C: ['You write to understand people and bring them closer.', 'You write to question and challenge.'],
+    P: ['You write about the world as it is now.', 'The past and memory pull at you.'],
+    R: ['You like to write freely, without fixed rules.', 'You like a clear shape: rhyme, rhythm or a planned structure.'],
+    I: ['You want to write in your own voice, as "I".', 'You would rather speak through invented characters.'],
+    A: ['Mood and feeling matter more to you than plot.', 'You want readers turning pages to find out what happens next.'],
+    E: ['You are not afraid of sad or open endings.', 'You want to leave readers with hope.'] };
+  const DO = { S: ['focus on small moments', 'paint big panoramas'], L: ['look inside people\'s heads', 'show people through action'], W: ['stay close to real life', 'invent other worlds'], D: ['start from a feeling', 'start from an idea'], T: ['write in a serious tone', 'use humour'], V: ['use plain words', 'use musical words'], C: ['write with a caring view', 'challenge the world'], P: ['write about the here and now', 'write about the past and memory'], R: ['write freely', 'use set patterns like rhyme'], I: ['write in their own voice', 'write through characters'], A: ['care more about mood', 'build strong plots'], E: ['write dark endings', 'write hopeful endings'],
+    poetry: 'write poetry', drama: 'write plays', novel: 'write novels', short: 'write short stories', nonfiction: 'write non-fiction', speculative: 'write fantasy or sci-fi', suspense: 'write mystery or horror', young: 'write for young readers', love: 'write about love', nature: 'write about nature and journeys', faith: 'write about faith and meaning' };
+  const SHORTNAME = { dante: 'Dante', grimm: 'the Grimms', murasaki: 'Murasaki', 'cao-xueqin': 'Cao Xueqin', 'lu-xun': 'Lu Xun', 'li-bai': 'Li Bai', 'du-fu': 'Du Fu', 'nguyen-du': 'Nguyễn Du', 'dr-seuss': 'Dr. Seuss', 'o-henry': 'O. Henry', basho: 'Bashō' };
+  const shortName = w => SHORTNAME[w.id] || w.name.split(' ').slice(-1)[0];
+  const list = a => a.length < 2 ? a.join('') : a.length === 2 ? (a.some(s => / and /.test(s)) ? a[0] + ', as well as ' + a[1] : a.join(' and ')) : a.slice(0, -1).join(', ') + ', and ' + a[a.length - 1];
+  const zoneU = x => x <= -0.33 ? 'left' : x >= 0.33 ? 'right' : 'mid';
+  const zoneText = (id, z) => (TR && TR.traits[id] ? TR.traits[id].zones[z] : PR.zones[id][z]);
+
+  function renderFullProfile(res, w) {
+    const u = res.u, low = res.top.agree < 50, W = DATA.writers;
+    const has = (wr, x, j) => DIM[j].group === 'style' ? vec(wr)[j] * x > 0 && Math.abs(vec(wr)[j]) >= 0.3 : vec(wr)[j] > 0;
+    const box = $('pread'); box.innerHTML = '';
+    const para = (t, s) => { if (s) box.append(el('h4', null, t), el('p', null, s)); };
+    const bullets = (t, arr, bold) => {
+      if (!arr.length) return;
+      const ul = el('ul');
+      arr.forEach(s => { const li = el('li'), m = s.match(/^([^.]+\.)\s*(.*)$/); if (bold && m) li.append(el('b', null, m[1] + ' '), document.createTextNode(m[2])); else li.textContent = s; ul.appendChild(li); });
+      box.append(el('h4', null, t), ul);
+    };
+    $('ptitle').textContent = low ? 'Why your match is under 50%' : 'Your writing profile';
+    $('psub').textContent = 'Based on your ' + res.questions + ' answers.';
+    $('psum').textContent = low ? 'Your answers make a mix that none of our ' + W.length + ' writers has in full. ' + w.name + ' is the closest. That is not a bad result: it means your writing voice is your own.' :
+      'What your answers say about you as a writer.';
+    // What stands out: the strongest answers, as small labels
+    const strongAll = DIM.map((d, j) => ({ d, j, x: u[j] })).filter(o => o.x != null && Math.abs(o.x) >= 0.33).sort((a, b) => Math.abs(b.x) - Math.abs(a.x));
+    const pillbox = el('div', 'pills');
+    strongAll.slice(0, 6).forEach(o => pillbox.appendChild(el('span', 'pill', o.d.group === 'style' ? (o.x < 0 ? o.d.left : o.d.right) : (o.x > 0 ? o.d.name : 'No ' + NOPE[o.d.id]))));
+    if (strongAll.length) box.append(el('h4', null, 'What stands out about you'), pillbox);
+    // Rare mix: two strong traits that are each common in our list but seldom found together
+    const st = DIM.map((d, j) => [u[j], d, j]).filter(([x, d]) => d.group === 'style' && x != null);
+    const strong = st.filter(([x]) => Math.abs(x) >= 0.33).sort((a, b) => Math.abs(b[0]) - Math.abs(a[0]));
+    const likes = DIM.map((d, j) => [u[j], d, j]).filter(([x, d]) => d.group !== 'style' && x != null);
+    const pool = strong.slice(0, 6).concat(likes.filter(([x]) => x >= 0.5));
+    const doing = ([x, d]) => d.group === 'style' ? DO[d.id][x < 0 ? 0 : 1] : DO[d.id];
+    let rare = null;
+    for (let a = 0; a < pool.length; a++) for (let b = a + 1; b < pool.length; b++) {
+      const [xa, , ja] = pool[a], [xb, , jb] = pool[b];
+      const na = W.filter(wr => has(wr, xa, ja)).length, nb = W.filter(wr => has(wr, xb, jb)).length;
+      const n = W.filter(wr => has(wr, xa, ja) && has(wr, xb, jb)).length, exp = na * nb / W.length;
+      if (na < 12 || nb < 12 || exp < 4 || n > exp * 0.35) continue;
+      if (!rare || n / exp < rare.r) rare = { r: n / exp, n, na, nb, a: pool[a], b: pool[b] };
+    }
+    if (rare) para('Your rare mix', 'In our list of ' + W.length + ' writers, ' + rare.na + ' ' + doing(rare.a) + ' and ' + rare.nb + ' ' + doing(rare.b) + ', but ' +
+      (rare.n === 0 ? 'none of them do' : 'only ' + rare.n + (rare.n === 1 ? ' does' : ' do')) + ' both. You do. ' +
+      (low ? 'That is part of why your top match is not higher, and part of what makes your voice your own.' : 'That is part of what makes your voice your own.'));
+    // What you would write
+    const lf = likes.filter(([x, d]) => x >= 0.33 && d.group === 'form').sort((a, b) => b[0] - a[0]).map(([, d]) => NICE[d.id]);
+    const lt = likes.filter(([x, d]) => x >= 0.33 && d.group !== 'form').sort((a, b) => b[0] - a[0]).map(([, d]) => NICE[d.id]);
+    const no = likes.filter(([x]) => x <= -0.5).sort((a, b) => a[0] - b[0]).map(([, d]) => NICE[d.id]).slice(0, 3);
+    let what = lf.length ? 'You lean toward ' + list(lf) + '.' : 'You did not pick one favourite form, so you may enjoy trying several.';
+    if (lt.length) what += ' You are drawn to ' + list(lt) + '.';
+    if (no.length) what += ' ' + list(no).replace(/^./, ch => ch.toUpperCase()) + (no.length > 1 ? ' are' : ' is') + ' less your thing.';
+    para('What you would write', what);
+    // How you write
+    const mid = st.filter(([x]) => Math.abs(x) < 0.2).map(([, d]) => MIDW[d.id]);
+    let how = strong.slice(0, 5).map(([x, d]) => POLE[d.id][x < 0 ? 0 : 1]).join(' ');
+    if (mid.length) how += (how ? ' ' : '') + 'You sit in the middle on ' + list(mid.slice(0, 3)) + ', so you can go either way.';
+    para('How you write', how);
+    // Strengths, watch-outs and next steps from the strongest traits
+    const byStrength = st.slice().sort((a, b) => Math.abs(b[0]) - Math.abs(a[0])).map(([x, d]) => Object.assign({ x, d }, zoneText(d.id, zoneU(x))));
+    bullets('Your strengths', byStrength.slice(0, 3).map(z => z.strength), true);
+    bullets('Watch out for', byStrength.slice(0, 2).map(z => z.watch));
+    bullets('Try this next', byStrength.slice(0, 2).map(z => z.try));
+    // Your writer family: what your top three share with you
+    const t3 = res.ranking.slice(0, 3), close = t3.length === 3 && t3[0].agree - t3[2].agree <= 8, fam = [];
+    DIM.forEach((d, j) => {
+      const vs = t3.map(r => vec(r.writer)[j]), x = u[j];
+      if (x == null) return;
+      const isStyle = d.group === 'style', lim = isStyle ? 0.3 : 0.99;
+      if (vs.every(v => v >= lim) && x > 0.15) fam.push([Math.min(...vs) * x, isStyle ? d.right : d.name, 1]);
+      else if (vs.every(v => v <= -lim) && x < -0.15) fam.push([-Math.max(...vs) * -x, isStyle ? d.left : 'No ' + NOPE[d.id], isStyle ? 1 : 0]);
+    });
+    fam.sort((a, b) => b[2] - a[2] || b[0] - a[0]);
+    const famPills = fam.filter((f, k) => f[2] || fam.slice(0, k).filter(g => !g[2]).length < 2).slice(0, 6);
+    if (famPills.length) {
+      box.append(el('h4', null, close ? 'Your writer family' : 'What your top writers share'));
+      box.appendChild(el('p', null, close ? list(t3.map(r => r.writer.name)) + ' are very close for you, because they write in similar ways. Think of them as one family. What they share, and you share too:' : 'What your top three have in common with you:'));
+      const fc = el('div', 'pills'); famPills.forEach(f => fc.appendChild(el('span', 'pill', f[1]))); box.appendChild(fc);
+    }
+    // How you answered, with the answer check (each trait is asked 2-3 times)
+    const all = res.sliders.filter(a => a != null), conv = all.length ? all.reduce((s, a) => s + Math.abs(a), 0) / all.length : 0;
+    const skipped = res.sliders.length - all.length;
+    const per = DIM.map(() => []); PR.items.forEach((it, k) => { if (res.sliders[k] != null) per[DIX[it.d]].push(res.sliders[k]); });
+    const mixed = DIM.filter((d, j) => per[j].length >= 2 && Math.max(...per[j]) - Math.min(...per[j]) >= 4 / 3);
+    let style = conv >= 0.6 ? 'You answered with conviction: most of your answers sat near the ends of the sliders, so you know what you like.' :
+      conv >= 0.35 ? 'You know your main leanings, but you kept some doors open, choosing the middle or a slight lean on many questions.' :
+      'You chose the middle or a slight lean on most questions. You may still be discovering what kind of writer you are, which is a fine place to be.';
+    if (skipped) style += ' You skipped ' + skipped + ' of ' + res.sliders.length + '.';
+    if (mixed.length) style += ' Some things were asked more than once in different words, and your answers pointed different ways on ' + list(mixed.map(d => d.name.toLowerCase()).slice(0, 3)) + '. That can mean you sit in between, or that a question was unclear.';
+    para('How you answered', style);
+    // Writers to read: for each strong trait, the clearest example among the 15 writers closest to you
+    const read = [], near = res.ranking.slice(0, 15).map(r => r.writer).filter(x => x !== w);
+    pool.slice(0, 4).forEach(([x, d, j]) => {
+      const best = near.filter(wr => has(wr, x, j) && (d.group !== 'style' || Math.abs(vec(wr)[j]) >= 0.5) && !read.some(q => q[1] === wr.name))
+        .sort((p, q) => Math.abs(vec(q)[j]) - Math.abs(vec(p)[j]))[0];
+      if (best) read.push([d.group === 'style' ? SH[d.id][x < 0 ? 0 : 1] : NICE[d.id], best.name]);
+    });
+    bullets('Writers to read', read.map(([t, n]) => 'For ' + t + ': ' + n + '.'));
+    // The twelve style scales
+    $('pscales').innerHTML = '';
+    DIM.forEach((d, j) => {
+      if (d.group !== 'style') return;
+      const x = u[j], zone = x == null ? 'mid' : zoneU(x);
+      const row = el('div', 'scale'), lab = el('div', 'lab');
+      lab.append(el(zone === 'left' ? 'b' : 'span', null, d.left), el(zone === 'right' ? 'b' : 'span', null, d.right));
+      const line = el('div', 'line'); line.appendChild(el('div', 'mid'));
+      if (x != null) { const dot = el('div', 'dot'); dot.style.left = Math.max(4, Math.min(96, 50 + x * 46)) + '%'; line.appendChild(dot); }
+      row.append(lab, line, el('div', 'zone', x == null ? 'Skipped' : zoneText(d.id, zone).title));
+      $('pscales').appendChild(row);
+    });
+    $('profilecard').style.display = '';
+    // Long analysis: one section per trait, strongest first; the first three start open
+    byStrength.forEach((z, i) => {
+      const j = DIX[z.d.id], zone = zoneU(z.x);
+      const det = el('details', 'trait');
+      if (i < 3) det.open = true;
+      const sm = el('summary');
+      sm.append(el('small', null, z.d.name + (zone === 'mid' ? ' · balanced' : ' · ' + (zone === 'left' ? z.d.left : z.d.right))), document.createTextNode(z.title));
+      det.append(sm, el('p', null, z.text));
+      [['Your strength', z.strength], ['Watch out for', z.watch], ['Try this', z.try]].forEach(([h, txt]) => {
+        const p = el('p', 'tip'); p.append(el('b', null, h), document.createTextNode(txt)); det.appendChild(p);
+      });
+      const peers = W.slice().sort((a, b) => zone === 'mid' ? Math.abs(vec(a)[j]) - Math.abs(vec(b)[j]) : (zone === 'left' ? vec(a)[j] - vec(b)[j] : vec(b)[j] - vec(a)[j])).slice(0, 3);
+      const pp = el('p', 'tip');
+      pp.append(el('b', null, zone === 'mid' ? 'Writers in the middle too' : 'Writers on your side'), document.createTextNode(peers.map(x => x.name).join(', ')));
+      det.appendChild(pp);
+      $('pdetails').appendChild(det);
+    });
+  }
+  // The writer least like you, and where you are opposites.
+  function leastLikeText(res) {
+    const ow = res.ranking[res.ranking.length - 1].writer, u = res.u, v = vec(ow), nm = shortName(ow), ds = [];
+    const theirs = (id, k) => id === 'I' && k === 0 ? 'a personal "I" voice' : SH[id][k];
+    DIM.forEach((d, j) => {
+      const x = u[j], y = v[j];
+      if (x == null) return;
+      if (d.group === 'style') { if (Math.abs(x) >= 0.33 && Math.abs(y) >= 0.3 && x * y < 0) ds.push([Math.abs(x) + Math.abs(y), 'You lean toward ' + SH[d.id][x < 0 ? 0 : 1] + ', while ' + nm + ' goes for ' + theirs(d.id, y < 0 ? 0 : 1) + '.']); }
+      else if (x >= 0.33 && y < 0) ds.push([x + 0.5, 'You would enjoy ' + NICE[d.id] + ', which ' + nm + ' never wrote.']);
+      else if (x <= -0.33 && y > 0) ds.push([-x + 0.5, nm + ' is known for ' + NICE[d.id] + ', which is not your thing.']);
+    });
+    ds.sort((a, b) => b[0] - a[0]);
+    return ds.slice(0, 3).map(t => t[1]).join(' ') + (ds.length ? ' ' : '') + 'Reading ' + nm + ' could stretch you in new directions.';
+  }
+
   $('startShort').onclick = () => start(SHORT);
-  $('startComplete').onclick = () => start(COMPLETE);
+  $('startComplete').onclick = () => PR ? startFull() : start(COMPLETE);
+  $('slider').addEventListener('input', () => { if (fq) paintSlider(); });
+  $('slider').addEventListener('keydown', e => { if (e.key === 'Enter') $('go').click(); });
+  $('go').onclick = () => { if (!fq) return; fq.ans[fq.i] = (+$('slider').value) / 3; nextSlider(); };
+  $('skip').onclick = () => { if (!fq) return; fq.ans[fq.i] = null; nextSlider(); };
+  $('none').onclick = () => { if (!fq || busy) return; fq.ans2[fq.j] = null; nextPart2(); };
+  $('cont').onclick = () => { show('quiz'); renderPart2(); };
+  $('mback').onclick = () => { fq.i = PR.items.length - 1; show('quiz'); renderSlider(); };
   $('back').onclick = () => {
     if (busy) return;
+    if (fq) {
+      if (fq.phase === 2) { if (fq.j > 0) { fq.j--; renderPart2(); } else show('mid'); }
+      else if (fq.i > 0) { fq.i--; renderSlider(); }
+      else { fq = null; show('intro'); }
+      return;
+    }
     if (history.length) { history.pop(); next(); }
     else show('intro');
   };

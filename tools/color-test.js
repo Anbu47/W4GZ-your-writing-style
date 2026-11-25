@@ -6,7 +6,7 @@ const root = path.join(__dirname, '..');
 const box = vm.createContext({});
 vm.runInContext(fs.readFileSync(path.join(root, 'data/writers.js'), 'utf8'), box);
 const writers = box.QUIZ_WRITERS;
-assert.equal(writers.length, 68);
+assert.equal(writers.length, 77);
 assert.equal(new Set(writers.map(w => w.color.toLowerCase())).size, writers.length);
 const lum = rgb => rgb.map(v => v <= .04045 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4)
   .reduce((sum, v, i) => sum + v * [.2126, .7152, .0722][i], 0);

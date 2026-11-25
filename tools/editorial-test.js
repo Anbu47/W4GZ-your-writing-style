@@ -20,7 +20,7 @@ for (const line of source.split('\n')) {
   if (q && match) { answer = { key: match[1].toLowerCase(), text: match[2] }; q.answers.push(answer); }
   if (q && line.startsWith('Maps to:')) answer.writers = line.slice(8).split(',').map(s => s.trim());
 }
-assert.equal(data.writers.length, 68);
+assert.equal(data.writers.length, 77);
 assert.equal(questions.length, 100);
 assert.equal(data.questions.length, 100);
 let assignments = 0;
@@ -35,7 +35,7 @@ questions.forEach((expected, i) => {
     assignments += mapped.length;
   });
 });
-assert.equal(assignments, 864);
+assert.equal(assignments, 1019);
 // Coverage is balanced: every writer appears 5 or 6 times in the short quiz (questions 1-25).
 for (const w of data.writers) {
   const short = Object.keys(w.fit).filter(id => data.questions.find(q => q.id === id).number <= 25).length;
