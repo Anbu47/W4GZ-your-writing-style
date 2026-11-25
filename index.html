@@ -103,11 +103,26 @@
   /* result */
   .rtop{margin-top:34px;border-radius:16px;padding:30px 26px;color:#F4F1EA;background:var(--night);border-top:6px solid var(--writer-color,#2C4463);position:relative;overflow:hidden}
   .rtop .writer-copy{position:relative;z-index:1;min-width:0;overflow-wrap:anywhere}
-  .writer-portrait{position:relative;z-index:2;width:160px;height:160px;margin:34px auto -76px;border:6px solid var(--bg);border-radius:50%;overflow:hidden;background:var(--card)}
+  /* Result hero with a full-figure portrait: one light card on the brand paper for every writer,
+     using the cut-out copy of the portrait (assets/writers/cut, made by tools/cut-portraits.py),
+     words on the left, the writer standing on the right (stacked on phones). Without a portrait the dark card above is used. */
+  .rhero{position:relative}
   .writer-portrait[hidden]{display:none}
-  .writer-portrait .writer-chibi{position:absolute;display:block;top:4px;left:50%;width:160%;height:auto;max-width:none;transform:translateX(-50%)}
-  .rtop.has-portrait{margin-top:0;padding-top:96px;text-align:center}
-  @media(max-width:560px){.writer-portrait{width:140px;height:140px;margin-bottom:-66px}.rtop.has-portrait{padding-top:86px}}
+  .rhero.has-portrait{margin-top:34px;border-radius:16px;overflow:hidden;background:#EDE6DB url(assets/brand/paper.webp) 0 0/640px 640px repeat;border:1px solid var(--line);border-top:6px solid var(--writer-color,#2C4463)}
+  .rhero.has-portrait .writer-portrait{position:absolute;top:0;right:0;bottom:0;width:46%}
+  .rhero.has-portrait .writer-chibi{position:absolute;right:0;bottom:0;height:100%;width:auto;max-width:none}
+  .rhero.has-portrait .rtop{margin:0;min-height:440px;padding:30px 44% 30px 28px;background:transparent;border:0;border-radius:0;color:var(--ink);text-align:left}
+  .rhero.has-portrait .rtop .kicker{color:var(--muted)}
+  .rhero.has-portrait .rtop h2{color:var(--ink-strong)}
+  .rhero.has-portrait .rtop .tag{color:var(--ink-strong)}
+  .rhero.has-portrait .rtop .tagby{color:var(--muted)}
+  .rhero.has-portrait .rtop .runner{color:var(--ink)}
+  .rhero.has-portrait .rtop .runner b{color:var(--ink-strong)}
+  @media(max-width:560px){
+    .rhero.has-portrait .writer-portrait{position:relative;width:100%;height:320px}
+    .rhero.has-portrait .writer-chibi{right:50%;transform:translateX(50%)}
+    .rhero.has-portrait .rtop{min-height:0;padding:4px 20px 26px}
+  }
   .rtop .kicker{font:400 12px/1.4 var(--mono);letter-spacing:.25em;text-transform:uppercase;color:#BDB6A6}
   .rtop h2{font-family:var(--hero);font-weight:700;font-style:normal;font-size:clamp(41.6px,8vw,72px);line-height:1.12;letter-spacing:.006em;margin:8px 0 10px;color:#F4F1EA}
   .rtop .tag{font:italic 400 24px/1.4 var(--serif);color:#F4F1EA}
@@ -261,8 +276,10 @@
   <!-- RESULT -->
   <section class="screen" id="result">
     <button class="backlink" id="rback" hidden>← Back</button>
-    <div class="writer-portrait" id="writerPortrait" hidden></div>
-    <div class="rtop" id="rtop"></div>
+    <div class="rhero" id="rhero">
+      <div class="writer-portrait" id="writerPortrait" hidden></div>
+      <div class="rtop" id="rtop"></div>
+    </div>
     <div class="card"><h3>Your style</h3><p id="rdesc"></p></div>
     <div class="card"><h3>True story</h3><p id="rfact"></p></div>
     <div class="card full-only" id="workcard"><h3>How they worked</h3><p id="rwork"></p></div>
@@ -539,16 +556,18 @@
     const portraitSlot = $('writerPortrait');
     portraitSlot.innerHTML = '';
     portraitSlot.hidden = !w.portrait;
-    portraitSlot.style.setProperty('--writer-color', color);
+    const hero = $('rhero');
+    hero.style.setProperty('--writer-color', color);
+    hero.classList.toggle('has-portrait', Boolean(w.portrait));
     top.classList.toggle('has-portrait', Boolean(w.portrait));
     if (w.portrait) {
       const portrait = el('img', 'writer-chibi');
       portrait.alt = 'Chibi portrait of ' + w.name;
-      portrait.width = 384;
+      portrait.width = 341;
       portrait.height = 512;
       portrait.decoding = 'async';
-      portrait.onerror = () => { portrait.remove(); portraitSlot.hidden = true; top.classList.remove('has-portrait'); };
-      portrait.src = w.portrait;
+      portrait.onerror = () => { portrait.remove(); portraitSlot.hidden = true; top.classList.remove('has-portrait'); hero.classList.remove('has-portrait'); };
+      portrait.src = w.portrait.replace('assets/writers/', 'assets/writers/cut/'); // background removed, sits on the card's paper
       portraitSlot.appendChild(portrait);
     }
 

@@ -40,7 +40,7 @@ Run `node tools/editorial-test.js` to verify this edition. `check.html` and `too
 
 All 77 result profiles include a matching chibi illustration. To add a writer's portrait, save `assets/writers/<id>.webp` and set `"portrait": "assets/writers/<id>.webp"` on that writer; a writer without one simply shows no picture. Transparent WebP portraits live in `assets/writers/` and are linked by the `portrait` field in each writer profile. Each portrait appears as an upper-body circular medallion overlapping the top center of the colored result banner on desktop and mobile. Writing-approach labels are hidden from banners and the writer directory. Ancient and some early historical likenesses are imaginative reconstructions.
 
-Run `node tools/portrait-test.js` to check all 77 portrait files, writer-to-image assignments and profile switching.
+The result card shows each writer on the brand paper using a copy of the portrait with its background removed (`assets/writers/cut/`). After replacing portraits, run `python3 tools/cut-portraits.py` to remake those copies. Run `node tools/portrait-test.js` to check all 77 portrait files, writer-to-image assignments and profile switching.
 
 ## Complete-quiz extras
 

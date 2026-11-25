@@ -67,9 +67,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dickens.webp",
     "portraitCrop": {
-      "x": 0.22,
-      "y": -0.1017,
-      "w": 1.459
+      "x": 0.5614,
+      "y": 0.0585,
+      "w": 1.6157
     }
   },
   {
@@ -149,9 +149,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/murasaki.webp",
     "portraitCrop": {
-      "x": 0.4082,
-      "y": -0.0518,
-      "w": 1.8071
+      "x": 0.6582,
+      "y": 0.1483,
+      "w": 1.6915
     }
   },
   {
@@ -257,9 +257,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/austen.webp",
     "portraitCrop": {
-      "x": 0.3785,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.5659,
+      "y": 0.0685,
+      "w": 1.6227
     }
   },
   {
@@ -335,9 +335,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/shakespeare.webp",
     "portraitCrop": {
-      "x": 0.3052,
-      "y": -0.0751,
-      "w": 1.6021
+      "x": 0.5955,
+      "y": 0.1673,
+      "w": 1.55
     }
   },
   {
@@ -422,9 +422,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dostoevsky.webp",
     "portraitCrop": {
-      "x": 0.4085,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.6549,
+      "y": 0.1102,
+      "w": 1.6582
     }
   },
   {
@@ -497,9 +497,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/hemingway.webp",
     "portraitCrop": {
-      "x": 0.3852,
-      "y": -0.0562,
-      "w": 1.7986
+      "x": 0.5623,
+      "y": 0.0237,
+      "w": 1.5853
     }
   },
   {
@@ -580,9 +580,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/tolstoy.webp",
     "portraitCrop": {
-      "x": 0.3442,
-      "y": -0.0693,
-      "w": 1.6973
+      "x": 0.5566,
+      "y": 0.0585,
+      "w": 1.6157
     }
   },
   {
@@ -654,9 +654,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/garcia-marquez.webp",
     "portraitCrop": {
-      "x": 0.392,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5966,
+      "y": 0.0953,
+      "w": 1.6545
     }
   },
   {
@@ -734,9 +734,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/hugo.webp",
     "portraitCrop": {
-      "x": 0.3837,
-      "y": -0.0605,
-      "w": 1.786
+      "x": 0.5669,
+      "y": 0.0283,
+      "w": 1.5853
     }
   },
   {
@@ -803,9 +803,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/lu-xun.webp",
     "portraitCrop": {
-      "x": 0.3729,
-      "y": -0.0424,
-      "w": 1.8071
+      "x": 0.5878,
+      "y": 0.0334,
+      "w": 1.592
     }
   },
   {
@@ -871,9 +871,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/nietzsche.webp",
     "portraitCrop": {
-      "x": 0.4019,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.5946,
+      "y": 0.0389,
+      "w": 1.6055
     }
   },
   {
@@ -948,9 +948,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/du-fu.webp",
     "portraitCrop": {
-      "x": 0.4485,
-      "y": -0.0562,
-      "w": 1.7986
+      "x": 0.6159,
+      "y": 0.059,
+      "w": 1.6227
     }
   },
   {
@@ -1027,9 +1027,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/homer.webp",
     "portraitCrop": {
-      "x": 0.3138,
-      "y": -0.077,
-      "w": 1.6405
+      "x": 0.5317,
+      "y": 0.024,
+      "w": 1.592
     }
   },
   {
@@ -1107,9 +1107,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/sappho.webp",
     "portraitCrop": {
-      "x": 0.3547,
-      "y": -0.0658,
-      "w": 1.7229
+      "x": 0.5854,
+      "y": 0.0474,
+      "w": 1.592
     }
   },
   {
@@ -1175,9 +1175,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dante.webp",
     "portraitCrop": {
-      "x": 0.3995,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.5675,
+      "y": -0.0141,
+      "w": 1.5657
     }
   },
   {
@@ -1263,9 +1263,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/cervantes.webp",
     "portraitCrop": {
-      "x": 0.3876,
-      "y": -0.0562,
-      "w": 1.7986
+      "x": 0.6064,
+      "y": 0.0393,
+      "w": 1.6123
     }
   },
   {
@@ -1340,9 +1340,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/li-bai.webp",
     "portraitCrop": {
-      "x": 0.4415,
-      "y": -0.0515,
-      "w": 1.7986
+      "x": 0.6719,
+      "y": 0.081,
+      "w": 1.6582
     }
   },
   {
@@ -1428,9 +1428,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/basho.webp",
     "portraitCrop": {
-      "x": 0.4043,
-      "y": -0.0191,
-      "w": 1.8373
+      "x": 0.6038,
+      "y": 0.1211,
+      "w": 1.6691
     }
   },
   {
@@ -1513,9 +1513,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/rumi.webp",
     "portraitCrop": {
-      "x": 0.3692,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.5532,
+      "y": 0.0141,
+      "w": 1.5787
     }
   },
   {
@@ -1595,9 +1595,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/nguyen-du.webp",
     "portraitCrop": {
-      "x": 0.3689,
-      "y": -0.0515,
-      "w": 1.7986
+      "x": 0.521,
+      "y": 0.0001,
+      "w": 1.5754
     }
   },
   {
@@ -1676,9 +1676,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/cao-xueqin.webp",
     "portraitCrop": {
-      "x": 0.3785,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.6975,
+      "y": 0.1672,
+      "w": 1.684
     }
   },
   {
@@ -1759,9 +1759,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/goethe.webp",
     "portraitCrop": {
-      "x": 0.3925,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.5734,
+      "y": 0.0485,
+      "w": 1.6089
     }
   },
   {
@@ -1842,9 +1842,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/voltaire.webp",
     "portraitCrop": {
-      "x": 0.3837,
-      "y": -0.0583,
-      "w": 1.7493
+      "x": 0.6063,
+      "y": 0.0856,
+      "w": 1.6545
     }
   },
   {
@@ -1920,9 +1920,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/moliere.webp",
     "portraitCrop": {
-      "x": 0.2889,
-      "y": -0.0815,
-      "w": 1.5656
+      "x": 0.6254,
+      "y": 0.0685,
+      "w": 1.6227
     }
   },
   {
@@ -1996,9 +1996,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/mary-shelley.webp",
     "portraitCrop": {
-      "x": 0.3923,
-      "y": -0.0515,
-      "w": 1.7986
+      "x": 0.5967,
+      "y": 0.118,
+      "w": 1.6402
     }
   },
   {
@@ -2073,9 +2073,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/charlotte-bronte.webp",
     "portraitCrop": {
-      "x": 0.3743,
-      "y": -0.0421,
-      "w": 1.7857
+      "x": 0.6866,
+      "y": 0.1398,
+      "w": 1.6618
     }
   },
   {
@@ -2166,9 +2166,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/poe.webp",
     "portraitCrop": {
-      "x": 0.3442,
-      "y": -0.0655,
-      "w": 1.6973
+      "x": 0.5718,
+      "y": 0.0324,
+      "w": 1.5754
     }
   },
   {
@@ -2243,9 +2243,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dickinson.webp",
     "portraitCrop": {
-      "x": 0.3967,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.6739,
+      "y": 0.1381,
+      "w": 1.6473
     }
   },
   {
@@ -2314,9 +2314,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/whitman.webp",
     "portraitCrop": {
-      "x": 0.2321,
-      "y": -0.0861,
-      "w": 1.5238
+      "x": 0.4117,
+      "y": 0.0131,
+      "w": 1.3848
     }
   },
   {
@@ -2385,9 +2385,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/twain.webp",
     "portraitCrop": {
-      "x": 0.2838,
-      "y": -0.09,
-      "w": 1.58
+      "x": 0.4849,
+      "y": 0.0088,
+      "w": 1.4667
     }
   },
   {
@@ -2469,9 +2469,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/andersen.webp",
     "portraitCrop": {
-      "x": 0.3767,
-      "y": -0.0506,
-      "w": 1.7765
+      "x": 0.6301,
+      "y": 0.0494,
+      "w": 1.6227
     }
   },
   {
@@ -2546,9 +2546,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/carroll.webp",
     "portraitCrop": {
-      "x": 0.3335,
-      "y": -0.0629,
-      "w": 1.689
+      "x": 0.5729,
+      "y": 0.069,
+      "w": 1.6296
     }
   },
   {
@@ -2623,9 +2623,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/verne.webp",
     "portraitCrop": {
-      "x": 0.385,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.6233,
+      "y": 0.1199,
+      "w": 1.6582
     }
   },
   {
@@ -2706,9 +2706,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dumas.webp",
     "portraitCrop": {
-      "x": 0.2613,
-      "y": -0.0953,
-      "w": 1.5306
+      "x": 0.5564,
+      "y": 0.0352,
+      "w": 1.6227
     }
   },
   {
@@ -2784,9 +2784,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/chekhov.webp",
     "portraitCrop": {
-      "x": 0.3829,
-      "y": -0.0515,
-      "w": 1.7986
+      "x": 0.599,
+      "y": 0.0898,
+      "w": 1.6473
     }
   },
   {
@@ -2874,9 +2874,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/pushkin.webp",
     "portraitCrop": {
-      "x": 0.3744,
-      "y": -0.0598,
-      "w": 1.7673
+      "x": 0.651,
+      "y": 0.0572,
+      "w": 1.5987
     }
   },
   {
@@ -2963,9 +2963,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/wilde.webp",
     "portraitCrop": {
-      "x": 0.331,
-      "y": -0.0686,
-      "w": 1.6973
+      "x": 0.6231,
+      "y": 0.069,
+      "w": 1.6296
     }
   },
   {
@@ -3040,9 +3040,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/kafka.webp",
     "portraitCrop": {
-      "x": 0.3618,
-      "y": -0.0562,
-      "w": 1.7986
+      "x": 0.5992,
+      "y": 0.0834,
+      "w": 1.6296
     }
   },
   {
@@ -3121,9 +3121,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/woolf.webp",
     "portraitCrop": {
-      "x": 0.3712,
-      "y": -0.0515,
-      "w": 1.7986
+      "x": 0.5878,
+      "y": 0.038,
+      "w": 1.592
     }
   },
   {
@@ -3207,9 +3207,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/joyce.webp",
     "portraitCrop": {
-      "x": 0.3803,
-      "y": -0.0516,
-      "w": 1.8028
+      "x": 0.5737,
+      "y": 0.0382,
+      "w": 1.5953
     }
   },
   {
@@ -3292,9 +3292,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/proust.webp",
     "portraitCrop": {
-      "x": 0.3915,
-      "y": -0.0377,
-      "w": 1.8113
+      "x": 0.5534,
+      "y": 0.0093,
+      "w": 1.5754
     }
   },
   {
@@ -3372,9 +3372,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/orwell.webp",
     "portraitCrop": {
-      "x": 0.3635,
-      "y": -0.0424,
-      "w": 1.8071
+      "x": 0.5714,
+      "y": 0.052,
+      "w": 1.592
     }
   },
   {
@@ -3452,9 +3452,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/christie.webp",
     "portraitCrop": {
-      "x": 0.3858,
-      "y": -0.0527,
-      "w": 1.7951
+      "x": 0.5507,
+      "y": 0.0283,
+      "w": 1.5853
     }
   },
   {
@@ -3541,9 +3541,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/tolkien.webp",
     "portraitCrop": {
-      "x": 0.4028,
-      "y": -0.0332,
-      "w": 1.8199
+      "x": 0.5842,
+      "y": 0.1158,
+      "w": 1.6654
     }
   },
   {
@@ -3618,9 +3618,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/tagore.webp",
     "portraitCrop": {
-      "x": 0.3462,
-      "y": -0.0681,
-      "w": 1.7058
+      "x": 0.6379,
+      "y": 0.1252,
+      "w": 1.6618
     }
   },
   {
@@ -3699,9 +3699,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/borges.webp",
     "portraitCrop": {
-      "x": 0.3756,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.6422,
+      "y": 0.0885,
+      "w": 1.6331
     }
   },
   {
@@ -3776,9 +3776,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/neruda.webp",
     "portraitCrop": {
-      "x": 0.3551,
-      "y": -0.0285,
-      "w": 1.8242
+      "x": 0.631,
+      "y": 0.1443,
+      "w": 1.6991
     }
   },
   {
@@ -3859,9 +3859,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/achebe.webp",
     "portraitCrop": {
-      "x": 0.4014,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.6561,
+      "y": 0.0585,
+      "w": 1.6157
     }
   },
   {
@@ -3954,18 +3954,18 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/morrison.webp",
     "portraitCrop": {
-      "x": 0.3731,
-      "y": -0.0592,
-      "w": 1.689
+      "x": 0.6272,
+      "y": 0.0138,
+      "w": 1.5722
     }
   },
   {
     "id": "rowling",
     "portrait": "assets/writers/rowling.webp",
     "portraitCrop": {
-      "x": 0.3925,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.5734,
+      "y": 0.0674,
+      "w": 1.6089
     },
     "name": "J.K. Rowling",
     "years": "born 1965",
@@ -4049,9 +4049,9 @@ var QUIZ_WRITERS = [
     "id": "king",
     "portrait": "assets/writers/king.webp",
     "portraitCrop": {
-      "x": 0.3946,
-      "y": -0.0515,
-      "w": 1.7986
+      "x": 0.5181,
+      "y": -0.001,
+      "w": 1.5465
     },
     "name": "Stephen King",
     "years": "born 1947",
@@ -4127,9 +4127,9 @@ var QUIZ_WRITERS = [
     "id": "fitzgerald",
     "portrait": "assets/writers/fitzgerald.webp",
     "portraitCrop": {
-      "x": 0.3779,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5544,
+      "y": 0.0629,
+      "w": 1.6123
     },
     "name": "F. Scott Fitzgerald",
     "years": "1896–1940",
@@ -4204,9 +4204,9 @@ var QUIZ_WRITERS = [
     "id": "grimm",
     "portrait": "assets/writers/grimm.webp",
     "portraitCrop": {
-      "x": 0.0317,
-      "y": -0.1383,
-      "w": 1.0919
+      "x": 0.2679,
+      "y": 0.1614,
+      "w": 1.2179
     },
     "name": "Brothers Grimm",
     "years": "Jacob 1785–1863, Wilhelm 1786–1859",
@@ -4282,9 +4282,9 @@ var QUIZ_WRITERS = [
     "id": "conan-doyle",
     "portrait": "assets/writers/conan-doyle.webp",
     "portraitCrop": {
-      "x": 0.3837,
-      "y": -0.0605,
-      "w": 1.786
+      "x": 0.6815,
+      "y": 0.1612,
+      "w": 1.7144
     },
     "name": "Arthur Conan Doyle",
     "years": "1859–1930",
@@ -4357,9 +4357,9 @@ var QUIZ_WRITERS = [
     "id": "harper-lee",
     "portrait": "assets/writers/harper-lee.webp",
     "portraitCrop": {
-      "x": 0.3478,
-      "y": -0.0678,
-      "w": 1.7316
+      "x": 0.5342,
+      "y": 0.0332,
+      "w": 1.5886
     },
     "name": "Harper Lee",
     "years": "1926–2016",
@@ -4430,9 +4430,9 @@ var QUIZ_WRITERS = [
     "id": "coelho",
     "portrait": "assets/writers/coelho.webp",
     "portraitCrop": {
-      "x": 0.3962,
-      "y": -0.0377,
-      "w": 1.8113
+      "x": 0.6231,
+      "y": 0.0843,
+      "w": 1.6402
     },
     "name": "Paulo Coelho",
     "years": "born 1947",
@@ -4504,9 +4504,9 @@ var QUIZ_WRITERS = [
     "id": "murakami",
     "portrait": "assets/writers/murakami.webp",
     "portraitCrop": {
-      "x": 0.392,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5849,
+      "y": 0.0497,
+      "w": 1.6261
     },
     "name": "Haruki Murakami",
     "years": "born 1949",
@@ -4579,9 +4579,9 @@ var QUIZ_WRITERS = [
     "id": "steinbeck",
     "portrait": "assets/writers/steinbeck.webp",
     "portraitCrop": {
-      "x": 0.3628,
-      "y": -0.0605,
-      "w": 1.786
+      "x": 0.58,
+      "y": 0.0834,
+      "w": 1.6296
     },
     "name": "John Steinbeck",
     "years": "1902–1968",
@@ -4657,9 +4657,9 @@ var QUIZ_WRITERS = [
     "id": "cs-lewis",
     "portrait": "assets/writers/cs-lewis.webp",
     "portraitCrop": {
-      "x": 0.3791,
-      "y": -0.0651,
-      "w": 1.786
+      "x": 0.6793,
+      "y": 0.1252,
+      "w": 1.6618
     },
     "name": "C.S. Lewis",
     "years": "1898–1963",
@@ -4735,9 +4735,9 @@ var QUIZ_WRITERS = [
     "id": "emily-bronte",
     "portrait": "assets/writers/emily-bronte.webp",
     "portraitCrop": {
-      "x": 0.3723,
-      "y": -0.0603,
-      "w": 1.7582
+      "x": 0.63,
+      "y": 0.0913,
+      "w": 1.6123
     },
     "name": "Emily Brontë",
     "years": "1818–1848",
@@ -4811,9 +4811,9 @@ var QUIZ_WRITERS = [
     "id": "stoker",
     "portrait": "assets/writers/stoker.webp",
     "portraitCrop": {
-      "x": 0.3949,
-      "y": -0.0514,
-      "w": 1.7944
+      "x": 0.5787,
+      "y": 0.028,
+      "w": 1.5787
     },
     "name": "Bram Stoker",
     "years": "1847–1912",
@@ -4879,9 +4879,9 @@ var QUIZ_WRITERS = [
     "id": "wells",
     "portrait": "assets/writers/wells.webp",
     "portraitCrop": {
-      "x": 0.4014,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5918,
+      "y": 0.1091,
+      "w": 1.6473
     },
     "name": "H.G. Wells",
     "years": "1866–1946",
@@ -4951,9 +4951,9 @@ var QUIZ_WRITERS = [
     "id": "asimov",
     "portrait": "assets/writers/asimov.webp",
     "portraitCrop": {
-      "x": 0.3044,
-      "y": -0.0795,
-      "w": 1.6173
+      "x": 0.6206,
+      "y": 0.0635,
+      "w": 1.6192
     },
     "name": "Isaac Asimov",
     "years": "c. 1920–1992",
@@ -5026,9 +5026,9 @@ var QUIZ_WRITERS = [
     "id": "bradbury",
     "portrait": "assets/writers/bradbury.webp",
     "portraitCrop": {
-      "x": 0.3756,
-      "y": -0.0469,
-      "w": 1.8028
+      "x": 0.5411,
+      "y": 0.024,
+      "w": 1.592
     },
     "name": "Ray Bradbury",
     "years": "1920–2012",
@@ -5098,9 +5098,9 @@ var QUIZ_WRITERS = [
     "id": "huxley",
     "portrait": "assets/writers/huxley.webp",
     "portraitCrop": {
-      "x": 0.3879,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.4977,
+      "y": -0.0056,
+      "w": 1.5465
     },
     "name": "Aldous Huxley",
     "years": "1894–1963",
@@ -5172,9 +5172,9 @@ var QUIZ_WRITERS = [
     "id": "dan-brown",
     "portrait": "assets/writers/dan-brown.webp",
     "portraitCrop": {
-      "x": 0.3692,
-      "y": -0.0561,
-      "w": 1.7944
+      "x": 0.6452,
+      "y": 0.1008,
+      "w": 1.6618
     },
     "name": "Dan Brown",
     "years": "born 1964",
@@ -5325,9 +5325,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/sophocles.webp",
     "portraitCrop": {
-      "x": 0.3639,
-      "y": -0.0547,
-      "w": 1.7933
+      "x": 0.523,
+      "y": 0.0235,
+      "w": 1.582
     }
   },
   {
@@ -5413,9 +5413,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/ibsen.webp",
     "portraitCrop": {
-      "x": 0.3896,
-      "y": -0.0594,
-      "w": 1.7838
+      "x": 0.5425,
+      "y": -0.0097,
+      "w": 1.5592
     }
   },
   {
@@ -5500,9 +5500,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/jm-barrie.webp",
     "portraitCrop": {
-      "x": 0.3943,
-      "y": -0.05,
-      "w": 1.798
+      "x": 0.6136,
+      "y": 0.1064,
+      "w": 1.6691
     }
   },
   {
@@ -5591,9 +5591,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/anne-frank.webp",
     "portraitCrop": {
-      "x": 0.3826,
-      "y": -0.0547,
-      "w": 1.7933
+      "x": 0.6279,
+      "y": 0.1172,
+      "w": 1.6331
     }
   },
   {
@@ -5687,9 +5687,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/angelou.webp",
     "portraitCrop": {
-      "x": 0.3826,
-      "y": -0.0452,
-      "w": 1.8028
+      "x": 0.5558,
+      "y": 0.0092,
+      "w": 1.5722
     }
   },
   {
@@ -5783,9 +5783,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/saint-exupery.webp",
     "portraitCrop": {
-      "x": 0.3686,
-      "y": -0.05,
-      "w": 1.798
+      "x": 0.558,
+      "y": 0.0994,
+      "w": 1.6473
     }
   },
   {
@@ -5868,9 +5868,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dr-seuss.webp",
     "portraitCrop": {
-      "x": 0.3384,
-      "y": -0.0547,
-      "w": 1.7885
+      "x": 0.5525,
+      "y": 0.0478,
+      "w": 1.5987
     }
   },
   {
@@ -5959,9 +5959,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/dahl.webp",
     "portraitCrop": {
-      "x": 0.3594,
-      "y": -0.0594,
-      "w": 1.7838
+      "x": 0.5149,
+      "y": 0.0087,
+      "w": 1.5624
     }
   },
   {
@@ -6055,9 +6055,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/o-henry.webp",
     "portraitCrop": {
-      "x": 0.371,
-      "y": -0.0594,
-      "w": 1.7838
+      "x": 0.5889,
+      "y": 0.1322,
+      "w": 1.6802
     }
   },
   {
@@ -6149,9 +6149,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/jack-london.webp",
     "portraitCrop": {
-      "x": 0.3803,
-      "y": -0.0546,
-      "w": 1.798
+      "x": 0.5923,
+      "y": 0.0577,
+      "w": 1.6055
     }
   },
   {
@@ -6234,9 +6234,9 @@ var QUIZ_WRITERS = [
     },
     "portrait": "assets/writers/harari.webp",
     "portraitCrop": {
-      "x": 0.3803,
-      "y": -0.05,
-      "w": 1.798
+      "x": 0.5948,
+      "y": 0.0423,
+      "w": 1.5853
     }
   }
 ];
