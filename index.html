@@ -379,9 +379,9 @@
   $('startShort').textContent = 'Short quiz · ' + count(SHORT) + ' questions';
   const FULLN = typeof QUIZ_PROFILE !== 'undefined' ? QUIZ_PROFILE.items.length + 10 : 100;
   $('startComplete').textContent = 'Complete quiz · ' + FULLN + ' questions';
-  // Complete quiz: about 10 seconds per slider and 30 per question.
+  // Complete quiz: about 30 seconds per slider or question (68 → about 34 minutes).
   $('meta').textContent = 'Short: about ' + minutes(SHORT) + ' minutes. Complete: about ' +
-    (FULLN === 100 ? minutes(COMPLETE) : Math.round((FULLN - 10) / 6 + 5)) + ' minutes.';
+    (FULLN === 100 ? minutes(COMPLETE) : Math.round(FULLN / 2)) + ' minutes.';
   $('alltitle').textContent = 'All ' + model.W + ' writers';
 
   /* ---------- quiz ---------- */
